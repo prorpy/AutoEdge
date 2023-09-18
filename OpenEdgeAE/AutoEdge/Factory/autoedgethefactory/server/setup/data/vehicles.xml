@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicles>
+	<!--
+		items/options for all brands/tenants. Create 'em once in this XML doc
+	-->
+	<brand name="all">
+		<!-- fuel -->
+		<item num="1001" type="fuel" isstandard="true">
+			<name>gas</name>
+			<description>Gasoline/petrol fueled</description>
+			<price>0</price>
+		</item>
+		<item num="1002" type="fuel">
+			<name>diesel</name>
+			<description>Diesel fueled</description>
+			<price>500</price>
+		</item>
+		<item num="1003" type="fuel">
+			<name>hybrid</name>
+			<description>Gas/Electric hybrid fuel</description>
+			<price>1500</price>
+		</item>
+		<item num="1004" type="fuel">
+			<name>electric</name>
+			<description>Pure electric engine</description>
+			<price>0</price>
+		</item>
+		<!-- engines -->
+		>
+		<item num="1011" type="engine">
+			<name>1.6</name>
+			<price>0</price>
+		</item>
+		<item num="1012" type="engine">
+			<name>1.8</name>
+			<price>200</price>
+		</item>
+		<item num="1013" type="engine" isstandard="true">
+			<name>2.0</name>
+			<price>300</price>
+		</item>
+		<item num="1014" type="engine">
+			<name>3.0</name>
+			<price>500</price>
+		</item>
+		<item num="1015" type="engine">
+			<name>electric</name>
+			<price>2000</price>
+		</item>
+		<!-- paint / ext colour -->
+		<item num="1020" type="ext-colour" isstandard="true">
+			<name>White</name>
+			<description>White</description>
+			<price>0</price>
+		</item>
+		<item num="1021" type="ext-colour">
+			<name>LightSteelBlue</name>
+			<description>Light Steel Blue</description>
+			<price>0</price>
+		</item>
+		<item num="1022" type="ext-colour">
+			<name>DarkGray</name>
+			<description>Charcoal</description>
+			<price>0</price>
+		</item>
+		<item num="1023" type="ext-colour">
+			<name>DarkSeaGreen</name>
+			<description>Dark Green</description>
+			<price>0</price>
+		</item>
+		<item num="1024" type="ext-colour">
+			<name>NavajoWhite</name>
+			<description>Champagne</description>
+			<price>150</price>
+		</item>
+		<!-- wheels -->
+		<item num="1031" type="wheels" isstandard="true">
+			<name>14std</name>
+			<description>Standard 14"</description>
+			<price>0</price>
+			<qty>5</qty>
+		</item>
+		<item num="1032" type="wheels">
+			<name>20alloylo</name>
+			<description>20 inch low-profile alloy</description>
+			<price>365</price>
+			<qty>5</qty>
+		</item>
+		<item num="1033" type="wheels">
+			<name>offroad</name>
+			<description>All-terrain off-road</description>
+			<price>550</price>
+			<qty>5</qty>
+		</item>
+		<!-- moonroof -->
+		<item num="1041" type="moonroof" isstandard="true">
+			<name>none</name>
+			<description>No moonroof</description>
+			<price>0</price>
+		</item>
+		<item num="1042" type="moonroof">
+			<name>moonroof</name>
+			<description>Standard moonroof</description>
+			<price>225</price>
+		</item>
+		<item num="1043" type="moonroof">
+			<name>panoramic</name>
+			<description>Galaxy-View Moonroof</description>
+			<price>500</price>
+		</item>
+		<item num="1044" type="moonroof">
+			<name>sunroof</name>
+			<description>Sunroof Only</description>
+			<price>150</price>
+		</item>
+		<!-- trim material -->
+		<item num="1051" type="Trim-Material" isstandard="true">
+			<name>pec-microfiber</name>
+			<description>Plush-E-Comfort Microfiber</description>
+			<price>0</price>
+		</item>
+		<item num="1052" type="Trim-Material">
+			<name>leather</name>
+			<description>Leather</description>
+			<price>85</price>
+		</item>
+		<!-- trim colour -->
+		<item num="1061" type="Trim-Colour" isstandard="true">
+			<name>LightGray</name>
+			<description>Light Gray</description>
+			<price>0</price>
+		</item>
+		<item num="1062" type="Trim-Colour">
+			<name>DarkSlateGray</name>
+			<description>Dark Slate Gray</description>
+			<price>0</price>
+		</item>
+		<item num="1063" type="Trim-Colour">
+			<name>Tan</name>
+			<description>Tan</description>
+			<price>0</price>
+		</item>
+		<item num="1064" type="Trim-Colour">
+			<name>Charcoal</name>
+			<description>Charcoal</description>
+			<price>0</price>
+		</item>
+		<!-- accessories -->
+		<item num="1071" type="accessories">
+			<name>nav</name>
+			<description>Never-lost Navigation System</description>
+			<price>400</price>
+		</item>
+		<item num="1072" type="accessories">
+			<name>prem-sound</name>
+			<description>Banshee Premium Sound System</description>
+			<price>525</price>
+		</item>
+		<item num="1073" type="accessories">
+			<name>bluetooth</name>
+			<description>Bluetooth</description>
+			<price>100</price>
+		</item>
+	</brand>
+	<!-- brands are the tenants -->
+	<brand name="hinda">
+		<item num="5001" type="vehicle-compact">
+			<name>Civoc</name>
+			<price>9000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="fuel" name="electric" />
+			<option type="engine" name="1.6" />
+			<option type="engine" name="1.8" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="5002" type="vehicle-sedan">
+			<name>Accorn</name>
+			<price>11000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="1.8" />
+			<option type="engine" name="2.0"/>
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="5003" type="vehicle-suv">
+			<name>CR-W</name>
+			<price>12000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="5004" type="vehicle-suv">
+			<name>Odysseus</name>
+			<price>15000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="5005" type="vehicle-compact">
+			<name>Feet</name>
+			<price>9500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="1.6" />			
+			<!-- options -->
+		</item>
+		<item num="5006" type="vehicle-truck">
+			<name>Ridgetop</name>
+			<price>19500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0"/>
+			<!-- options -->
+		</item>
+		<item num="5007" type="vehicle-coupe">
+			<name>Craze</name>
+			<price>19500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="5008" type="vehicle-coupe">
+			<name>Integer</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="5009" type="vehicle-sedan">
+			<name>Insignia</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="5010" type="vehicle-truck">
+			<name>Rampage</name>
+			<price>24000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="3.0"/>
+			<!-- options -->
+		</item>
+	</brand>
+	<brand name="chery">
+		<item num="6001" type="vehicle-sedan">
+			<name>Avalaunch</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="6002" type="vehicle-suv">
+			<name>Blazen</name>
+			<price>16000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="6003" type="vehicle-compact">
+			<name>Curve</name>
+			<price>9000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="1.6" />
+			<option type="engine" name="1.8" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="6004" type="vehicle-truck">
+			<name>SilverRider</name>
+			<price>10000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="diesel" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="6005" type="vehicle-compact">
+			<name>Amp</name>
+			<price>30000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="electric" />
+			<option type="engine" name="electric" />
+			<!-- options -->
+		</item>
+		<item num="6006" type="vehicle-edan">
+			<name>Gazelle</name>
+			<price>17500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="6007" type="vehicle-convertible">
+			<name>Covet</name>
+			<price>25000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="6008" type="vehicle-sedan">
+			<name>Crewe</name>
+			<price>21000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="3.0" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="6009" type="vehicle-coupe">
+			<name>Monaco</name>
+			<price>21000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="3.0" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="6010" type="vehicle-crossover">
+			<name>Equiluxe</name>
+			<price>20000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="3.0" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+	</brand>
+	<brand name="toyola">
+		<item num="7001" type="vehicle-sedan">
+			<name>Crown</name>
+			<price>20000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="7002" type="vehicle-suv">
+			<name>RAD-4</name>
+			<price>19000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="7003" type="vehicle-suv">
+			<name>Lowlander</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="7004" type="vehicle-truck">
+			<name>Tucoma</name>
+			<price>18500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="diesel" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+
+		<item num="7005" type="vehicle-compact">
+			<name>Spyin</name>
+			<price>11000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="1.6" />
+			<option type="engine" name="1.8" />
+			<!-- options -->
+		</item>
+		<item num="7006" type="vehicle-sedan">
+			<name>Pryin</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="1.6" />
+			<!-- options -->
+		</item>
+		<item num="7007" type="vehicle-compact">
+			<name>Tardis</name>
+			<price>12000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="1.6" />
+			<!-- options -->
+		</item>
+		<item num="7008" type="vehicle-truck">
+			<name>Siberia</name>
+			<price>23000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="diesel" />
+			<option type="engine" name="3.0" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="7009" type="vehicle-coupe">
+			<name>Silliekah</name>
+			<price>23000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="3.0" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="7010" type="vehicle-convertible">
+			<name>Solar Ray</name>
+			<price>23000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="3.0" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+	</brand>
+	<brand name="potomoc">
+		<item num="8001" type="vehicle-convertible">
+			<name>BM3</name>
+			<price>20000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8002" type="vehicle-compact">
+			<name>Stripe</name>
+			<price>10400</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8003" type="vehicle-sedan">
+			<name>Grandeur</name>
+			<price>10500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8004" type="vehicle-crossover">
+			<name>Maya</name>
+			<price>14000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8005" type="vehicle-convertible">
+			<name>Solar Flare</name>
+			<price>16000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="electric" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8006" type="vehicle-compact">
+			<name>P3</name>
+			<price>13000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="1.8" />
+			<!-- options -->
+		</item>
+		<item num="8007" type="vehicle-sedan">
+			<name>GR8</name>
+			<price>18500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8008" type="vehicle-crossover">
+			<name>Flood</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8009" type="vehicle-truck">
+			<name>G9</name>
+			<price>19500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="8010" type="vehicle-commercial">
+			<name>TransState</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+	</brand>
+	<brand name="fjord">
+		<item num="9001" type="vehicle-compact">
+			<name>Faster</name>
+			<price>12000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="1.8" />
+			<!-- options -->
+		</item>
+		<item num="9002" type="vehicle-truck">
+			<name>FJ-100</name>
+			<price>15000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="diesel" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="9003" type="vehicle-truck">
+			<name>FJ-200</name>
+			<price>16000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="diesel" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="9004" type="vehicle-crossover">
+			<name>Side</name>
+			<price>24000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="9005" type="vehicle-convertible">
+			<name>Lightningbolt</name>
+			<price>24000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="9006" type="vehicle-sedan">
+			<name>Aurochs</name>
+			<price>21000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="9007" type="vehicle-sedan">
+			<name>Fission</name>
+			<price>19000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="9008" type="vehicle-suv">
+			<name>Getaway</name>
+			<price>21500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="hybrid" />
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="9009" type="vehicle-compact">
+			<name>Focal</name>
+			<price>17500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="hybrid" />
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="9010" type="vehicle-convertible">
+			<name>Filly</name>
+			<price>2300</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+	</brand>
+	<brand name="scubaroo">
+		<item num="10001" type="vehicle-suv">
+			<name>Lumberjack</name>
+			<price>17500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="10002" type="vehicle-compact">
+			<name>Impression</name>
+			<price>19000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="10003" type="vehicle-commercial">
+			<name>WorkerMan</name>
+			<price>24000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="fuel" name="diesel" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="10004" type="vehicle-compact">
+			<name>Artois</name>
+			<price>11000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="1.8" />
+			<option type="engine" name="1.6" />
+			<!-- options -->
+		</item>
+		<item num="10005" type="vehicle-crossover">
+			<name>California</name>
+			<price>22000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="10006" type="vehicle-truck">
+			<name>Wagon</name>
+			<price>19000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="1.8" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="10007" type="vehicle-coupe">
+			<name>Axe</name>
+			<price>19000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="1.8" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="10008" type="vehicle-crossover">
+			<name>Exigent</name>
+			<price>22500</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+		<item num="10009" type="vehicle-sedan">
+			<name>Leggy C</name>
+			<price>20000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<!-- options -->
+		</item>
+		<item num="10010" type="vehicle-sedan">
+			<name>Soho</name>
+			<price>25000</price>
+			<onhand />
+			<!-- options -->
+			<option type="fuel" name="gas" />
+			<option type="fuel" name="hybrid" />
+			<option type="engine" name="2.0" />
+			<option type="engine" name="3.0" />
+			<!-- options -->
+		</item>
+	</brand>
+</vehicles>

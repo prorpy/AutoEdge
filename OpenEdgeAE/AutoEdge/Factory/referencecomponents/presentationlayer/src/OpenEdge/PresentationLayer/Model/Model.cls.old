@@ -1,0 +1,727 @@
+/*------------------------------------------------------------------------
+    File        : Model
+    Purpose     : Generic Model for non-ProDataset-based Models (DatasetModel
+                  caters for those. 
+    Syntax      : 
+    Description : 
+    Author(s)   : pjudge
+    Created     : Fri Apr 10 11:47:12 EDT 2009
+    Notes       : 
+  ----------------------------------------------------------------------*/
+routine-level on error undo, throw.
+
+using OpenEdge.PresentationLayer.Model.IModel.
+using OpenEdge.PresentationLayer.Model.IModelReadOnly.
+using OpenEdge.PresentationLayer.Model.IModelQuery.
+using OpenEdge.PresentationLayer.Model.DataRequestFlagsEnum.
+using OpenEdge.PresentationLayer.Common.ModelErrorEventArgs.
+using OpenEdge.PresentationLayer.Common.ModelEventArgs.
+using OpenEdge.PresentationLayer.Common.ModelActionEnum.
+
+using OpenEdge.CommonInfrastructure.Common.IServiceManager. 
+using OpenEdge.CommonInfrastructure.Common.Component.
+using OpenEdge.CommonInfrastructure.Common.IComponent.
+
+using OpenEdge.Core.System.ITableOwner.
+using OpenEdge.Core.System.IQueryDefinition.
+using OpenEdge.Core.System.EventArgs.
+
+using Progress.Lang.AppError.
+using Progress.Lang.Object.
+
+class OpenEdge.PresentationLayer.Model.Model abstract inherits Component
+        implements IModel, IComponent, ITableOwner:
+    
+    define private temp-table ttModelQuery no-undo
+        field QueryName   as character
+        field Instance as Object          /* OpenEdge.PresentationLayer.Model.IModelQuery */
+        index idx1 as primary unique QueryName
+        .
+
+    /* Largely for init (ie first calls) of shared models. */
+    define private variable mlDoneFetchForContext as logical no-undo.
+    
+    define public property ErrorBuffer as character extent no-undo get. set.
+    define public property ServiceName as character no-undo get. set.
+    define public property AllowDestroyComponent as logical no-undo get. set.
+            
+    /* Events */
+    define public event DataAdd     signature void (poSender as IComponent, poEventArgs as ModelEventArgs).
+    define public event DataDelete  signature void (poSender as IComponent, poEventArgs as ModelEventArgs).
+    define public event DataSave    signature void (poSender as IComponent, poEventArgs as ModelEventArgs).
+    
+    /* Event handlers */
+    method public void DataFetchedHandler(poComponent as IComponent, poEventArgs as EventArgs):
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+    end method.
+    
+	constructor public Model(poServiceManager as IServiceManager):
+		super(poServiceManager).
+	end constructor.
+    
+    method override public void DestroyComponent():
+        DeleteQueries().
+    end method.
+    
+    method protected void OnDataAdd(poEventArgs as ModelEventArgs):
+        poEventArgs:ModelAction = ModelActionEnum:Add.
+        DataAdd:Publish(this-object, poEventArgs).
+    end method.
+    
+    method protected void OnDataDelete(poEventArgs as ModelEventArgs):
+        poEventArgs:ModelAction = ModelActionEnum:Delete.
+        DataDelete:Publish(this-object, poEventArgs).
+    end method.
+    
+    method protected void OnDataSave(poEventArgs as ModelEventArgs):
+        poEventArgs:ModelAction = ModelActionEnum:Save.
+        DataSave:Publish(this-object, poEventArgs).
+    end method.
+    
+    method protected void DeleteQueries():
+        define buffer lbQuery for ttModelQuery.
+                        
+        repeat preselect each lbQuery:
+            find next lbQuery.
+            if available lbQuery then
+            do:
+                delete object lbQuery.Instance.
+                delete lbQuery.
+            end.
+        end.
+    end method.
+    
+    method public void DeleteQuery(pcQuery as char):
+        define buffer lbQuery for ttModelQuery.
+        
+        find lbQuery where lbQuery.QueryName = pcQuery no-error.
+        if available lbQuery then
+        do:
+            delete object lbQuery.Instance.
+            delete lbQuery.
+        end.
+    end method.
+    
+    method override public void CreateComponent():
+        mlDoneFetchForContext = false.
+        
+        super:CreateComponent().
+    end method.
+    
+    method final public void FetchData() :
+        @todo(task="implement", action="").
+    end method.    
+    
+    /** This FetchData doesn't actually do any retrieval, but calls the data retrieval 
+        sequence.
+    method final public void FetchData(poRequestContext as IServerDataContext,
+                                       piDataRequestFlags as int):
+        
+        BeforeFetchData(poRequestContext, piDataRequestFlags).
+        DoFetchData(poRequestContext, piDataRequestFlags).
+        AfterFetchData(poRequestContext, piDataRequestFlags).
+                
+    end method.
+        
+    method protected void BeforeFetchData (poRequestContext as IServerDataContext,
+                                           piDataRequestFlags as integer):
+        if mlDoneFetchForContext and
+           not DataRequestFlagsEnum:IsA(piDataRequestFlags, DataRequestFlagsEnum:IgnoreContextForFetch) and
+           /* do this last since its the most expensive operation */
+           poRequestContext:Equals(RequestContext) then
+            return error new OperationDoneForContextError('FetchData', this-object:GetClass():TypeName).
+    end method.
+    
+    method protected void AfterFetchData (poRequestContext as IServerDataContext,
+                                          piDataRequestFlags as integer):
+        /* Regardless of whether this is duplicate context or not, we've now
+           done a fetch for this RequestContext. */
+        mlDoneFetchForContext = true.
+        this-object:RequestContext = poRequestContext.
+    end method.
+    
+    /* each model type (Dataset, OERA, etc) does this themselves */
+    method abstract protected void DoFetchData (poRequestContext as IServerDataContext,
+                                                piDataRequestFlags as integer).
+    
+     **/
+     
+    method final public void CommitData():
+        BeforeCommitData().
+        DoCommitData().
+        AfterCommitData().        
+    end method.
+        
+    method protected void BeforeCommitData():
+        /* If records have been added to the Model directly (ie not
+           using the API), make sure that we're allowed to update */
+        if type-of(this-object, IModelReadOnly) then
+            undo, throw new AccessViolationError(
+                'Model ' + this-object:GetClass():TypeName,
+                AccessViolationError:READ_ONLY).
+    end method.
+
+    method abstract protected void DoCommitData().
+    method abstract protected void AfterCommitData().
+
+    method public IModelQuery CreateQuery(poQueryDefinition as IQueryDefinition,
+                                   phQuery as handle,
+                                   pcQuery as char):
+        define buffer lbQuery for ttModelQuery.
+        
+        find lbQuery where
+             lbQuery.QueryName = pcQuery
+             no-error.
+        if not available lbQuery then
+        do:
+            create lbQuery.
+            assign lbQuery.Instance = new ModelQuery(this-object /*IModel and ITableOwner*/,
+                                                pcQuery,
+                                                phQuery,
+                                                poQueryDefinition)
+                   /* Don't use parameter pcQuery: ModelQuery may have set this value */
+                   lbQuery.QueryName = cast(lbQuery.Instance, IModelQuery):QueryName. 
+        end.
+        
+        return cast(lbQuery.Instance, IModelQuery).
+    end method.
+    
+    method public IModelQuery GetQuery(pcQuery as char):
+        define buffer lbQuery for ttModelQuery.
+        
+        find lbQuery where lbQuery.QueryName = pcQuery no-error.
+        if not available lbQuery then
+            return error new ValueNotSpecifiedError('query', 'operation').
+        
+        return cast(lbQuery.Instance, IModelQuery).
+    end method.
+    
+    /** GetTableHandle called by IQuery when building 
+        a query. We need to enforce that this method exists within
+        each of the 'physical' Model classes, so it's just a wrapper
+        for the internal abstract GetBufferHandle() call. 
+     **/    
+    method final public handle GetTableHandle(pcTable as char):
+        return GetBufferHandle(pcTable).
+    end method.
+    
+    method abstract protected handle GetBufferHandle (pcBuffer as char).
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output pcValue as char ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        pcValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output pcValue as char extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        pcValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output ptValue as date ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        ptValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output ptValue as date extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        ptValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output ptValue as datetime ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        ptValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output ptValue as datetime extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        ptValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output ptValue as datetime-tz ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        ptValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output ptValue as datetime-tz extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        ptValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output pdValue as decimal ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        pdValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output pdValue as decimal extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        pdValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output phValue as handle ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        phValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output phValue as handle extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        phValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output piValue as int ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        piValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output piValue as int extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        piValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output piValue as int64 ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        piValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output piValue as int64 extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        piValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output pcValue as longchar ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        pcValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output pcValue as longchar extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        pcValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+    
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output prValue as raw ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        prValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output prValue as raw extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        prValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output poValue as Object ):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        poValue = GetBufferField(pcBufferName, pcField):buffer-value.               
+    end method.
+
+    method public void GetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, output poValue as Object extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        poValue = GetBufferField(pcBufferName, pcField):buffer-value.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, pcValue as char):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = pcValue.                    
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, pcValue as char extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = pcValue.
+    end method.
+            
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, pcValue as longchar):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = pcValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, pcValue as longchar extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = pcValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, phValue as handle):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = phValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, phValue as handle extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = phValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, piValue as int):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = piValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, piValue as int extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = piValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, piValue as int64):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = piValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, piValue as int64 extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = piValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, pdValue as decimal):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = pdValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, pdValue as decimal extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = pdValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, ptValue as date):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = ptValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, ptValue as date extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = ptValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, ptValue as datetime):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = ptValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, ptValue as datetime extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = ptValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, ptValue as datetime-tz):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = ptValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, ptValue as datetime-tz extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = ptValue.
+    end method.
+    
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, prValue as raw):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = prValue.
+    end method.
+
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, prValue as raw extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = prValue.
+    end method.
+
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, poValue as Object):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = poValue.
+    end method.
+
+    method public logical SetValue(pcBufferName as char, pcRecordKey as char,  pcField as char, poValue as Object extent):
+        FindBufferByKey(pcBufferName, pcRecordKey).
+        GetBufferField(pcBufferName, pcField):buffer-value = poValue.
+    end method.
+    
+    /* Not abstract since there's no requirement for validation */
+    method public void ValidateRow (piAction as integer,
+                                    phBeforeBuffer as handle,
+                                    phAfterBuffer as handle):
+    end method.
+                
+    method public void ValidateField(piAction as integer,
+                                     pcFieldName as char,
+                                     phBeforeField as handle,
+                                     phAfterField as handle):        
+    end method. 
+
+    method public final character AddRecord(pcBufferName as char):
+        define variable cNewRecordKey as character no-undo.
+        
+        BeforeAddRecord(pcBufferName).
+        cNewRecordKey = DoAddRecord(pcBufferName).
+        AfterAddRecord(pcBufferName, cNewRecordKey).
+        
+        return cNewRecordKey.
+    end method.
+    
+    method protected void BeforeAddRecord(pcBufferName as char):
+        if type-of(this-object, IModelReadOnly) then
+            undo, throw new AccessViolationError(
+                ComponentTypeEnum:Model:ToString() + ' ' + this-object:GetClass():TypeName,
+                AccessViolationError:READ_ONLY).
+    end method.
+    
+    method protected void AfterAddRecord(pcBufferName as char, pcNewRecordKey as char):
+        /* TODO/ args */
+        OnDataAdd(new ModelEventArgs()).        
+    end method.
+        
+    method protected character DoAddRecord(pcBufferName as char):
+        define variable hBuffer    as handle no-undo.
+        define variable cNewRecordKey as character no-undo.
+
+        hBuffer = GetBufferHandle(pcBufferName).
+        
+        do transaction:
+            hBuffer:buffer-create().
+            
+            AssignKeyValues(pcBufferName, hBuffer).
+            AssignDefaultValues(pcBufferName, hBuffer).
+            
+            cNewRecordKey = GetRecordKey(hBuffer).
+            
+            hBuffer:buffer-release().
+        end.
+        
+        return cNewRecordKey.
+    end method.
+    
+    method protected character GetRecordKey(phBuffer as handle):
+        define variable cRecordKey as char no-undo.
+        define variable cKeys as char no-undo.
+        define variable iFields as int no-undo.
+        
+        if phBuffer:available then
+        do:
+            cKeys = phBuffer:keys.
+            if cKeys eq 'Rowid' then
+                cRecordKey = string(phBuffer:rowid). 
+            else
+            do iFields = 1 to num-entries(cKeys):
+                cRecordKey = cRecordKey
+                           + (if iFields eq 1 then 'where ' else ' and ')
+                           + phBuffer:name + '.' + entry(iFields, cKeys)
+                           + ' = ' + quoter(phBuffer:buffer-field(entry(iFields, cKeys)):buffer-value)
+                           .
+            end.    /* key fields */
+        end.
+        else
+            cRecordKey = ?.
+        
+        return cRecordKey.        
+    end method.
+    
+    method public final void SaveRecord(pcBufferName as char, pcRecordKey as char):
+        BeforeSaveRecord(pcBufferName, pcRecordKey).
+        DoSaveRecord(pcBufferName, pcRecordKey).
+        AfterSaveRecord(pcBufferName, pcRecordKey).
+    end method.
+    
+    method protected void BeforeSaveRecord(pcBufferName as char, pcRecordKey as char):
+        if type-of(this-object, IModelReadOnly) then
+            undo, throw new AccessViolationError(
+                ComponentTypeEnum:Model:ToString() + ' ' + this-object:GetClass():TypeName,
+                AccessViolationError:READ_ONLY).
+    end method.
+    
+    method protected abstract void DoSaveRecord(pcBufferName as char, pcRecordKey as char).
+    
+    method protected void AfterSaveRecord(pcBufferName as char, pcRecordKey as char):
+        /* TODO/ args */
+        OnDataSave(new ModelEventArgs()).
+    end method.
+
+    method public final void DeleteRecord(pcBufferName as char, pcRecordKey as char):
+        BeforeDeleteRecord(pcBufferName, pcRecordKey).
+        DoDeleteRecord(pcBufferName, pcRecordKey).
+        AfterDeleteRecord(pcBufferName, pcRecordKey).
+    end method.
+    
+    method protected void BeforeDeleteRecord(pcRecordKey as char, pcBufferName as char):
+        if type-of(this-object, IModelReadOnly) then
+            undo, throw new AccessViolationError(
+                ComponentTypeEnum:Model:ToString() + ' ' + this-object:GetClass():TypeName,
+                AccessViolationError:READ_ONLY).
+    end method.
+    
+    method protected void DoDeleteRecord(pcRecordKey as char, pcBufferName as char):
+        define variable hBuffer as handle  no-undo.
+        
+        hBuffer = GetBufferHandle(pcBufferName).
+        /* try to keep the record scope tight ... */
+        if FindBufferByKey(hBuffer, pcRecordKey) then
+        do transaction:
+            hBuffer:buffer-delete() no-error.
+        end.
+    end method.
+    
+    method protected void AfterDeleteRecord(pcRecordKey as char, pcBufferName as char):
+        /* TODO/ args */
+        def var oMEE as ModelEventArgs.
+        
+        assign oMEE = new ModelEventArgs()
+               oMEE:ModelName = this-object:GetClass():TypeName
+               oMEE:TableName = pcBufferName
+               .
+        OnDataDelete(oMEE).
+    end method.
+    
+    method protected logical FindBufferByKey(pcBufferName as char, pcRecordKey as char):
+        return FindBufferByKey(GetBufferHandle(pcBufferName), pcRecordKey).        
+    end method.
+    
+    method protected logical FindBufferByKey(phBuffer as handle, pcRecordKey as char):
+        if pcRecordKey begins 'where' then
+            phBuffer:find-unique(pcRecordKey) no-error.
+        else
+            phBuffer:find-by-rowid(to-rowid(pcRecordKey)) no-error.
+        
+        return phBuffer:available.       
+    end method.
+    
+    /** Each model type will have it's own way of determining a buffer handle
+        based on it's internal data storage structures, eg prodataset, temp-table.
+     **/
+    method abstract protected handle GetBufferField(pcBufferName as char, pcFieldName as char).
+    
+    /** Override to set the default (initial) values on create of a record
+        in the model. The table name is passed in in case the model is operating 
+        on a non-default-ly named buffer. The buffer handle is positioned to the
+        newly-created record.
+        
+        Note that key values are set in AssignKeyValues(). 
+     **/
+    method abstract protected void AssignDefaultValues (pcTable as char, phBuffer as handle).
+    
+    method abstract protected void AssignKeyValues (pcTable as char, phBuffer as handle).
+
+    method public ModelErrorEventArgs ProcessModelErrors (pcBuffer as char):
+        define variable oModelErrorEventArgs as ModelErrorEventArgs no-undo.
+        
+        oModelErrorEventArgs = new ModelErrorEventArgs(pcBuffer).
+                
+        return oModelErrorEventArgs.
+    end method.
+
+    method public void CollectChanges():
+    end method.
+    
+    method public logical MergeChanges(pcQuery as char):
+    end method.
+    
+    method public handle GetBindingHandle(pcQuery as char):
+        return cast(GetQuery(pcQuery), IQuery):QueryHandle.
+    end method.
+    
+
+    
+    
+
+ 
+
+
+    
+    method public void FetchData(poTableRequest as OpenEdge.Core.System.ITableRequest ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public void FetchDataForQueries(  ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public void FetchDataForQueries(poTableRequest as OpenEdge.Core.System.ITableRequest ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public OpenEdge.Core.System.IFetchRequest BuildRequest(  ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public OpenEdge.Core.System.IFetchRequest BuildRequest(pcTables as character extent ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public OpenEdge.Core.System.IFetchRequest BuildRequestFromQueries(  ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public OpenEdge.Core.System.IFetchRequest BuildRequestFromQueries(pcTables as character extent ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public void ReceiveData(poResponse as OpenEdge.Core.System.IFetchResponse ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public void CreateQuery(pcQueryName as character,pcTable as character ):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+
+    
+    method public void CreateQuery(pcQueryName as character, poQueryDefinition as IQueryDefinition):
+        
+        undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+    end method.
+
+
+ 
+
+end class.

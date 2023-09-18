@@ -1,0 +1,474 @@
+@todo(task="deal with 'actual' prodataset query handles").
+
+/*------------------------------------------------------------------------
+    File        : DatasetModel
+    Description : 
+    Author(s)   : pjudge
+    Created     : Tue Dec 11 11:31:41 EST 2007
+    Notes       : 
+  ----------------------------------------------------------------------*/
+routine-level on error undo, throw.
+
+using OpenEdge.PresentationLayer.Model.Model.
+using OpenEdge.PresentationLayer.Model.IDatasetModel.
+
+using OpenEdge.PresentationLayer.Common.*.
+using OpenEdge.Core.System.*.
+using OpenEdge.Lang.*.
+using Progress.Data.*.
+ 
+
+class OpenEdge.PresentationLayer.Model.DatasetModel abstract inherits Model
+    implements IDatasetModel:
+    
+    /** Since a ProDataset can only be navigated by a single
+        ProBindingSource at a time, we need a facility to clone
+        the dataset for the UI.
+        
+        The Presenter keeps track of which clones it has, and will
+        cause them to be removed, as needed. The Presenter needs to 
+        do this, since the Model doesn't know anything about the Presenter's
+        life-cycle, nor even which Presenters it serves.
+        
+        When this Model is torn down, it will of course clean up after
+        itself, but in cases where the Model is shared, we don't want
+        any leaks.        
+     **/
+    define private temp-table ttDatasetClone no-undo
+        field DatasetHandle as handle
+        index idx1 as primary unique DatasetHandle.
+    
+    define private variable mhMasterDataset as handle no-undo.
+    /* Get & save the requested data in a transport/temporary dataset, and 
+       copy results into master dataset (mhMasterDataset). This is handy
+       when batching (so we don't schlepp all the data - which is
+       getting bigger and bigger - across the wire on each request). */
+    define private variable mhTransportDataset         as handle              no-undo.
+    
+    constructor public DatasetModel():
+        super().        
+    end constructor.
+    
+    method override public void Initialize():
+        super:Initialize().
+        
+        mhMasterDataset = CreateMasterDataset().
+        mhTransportDataset = CreateTransportDataset(mhMasterDataset).
+        
+        SetCallbacks(mhMasterDataset).
+                                        
+        EnableDatasetForUpdate(mhMasterDataset).
+    end method.
+    
+    method protected void SetCallbacks(phDataset as handle):
+        define variable iLoop as integer no-undo.
+        define variable hBuffer as handle no-undo.
+                        
+        do iLoop = 1 to phDataset:num-buffers:
+            hBuffer = phDataset:get-buffer-handle(iLoop).
+            SetBufferCallbacks(hBuffer:name, hBuffer).
+        end.
+    end method.
+                
+    method protected abstract void SetBufferCallbacks(pcBufferName as char, phBuffer as handle).
+                                  
+    method abstract protected handle CreateMasterDataset().
+    
+    method protected handle CreateTransportDataset(phMasterDataset as handle):
+        define variable hTransportDataset as handle no-undo.
+        
+        create dataset hTransportDataset.
+        hTransportDataset:create-like(phMasterDataset).
+        
+        return hTransportDataset.
+    end method.
+                
+    method protected void EnableDatasetForUpdate(phDataset as handle):
+        define variable iLoop   as integer no-undo.
+        define variable hBuffer as handle  no-undo.
+        
+        if not type-of(this-object, IModelReadOnly) then
+        do iLoop = 1 to phDataset:num-buffers:
+            hBuffer = phDataset:get-buffer-handle(iLoop).
+            hBuffer:table-handle:tracking-changes = true.
+        end.
+    end method.
+        
+    method protected void DisableDatasetForUpdate(phDataset as handle):
+        define variable iLoop   as integer no-undo.
+        define variable hBuffer as handle  no-undo.
+        
+        do iLoop = 1 to phDataset:num-buffers:
+            hBuffer = phDataset:get-buffer-handle(iLoop).
+            hBuffer:table-handle:tracking-changes = no.
+        end.
+    end method.
+    
+    method protected handle CloneDataset(phDataset as handle):
+        define variable iLoop as integer no-undo.
+        define variable hBuffer as handle no-undo.
+        define variable hRelation as handle no-undo.
+                
+        define buffer lbDataset for ttDatasetClone.
+                        
+        create lbDataset.
+        create dataset lbDataset.DatasetHandle.
+        lbDataset.DatasetHandle:Name = phDataset:name.
+        
+        do iLoop = 1 to phDataset:num-buffers:
+            create buffer hBuffer for 
+                    table phDataset:get-buffer-handle(iLoop)
+                    buffer-name phDataset:get-buffer-handle(iLoop):name.
+            
+            /* We don't want the buffers deleted when the cloned dataset is cleaned up. */
+            lbDataset.DatasetHandle:add-buffer(hBuffer).
+            
+            /* Set the Auto-Delete to False since we're re-using the buffers from the
+               master dataset, and we don't want those to get blown away willy-nilly
+               when the cloned dataset is cleaned up.
+                
+               We MUST do thas /after/ the buffer's been added to the ProDataSet else
+               it has no effect. */
+            hBuffer:auto-delete = false.
+        end.
+                
+        do iLoop = 1 to phDataset:num-relations:
+            hRelation = phDataset:get-relation(iLoop).
+            
+            lbDataset.DatasetHandle:add-relation(
+                    lbDataset.DatasetHandle:get-buffer-handle(hRelation:parent-buffer:name),
+                    lbDataset.DatasetHandle:get-buffer-handle(hRelation:child-buffer:name),
+                    hRelation:relation-fields,
+                    hRelation:reposition,
+                    hRelation:nested,
+                    hRelation:active,
+                    hRelation:recursive,
+                    hRelation:foreign-key-hidden ).
+        end.
+        
+        CreateDefaultQueries(lbDataset.DatasetHandle).
+        
+        return lbDataset.DatasetHandle.
+    end method.
+    
+    method override public void DestroyComponent():
+        super:DestroyComponent().
+                
+        DeleteDatasetClones().
+        DeleteTransportDataset().
+        DeleteMasterDataset().
+    end method.
+    
+    method protected void DeleteTransportDataset():
+        delete object mhTransportDataset no-error.
+    end method.
+                
+    method protected void DeleteMasterDataset():
+        define variable iBuffer as integer no-undo.
+        
+        /* buffers are not set to auto delete, so clean up manually */
+        do iBuffer = 1 to mhMasterDataset:num-buffers:
+            delete object mhMasterDataset:get-buffer-handle(iBuffer).
+        end.
+        
+        delete object mhMasterDataset no-error.
+    end method.
+    
+    method protected void DeleteDatasetClone(phDataset as handle):
+        define buffer lbDataset for ttDatasetClone.
+        
+        find lbDataset where lbDataset.DatasetHandle = phDataset no-error.
+        if available lbDataset then
+        do:
+            DeleteDatasetQueries(lbDataset.DatasetHandle).
+            delete object lbDataset.DatasetHandle no-error.
+            delete lbDataset.
+        end.
+    end method.
+    
+    method protected void DeleteDatasetQueries(phDataset as handle):
+        define variable iNumRelations  as integer no-undo.
+        
+        if valid-handle(phDataset) then
+        do:
+            do iNumRelations = 1 to phDataset:num-relations:
+                DeleteQuery(string(phDataset:get-relation(iNumRelations):query)).
+            end.
+            
+            DeleteQuery('top-nav-query').
+        end.
+    end method.        
+            
+    method protected void DeleteDatasetClones():
+        define buffer lbDataset for ttDatasetClone.
+        
+        for each lbDataset:
+            DeleteDatasetQueries(lbDataset.DatasetHandle).
+            
+            delete object lbDataset.DatasetHandle no-error.
+            delete lbDataset.
+        end.
+        
+    end method.
+            
+    method override protected handle GetBufferHandle (pcTable as char):
+        return mhMasterDataset:get-buffer-handle(pcTable).
+    end method.
+    
+    method override protected void AfterFetchData(poRequestContext as IServerDataContext,
+                                                  piDataRequestFlags as integer):
+        
+        super:AfterFetchData(poRequestContext, piDataRequestFlags).
+        
+        /* Life's a batch :) */
+        LoadNewBatch().
+    end method.
+                
+    method protected void LoadNewBatch():
+        DisableDatasetForUpdate(mhMasterDataset).
+        mhMasterDataset:copy-dataset(mhTransportDataset,
+                                     true,      /* append */
+                                     ?,         /* replace */
+                                     true).     /* loose fill */
+        EnableDatasetForUpdate(mhMasterDataset).
+                
+        ErrorBuffer = GatherErrorBuffers(mhTransportDataset).
+    end method.
+    
+    method override public void CollectChanges():
+        mhTransportDataset:empty-dataset().
+        mhTransportDataset:get-changes(mhMasterDataset).
+        
+        /* Check whether we're attempting to update a R-O model */
+        if type-of(this-object, IModelReadOnly) then 
+        do:
+            /* in case someone ignores the Error */
+            mhTransportDataset:empty-dataset().
+            undo, throw new AccessViolationError(
+                'Model ' + this-object:GetClass():TypeName,
+                AccessViolationError:READ_ONLY).
+        end.
+    end method.
+                                                    
+    /* Operations */
+    method override public void AfterAddRecord(pcBufferName as char, pcNewRecordKey as char):
+        
+        /* If there are validation errors, the callbacks on the ProDataset
+           need to set the :Error and/or :Error-String properties. */
+        ErrorBuffer = GatherErrorBuffers(mhMasterDataset).
+        
+        /* The new record needs to be sorted 
+        cast(GetQuery(pcQuery), IQuery):ReopenQuery(cNewRecordKey).
+        **/
+    end method.
+            
+    /** Assign parent values based on the relation a (child) buffer is part of.
+     **/
+    method override protected void AssignKeyValues (pcTable as char, phBuffer as handle):
+        define variable hRelation as handle no-undo.
+        define variable iNumFields as integer no-undo.
+        
+        hRelation = phBuffer:parent-relation.
+        
+        if valid-handle(hRelation) then
+        /* relationfields = parent-field1, child-field1 [, parent-fieldn, child-fieldn ] ...) */
+        do iNumFields = 1 to num-entries(hRelation:relation-fields) by 2:
+            phBuffer:buffer-field(entry(iNumFields + 1, hRelation:relation-fields)):buffer-value =
+                    hRelation:parent-buffer:buffer-field(entry(iNumFields, hRelation:relation-fields)):buffer-value.
+        end.                        
+    end method.
+                          
+    method override public ModelErrorEventArgs ProcessModelErrors (pcBuffer as char):
+        define variable hChangeBuffer              as handle                    no-undo.
+        define variable hChangeBefore              as handle                    no-undo.
+        define variable hChangeAfter               as handle                    no-undo.
+        define variable hMasterBuffer              as handle                    no-undo.
+        define variable hMasterBefore              as handle                    no-undo.
+        define variable hMasterAfter               as handle                    no-undo.
+        define variable hQuery                     as handle                    no-undo.
+        define variable oModelErrorEventArgs as ModelErrorEventArgs no-undo.
+        
+        oModelErrorEventArgs = new ModelErrorEventArgs(pcBuffer).
+        
+        hChangeAfter = mhTransportDataset:get-buffer-handle(pcBuffer).
+        hMasterBuffer = mhMasterDataset:get-buffer-handle(pcBuffer).
+        /* we want a separate buffer so we don't risk messing up the buffer 
+           being viewed/traversed in the View */
+        create buffer hMasterAfter for table hMasterBuffer.
+        
+        if valid-handle(hChangeAfter) then
+        do:
+            hMasterBefore = hMasterBuffer:before-buffer no-error. 
+            create query hQuery.
+                                    
+            if valid-handle(hMasterBefore) then
+            do:
+                hChangeBefore = hChangeAfter:before-buffer.
+
+                hQuery:set-buffers(hChangeBefore).
+                hQuery:query-prepare('for each ' + hChangeBefore:name ).
+                hQuery:query-open().
+                hQuery:get-first().
+                
+                do while hChangeBefore:available:
+                    if hChangeBefore:data-source-modified and 
+                        hChangeBefore:row-state ne row-deleted then
+                    do:
+                        hMasterBefore:find-by-rowid(hChangeBefore:origin-rowid).
+                        hMasterAfter:find-by-rowid(hMasterBefore:after-rowid).
+                        hChangeAfter:find-by-rowid(hChangeBefore:after-rowid).
+                        
+                        oModelErrorEventArgs:AddErrorRecord(
+                            hChangeAfter:rowid,
+                            BufferHelper:BufferCompare(hMasterAfter, hChangeAfter),
+                            hChangeAfter:error-string).
+                    end.    /* record changed */
+                    hQuery:get-next().
+                end.    /* query loop */
+            end.    /* valid masterbefore */
+        end.    /* valid changeafter */
+        
+        return oModelErrorEventArgs.
+    end method.
+    
+    method override protected void AfterCommitData():
+        ErrorBuffer = GatherErrorBuffers(mhTransportDataset).
+    end method.
+
+    method protected char extent GatherErrorBuffers(phDataset as handle):
+        /* hack since we don't know how many errors there are. */
+        define variable cTempBuffer  as character extent no-undo.
+        define variable cErrorBuffer as character extent no-undo.
+        define variable iNumBuffers  as integer   no-undo.
+        define variable iLoop        as integer   no-undo.
+                                
+        if phDataset:error then
+        do:
+            /* max size limited to num buffers */
+            extent(cTempBuffer) = phDataset:num-buffers.
+            iNumBuffers = 1.
+            do iLoop = 1 to phDataset:num-buffers:
+                if phDataset:get-buffer-handle(iLoop):error then
+                    assign cTempBuffer[iNumBuffers] = phDataset:get-buffer-handle(iLoop):name
+                           iNumBuffers              = iNumBuffers + 1.
+            end.
+                                    
+            extent(cErrorBuffer) = iNumBuffers.
+            do iLoop = 1 to iNumBuffers:
+                cErrorBuffer[iLoop] = cTempBuffer[iLoop].
+            end.
+        end.
+        
+        return cErrorBuffer.
+    end method.
+    
+    method override public logical MergeChanges(pcQuery as char):
+        define variable oQuery as IQuery no-undo.
+        
+        /* merge all changes from the transport dataset to the master */
+        DisableDatasetForUpdate(mhMasterDataset).
+        
+        mhTransportDataset:merge-changes(mhMasterDataset, true).
+        
+        EnableDatasetForUpdate(mhMasterDataset).
+        
+        /* At this point, we're done with the transport dataset, and  
+           assume that all errors have been dealt with */
+        mhTransportDataset:empty-dataset().
+        extent(ErrorBuffer) = ?.
+        
+        /* Take cognisance of the new data and reposition to the
+           last row we know about. */
+        oQuery = cast(GetQuery(pcQuery), IQuery).
+        oQuery:ReopenQuery(oQuery:GetCurrentRowKey()).
+    end method.
+    
+    method protected override void DoSaveRecord(pcBufferName as char, pcRecordKey as char):
+        @todo(task="implement").
+    end method.
+    
+    method protected override void AfterSaveRecord(pcBufferName as char, pcRecordKey as char):
+        /* If there are validation errors, the callbacks on the ProDataset
+           need to ser the :Error and/or :Error-String properties. */
+        ErrorBuffer = GatherErrorBuffers(mhMasterDataset).
+        
+        super:AfterSaveRecord(pcBufferName, pcRecordKey).
+    end method.
+                              
+    method override protected void AfterDeleteRecord(pcBufferName as char, pcRecordKey as char):
+        /* If there are validation errors, the callbacks on the ProDataset
+           need to ser the :Error and/or :Error-String properties. */
+        ErrorBuffer = GatherErrorBuffers(mhMasterDataset).
+        
+        super:DeleteRecord(pcBufferName, pcRecordKey).
+    end method.
+    
+    @todo(task="clean up all child queries").
+    /**  
+    method public override void RemoveBindingHandle(phBindingHandle as handle):
+        if valid-handle(phBindingHandle) and
+           phBindingHandle:type eq 'Dataset' then
+            DeleteDatasetClone(phBindingHandle).
+        else
+            /* We can also create 'manual' queries with DatasetModel */
+            super:RemoveBindingHandle(phBindingHandle).
+    end method.
+    **/
+        
+    method protected void CreateDefaultQueries(phDataset as handle):
+        /* Create query records for a dataset's queries. */
+        define variable oQueryDefinition as IQueryDefinition no-undo.
+        define variable oQuery as IQuery no-undo.
+        define variable cQuery as character no-undo. 
+        define variable hQuery as handle no-undo.
+        define variable iNumRelations as integer no-undo.
+        define variable hRelation as handle no-undo.
+        define variable iNumFields as integer no-undo.
+        
+        /* Top-Nav-Query */
+        hQuery = phDataset:top-nav-query.
+        cQuery = string(phDataset) + '-top-nav-query'.
+        
+        oQueryDefinition = new QueryDefinition().
+        oQueryDefinition:AddBuffer(phDataset:get-top-buffer(1):name).
+        CreateQuery(oQueryDefinition, hQuery, cQuery).
+        
+        /* relations' queries */
+        do iNumRelations = 1 to phDataset:num-relations:
+            hRelation = phDataset:get-relation(iNumRelations).
+            if not hRelation:active then
+                next.
+            
+            oQueryDefinition = new QueryDefinition().
+            oQueryDefinition:AddBuffer(hRelation:child-buffer:name).
+            
+            /* relationfields = parent-field1, child-field1 [, parent-fieldn, child-fieldn ] ...) */
+            do iNumFields = 1 to num-entries(hRelation:relation-fields) by 2:
+                oQueryDefinition:AddJoin(hRelation:child-buffer:name,
+                                        entry(iNumFields, hRelation:relation-fields),
+                                        OperatorEnum:Equals,
+                                        hRelation:parent-buffer:name,
+                                        entry(iNumFields + 1, hRelation:relation-fields),
+                                        JoinEnum:And).
+            end.
+            
+            /* Use the RELATION as an identifier, and NOT the query. This is so that 
+               we can use the same Query object for all the queries that are constructed on the 
+               fly by the ProBindingSource. 
+               
+               We don't have a query for this relation yet, since the actual query used may change
+               as the PBS does its creation and destruction. */
+            assign hQuery = ?
+                   cQuery = string(phDataset) + '-'
+                          + 'relation-'  
+                          + hRelation:parent-buffer:name + '-'
+                          + hRelation:child-buffer:name.
+            CreateQuery(oQueryDefinition, hQuery, cQuery).
+        end.
+    end method.
+    
+    method override protected handle GetBufferField(pcBufferName as character, pcFieldName as character):
+        return GetBufferHandle(pcBufferName):buffer-field(pcFieldName).
+    end method.
+        
+end class.

@@ -1,0 +1,568 @@
+/*-----------------------------------------------------------------------
+    File        : Presenter
+    Purpose     : 
+    Syntax      : 
+    Description : 
+    Author(s)   : pjudge
+    Created     : Tue Dec 11 11:31:52 EST 2007
+    Notes       : 
+  ----------------------------------------------------------------------*/
+routine-level on error undo, throw.
+
+using OpenEdge.CommonInfrastructure.Common.IComponentCollection.
+
+using OpenEdge.PresentationLayer.Presenter.*.
+using OpenEdge.PresentationLayer.Interfaces.*.
+using OpenEdge.PresentationLayer.View.*.
+using OpenEdge.PresentationLayer.Common.*.
+using OpenEdge.CommonInfrastructure.Client.*.
+using OpenEdge.CommonInfrastructure.Common.*.
+using OpenEdge.Core.System.*.
+using OpenEdge.Lang.*.
+using Progress.Lang.*.
+
+class OpenEdge.PresentationLayer.Presenter.Presenter abstract 
+        implements IPresenter, IComponent:
+    
+    /*
+    define private static temp-table PresenterComponent no-undo
+        field OwningPresenter as Object /* IPresenter */
+        field ComponentType as int
+        field ComponentName as char
+        field InstanceName as char
+        field Instance as Object
+        index idx1 as primary unique OwningPresenter ComponentType InstanceName
+        index idx2 OwningPresenter ComponentType ComponentName
+        .
+    */
+    
+    /* This only really works because the ABL is single-threaded and only 1 Presenter can be doing any 1 thing at a time */
+    define public static property IsInvokingView as logical no-undo get. protected set.
+    
+    define public property ParentPresenter as IPresenter no-undo get. set.
+    define public property AllowDestroyComponent as logical initial true no-undo get. set.
+    define public property ViewName as character no-undo
+        get. 
+        set (pcView as char):
+            /* only register real views */
+            if pcView ne ? and pcView ne '' then
+                RegisterView(pcView).
+            
+            ViewName = pcView.
+        end set.
+    
+    define public property View as IView no-undo
+        get ():
+            define variable oComponent as Object no-undo.
+
+            oComponent = GetComponent(this-object, ComponentTypeEnum:View, this-object:ViewName).
+            
+            if valid-object(oComponent) and type-of(oComponent, IView) then
+                return cast(oComponent, IView).
+        end get.
+        set (poView as IView):
+            if not valid-object(poView) then
+                undo, throw new ValueNotSpecifiedError('View', this-object:InstanceName).
+            
+            /* Calls RegisterView(), which creates the TT if needed. */
+            this-object:ViewName = poView:GetClass():TypeName.
+            
+            /* This will cause a running instance of this View to be GC'ed,
+               since we are replacing it with the passed-in IComponent */
+            if valid-object(poView) then
+                SetComponentInstance(ComponentTypeEnum:View, this-object:ViewName, cast(poView, IComponent)).                 
+            /* Make sure the child view is started. */
+            else
+            do:
+                InitializeView().
+                AfterInitialize().
+            end.
+        end set.
+    
+    define public property Models as IComponentCollection no-undo get. protected set.
+    define public property ChildPresenters as IComponentCollection no-undo get. protected set.
+    
+    define public property InstanceName as character no-undo
+        get ():
+            if InstanceName eq ? or InstanceName eq '' then                
+                InstanceName = this-object:GetClass():TypeName.
+            
+            return InstanceName.
+        end get.
+        set.
+
+	
+	define public property ComponentInfo as OpenEdge.CommonInfrastructure.Common.IComponentInfo no-undo 
+	get():
+		undo, throw new Progress.Lang.AppError("Property getter for ComponentInfo has not been implemented").
+	end get.
+	private set(input arg as OpenEdge.CommonInfrastructure.Common.IComponentInfo):
+		undo, throw new Progress.Lang.AppError("Property setter for ComponentInfo has not been implemented").		
+	end set.
+	
+	constructor public Presenter (poView as IView,	                              
+	                              poChildPresenter as IPresenter extent ):
+        define variable iLoop as integer no-undo.
+        define variable iMax as integer no-undo.
+        define variable oPresenter as IPresenter no-undo.
+        
+        if valid-object(poView) then
+            this-object:View = poView.
+        
+        iMax = extent(poChildPresenter).
+        do iLoop = 1 to iMax:
+            oPresenter = poChildPresenter[iLoop].
+            RegisterChildPresenter(oPresenter:GetClass():TypeName, cast(oPresenter, IComponent):InstanceName).
+            SetComponentInstance(ComponentTypeEnum:Presenter,
+                                 cast(oPresenter, IComponent):InstanceName,
+                                 cast(oPresenter, IComponent)).
+        end.
+    end constructor.
+	
+    constructor public Presenter ():
+        super().
+    end constructor.
+    
+    method public void Create():
+        /* these are child presenters (user controls maybe) */
+        StartChildPresenters().
+        StartViews().
+        
+        /* Simply inform user that there's no listener. Carry on as before */ 
+        catch oException as InvalidTypeException:
+            oException:ShowException().
+        end catch.
+    end method.
+    
+    /* Concrete presenters need to call CreateChildPresenter() to do the actual creation */
+    method abstract protected void StartChildPresenters().
+    
+    method protected void StartViews ():
+        if this-object:ViewName ne ? then
+            this-object:View = CreateView().
+    end method.
+    
+    method public void Initialize():
+        /* Models, if any, are already init'ed */
+        InitializeChildPresenters().
+        InitializeView().
+        
+        /* Typically these things happen after the view
+           is init'ed. Could go into Presenter:Init() but
+           there are times where InitView happens independently
+           as per associated views. In those cases we need
+           to run the post-init processing independently. */
+        AfterInitialize().
+    end method.
+    
+    method protected void AfterInitialize():
+        Secure().
+        Personalize().
+        Translate().
+    end method.
+    
+    method protected void InitializeChildPresenters():
+        define variable oChildPresenter as IComponent extent no-undo.
+        define variable iLoop as integer no-undo.
+        define variable iMax as integer no-undo.
+        
+        assign oChildPresenter = ListComponents(ComponentTypeEnum:Presenter:Value)
+               iMax = extent(oChildPresenter).
+        
+        do iLoop = 1 to iMax:
+            InitializeChildPresenter(cast(oChildPresenter[iLoop], IPresenter)).
+        end.
+    end method.
+
+    method protected void InitializeChildPresenter(poPresenter as IPresenter):
+        cast(poPresenter, IComponent):Initialize().
+    end method.
+    
+    method protected void Secure():
+    end method.
+    
+    method protected void Personalize():
+    end method.
+    
+    method protected void Translate():
+    end method.
+    
+    method protected logical AddComponent (poComponentType as EnumMember,
+                                           pcComponentName as char):
+        return AddComponent(poComponentType, pcComponentName, pcComponentName).
+    end method.
+    
+    method protected logical AddComponent (poComponentType as EnumMember,
+                                           pcComponentName as char,
+                                           pcInstanceName  as char  ):
+        define variable lNew as log no-undo.
+        define buffer lbComponent for PresenterComponent.
+                
+        lNew = not can-find(lbComponent where
+                            lbComponent.ComponentType = poComponentType:Value and
+                            lbComponent.InstanceName = pcInstanceName).
+        if lNew then
+        do:
+            create lbComponent.
+            assign lbComponent.ComponentType = poComponentType:Value
+                   lbComponent.ComponentName = pcComponentName
+                   lbComponent.InstanceName  = pcInstanceName.
+        end.
+        
+        return lNew.
+    end method.
+        
+    method protected logical RegisterView (pcComponentName as char):
+        return AddComponent(ComponentTypeEnum:View, pcComponentName).
+    end method.
+                                                
+    method protected logical RegisterChildPresenter (pcPresenterName as char,
+                                                     pcInstanceName as char):
+        return AddComponent(ComponentTypeEnum:Presenter, pcPresenterName, pcInstanceName).
+    end method.
+                    
+    method protected IComponent extent ListComponents (piComponentType as integer):
+        /* Keep param as INT because it could contain multiple types */
+        define variable oList as IComponent extent no-undo.
+        define variable oReturnList as IComponent extent no-undo.
+        define variable iValid as integer no-undo.
+        define variable iExtent as integer no-undo.
+        define variable iLoop as integer no-undo.
+        
+        define buffer lbComponent for PresenterComponent.
+        define query qryComponent for lbComponent.
+        
+        /* component type could list multiple component types. */
+        open query qryComponent preselect each lbComponent.
+                                               
+        iExtent = max(1, num-results('qryComponent')). 
+        extent(oList) = iExtent. 
+        oList = ?.
+                                       
+        get first qryComponent.
+        do while not query-off-end('qryComponent'):
+            if FlagsEnum:IsA(piComponentType, ComponentTypeEnum:EnumFromValue(lbComponent.ComponentType)) then
+                assign oList[current-result-row('qryComponent')] = cast(lbComponent.Instance, IComponent)
+                       iValid = iValid + 1.
+            get next qryComponent.
+        end.
+                               
+        if iValid gt 0 then
+        do:
+            extent(oReturnList) = iValid.
+            
+            do iLoop = 1 to iExtent:
+                if valid-object(oList[iLoop]) then
+                    oReturnList[iLoop] = oList[iLoop]. 
+            end.
+        end.
+        
+        return oReturnList.
+    end method.
+    
+    method protected void InitializeView():
+        if this-object:ViewName ne ? then
+            cast(this-object:View, IComponent):Initialize().
+    end method.
+    
+    method protected IView CreateView():
+        define variable oView as IView no-undo.
+        
+        /* There's only going to be one of these. */
+        oView = this-object:View.
+        if not valid-object(oView) then
+        do:
+            Presenter:IsInvokingView = true.
+            
+            oView = ViewFactory:GetView(this-object:ViewName, this-object).            
+            SetComponentInstance(ComponentTypeEnum:View,
+                                 this-object:ViewName,
+                                 cast(oView,IComponent)).
+            Presenter:IsInvokingView = false.
+        end.
+        
+        return oView.
+    end method.
+            
+    /* We need to return the newly-created Presenter as a parameter, not return value, since
+       there are cases where the Initialize() call may initialize another Presenter, which may have
+       UI attached, as in the case where we perform a login as part of the initialization. */
+    method protected void CreateChildPresenter (pcPresenterName as char,
+                                                    pcViewName as char):
+        define variable oPresenter as IPresenter no-undo.
+        CreateChildPresenter(pcPresenterName, pcViewName, output oPresenter).                                                
+    end method.
+
+    method protected void CreateChildPresenter (pcPresenterName as char,
+                                                    pcViewName as char,
+                                                    pcInstanceName as char):
+        define variable oPresenter as IPresenter no-undo.
+        CreateChildPresenter(pcPresenterName, pcViewName, pcInstanceName, output oPresenter).                                                
+    end method.
+    
+    method protected void CreateChildPresenter (pcPresenterName as char,
+                                                    pcViewName as char,
+                                                    output poPresenter as IPresenter):
+        define variable cInstanceName as character no-undo.
+        define variable iInstance as integer no-undo.
+                        
+        define buffer lbComponent for PresenterComponent.
+        define query qryComponent for lbComponent.
+        
+        open query qryComponent
+            preselect each lbComponent where
+                           lbComponent.ComponentType = ComponentTypeEnum:Presenter:Value and
+                           lbComponent.ComponentName = pcPresenterName.
+        
+        iInstance = num-results('qryComponent').
+        close query qryComponent.
+        
+        if iInstance eq 0 then
+            cInstanceName = pcPresenterName .
+        else            
+            cInstanceName = pcPresenterName + '_' + string(iInstance).
+        
+        CreateChildPresenter(pcPresenterName, pcViewName, cInstanceName, output poPresenter).
+    end method.
+    
+    method protected void CreateChildPresenter (pcPresenterName as char,
+                                                pcViewName as char,
+                                                pcInstanceName as char,
+                                                output poPresenter as IPresenter):
+        
+        RegisterChildPresenter(pcPresenterName, pcInstanceName).
+        
+        poPresenter = PresenterFactory:GetPresenter(pcPresenterName, pcViewName).
+        SetComponentInstance(ComponentTypeEnum:Presenter,
+                             pcInstanceName,
+                             cast(poPresenter, IComponent)).
+        
+        cast(poPresenter, IPresenter):ParentPresenter = this-object.
+        cast(poPresenter, IPresenter):InstanceName = pcInstanceName.
+    end method.
+    
+    method static protected IComponent GetComponent(poPresenter as IPresenter,
+                                                    poComponentType as EnumMember,
+                                                    pcInstanceName as char):
+        define buffer lbComponent for PresenterComponent.
+        
+        find lbComponent where 
+             lbComponent.OwningPresenter = poPresenter and
+             lbComponent.ComponentType = poComponentType:Value and 
+             lbComponent.InstanceName = pcInstanceName  
+             no-error.
+        
+        if available lbComponent and
+           valid-object(lbComponent.Instance) and
+           type-of(lbComponent.Instance, IComponent) then
+            return cast(lbComponent.Instance, IComponent).
+        else
+            return ?.
+    end method.
+            
+    method protected void SetComponentInstance(poComponentType as EnumMember,
+                                               pcInstanceName as char,
+                                               poComponent as IComponent):
+        define buffer lbComponent for PresenterComponent.
+        
+        find lbComponent where
+             lbComponent.ComponentType = poComponentType:Value and
+             lbComponent.InstanceName = pcInstanceName.
+        
+        lbComponent.Instance = poComponent.
+    end method.
+    
+    method public IPresenter GetChildPresenter (pcPresenter as character):
+        define variable oPresenter as IPresenter no-undo.
+                       
+        oPresenter = GetPresenter(pcPresenter,
+                                  PresenterSearchEnum:TypeName,
+                                  false).   /* plUnassociatedOnly */
+        
+        if not valid-object(oPresenter) then
+            oPresenter = GetPresenter(pcPresenter,
+                                      PresenterSearchEnum:Interface,
+                                      false).   /* plUnassociatedOnly */
+        
+        return oPresenter.
+    end method.        
+
+    method private IPresenter GetPresenter (pcName as char,
+                                            poSearchType as EnumMember, /* OpenEdge.PresentationLayer.Presenter.PresenterSearchEnum */
+                                            plUnassociatedOnly as log ):
+        define variable oPresenter as IPresenter no-undo.
+        
+        define buffer lbComponent for PresenterComponent.
+        define query qryComponent for lbComponent.
+        
+        if poSearchType eq PresenterSearchEnum:TypeName then
+        /* should only return 1 record */
+        open query qryComponent
+            preselect each lbComponent where
+                           lbComponent.ComponentType = ComponentTypeEnum:Presenter:Value and
+                           lbComponent.InstanceName = pcName.
+        else
+        open query qryComponent
+            preselect each lbComponent where
+                           lbComponent.ComponentType = ComponentTypeEnum:Presenter:Value.
+        
+        get first qryComponent.
+        do while not query-off-end('qryComponent') and not valid-object(oPresenter):
+            if valid-object(lbComponent.Instance) then
+            CHECK-BLK:
+            do:
+                /* IsA works for classes and interfaces, so will also be true
+                   for search-by-name. */
+                if not lbComponent.Instance:GetClass():IsA(pcName) then
+                    leave CHECK-BLK.
+                
+                /* We may want only Presenters that are unassociated to any Views */
+                if plUnassociatedOnly and
+                   valid-object(cast(lbComponent.Instance, IPresenter):View) then
+                    leave CHECK-BLK.
+                
+                oPresenter = cast(lbComponent.Instance, IPresenter).
+            end.
+                                               
+            get next qryComponent.
+        end.
+        close query qryComponent.
+                
+        return oPresenter.        
+    end method.
+                
+    method public void CloseView (poDialogResult as EnumMember, poCloseReason as EnumMember):
+        /* If this presenter has a parent (as would happen in
+           MDI windows although not limited to that), let the
+           parent shut the child down. */
+        if valid-object(ParentPresenter) then
+            ParentPresenter:DestroyComponentChildPresenter(this-object:InstanceName).
+        else
+            DestroyComponent().
+        
+        /* If the DestroyComponent fails for some reason, report on it here,
+           and halt the shutdown. */
+        catch oException as DestroyComponentException:
+            oException:ShowException().            
+        end catch.
+    end method.
+                        
+    method public void DestroyComponent ():
+        DestroyComponentComponentType(ComponentTypeEnum:View, false).
+        DestroyComponentComponentType(ComponentTypeEnum:Presenter, false).
+    end method.
+                             
+    method protected void DestroyComponentComponentType (poType as EnumMember, plKeepRegistryEntry as log):
+        define buffer lbComponent for PresenterComponent.
+        
+        for each lbComponent where lbComponent.ComponentType = poType:Value:
+            if valid-object(lbComponent.Instance) then
+            do:
+                if cast(lbComponent.Instance, IComponent):AllowDestroyComponent then
+                    DestroyComponentComponent(buffer lbComponent, plKeepRegistryEntry).
+            end.    /* valid object */
+        end.
+    end method.
+                                        
+    method public void DestroyComponentChildPresenter(pcPresenter as char):
+        DestroyComponentChildPresenter(pcPresenter, false).  /* remove registry entry */
+    end method.
+                        
+    method protected void DestroyComponentChildPresenter(pcPresenter as char, plKeepRegistryEntry as log):
+        define buffer lbComponent for PresenterComponent.
+                        
+        find lbComponent where 
+             lbComponent.ComponentType = ComponentTypeEnum:Presenter:Value and 
+             lbComponent.InstanceName = pcPresenter
+             no-error.
+        
+        DestroyComponentComponent(buffer lbComponent, plKeepRegistryEntry).
+    end method.
+
+    method private void DestroyComponentComponent (buffer pbComponent for PresenterComponent, plKeepRegistryEntry as log):
+        if available pbComponent and
+           cast(pbComponent.Instance, IComponent):AllowDestroyComponent then
+        do:
+            cast(pbComponent.Instance, IComponent):DestroyComponent().
+                                                                                                  
+            /* TODO/QUESTION: deliberately delete the instance? */
+            delete object pbComponent.Instance. 
+            pbComponent.Instance = ?.
+            
+            if not plKeepRegistryEntry then
+                delete pbComponent.
+        end.
+    end method.
+    
+    /* speaking to the view */
+    method public void ShowModal (): 
+        cast(this-object:View, IContainerView):ShowModal().
+    end method.
+    
+    method public void ShowNonModal (plPrimary as log):
+        cast(this-object:View, IContainerView):ShowNonModal(plPrimary).
+    end method.
+
+     method public void ShowEmbedded(poParent as Object):
+        cast(this-object:View, IContainerView):ShowEmbedded(poParent).
+    end method.
+            
+    method public void TerminateEventLoop():
+        cast(this-object:View, IContainerView):TerminateEventLoop().
+    end method.
+            
+    method public IPresenter AssociateContainedView (poView as IContainedView):
+        return AssociateContainedView(cast(poView, IView), poView:PresenterName).       
+    end method.
+                             
+    method public IPresenter AssociateContainedView (poView as IView, pcPresenter as char):
+        define variable oPresenter as IPresenter no-undo.
+
+        oPresenter = GetPresenter(pcPresenter,
+                                  PresenterSearchEnum:TypeName,
+                                  true).    /* plUnassociatedOnly */
+        
+        if not valid-object(oPresenter) then
+            oPresenter = GetPresenter(pcPresenter,
+                                      PresenterSearchEnum:Interface,
+                                      true).    /* plUnassociatedOnly */
+
+        if not valid-object(oPresenter) then
+            return error new PresenterNotFoundException(pcPresenter, InstanceName).
+        
+        oPresenter:View = (cast(poView, IView)).
+                                                             
+        return oPresenter.
+    end method.
+
+	
+	method public void CreateComponent(  ):
+		
+		undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+	end method.
+
+
+ 
+
+	
+	method public void DestroyComponent(  ):
+		
+		undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+	end method.
+
+
+ 
+
+	
+	method public void DestroyChildPresenter( input pcPresenter as character ):
+		
+		undo, throw new Progress.Lang.AppError("METHOD NOT IMPLEMENTED").
+
+	end method.
+
+
+ 
+        
+end class.
