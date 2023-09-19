@@ -1,4 +1,9 @@
-component_depth: 4
+#component_depth: 4
 languages:
   - name: abl
   - name: progress
+component_base_dirs:
+  - "AutoEdge/Factory/autoedgethefactory/client"
+  - "AutoEdge/Factory/autoedgethefactory/server"
+  - "AutoEdge/Factory/autoedgethefactory/shared"
+  - "AutoEdge/Factory/referencecomponents"
