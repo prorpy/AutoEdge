@@ -6,5 +6,5 @@ component_base_dirs:
   - "openedgeae/autoedge/factory/autoedgethefactory/server"
   - "openedgeae/autoedge/factory/autoedgethefactory/shared"
   - "openedgeae/autoedge/factory/referencecomponents"
-  - ""
+
 
