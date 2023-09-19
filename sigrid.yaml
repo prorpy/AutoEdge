@@ -4,8 +4,8 @@ languages:
   - name: progress
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory"
-  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/client"
-  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/server"
-  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/shared"
+#  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/client"
+#  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/server"
+#  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/shared"
   - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
 
