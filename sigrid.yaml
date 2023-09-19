@@ -2,9 +2,9 @@ languages:
   - name: abl
   - name: progress
 component_base_dirs:
-  - "openedgeae/autoedge/factory/autoedgethefactory/client"
-  - "openedgeae/autoedge/factory/autoedgethefactory/server"
-  - "openedgeae/autoedge/factory/autoedgethefactory/shared"
-  - "openedgeae/autoedge/factory/referencecomponents"
+  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/client"
+  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/server"
+  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory/shared"
+  - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
 
 
