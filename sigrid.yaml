@@ -4,3 +4,8 @@ languages:
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory"
   - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
+architecture:
+  enabled: true
+security:
+  enabled: true
+
