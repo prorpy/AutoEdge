@@ -6,6 +6,7 @@ component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
 architecture:
   enabled: true
+  custom_components: true
 security:
   enabled: true
 
