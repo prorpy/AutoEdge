@@ -1,8 +1,3 @@
-architecture:
-  enabled: true
-  custom_components: true
-security:
-  enabled: true
 languages:
   - name: abl
   - name: progress
