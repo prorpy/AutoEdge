@@ -1,7 +1,6 @@
-component_base_dirs:
-  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory"
-  - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
 languages:
   - name: abl
   - name: progress
-
+component_base_dirs:
+  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory"
+  - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
