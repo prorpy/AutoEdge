@@ -1,9 +1,13 @@
 languages:
   - name: abl
   - name: progress
-component_base_dirs:
-  - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory"
-  - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
+components:
+  - name: "TheFactory"
+    include:
+      - ".*/autoedgethefactory/.*"
+  - name: "Framework"
+    include:
+      - ".*/referencecomponents/.*"
 architecture:
   enabled: true
   custom_components: true
