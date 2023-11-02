@@ -2,10 +2,10 @@ languages:
   - name: abl
   - name: progress
 architecture:
-  enabled: true
-  custom_components: true
+  - enabled: true
+  - custom_components: true
 security:
-  enabled: true
+  - enabled: true
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory"
   - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
