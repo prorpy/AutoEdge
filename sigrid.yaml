@@ -3,7 +3,6 @@ languages:
   - name: progress
 architecture:
   - enabled: true
-  - custom_components: true
 security:
   - enabled: true
 component_base_dirs:
