@@ -1,13 +1,6 @@
 languages:
   - name: abl
   - name: progress
-components:
-  - name: "TheFactory"
-    include:
-      - ".*/autoedgethefactory/.*"
-  - name: "Framework"
-    include:
-      - ".*/referencecomponents/.*"
 architecture:
   enabled: true
   custom_components: true
