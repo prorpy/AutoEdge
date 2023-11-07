@@ -4,5 +4,5 @@ languages:
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory/autoedgethefactory"
   - "OpenEdgeAE/AutoEdge/Factory/referencecomponents"
-security:
+thirdpartyfindings:
   enabled: true
