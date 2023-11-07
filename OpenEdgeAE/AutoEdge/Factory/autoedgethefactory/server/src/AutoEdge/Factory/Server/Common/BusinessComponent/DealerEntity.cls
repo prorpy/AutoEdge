@@ -60,7 +60,9 @@ class AutoEdge.Factory.Server.Common.BusinessComponent.DealerEntity inherits Sta
 	end constructor.
 	
 	constructor public DealerEntity(input poComponentInfo as IComponentInfo):
+
 		super(input poComponentInfo).
+
 	end constructor.
 	
     method override protected handle CopyStaticDataset (output dataset-handle phDataset):
