@@ -60,6 +60,8 @@ class AutoEdge.Factory.Server.Common.BusinessComponent.DealerEntity inherits Sta
 	end constructor.
 	
 	constructor public DealerEntity(input poComponentInfo as IComponentInfo):
+                // added to test sigrid
+                message program-name(1) view-as alert-box. 
 
 		super(input poComponentInfo).
 
