@@ -1,7 +1,9 @@
 languages:
   - name: abl
   - name: progress
+  
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory"
+  
 thirdpartyfindings:
   enabled: true
