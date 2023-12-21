@@ -6,8 +6,5 @@ languages:
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory"
 
-architecture:
-  enabled: true
-
 thirdpartyfindings:
   enabled: true
