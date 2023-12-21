@@ -4,9 +4,6 @@ languages:
 supplementary:  
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory"
-architecture:
-  enabled: true
-  custom_components: false
 security:
   enabled: true  
 thirdpartyfindings:
