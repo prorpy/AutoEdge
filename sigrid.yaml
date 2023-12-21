@@ -1,6 +1,7 @@
 languages:
   - name: abl
   - name: progress
+  supplementary:
 
 component_base_dirs:
   - "OpenEdgeAE/AutoEdge/Factory"
