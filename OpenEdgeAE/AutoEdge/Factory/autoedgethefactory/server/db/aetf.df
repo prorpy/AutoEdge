@@ -1,5 +1,5 @@
 ADD TABLE "AddressDetail"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Address detail table.  Use with AddressXref with ParentId or directly on  owning table."
   DUMP-NAME "addressdetail"
 
@@ -66,21 +66,21 @@ ADD FIELD "State" OF "AddressDetail" AS character
   ORDER 50
 
 ADD INDEX "Address_PK" ON "AddressDetail" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "AddressDetailId" ASCENDING 
 
 ADD INDEX "Country_FK" ON "AddressDetail" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "CountryCode" ASCENDING 
 
 ADD INDEX "State_FK" ON "AddressDetail" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "State" ASCENDING 
 
 ADD TABLE "AddressType"
-  AREA "Data"
+  AREA "Schema Area"
   DUMP-NAME "addresstype"
 
 ADD FIELD "AddressType" OF "AddressType" AS character 
@@ -94,13 +94,13 @@ ADD FIELD "AddressType" OF "AddressType" AS character
   MANDATORY
 
 ADD INDEX "AddressType_PK" ON "AddressType" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "AddressType" ASCENDING 
 
 ADD TABLE "AddressXref"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Xref for AddressDetail, AddressType and parent Object ID from other table"
   DUMP-NAME "addressxref"
 
@@ -141,7 +141,7 @@ ADD FIELD "TenantId" OF "AddressXref" AS character
   MANDATORY
 
 ADD INDEX "AddressXref_PK" ON "AddressXref" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
@@ -149,16 +149,16 @@ ADD INDEX "AddressXref_PK" ON "AddressXref"
   INDEX-FIELD "AddressType" ASCENDING 
 
 ADD INDEX "AddressDetail_FK" ON "AddressXref" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "AddressDetailId" ASCENDING 
 
 ADD INDEX "Parent_FK" ON "AddressXref" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ParentId" ASCENDING 
 
 ADD TABLE "ApplicationUser"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The application's user table. Contains login names, passwords and mappings to login domains."
   DUMP-NAME "applicationuser"
 
@@ -252,34 +252,34 @@ ADD FIELD "LoginDomain" OF "ApplicationUser" AS character
   ORDER 101
 
 ADD INDEX "ApplicationUser_PK" ON "ApplicationUser" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ApplicationUserId" ASCENDING 
 
 ADD INDEX "Customer_FK" ON "ApplicationUser" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CustomerId" ASCENDING 
 
 ADD INDEX "Employee_FK" ON "ApplicationUser" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "EmployeeId" ASCENDING 
 
 ADD INDEX "Login" ON "ApplicationUser" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "LoginName" ASCENDING 
   INDEX-FIELD "LoginDomain" ASCENDING 
 
 ADD INDEX "Supplier_FK" ON "ApplicationUser" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "SupplierId" ASCENDING 
 
 ADD TABLE "Benefits"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The benefits table contains employee benefits."
   DUMP-NAME "benefits"
 
@@ -366,20 +366,20 @@ ADD FIELD "TenantId" OF "Benefits" AS character
   MANDATORY
 
 ADD INDEX "Benefits_PK" ON "Benefits" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "BenefitsId" ASCENDING 
 
 ADD INDEX "Employee_FK" ON "Benefits" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "EmployeeId" ASCENDING 
 
 ADD TABLE "Bin"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The bin table is used to represent the bins in each warehouse that contain items."
   DUMP-NAME "bin"
 
@@ -430,22 +430,22 @@ ADD FIELD "BinId" OF "Bin" AS character
   MANDATORY
 
 ADD INDEX "Bin_PK" ON "Bin" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "BinId" ASCENDING 
 
 ADD INDEX "BinNum" ON "Bin" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "BinNum" ASCENDING 
 
 ADD INDEX "Warehouse_FK" ON "Bin" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "WarehouseId" ASCENDING 
 
 ADD TABLE "ComponentItem"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Component items of a FinishedItem"
   DUMP-NAME "componentitem"
 
@@ -482,7 +482,7 @@ ADD FIELD "TenantId" OF "ComponentItem" AS character
   ORDER 4
 
 ADD INDEX "Component_PK" ON "ComponentItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
@@ -490,12 +490,12 @@ ADD INDEX "Component_PK" ON "ComponentItem"
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD INDEX "Item_FK" ON "ComponentItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD TABLE "ContactDetail"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Individual detail for a contact (eg email address, phone number)"
   DUMP-NAME "contactdetail"
 
@@ -516,18 +516,18 @@ ADD FIELD "ContactDetailId" OF "ContactDetail" AS character
   MANDATORY
 
 ADD INDEX "ContactDetail_PK" ON "ContactDetail" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "ContactDetailId" ASCENDING 
 
 ADD INDEX "Detail_W" ON "ContactDetail" 
-  AREA "Indexes"
+  AREA "Schema Area"
   WORD
   INDEX-FIELD "Detail" ASCENDING 
 
 ADD TABLE "ContactType"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The contact type (eg work email, fax)"
   DUMP-NAME "contacttype"
 
@@ -539,13 +539,13 @@ ADD FIELD "Name" OF "ContactType" AS character
   ORDER 10
 
 ADD INDEX "ContactType_PK" ON "ContactType" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "Name" ASCENDING 
 
 ADD TABLE "ContactXref"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Cross-reference for contacts, between types, detail"
   DUMP-NAME "contactxref"
 
@@ -583,7 +583,7 @@ ADD FIELD "ContactType" OF "ContactXref" AS character
   ORDER 4
 
 ADD INDEX "Contact_Xref_PK" ON "ContactXref" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
@@ -591,16 +591,16 @@ ADD INDEX "Contact_Xref_PK" ON "ContactXref"
   INDEX-FIELD "ParentId" ASCENDING 
 
 ADD INDEX "ContactDetail_FK" ON "ContactXref" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ContactDetailId" ASCENDING 
 
 ADD INDEX "Parent_FK" ON "ContactXref" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ParentId" ASCENDING 
 
 ADD TABLE "Country"
-  AREA "Data"
+  AREA "Schema Area"
   DUMP-NAME "country"
 
 ADD FIELD "Name" OF "Country" AS character 
@@ -619,19 +619,20 @@ ADD FIELD "Code" OF "Country" AS character
   MANDATORY
 
 ADD INDEX "Country_PK" ON "Country" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "Code" ASCENDING 
 
 ADD INDEX "Name" ON "Country" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "Name" ASCENDING 
 
 ADD TABLE "Customer"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The customer table contains customer  information including  balance."
   DUMP-NAME "customer"
+  TABLE-TRIGGER "CREATE" NO-OVERRIDE PROCEDURE "customer_create.p" CRC "61049" 
 
 ADD FIELD "CustNum" OF "Customer" AS integer 
   FORMAT ">>>>9"
@@ -743,39 +744,39 @@ ADD FIELD "PrimaryLocaleId" OF "Customer" AS character
   ORDER 3
 
 ADD INDEX "Customer_PK" ON "Customer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CustomerId" ASCENDING 
 
 ADD INDEX "Comments" ON "Customer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   WORD
   INDEX-FIELD "Comments" ASCENDING 
 
 ADD INDEX "CustNum" ON "Customer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CustNum" ASCENDING 
 
 ADD INDEX "Locale_FK" ON "Customer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "PrimaryLocaleId" ASCENDING 
 
 ADD INDEX "Name" ON "Customer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "Name" ASCENDING 
 
 ADD INDEX "Salesrep_FK" ON "Customer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "SalesrepId" ASCENDING 
 
 ADD TABLE "CustomerAddress"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Xref for AddressDetail, AddressType and Customer"
   DUMP-NAME "customeraddress"
 
@@ -816,7 +817,7 @@ ADD FIELD "TenantId" OF "CustomerAddress" AS character
   MANDATORY
 
 ADD INDEX "CustomerAddress_PK" ON "CustomerAddress" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
@@ -824,16 +825,16 @@ ADD INDEX "CustomerAddress_PK" ON "CustomerAddress"
   INDEX-FIELD "AddressType" ASCENDING 
 
 ADD INDEX "AddressDetail_FK" ON "CustomerAddress" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "AddressDetailId" ASCENDING 
 
 ADD INDEX "Parent_FK" ON "CustomerAddress" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CustomerId" ASCENDING 
 
 ADD TABLE "CustomerContact"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Cross-reference for contacts, between types, detail and customers"
   DUMP-NAME "customercontact"
 
@@ -871,7 +872,7 @@ ADD FIELD "ContactType" OF "CustomerContact" AS character
   ORDER 4
 
 ADD INDEX "Contact_Xref_PK" ON "CustomerContact" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
@@ -879,16 +880,16 @@ ADD INDEX "Contact_Xref_PK" ON "CustomerContact"
   INDEX-FIELD "CustomerId" ASCENDING 
 
 ADD INDEX "ContactDetail_FK" ON "CustomerContact" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ContactDetailId" ASCENDING 
 
 ADD INDEX "Parent_FK" ON "CustomerContact" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CustomerId" ASCENDING 
 
 ADD TABLE "Dealer"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Information specific to a dealership."
   DUMP-NAME "dealer"
 
@@ -960,24 +961,24 @@ ADD FIELD "Code" OF "Dealer" AS character
   MANDATORY
 
 ADD INDEX "Dealer_PK" ON "Dealer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "DealerId" ASCENDING 
 
 ADD INDEX "Code" ON "Dealer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "Code" ASCENDING 
 
 ADD INDEX "Name" ON "Dealer" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "Name" ASCENDING 
 
 ADD TABLE "Department"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The department contains a master listing of departments."
   DUMP-NAME "department"
 
@@ -1027,20 +1028,20 @@ ADD FIELD "DepartmentId" OF "Department" AS character
   ORDER 1
 
 ADD INDEX "Department_PK" ON "Department" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "DepartmentId" ASCENDING 
 
 ADD INDEX "Code" ON "Department" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "Code" ASCENDING 
 
 ADD TABLE "Employee"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The employee table stores employee information including name and address"
   DUMP-NAME "employee"
 
@@ -1139,7 +1140,7 @@ ADD FIELD "Photo" OF "Employee" AS blob
   FORMAT "x(8)"
   INITIAL ?
   POSITION 20
-  LOB-AREA "Data"
+  LOB-AREA "Schema Area"
   LOB-BYTES 209715200
   LOB-SIZE 200M
   ORDER 120
@@ -1148,7 +1149,7 @@ ADD FIELD "Resume" OF "Employee" AS blob
   FORMAT "x(8)"
   INITIAL ?
   POSITION 21
-  LOB-AREA "Data"
+  LOB-AREA "Schema Area"
   LOB-BYTES 104857600
   LOB-SIZE 100M
   ORDER 130
@@ -1170,30 +1171,30 @@ ADD FIELD "DealerId" OF "Employee" AS character
   ORDER 140
 
 ADD INDEX "Employee_PK" ON "Employee" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "EmployeeId" ASCENDING 
 
 ADD INDEX "Dealer_FK" ON "Employee" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "DepartmentId" ASCENDING 
 
 ADD INDEX "Department_FK" ON "Employee" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "DepartmentId" ASCENDING 
 
 ADD INDEX "EmpNo" ON "Employee" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "EmpNum" ASCENDING 
 
 ADD TABLE "Family"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The family table tracks an employee's family"
   DUMP-NAME "family"
 
@@ -1269,19 +1270,19 @@ ADD FIELD "EmployeeId" OF "Family" AS character
   ORDER 3
 
 ADD INDEX "Family_PK" ON "Family" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "FamilyId" ASCENDING 
 
 ADD INDEX "Employee_FK" ON "Family" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "EmployeeId" ASCENDING 
 
 ADD TABLE "Feedback"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The feedback table allows customers to provide feedback about what they like and don't like."
   DUMP-NAME "feedback"
 
@@ -1349,39 +1350,39 @@ ADD FIELD "DepartmentId" OF "Feedback" AS character
   ORDER 2
 
 ADD INDEX "Feedback_PK" ON "Feedback" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "FeedbackId" ASCENDING 
 
 ADD INDEX "Comments" ON "Feedback" 
-  AREA "Indexes"
+  AREA "Schema Area"
   WORD
   INDEX-FIELD "Comments" ASCENDING 
 
 ADD INDEX "Company" ON "Feedback" 
-  AREA "Indexes"
+  AREA "Schema Area"
   WORD
   INDEX-FIELD "Company" ASCENDING 
 
 ADD INDEX "ContactName" ON "Feedback" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ContactName" ASCENDING 
 
 ADD INDEX "Department_FK" ON "Feedback" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "DepartmentId" ASCENDING 
 
 ADD INDEX "Rating" ON "Feedback" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "Rating" ASCENDING 
 
 ADD TABLE "FinishedItem"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "A unique, completed item for sale. Composed of a number of ComponentItems."
   DUMP-NAME "finisheditem"
 
@@ -1434,23 +1435,23 @@ ADD FIELD "TenantId" OF "FinishedItem" AS character
   ORDER 5
 
 ADD INDEX "FinishedItem_PK" ON "FinishedItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "FinishedItemId" ASCENDING 
 
 ADD INDEX "ExternalId" ON "FinishedItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ExternalId" ASCENDING 
 
 ADD INDEX "Status_FK" ON "FinishedItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "StatusId" ASCENDING 
 
 ADD TABLE "InventoryTrans"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The inventorytrans table contains information about the movement of inventory."
   DUMP-NAME "inventorytrans"
 
@@ -1547,27 +1548,27 @@ ADD FIELD "TenantId" OF "InventoryTrans" AS character
   ORDER 7
 
 ADD INDEX "InventoryTrans_PK" ON "InventoryTrans" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "TransferId" ASCENDING 
 
 ADD INDEX "Item_FK" ON "InventoryTrans" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD INDEX "POId" ON "InventoryTrans" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "POId" ASCENDING 
 
 ADD INDEX "WarehouseId" ON "InventoryTrans" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "WarehouseId" ASCENDING 
 
 ADD TABLE "Invoice"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The invoice table contains transactions for the receivable module."
   DUMP-NAME "invoice"
 
@@ -1646,25 +1647,25 @@ ADD FIELD "InvoiceId" OF "Invoice" AS character
   ORDER 1
 
 ADD INDEX "Invoice_PK" ON "Invoice" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "InvoiceId" ASCENDING 
 
 ADD INDEX "InvoiceDate" ON "Invoice" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "InvoiceDate" ASCENDING 
 
 ADD INDEX "InvoiceNum" ON "Invoice" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "InvoiceNum" ASCENDING 
 
 ADD TABLE "Item"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The item table provides a quick reference for items in stock and quantity on-hand."
   DUMP-NAME "item"
 
@@ -1790,7 +1791,7 @@ ADD FIELD "Photo" OF "Item" AS blob
   FORMAT "x(8)"
   INITIAL ?
   POSITION 17
-  LOB-AREA "Data"
+  LOB-AREA "Schema Area"
   LOB-BYTES 51200
   LOB-SIZE 50K
   ORDER 170
@@ -1805,39 +1806,39 @@ ADD FIELD "ItemTypeId" OF "Item" AS character
   MANDATORY
 
 ADD INDEX "Item_PK" ON "Item" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD INDEX "Description" ON "Item" 
-  AREA "Indexes"
+  AREA "Schema Area"
   WORD
   INDEX-FIELD "Description" ASCENDING 
 
 ADD INDEX "ItemName" ON "Item" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ItemName" ASCENDING 
 
 ADD INDEX "ItemName_W" ON "Item" 
-  AREA "Indexes"
+  AREA "Schema Area"
   WORD
   INDEX-FIELD "ItemName" ASCENDING 
 
 ADD INDEX "ItemNum" ON "Item" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ItemNum" ASCENDING 
 
 ADD INDEX "ItemType_FK" ON "Item" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ItemTypeId" ASCENDING 
 
 ADD TABLE "ItemOption"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Contains all possible options which can be used to create a FinishedItem. Smiliar to ComponentItems"
   DUMP-NAME "itemoption"
 
@@ -1883,7 +1884,7 @@ ADD FIELD "Quantity" OF "ItemOption" AS decimal
   ORDER 30
 
 ADD INDEX "ItemOption_PK" ON "ItemOption" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
@@ -1891,12 +1892,12 @@ ADD INDEX "ItemOption_PK" ON "ItemOption"
   INDEX-FIELD "ChildItemId" ASCENDING 
 
 ADD INDEX "ChildItem_FK" ON "ItemOption" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ChildItemId" ASCENDING 
 
 ADD TABLE "ItemType"
-  AREA "Data"
+  AREA "Schema Area"
   DUMP-NAME "itemtype"
 
 ADD FIELD "ItemTypeId" OF "ItemType" AS character 
@@ -1923,18 +1924,18 @@ ADD FIELD "Description" OF "ItemType" AS character
   ORDER 30
 
 ADD INDEX "ItemType_PK" ON "ItemType" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "ItemTypeId" ASCENDING 
 
 ADD INDEX "Name" ON "ItemType" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "Name" ASCENDING 
 
 ADD TABLE "Locale"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The local default table contains default information for the application."
   DUMP-NAME "locale"
 
@@ -2007,22 +2008,22 @@ ADD FIELD "Country" OF "Locale" AS character
   MANDATORY
 
 ADD INDEX "Locale_PK" ON "Locale" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "LocaleId" ASCENDING 
 
 ADD INDEX "Country_FK" ON "Locale" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "Country" ASCENDING 
 
 ADD INDEX "Name" ON "Locale" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "Name" ASCENDING 
 
 ADD TABLE "Order"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The order table contains order header information."
   DUMP-NAME "order"
 
@@ -2171,7 +2172,7 @@ ADD FIELD "EmailMessage" OF "Order" AS clob
   FORMAT "x(8)"
   INITIAL ?
   POSITION 24
-  LOB-AREA "Data"
+  LOB-AREA "Schema Area"
   LOB-BYTES 65536
   LOB-SIZE 64K
   CLOB-CODEPAGE "iso8859-1"
@@ -2228,58 +2229,58 @@ ADD FIELD "ShippingAddressId" OF "Order" AS character
   ORDER 9
 
 ADD INDEX "Order_PK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "OrderId" ASCENDING 
 
 ADD INDEX "BillingAddress_FK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "BillingAddressId" ASCENDING 
 
 ADD INDEX "Customer_FK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CustomerId" ASCENDING 
 
 ADD INDEX "InventoryTrans_FK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "InventoryTransId" ASCENDING 
 
 ADD INDEX "Invoice_FK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "InvoiceId" ASCENDING 
 
 ADD INDEX "OrderDate" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "OrderDate" ASCENDING 
 
 ADD INDEX "OrderNum" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "OrderNum" ASCENDING 
 
 ADD INDEX "Salesrep_FK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "SalesrepId" ASCENDING 
 
 ADD INDEX "ShippingAddress_FK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ShippingAddressId" ASCENDING 
 
 ADD INDEX "Status_FK" ON "Order" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "StatusId" ASCENDING 
 
 ADD TABLE "OrderLine"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The orderline table contains order detail information including item number and quantity ordered."
   DUMP-NAME "orderline"
 
@@ -2365,7 +2366,7 @@ ADD FIELD "FinishedItemId" OF "OrderLine" AS character
   MANDATORY
 
 ADD INDEX "OrderLine_PK" ON "OrderLine" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
@@ -2373,20 +2374,20 @@ ADD INDEX "OrderLine_PK" ON "OrderLine"
   INDEX-FIELD "LineNum" ASCENDING 
 
 ADD INDEX "FinishedITem_FK" ON "OrderLine" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "FinishedItemId" ASCENDING 
 
 ADD INDEX "Item_FK" ON "OrderLine" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD INDEX "Status_FK" ON "OrderLine" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "StatusId" ASCENDING 
 
 ADD TABLE "POLine"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The poline table contains the PO detail information including the item and quantity on the PO."
   DUMP-NAME "poline"
 
@@ -2455,22 +2456,22 @@ ADD FIELD "PurchaseOrderId" OF "POLine" AS character
   ORDER 2
 
 ADD INDEX "POLine_PK" ON "POLine" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "PurchaseOrderId" ASCENDING 
   INDEX-FIELD "LineNum" ASCENDING 
 
 ADD INDEX "Item_FK" ON "POLine" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD INDEX "Status_FK" ON "POLine" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "StatusId" ASCENDING 
 
 ADD TABLE "PurchaseOrder"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The purchaseorder table contains information pertaining to the purchase order including: PO number and status."
   DUMP-NAME "purchaseorder"
 
@@ -2518,21 +2519,21 @@ ADD FIELD "PurchaseOrderId" OF "PurchaseOrder" AS character
   ORDER 1
 
 ADD INDEX "PurchaseOrder_PK" ON "PurchaseOrder" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "PurchaseOrderId" ASCENDING 
 
 ADD INDEX "Status_FK" ON "PurchaseOrder" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "StatusId" ASCENDING 
 
 ADD INDEX "Supplier_FK" ON "PurchaseOrder" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "SupplierId" ASCENDING 
 
 ADD TABLE "RefCall"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The refcall table contains information about a sale."
   DUMP-NAME "refcall"
 
@@ -2605,40 +2606,40 @@ ADD FIELD "CallDate" OF "RefCall" AS datetime-tz
   ORDER 70
 
 ADD INDEX "RefCall_PK" ON "RefCall" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "RefCallId" ASCENDING 
 
 ADD INDEX "CallDetail" ON "RefCall" 
-  AREA "Indexes"
+  AREA "Schema Area"
   WORD
   INDEX-FIELD "Detail" ASCENDING 
 
 ADD INDEX "CallNum" ON "RefCall" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CallNum" ASCENDING 
 
 ADD INDEX "Customer_FK" ON "RefCall" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "CustomerId" ASCENDING 
 
 ADD INDEX "ParentRefCall_FK" ON "RefCall" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "ParentRefCallId" ASCENDING 
 
 ADD INDEX "Salesrep_FK" ON "RefCall" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "SalesrepId" ASCENDING 
 
 ADD TABLE "SalesRegion"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "Describes sales regions"
   DUMP-NAME "salesregion"
 
@@ -2659,14 +2660,14 @@ ADD FIELD "Name" OF "SalesRegion" AS character
   ORDER 11
 
 ADD INDEX "SalesRegion_PK" ON "SalesRegion" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "Name" ASCENDING 
 
 ADD TABLE "Salesrep"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The salesrep table contains sales representative information"
   DUMP-NAME "salesrep"
 
@@ -2723,30 +2724,30 @@ ADD FIELD "SalesrepId" OF "Salesrep" AS character
   ORDER 1
 
 ADD INDEX "Salesrep_PK" ON "Salesrep" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "SalesrepId" ASCENDING 
 
 ADD INDEX "Employee_FK" ON "Salesrep" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "EmployeeId" ASCENDING 
 
 ADD INDEX "SalesRegion_FK" ON "Salesrep" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "SalesRegion" ASCENDING 
 
 ADD INDEX "SalesRep" ON "Salesrep" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "TenantId" ASCENDING 
   INDEX-FIELD "Code" ASCENDING 
 
 ADD TABLE "State"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The state table contains state abbreviations and corresponding sales regions"
   DUMP-NAME "state"
 
@@ -2784,14 +2785,14 @@ ADD FIELD "Timezone" OF "State" AS integer
   ORDER 70
 
 ADD INDEX "State_PK" ON "State" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "Country" ASCENDING 
   INDEX-FIELD "State" ASCENDING 
 
 ADD TABLE "StatusDetail"
-  AREA "Data"
+  AREA "Schema Area"
   DUMP-NAME "statusdetail"
 
 ADD FIELD "StatusDetailId" OF "StatusDetail" AS character 
@@ -2818,18 +2819,18 @@ ADD FIELD "Description" OF "StatusDetail" AS character
   ORDER 30
 
 ADD INDEX "StatusDetail_PK" ON "StatusDetail" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "StatusDetailId" ASCENDING 
 
 ADD INDEX "Code" ON "StatusDetail" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "Code" ASCENDING 
 
 ADD TABLE "Supplier"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The supplier table contains a supplier's name, address and additional information pertaining to the supplier."
   DUMP-NAME "supplier"
 
@@ -2881,18 +2882,18 @@ ADD FIELD "Code" OF "Supplier" AS character
   ORDER 10
 
 ADD INDEX "Supplier_PK" ON "Supplier" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "SupplierId" ASCENDING 
 
 ADD INDEX "Code" ON "Supplier" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "Code" ASCENDING 
 
 ADD TABLE "SupplierItem"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The supplieritem lists all of the items that are supplied by a particlar supplier."
   DUMP-NAME "supplieritem"
 
@@ -2921,22 +2922,22 @@ ADD FIELD "SupplierItemXrefId" OF "SupplierItem" AS character
   ORDER 1
 
 ADD INDEX "SupplierItem_PK" ON "SupplierItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "SupplierId" ASCENDING 
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD INDEX "Item_FK" ON "SupplierItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ItemId" ASCENDING 
 
 ADD INDEX "Supplier_FK" ON "SupplierItem" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "SupplierId" ASCENDING 
 
 ADD TABLE "Tenant"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The master tenant table. This table also contains the parent/child relationships shown in the diagram above."
   DUMP-NAME "tenant"
 
@@ -2974,22 +2975,22 @@ ADD FIELD "LocaleId" OF "Tenant" AS character
   ORDER 22
 
 ADD INDEX "Tenant_PK" ON "Tenant" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "TenantId" ASCENDING 
 
 ADD INDEX "Name" ON "Tenant" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "Name" ASCENDING 
 
 ADD INDEX "Parent_FK" ON "Tenant" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "ParentTenantId" ASCENDING 
 
 ADD TABLE "Warehouse"
-  AREA "Data"
+  AREA "Schema Area"
   DESCRIPTION "The warehouse table contains warehouse information including warehouse name and address."
   DUMP-NAME "warehouse"
 
@@ -3018,22 +3019,22 @@ ADD FIELD "Code" OF "Warehouse" AS character
   ORDER 100
 
 ADD INDEX "Warehouse_PK" ON "Warehouse" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   PRIMARY
   INDEX-FIELD "WarehouseId" ASCENDING 
 
 ADD INDEX "Code" ON "Warehouse" 
-  AREA "Indexes"
+  AREA "Schema Area"
   UNIQUE
   INDEX-FIELD "Code" ASCENDING 
 
 ADD INDEX "Name" ON "Warehouse" 
-  AREA "Indexes"
+  AREA "Schema Area"
   INDEX-FIELD "Name" ASCENDING 
 
 .
 PSC
-cpstream=UTF-8
+cpstream=ISO8859-1
 .
-0000065292
+0000066188
