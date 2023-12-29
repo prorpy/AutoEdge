@@ -1,12 +1,12 @@
 /** ****************************************************************************
   Copyright 2012 Progress Software Corporation
-  
+
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
     http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -15,12 +15,12 @@
 **************************************************************************** **/
 /** ------------------------------------------------------------------------
     File        : VehicleOptionsEntity
-    Purpose     : 
-    Syntax      : 
-    Description : 
+    Purpose     :
+    Syntax      :
+    Description :
     @author pjudge
     Created     : Thu Jan 20 14:01:28 EST 2011
-    Notes       : 
+    Notes       :
   ---------------------------------------------------------------------- */
 routine-level on error undo, throw.
 
@@ -42,7 +42,7 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.VehicleOptionsEntity inher
         field VehicleType as character
         index idx1 as primary unique ItemId
         .
-    
+
     define temp-table eItem no-undo
         field ItemId as character
         field ItemNum as integer
@@ -52,7 +52,7 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.VehicleOptionsEntity inher
         field Price as decimal
         index idx1 as primary unique ItemNum
         .
-    
+
     define temp-table eItemOption no-undo
         field ItemId as character
         field ItemNum as integer
@@ -63,16 +63,17 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.VehicleOptionsEntity inher
         field StandardOption as logical
         index idx2 ChildItemNum
         .
-    
+
     define dataset dsVehicleOptions for eVehicle, eItem, eItemOption
         /* get the options for the vehicles */
         data-relation for eVehicle, eItemOption relation-fields (ItemId, ItemId)
         /* single-level series of items and options */
         data-relation for eItemOption, eItem relation-fields (ChildItemId, ItemId)
         .
-    
+
     constructor public VehicleOptionsEntity(input poComponentInfo as IComponentInfo ):
         super (input poComponentInfo).
+        message program-name(1) view-as alert-box.
     end constructor.
 
     constructor public VehicleOptionsEntity ( input poComponentInfo as IComponentInfo, input poDAO as IDataAccess ):
@@ -80,7 +81,7 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.VehicleOptionsEntity inher
     end constructor.
 
     method override protected handle CopyStaticDataset (output dataset-handle phDataset):
-        phDataset = dataset dsVehicleOptions:handle.  
+        phDataset = dataset dsVehicleOptions:handle.
     end method.
-    
+
 end class.
