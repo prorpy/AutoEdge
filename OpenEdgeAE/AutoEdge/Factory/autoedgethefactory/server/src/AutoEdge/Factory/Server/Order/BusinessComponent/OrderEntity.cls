@@ -1,12 +1,12 @@
 /** ****************************************************************************
   Copyright 2012 Progress Software Corporation
-  
+
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
     http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -15,12 +15,12 @@
 **************************************************************************** **/
 /** ------------------------------------------------------------------------
     File        : OrderEntity
-    Purpose     : 
-    Syntax      : 
-    Description : 
+    Purpose     :
+    Syntax      :
+    Description :
     @author pjudge
     Created     : Wed Dec 08 16:22:06 EST 2010
-    Notes       : 
+    Notes       :
   ---------------------------------------------------------------------- */
 routine-level on error undo, throw.
 
@@ -48,14 +48,14 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
         field CustomerNum   as integer
         field CustomerName  as character
         field CustomerPO    as character
-        
+
         field OrderAmount   as decimal
         field OrderStatus   as character
         field Instructions  as character
-        
+
         field SalesrepCode  as character
         field DealerCode    as character
-        
+
         index idx1 as primary unique Orderid
         index idx2 as unique OrderNum.
 
@@ -70,9 +70,9 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
         field BillingAddressId  as character
         field Carrier           as character
         field Creditcard        as character
-        
+
         index idx1 as primary unique OrderNum.
-    
+
     @todo(task="refactor", action="merge OrderLine and FinishedItem into single BE table? ").
     define temp-table eOrderLine no-undo before-table beOrderLine
         field OrderId           as character
@@ -84,7 +84,7 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
         field OrderLineStatus   as character
         field FinishedItemId    as character
         index idx1 as primary unique OrderId LineNum.
-    
+
     define temp-table eFinishedItem no-undo before-table beFinishedItem
         field FinishedItemId as character
         field ItemId as character
@@ -92,15 +92,15 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
         field FinishedItemStatus as character
         field ExternalId as character   /* This is likely to be the VIN */
         index idx1 as primary unique FinishedItemId.
-    
+
     define temp-table eComponentItem no-undo before-table beComponentItem
         field ItemId as character
         field FinishedItemId as character
         field Quantity as decimal
-        index idx1 as primary unique FinishedItemId ItemId 
+        index idx1 as primary unique FinishedItemId ItemId
         index idx2 FinishedItemId
         .
-    
+
     define temp-table eItem no-undo before-table beItem
         field ItemId as character
         field ItemNum as integer
@@ -112,13 +112,13 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
         index idx2 as unique ItemNum
         .
 
-    define private dataset dsOrder for eOrder, /*eOrderPayment,*/ eOrderLine, eFinishedItem, eItem, eComponentItem 
+    define private dataset dsOrder for eOrder, /*eOrderPayment,*/ eOrderLine, eFinishedItem, eItem, eComponentItem
         data-relation for eOrder, eOrderLine relation-fields (OrderId, OrderId)
         data-relation for eOrderLine, eItem relation-fields (ItemId, ItemId)
         data-relation for eOrderLine, eFinishedItem relation-fields (FinishedItemId, FinishedItemId)
         data-relation for eFinishedItem, eComponentItem relation-fields (FinishedItemId, FinishedItemId)
         .
-    
+
     constructor public OrderEntity(input poComponentInfo as IComponentInfo ):
         super (input poComponentInfo).
     end constructor.
@@ -138,39 +138,44 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
 	    define variable hDataset as handle no-undo.
 	    define variable hQuery as handle no-undo.
 	    define variable hOrder as handle no-undo.
-	    
+
 	    @todo(task="implement", action="").
 	    cast(poRequest, IServiceMessage):GetMessageData(output hDataset).
 	    hFinishedItem = hDataset:get-buffer-handle('eFinishedItem').
 	    hOrder = hDataset:get-buffer-handle('eOrder').
-	    
+
 	    create query hQuery.
-	    
+
         /* make sure new records have a salesrep */
 	    hQuery:set-buffers(hOrder).
 	    hQuery:query-prepare(substitute('for each &1 where row-state(&1) eq &2',
 	                         hOrder:name,
 	                         RowStateEnum:Created:Value)).
 	    hQuery:query-open().
-	    
+
 	    hQuery:get-first().
+
+      // Sigrid
+      if not hOrder:available then
+        return error.
+        
 	    do while hOrder:available:
             ValidateNewRow(hDataset, hOrder).
 	        hQuery:get-next().
         end.
         hQuery:query-close().
-        
+
         hQuery:set-buffers(hFinishedItem).
         hQuery:query-prepare(substitute('for each &1 ', hFinishedItem:name)).
         hQuery:query-open().
-        
+
         hQuery:get-first().
         do while hFinishedItem:available:
             ValidateNewRow(hDataset, hFinishedItem).
             hQuery:get-next().
         end.
-        
-		return super:SaveData(input poRequest).	
+
+		return super:SaveData(input poRequest).
         finally:
             hQuery:query-close().
             delete object hQuery.
@@ -203,18 +208,18 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
         hQuery:get-first().
 
         do while hOrderLine:available:
-            dLineTotal = hOrderLine::Price * hOrderLine::Quantity.            
+            dLineTotal = hOrderLine::Price * hOrderLine::Quantity.
             if hOrderLine::Discount gt 0 then
                 dLineTotal = dLineTotal - (hOrderLine::Discount * dLineTotal / 100).
-            
-            hOrder::OrderAmount = hOrder::OrderAmount + dLineTotal. 
+
+            hOrder::OrderAmount = hOrder::OrderAmount + dLineTotal.
 
             hQuery:get-next().
         end.
         hQuery:query-close().
         delete object hQuery.
 
-        return oResponse.        
+        return oResponse.
 	end method.
 
     method protected void ValidateNewRow(input phDataset as handle,
