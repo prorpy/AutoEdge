@@ -51,10 +51,6 @@ class AutoEdge.Factory.Server.Common.BusinessComponent.UserLoginEntity inherits 
     constructor public UserLoginEntity(input poComponentInfo as IComponentInfo, input poDAO as IDataAccess ):
         super(input poComponentInfo, input poDAO).
 
-        // Sigrid
-        output to logging.txt.
-        put program-name(1).
-        
     end constructor.
 
     method override protected handle CopyStaticDataset (output dataset-handle phDataset):

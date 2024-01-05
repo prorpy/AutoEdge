@@ -155,10 +155,6 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity inherits Stand
 
 	    hQuery:get-first().
 
-      // Sigrid
-      if not hOrder:available then
-        return error.
-        
 	    do while hOrder:available:
             ValidateNewRow(hDataset, hOrder).
 	        hQuery:get-next().

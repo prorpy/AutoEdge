@@ -98,10 +98,6 @@ class AutoEdge.Factory.Server.Order.BusinessComponent.OrderDA inherits StandardD
                            cFieldName[2] = 'ComponentItem'.
             end case.   /* eComponentItem */
 
-            // Sigrid
-            otherwise
-              return error.
-              
         end case.
 
         return cFieldName.
