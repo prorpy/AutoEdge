@@ -55,7 +55,7 @@ for each Tenant
                    CustomerContact.TenantId eq ApplicationUser.TenantId and
                    CustomerContact.CustomerId eq ApplicationUser.CustomerId and
                    CustomerContact.ContactType eq 'email-home'
-                   no-lock no-error.
+                   share-lock no-error.
         if available CustomerContact then
             find ContactDetail where
                  ContactDetail.ContactDetailId eq CustomerContact.ContactDetailId
