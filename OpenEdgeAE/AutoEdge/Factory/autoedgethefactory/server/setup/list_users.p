@@ -76,7 +76,7 @@ end.
 put unformatted '  ' skip.
             
 put unformatted 'EMPLOYEES: ' skip.
-for each Tenant no-lock by Tenant.Name:
+for each Tenant share-lock by Tenant.Name:
     
     if not can-find(first ApplicationUser where
                           ApplicationUser.TenantId eq Tenant.TenantId and             
