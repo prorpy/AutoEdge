@@ -1,0 +1,16 @@
+/DatabaseModel.r
+/DatasetModel.r
+/IModel.r
+/IModelEventHandler.r
+/IModelQuery.r
+/IModelQueryCollection.r
+/IModelReadOnly.r
+/ISharedModel.r
+/ITableInfo.r
+/Model.r
+/ModelQuery.r
+/OperationDoneForContextError.r
+/SDOModel.r
+/UndoActionModel.r
+/UndoDeleteOnSubmitErrorEnum.r
+/UndoOnConflictEnum.r

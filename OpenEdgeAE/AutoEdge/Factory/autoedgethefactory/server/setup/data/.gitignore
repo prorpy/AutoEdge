@@ -1,0 +1,13 @@
+/load_all.r
+/load_addresses.r
+/load_contact_types.r
+/load_customers.r
+/load_dealers.r
+/load_employees.r
+/load_geography.r
+/load_items.r
+/load_orders.r
+/load_salesregion.r
+/load_statusdetail.r
+/load_tenants.r
+/load_users.r

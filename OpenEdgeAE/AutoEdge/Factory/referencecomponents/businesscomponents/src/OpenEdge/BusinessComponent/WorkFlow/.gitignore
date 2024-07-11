@@ -1,0 +1,10 @@
+/BizLogicWorkFlow.r
+/BizLogicWorkStep.r
+/BusinessWorkFlow.r
+/WorkFlowServiceInterface.r
+/WorkStep.r
+/WorkStepServiceInterface.r
+/IBusinessWorkFlow.r
+/IWorkStep.r
+/WorkFlowDecorator.r
+/WorkStepDecorator.r

@@ -1,0 +1,10 @@
+/propath_compile.r
+/test_buildvehicle.r
+/show_options.r
+/show_orders.r
+/test_appserver_si.r
+/test_appserver_start.r
+/test_connect_bpmserver.r
+/test_orderservice.r
+/test_updateorder.r
+/test_vehbranddata.r

@@ -1,0 +1,9 @@
+/ComponentKernel.r
+/ComponentKernelSettings.r
+/ComponentLifecycleStrategy.r
+/ManagerScope.r
+/ManagerScopeEnum.r
+/ServiceMessageModule.r
+/ServiceProvider.r
+/SharedModule.r
+/ComponentProvider.r

@@ -1,0 +1,9 @@
+/AppServerServiceAdapter.r
+/ComponentTypeEnum.r
+/SecurityManagerDecorator.r
+/SecurityManagerServiceAdapter.r
+/ServiceTypeEnum.r
+/service_managed_async_response.r
+/ISecurityManager.r
+/SecurityManager.r
+/ServiceAdapter.r

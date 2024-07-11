@@ -1,0 +1,11 @@
+/Condition.r
+/ConditionBuilder.r
+/ConnectionCondition.r
+/ConnectionConditionResolver.r
+/ICondition.r
+/IConditionResolver.r
+/IConditionSyntax.r
+/SessionTypeCondition.r
+/SessionTypeConditionResolver.r
+/StandardConditionResolver.r
+/UITypeCondition.r

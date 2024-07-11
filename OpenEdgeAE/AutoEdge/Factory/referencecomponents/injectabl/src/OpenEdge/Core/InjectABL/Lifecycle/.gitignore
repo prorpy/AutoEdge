@@ -1,0 +1,13 @@
+/ILifecycleContext.r
+/ILifecycleStrategy.r
+/ILifecycleStrategyCollection.r
+/IPipeline.r
+/IProvider.r
+/LifecycleContext.r
+/LifecycleStrategy.r
+/MethodInjectionLifecycleStrategy.r
+/PropertyInjectionLifecycleStrategy.r
+/StandardPipeline.r
+/StandardProvider.r
+/StandardScope.r
+/StandardScopeEnum.r

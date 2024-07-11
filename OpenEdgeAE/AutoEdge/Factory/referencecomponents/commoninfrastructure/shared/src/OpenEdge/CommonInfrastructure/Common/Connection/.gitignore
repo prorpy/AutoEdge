@@ -1,0 +1,13 @@
+/AppServerConnectionParameters.r
+/AppServerConnection.r
+/BpmServerConnection.r
+/BpmServerConnectionParameters.r
+/ConnectionParameters.r
+/ConnectionTypeEnum.r
+/DBConnectionParameters.r
+/DatabaseConnection.r
+/IConnectionParameters.r
+/IServerConnection.r
+/ServerConnectionError.r
+/SocketConnection.r
+/WebServiceConnection.r

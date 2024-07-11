@@ -1,0 +1,16 @@
+/DataSlotInstance.r
+/DataSlotTemplate.r
+/IBizLogicAPI.r
+/PriorityEnum.r
+/ProcessInstance.r
+/ProcessInstanceStateEnum.r
+/ProcessTemplate.r
+/ProcessTemplateStateEnum.r
+/SavvionType.r
+/Task.r
+/WorkFlowWebService.r
+/WorkItem.r
+/WorkItemStatusEnum.r
+/WorkStepInstance.r
+/WorkStepTemplate.r
+/WorkStepTemplateTypeEnum.r

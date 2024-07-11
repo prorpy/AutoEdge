@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module-content version="12.8">
+    <module id="6da0d704-8de8-4fa9-86ce-f5f1bf6a444c" name="AutoEdge">
+        <resource path="AppServer" publish="true"/>
+    </module>
+</module-content>

@@ -1,0 +1,9 @@
+/Cache.r
+/ComponentContainer.r
+/ICache.r
+/IInjectionRequest.r
+/IKernel.r
+/InjectionRequest.r
+/KernelBase.r
+/KernelSettings.r
+/StandardKernel.r
