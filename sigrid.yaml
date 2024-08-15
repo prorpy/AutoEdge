@@ -15,3 +15,7 @@ dependencychecker:
   transitive: false
   exclude:
     - ".*/scripts/.*"
+
+add_system_elements:
+  - name: aetf_db
+    type: DATA_STORE
