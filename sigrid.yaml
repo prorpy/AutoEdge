@@ -8,3 +8,10 @@ component_base_dirs:
 
 thirdpartyfindings:
   enabled: true
+
+dependencychecker:
+  blocklist:
+  - ".*psc.*"
+  transitive: false
+  exclude:
+    - ".*/scripts/.*"
