@@ -1,0 +1,46 @@
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 1 COMPILE OpenEdge\Lang\QueryTypeEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 30 CLASS OpenEdge.Lang.QueryTypeEnum,INHERITS OpenEdge.Lang.EnumMember,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 30 STRING "OpenEdge.Lang.QueryTypeEnum" 27 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 32 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 33 STRING "Each" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,Each
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 34 STRING "First" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,First
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 35 STRING "Last" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Last
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:Each
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 38 STRING "Each" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.QueryTypeEnum:Each 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:First
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 39 STRING "First" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.QueryTypeEnum:First 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:Last
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 40 STRING "Last" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.QueryTypeEnum:Last 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:Each
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 42 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.QueryTypeEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 43 CONSTRUCTOR ,STATIC,,,QueryTypeEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 43 STRING "QUERYTYPEENUM" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 45 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 47 CONSTRUCTOR PUBLIC,,,,QueryTypeEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 47 STRING "QUERYTYPEENUM" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 49 STRING "pcQueryType" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 50 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 53 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:Each
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:First
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.QueryTypeEnum:Last
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 59 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.QueryTypeEnum,INPUT pcQueryType CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 59 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 38 NEW OpenEdge.Lang.QueryTypeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 39 NEW OpenEdge.Lang.QueryTypeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 40 NEW OpenEdge.Lang.QueryTypeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 46 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 54 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\QueryTypeEnum.cls 55 INVOKE OpenEdge.Lang.EnumMember:ToString

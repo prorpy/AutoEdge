@@ -1,0 +1,39 @@
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 1 COMPILE OpenEdge\Core\XML\SaxWriterError.cls
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 30 CLASS OpenEdge.Core.XML.SaxWriterError,INHERITS OpenEdge.Core.System.ApplicationError,,,,,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 30 STRING "OpenEdge.Core.XML.SaxWriterError" 32 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 30 STRING "Progress.Lang.ProError" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 30 STRING "Progress.Lang.AppError" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 30 STRING "OpenEdge.Core.System.ApplicationError" 37 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 31 STRING "ErrorText" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 31 PROPERTY PROTECTED,,OVERRIDE,,,ErrorText
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 32 STRING "ErrorTitle" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 32 PROPERTY PROTECTED,,OVERRIDE,,,ErrorTitle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 34 STRING "poInnerError" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 37 ACCESS INHERITED-PROPERTY OpenEdge.Core.XML.SaxWriterError:ErrorTitle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 37 STRING "Sax Writer Error" 16 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 37 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterError:ErrorTitle 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Core.XML.SaxWriterError:ErrorText
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 38 STRING "?" 1 LEFT TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 38 STRING "Error &1 &2" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterError:ErrorText 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 39 CONSTRUCTOR PUBLIC,,,,SaxWriterError,void,INPUT poInnerError PROGRESS.LANG.ERROR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 39 STRING "SAXWRITERERROR" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 41 STRING "poErr" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 41 STRING "pcArgs1" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 41 STRING "pcArgs2" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 48 CONSTRUCTOR PUBLIC,,,,SaxWriterError,void,INPUT poErr PROGRESS.LANG.ERROR,INPUT pcArgs1 CHARACTER,INPUT pcArgs2 CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 48 STRING "SAXWRITERERROR" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 50 STRING "pcArgs1" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 50 STRING "pcArgs2" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 56 CONSTRUCTOR PUBLIC,,,,SaxWriterError,void,INPUT pcArgs1 CHARACTER,INPUT pcArgs2 CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 56 STRING "SAXWRITERERROR" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 35 INVOKE OpenEdge.Core.System.ApplicationError:ApplicationError,INPUT Progress.Lang.Error
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 44 INVOKE OpenEdge.Core.XML.SaxWriterError:SaxWriterError,INPUT Progress.Lang.Error
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 46 INVOKE Progress.Lang.AppError:AddMessage,INPUT character,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 47 INVOKE Progress.Lang.AppError:AddMessage,INPUT character,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 52 INVOKE OpenEdge.Core.XML.SaxWriterError:SaxWriterError,INPUT Progress.Lang.Error
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 54 INVOKE Progress.Lang.AppError:AddMessage,INPUT character,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriterError.cls 55 INVOKE Progress.Lang.AppError:AddMessage,INPUT character,INPUT integer

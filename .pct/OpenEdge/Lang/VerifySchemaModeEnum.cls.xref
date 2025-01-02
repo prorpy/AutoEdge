@@ -1,0 +1,46 @@
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 1 COMPILE OpenEdge\Lang\VerifySchemaModeEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 30 CLASS OpenEdge.Lang.VerifySchemaModeEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 30 STRING "OpenEdge.Lang.VerifySchemaModeEnum" 34 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 32 STRING "Ignore" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Ignore
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 33 STRING "Loose" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,Loose
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 34 STRING "Strict" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,Strict
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 35 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Ignore
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 38 STRING "Ignore" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Ignore 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Loose
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 39 STRING "Loose" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Loose 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Strict
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 40 STRING "Loose-Handle" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Strict 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Loose
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 42 CONSTRUCTOR ,STATIC,,,VerifySchemaModeEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 42 STRING "VERIFYSCHEMAMODEENUM" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 44 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 46 CONSTRUCTOR PUBLIC,,,,VerifySchemaModeEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 46 STRING "VERIFYSCHEMAMODEENUM" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 48 STRING "pcVerifyMode" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 49 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 52 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Ignore
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 53 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Loose
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.VerifySchemaModeEnum:Strict
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 58 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.VerifySchemaModeEnum,INPUT pcVerifyMode CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 58 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 38 NEW OpenEdge.Lang.VerifySchemaModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 39 NEW OpenEdge.Lang.VerifySchemaModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 40 NEW OpenEdge.Lang.VerifySchemaModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 45 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 52 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\VerifySchemaModeEnum.cls 54 INVOKE OpenEdge.Lang.EnumMember:ToString

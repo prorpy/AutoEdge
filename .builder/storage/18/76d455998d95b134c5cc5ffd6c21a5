@@ -1,0 +1,12 @@
+OpenEdge.Core.InjectABL.Binding.Conditions
+OpenEdge.Core.InjectABL.Binding.Conditions.Condition	C	ac7a4321b4860f368dbf09ee19522503
+OpenEdge.Core.InjectABL.Binding.Conditions.ConditionBuilder	C	77c38b32eec002ad030f40d86e91bd38
+OpenEdge.Core.InjectABL.Binding.Conditions.ConnectionCondition	C	a11125822682a179e3934c79e9a7922d
+OpenEdge.Core.InjectABL.Binding.Conditions.ConnectionConditionResolver	C	e345a834bada93d3dbfcbaa373703d0f
+OpenEdge.Core.InjectABL.Binding.Conditions.ICondition	C	b17f205616d3d4f093c3b8a6936795a4
+OpenEdge.Core.InjectABL.Binding.Conditions.IConditionResolver	C	35735342472e12971490e9804f459a3a
+OpenEdge.Core.InjectABL.Binding.Conditions.IConditionSyntax	C	c109cbefc9f1bfb6898d463dcdc2c21f
+OpenEdge.Core.InjectABL.Binding.Conditions.SessionTypeCondition	C	1f04b6704192b40ba9b49875e7af49f4
+OpenEdge.Core.InjectABL.Binding.Conditions.SessionTypeConditionResolver	C	6c4aeb42992a4c4ad9842b63c0d097b9
+OpenEdge.Core.InjectABL.Binding.Conditions.StandardConditionResolver	C	6969cfca1bd278c030ef56ea6da7ede9
+OpenEdge.Core.InjectABL.Binding.Conditions.UITypeCondition	C	b57d979486fec67f2ef70df1f436723b

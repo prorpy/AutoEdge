@@ -1,0 +1,14 @@
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 1 COMPILE support\tests\custom2.p
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 1 CPINTERNAL utf-8
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 1 CPSTREAM iso8859-1
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 1 STRING "mptr" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 2 STRING "rasw1" 5 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 3 STRING "cnt" 3 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 4 STRING "i" 1 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 6 STRING "cvar" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 9 STRING "1165PABLO1115046441163777" 25 NONE TRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 19 STRING "PABLO" 5 NONE TRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 48 STRING "->,>>>,>>9" 10 NONE TRANSLATABLE  FORMAT 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 48 STRING "x(8)" 4 NONE TRANSLATABLE  FORMAT 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 52 STRING "i" 1 LEFT TRANSLATABLE 
+referencecomponents\support\tests\custom2.p referencecomponents\support\tests\custom2.p 52 STRING "----------------" 16 NONE UNTRANSLATABLE 

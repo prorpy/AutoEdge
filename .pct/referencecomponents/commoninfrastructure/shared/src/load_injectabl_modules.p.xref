@@ -1,0 +1,7 @@
+.\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p .\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p 1 COMPILE referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p
+.\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p .\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p 1 CPINTERNAL utf-8
+.\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p .\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p 1 CPSTREAM iso8859-1
+.\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p .\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p .\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p 31 STRING "poKernel" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p .\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p 34 INVOKE OpenEdge.Core.InjectABL.IKernel:Load,INPUT OpenEdge.Core.InjectABL.Binding.Modules.IInjectionModule
+.\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p .\referencecomponents\commoninfrastructure\shared\src\load_injectabl_modules.p 34 NEW OpenEdge.CommonInfrastructure.Common.InjectABL.SharedModule

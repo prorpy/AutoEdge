@@ -1,0 +1,9 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 1 COMPILE OpenEdge\Core\System\ILoginData.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 25 INTERFACE OpenEdge.Core.System.ILoginData,,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 25 STRING "OpenEdge.Core.System.ILoginData" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 27 STRING "UserName" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 27 PROPERTY PUBLIC,,,,,UserName
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 28 STRING "Password" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\ILoginData.cls 28 PROPERTY PUBLIC,,,,,Password

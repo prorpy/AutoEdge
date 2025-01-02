@@ -1,0 +1,182 @@
+{
+  "name": "AutoEdge",
+  "version": "1.0",
+  "oeversion": "12.8",
+  "graphicalMode": true,
+  "charset": "ISO8859-1",
+  "extraParameters": "-basekey ini",
+  "workingDirectory": "C:\/workspace\/AutoEdge",
+  "numThreads": 1,
+  "buildPath": [
+    {
+      "path": ".",
+      "type": "source",
+      "build": ".\/rcode"
+    },
+    {
+      "type": "propath",
+      "path": "."
+    },
+    {
+      "type": "propath",
+      "path": "."
+    },
+    {
+      "type": "propath",
+      "path": "C:\/Progress\/OpenEdge\/gui\/"
+    },
+    {
+      "type": "propath",
+      "path": "${DLC}\/tty\/netlib\/OpenEdge.net.pl"
+     },
+    {
+      "type": "propath",
+      "path": "C:\/Progress\/OpenEdge"
+    },
+    {
+      "type": "propath",
+      "path": "C:\/Progress\/OpenEdge\/bin"
+    },
+    {
+      "type": "propath",
+      "path": "C:\/Progress\/OpenEdge\/gui"
+    }
+  ],
+  "dbConnections": [
+    {
+      "name": "aetf",
+      "connect": "-db aetf.db -H localhost -S 4242",
+      "schemaFile": "dump\/aetf.df",
+      "aliases": [
+        "dictdb"
+      ]
+    }
+  ],
+  "profiles": 
+  [
+   {
+     "name": "GUI",
+     "inherits": "default",
+     "value": {
+       "graphicalMode": true,
+       "buildPath": [
+        {
+          "path": ".\\autoedgethefactory\\server\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\autoedgethefactory\\server\\src"
+        },
+        {
+          "path": ".\\autoedgethefactory\\shared\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\autoedgethefactory\\shared\\src"
+        },
+        {
+          "path": ".\\referencecomponents\\businesscomponents\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\referencecomponents\\businesscomponents\\src"
+        },
+        {
+          "path": ".\\referencecomponents\\dataaccess\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\referencecomponents\\dataaccess\\src"
+        },
+        {
+          "path": ".\\referencecomponents\\enterpriseservices\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\referencecomponents\\enterpriseservices\\src"
+        },
+        {
+          "path": ".\\referencecomponents\\commoninfrastructure\\server\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\referencecomponents\\commoninfrastructure\\server\\src"
+        },
+        {
+          "path": ".\\referencecomponents\\commoninfrastructure\\shared\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\referencecomponents\\commoninfrastructure\\shared\\src"
+        },
+        {
+          "path": ".\\referencecomponents\\injectabl\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\referencecomponents\\injectabl\\src"
+        },
+        {
+          "path": ".\\referencecomponents\\support\\src",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\referencecomponents\\support\\src"
+        },
+        {
+          "path": ".\\autoedgethefactory\\server\\tests",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": ".\\autoedgethefactory\\server\\tests"
+        },
+        {
+          "path": ".\\autoedgethefactory\\client\\src\\start_ui.p",
+          "type": "source",
+          "build": ".\\rcode"
+        },
+        {
+          "type": "propath",
+          "path": "C:\/Progress\/OpenEdge\/gui\/"
+        },
+        {
+          "type": "propath",
+          "path": "${DLC}\/tty\/netlib\/OpenEdge.net.pl"
+        },
+        {
+          "type": "propath",
+          "path": "C:\/Progress\/OpenEdge"
+        },
+        {
+          "type": "propath",
+          "path": "C:\/Progress\/OpenEdge\/bin"
+        },
+        {
+          "type": "propath",
+          "path": "C:\/Progress\/OpenEdge\/gui"
+        }    
+       ]
+     }
+   }
+ ]
+}

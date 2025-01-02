@@ -1,0 +1,6 @@
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p 47 STRING "oTasks" 6 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\client\src\start_ui.p 48 STRING "oServiceManager" 15 NONE UNTRANSLATABLE 

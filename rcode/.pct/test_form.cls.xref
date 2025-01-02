@@ -1,0 +1,270 @@
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 1 COMPILE test_form.cls
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 1 CPINTERNAL utf-8
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 1 CPSTREAM iso8859-1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 CLASS test_form,INHERITS Progress.Windows.Form System.Windows.Forms.Form System.Windows.Forms.ContainerControl System.Windows.Forms.ScrollableControl System.Windows.Forms.Control System.ComponentModel.Component System.MarshalByRefObject System.Object,,,,,
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "test_form" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "System.Object" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "System.MarshalByRefObject" 25 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "System.ComponentModel.Component" 31 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "System.Windows.Forms.Control" 28 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "System.Windows.Forms.ScrollableControl" 38 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "System.Windows.Forms.ContainerControl" 37 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "System.Windows.Forms.Form" 25 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 17 STRING "Progress.Windows.Form" 21 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "eDepartment" 11 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "DeptCode" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "DeptName" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "eDepartmentBefore" 17 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "__error-flag__" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "__origin-rowid__" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "__error-string__" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "__after-rowid__" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 19 STRING "__row-state__" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "eEmployee" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "Address" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "Address2" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "Birthdate" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "City" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "DeptCode" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "EmpNum" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "FirstName" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "HomePhone" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "LastName" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "Position" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "PostalCode" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "SickDaysLeft" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "StartDate" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "State" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "VacationDaysLeft" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "WorkPhone" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "eEmployeeBefore" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "__error-flag__" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "__origin-rowid__" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "__error-string__" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "__after-rowid__" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 24 STRING "__row-state__" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "eFamily" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "BenefitDate" 11 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "Birthdate" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "CoveredOnBenefits" 17 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "EmpNum" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "Relation" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "RelativeName" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "eFamilyBefore" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "__error-flag__" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "__origin-rowid__" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "__error-string__" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "__after-rowid__" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 45 STRING "__row-state__" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 54 REFERENCE eDepartment DeptCode TEMPTABLE
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 54 REFERENCE eEmployee DeptCode TEMPTABLE
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 54 REFERENCE eEmployee EmpNum TEMPTABLE
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 54 REFERENCE eFamily EmpNum TEMPTABLE
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 58 STRING "Department" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 58 REFERENCE aetf.Department 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 59 STRING "Employee" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 59 REFERENCE aetf.Employee 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 60 STRING "Family" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 60 REFERENCE aetf.Family 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 62 STRING "mhMasterDataset" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 63 STRING "hq" 2 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 64 STRING "hb" 2 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 66 STRING "components" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 68 STRING "bindingSource1" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 70 STRING "textBox1" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 71 STRING "textBox2" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 73 STRING "button1" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 91 STRING "preselect each " 15 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 97 ACCESS PUBLIC-PROPERTY Progress.Data.BindingSource:handle
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 97 UPDATE PUBLIC-PROPERTY Progress.Data.BindingSource:Handle 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 103 STRING "[DEBUG]" 7 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 107 STRING "e" 1 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 111 CONSTRUCTOR PUBLIC,,,,test_form,void,
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 111 STRING "TEST_FORM" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 118 ANNOTATION VisualDesigner
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 119 STRING "sender" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 119 STRING "e" 1 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 120 STRING "i" 1 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 126 STRING "[DEBUG]" 7 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 126 STRING "i=" 2 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 126 STRING "hq:current-result-row=" 22 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 126 STRING "after next" 10 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 126 STRING "bindingSource1:Position=" 24 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 126 ACCESS PUBLIC-PROPERTY System.Windows.Forms.BindingSource:Position
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 137 STRING "GETNEXTCLICK" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 148 ANNOTATION VisualDesigner.FormMember (NeedsInitialize=true)
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 149 STRING "tableDesc1" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 150 STRING "eDepartment" 11 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 151 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 151 UPDATE PUBLIC-DATA-MEMBER test_form:bindingSource1 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 152 ACCESS INHERITED-DATA-MEMBER test_form:textBox1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 152 UPDATE PUBLIC-DATA-MEMBER test_form:textBox1 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 153 ACCESS INHERITED-DATA-MEMBER test_form:textBox2
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 153 UPDATE PUBLIC-DATA-MEMBER test_form:textBox2 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 154 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 154 UPDATE PUBLIC-DATA-MEMBER test_form:button1 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 155 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 155 CAST FROM Progress.Data.BindingSource TO System.ComponentModel.ISupportInitialize
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 160 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 160 ACCESS PUBLIC-PROPERTY Progress.Data.BindingSource:MaxDataGuess
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 160 UPDATE PUBLIC-PROPERTY Progress.Data.BindingSource:MaxDataGuess 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 161 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 161 ACCESS PUBLIC-PROPERTY Progress.Data.BindingSource:NoLOBs
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 161 UPDATE PUBLIC-PROPERTY Progress.Data.BindingSource:NoLOBs 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 162 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 162 ACCESS PUBLIC-PROPERTY System.Windows.Forms.BindingSource:Position
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 162 UPDATE PUBLIC-PROPERTY System.Windows.Forms.BindingSource:Position 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 163 ANNOTATION VisualDesigner.FormMember (NeedsInitialize=false, InitializeArray=true)
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 164 STRING "arrayvar0" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 166 ACCESS PUBLIC-PROPERTY Progress.Data.TableDesc:ChildTables
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 166 UPDATE PUBLIC-PROPERTY Progress.Data.TableDesc:ChildTables 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 167 ANNOTATION VisualDesigner.FormMember (NeedsInitialize=false, InitializeArray=true)
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 168 STRING "arrayvar1" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 169 STRING "DeptCode" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 169 STRING "Code" 4 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 169 ACCESS PUBLIC-DATA-MEMBER Progress.Data.DataType:CHARACTER
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 170 STRING "DeptName" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 170 STRING "Name" 4 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 170 ACCESS PUBLIC-DATA-MEMBER Progress.Data.DataType:CHARACTER
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 171 ACCESS PUBLIC-PROPERTY Progress.Data.TableDesc:Columns
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 171 UPDATE PUBLIC-PROPERTY Progress.Data.TableDesc:Columns 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 172 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 172 ACCESS PUBLIC-PROPERTY Progress.Data.BindingSource:TableSchema
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 172 UPDATE PUBLIC-PROPERTY Progress.Data.BindingSource:TableSchema 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 176 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 176 ACCESS INHERITED-DATA-MEMBER test_form:textBox1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 176 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:DataBindings
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 176 STRING "Text" 4 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 176 STRING "DeptCode" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 177 ACCESS INHERITED-DATA-MEMBER test_form:textBox1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 177 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Location
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 177 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Location 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 178 ACCESS INHERITED-DATA-MEMBER test_form:textBox1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 178 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Name
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 178 STRING "textBox1" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 178 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Name 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 179 ACCESS INHERITED-DATA-MEMBER test_form:textBox1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 179 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Size
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 179 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Size 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 180 ACCESS INHERITED-DATA-MEMBER test_form:textBox1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 180 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:TabIndex
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 180 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:TabIndex 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 184 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 184 ACCESS INHERITED-DATA-MEMBER test_form:textBox2
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 184 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:DataBindings
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 184 STRING "Text" 4 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 184 STRING "DeptName" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 185 ACCESS INHERITED-DATA-MEMBER test_form:textBox2
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 185 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Location
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 185 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Location 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 186 ACCESS INHERITED-DATA-MEMBER test_form:textBox2
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 186 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Name
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 186 STRING "textBox2" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 186 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Name 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 187 ACCESS INHERITED-DATA-MEMBER test_form:textBox2
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 187 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Size
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 187 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Size 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 188 ACCESS INHERITED-DATA-MEMBER test_form:textBox2
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 188 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:TabIndex
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 188 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:TabIndex 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 192 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 192 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Location
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 192 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Location 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 193 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 193 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Name
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 193 STRING "button1" 7 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 193 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Name 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 194 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 194 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:Size
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 194 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Size 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 195 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 195 ACCESS PUBLIC-PROPERTY System.Windows.Forms.Control:TabIndex
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 195 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:TabIndex 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 196 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 196 ACCESS PUBLIC-PROPERTY System.Windows.Forms.ButtonBase:Text
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 196 STRING "Get Next" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 196 UPDATE PUBLIC-PROPERTY System.Windows.Forms.ButtonBase:Text 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 197 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 197 ACCESS PUBLIC-PROPERTY System.Windows.Forms.ButtonBase:UseCompatibleTextRendering
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 197 UPDATE PUBLIC-PROPERTY System.Windows.Forms.ButtonBase:UseCompatibleTextRendering 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 198 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 198 ACCESS PUBLIC-PROPERTY System.Windows.Forms.ButtonBase:UseVisualStyleBackColor
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 198 UPDATE PUBLIC-PROPERTY System.Windows.Forms.ButtonBase:UseVisualStyleBackColor 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 199 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 199 SUBSCRIBE System.Windows.Forms.Control:Click,test_form:getnextclick,INPUT System.Object,INPUT System.EventArgs
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 199 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 199 STRING "Click" 5 LEFT UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 199 STRING "getnextclick" 12 LEFT UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 203 ACCESS INHERITED-PROPERTY System.Windows.Forms.Form:ClientSize
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 203 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Form:ClientSize 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 204 ACCESS INHERITED-DATA-MEMBER test_form:button1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 204 ACCESS INHERITED-PROPERTY System.Windows.Forms.Control:Controls
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 205 ACCESS INHERITED-DATA-MEMBER test_form:textBox2
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 205 ACCESS INHERITED-PROPERTY System.Windows.Forms.Control:Controls
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 206 ACCESS INHERITED-DATA-MEMBER test_form:textBox1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 206 ACCESS INHERITED-PROPERTY System.Windows.Forms.Control:Controls
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 207 ACCESS INHERITED-PROPERTY System.Windows.Forms.Control:Name
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 207 STRING "test_form" 9 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 207 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Control:Name 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 208 ACCESS INHERITED-PROPERTY System.Windows.Forms.Form:Text
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 208 STRING "test_form" 9 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 208 UPDATE PUBLIC-PROPERTY System.Windows.Forms.Form:Text 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 209 ACCESS INHERITED-DATA-MEMBER test_form:bindingSource1
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 209 CAST FROM Progress.Data.BindingSource TO System.ComponentModel.ISupportInitialize
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 212 STRING "e" 1 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 215 STRING "INITIALIZECOMPONENT" 19 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 223 CAST FROM System.ComponentModel.IContainer TO System.IDisposable
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 226 DESTRUCTOR PUBLIC,,,,test_form,void,
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 226 STRING "TEST_FORM" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 238 STRING "dsfam" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 238 STRING "dsemp" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 238 STRING "dsdept" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 238 METHOD PUBLIC,,,,,FetchData,void,
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 238 STRING "FETCHDATA" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "rowState" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "idx3" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "rowState" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "rowState" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "dsDepartment" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "DeptCode,DeptCode" 17 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "RELATION1" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "EmpNum,EmpNum" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "RELATION2" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "dsfam" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "dsemp" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 240 STRING "dsdept" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 80 INVOKE Progress.Windows.Form:Form
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 81 INVOKE test_form:InitializeComponent
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 83 INVOKE test_form:fetchdata
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 150 NEW Progress.Data.TableDesc,INPUT character
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 151 NEW Progress.Data.BindingSource
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 152 NEW System.Windows.Forms.TextBox
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 153 NEW System.Windows.Forms.TextBox
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 154 NEW System.Windows.Forms.Button
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 155 INVOKE System.ComponentModel.ISupportInitialize:BeginInit
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 156 INVOKE System.Windows.Forms.Control:SuspendLayout
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 165 NEW Progress.Data.TableDesc[],INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 169 NEW Progress.Data.ColumnPropDesc,INPUT character,INPUT character,INPUT Progress.Data.DataType
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 170 NEW Progress.Data.ColumnPropDesc,INPUT character,INPUT character,INPUT Progress.Data.DataType
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 176 INVOKE System.Windows.Forms.ControlBindingsCollection:Add,INPUT System.Windows.Forms.Binding
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 176 NEW System.Windows.Forms.Binding,INPUT character,INPUT System.Object,INPUT character
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 177 NEW System.Drawing.Point,INPUT integer,INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 179 NEW System.Drawing.Size,INPUT integer,INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 184 INVOKE System.Windows.Forms.ControlBindingsCollection:Add,INPUT System.Windows.Forms.Binding
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 184 NEW System.Windows.Forms.Binding,INPUT character,INPUT System.Object,INPUT character
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 185 NEW System.Drawing.Point,INPUT integer,INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 187 NEW System.Drawing.Size,INPUT integer,INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 192 NEW System.Drawing.Point,INPUT integer,INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 194 NEW System.Drawing.Size,INPUT integer,INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 203 NEW System.Drawing.Size,INPUT integer,INPUT integer
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 204 INVOKE System.Windows.Forms.Control+ControlCollection:Add,INPUT System.Windows.Forms.Control
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 205 INVOKE System.Windows.Forms.Control+ControlCollection:Add,INPUT System.Windows.Forms.Control
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 206 INVOKE System.Windows.Forms.Control+ControlCollection:Add,INPUT System.Windows.Forms.Control
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 209 INVOKE System.ComponentModel.ISupportInitialize:EndInit
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 210 INVOKE System.Windows.Forms.Control:ResumeLayout,INPUT logical
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 211 INVOKE System.Windows.Forms.Control:PerformLayout
+.\autoedgethefactory\client\tests\test_form.cls .\autoedgethefactory\client\tests\test_form.cls 223 INVOKE System.IDisposable:Dispose

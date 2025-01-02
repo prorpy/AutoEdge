@@ -1,0 +1,70 @@
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 1 COMPILE OpenEdge\Lang\BPM\Task.cls
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 26 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 40 CLASS OpenEdge.Lang.BPM.Task,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 40 STRING "OpenEdge.Lang.BPM.Task" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 41 STRING "WorkItem" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 41 PROPERTY PUBLIC,,,,,WorkItem
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 43 STRING "DataSlots" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 43 PROPERTY PUBLIC,,,,,DataSlots
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 45 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:DataSlots
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 46 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:DataSlots
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 46 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.String:Type
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 46 STRING "OpenEdge.Lang.BPM.DataSlotInstance" 34 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 46 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:DataSlots 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 49 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:DataSlots
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 53 STRING "poWorkItem" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 53 STRING "poDataSlots" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 57 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.Task:WorkItem
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 57 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:WorkItem 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 59 CONSTRUCTOR PUBLIC,,,,Task,void,INPUT poWorkItem OPENEDGE.LANG.BPM.WORKITEM,INPUT poDataSlots OPENEDGE.LANG.BPM.DATASLOTINSTANCE EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 59 STRING "TASK" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 61 STRING "poWorkItem" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 62 STRING "oDummy" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 65 CONSTRUCTOR PUBLIC,,,,Task,void,INPUT poWorkItem OPENEDGE.LANG.BPM.WORKITEM
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 65 STRING "TASK" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 67 STRING "poDataSlots" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 68 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 69 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 73 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:DataSlots
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 73 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.DataSlotInstance:Name
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 75 METHOD PUBLIC,,,,,AddDataSlots,void,INPUT poDataSlots OPENEDGE.LANG.BPM.DATASLOTINSTANCE EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 75 STRING "ADDDATASLOTS" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 77 STRING "pcDataSlotName" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 78 STRING "oDSI" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 79 STRING "cValue" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 81 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:DataSlots
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 81 CAST FROM OpenEdge.Lang.Collections.IMap TO OpenEdge.Lang.BPM.DataSlotInstance
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 82 STRING "Dataslot &1" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 84 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.DataSlotInstance:Value
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 84 STRING "?" 1 LEFT TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 85 METHOD PUBLIC,,,,,GetDataSlotValue,longchar,INPUT pcDataSlotName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 85 STRING "GETDATASLOTVALUE" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 87 STRING "pcDataSlotName" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 87 STRING "pcDataSlotValue" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 89 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:DataSlots
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 89 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.DataSlotInstance:value
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 89 CAST FROM OpenEdge.Lang.Collections.IMap TO OpenEdge.Lang.BPM.DataSlotInstance
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 89 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.DataSlotInstance:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 90 METHOD PUBLIC,,,,,SetDataSlotValue,void,INPUT pcDataSlotName CHARACTER,INPUT pcDataSlotValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 90 STRING "SETDATASLOTVALUE" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 92 STRING "p0" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 93 STRING "lEquals" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 100 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.Task:WorkItem
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 100 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.BPM.Task
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 100 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.Task:WorkItem
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 103 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT p0 PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 103 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 46 INVOKE Progress.Lang.Class:GetClass,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 46 NEW OpenEdge.Lang.Collections.TypedMap,INPUT Progress.Lang.Class,INPUT Progress.Lang.Class
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 55 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 58 INVOKE OpenEdge.Lang.BPM.Task:AddDataSlots,INPUT OpenEdge.Lang.BPM.DataSlotInstance EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 64 INVOKE OpenEdge.Lang.BPM.Task:Task,INPUT OpenEdge.Lang.BPM.WorkItem,INPUT OpenEdge.Lang.BPM.DataSlotInstance EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 73 INVOKE OpenEdge.Lang.Collections.IMap:Put,INPUT Progress.Lang.Object,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 73 NEW OpenEdge.Lang.String,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 81 INVOKE OpenEdge.Lang.Collections.IMap:Get,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 81 NEW OpenEdge.Lang.String,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 82 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 95 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\Task.cls 100 INVOKE OpenEdge.Lang.BPM.WorkItem:Equals,INPUT Progress.Lang.Object

@@ -1,0 +1,29 @@
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 1 COMPILE autoedgethefactory\client\src\start_ui.p
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 47 STRING "oTasks" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 48 STRING "oServiceManager" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 57 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceManager:IServiceManagerType
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 57 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 57 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 57 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 57 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 57 CAST FROM Progress.Lang.Class TO OpenEdge.CommonInfrastructure.Common.IServiceManager
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 58 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.IServiceManager:Kernel
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 58 STRING "OpenEdge.CommonInfrastructure.Common.IApplicationStart" 54 NONE TRANSLATABLE 
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 58 CAST TO Progress.Windows.Form
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 60 CAST FROM Progress.Lang.Object TO Progress.Windows.Form
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 65 STRING "oException" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 70 STRING "oError" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 71 STRING "oUnhandled" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 55 RUN OpenEdge/CommonInfrastructure/Common/start_session.p
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 57 INVOKE OpenEdge.Lang.Collections.IMap:Get,INPUT Progress.Lang.Object
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 58 INVOKE OpenEdge.Core.InjectABL.IKernel:Get,INPUT character
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 60 INVOKE System.Windows.Forms.Application:Run,INPUT System.Windows.Forms.Form
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 66 INVOKE OpenEdge.Core.System.ApplicationError:LogError
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 67 INVOKE OpenEdge.Core.System.ApplicationError:ShowError
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 73 NEW OpenEdge.Core.System.UnhandledError,INPUT Progress.Lang.Error
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 75 INVOKE OpenEdge.Core.System.ApplicationError:LogError
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 76 INVOKE OpenEdge.Core.System.ApplicationError:ShowError
+.\autoedgethefactory\client\src\start_ui.p .\autoedgethefactory\client\src\start_ui.p 80 RUN OpenEdge/CommonInfrastructure/Common/stop_session.p

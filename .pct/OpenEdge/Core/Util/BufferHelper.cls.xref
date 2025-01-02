@@ -1,0 +1,70 @@
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 1 COMPILE OpenEdge\Core\Util\BufferHelper.cls
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 35 CLASS OpenEdge.Core.Util.BufferHelper,,,,,,
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 35 STRING "OpenEdge.Core.Util.BufferHelper" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 37 STRING "phSource" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 37 STRING "phTarget" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 39 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 40 STRING "iField" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 41 STRING "hSourceField" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 42 STRING "hTargetField" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 43 STRING "iExtent" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 44 STRING "lExtent" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 45 STRING "iNumItems" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 46 STRING "iNumDiff" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 47 STRING "cChangedFields" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 48 STRING "cTempFields" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 51 STRING "source buffer" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 57 STRING "target buffer" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 76 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:IsEqual
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 76 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Raw
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 82 STRING "[" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 82 STRING "]" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 94 METHOD PUBLIC,STATIC,,,,BufferCompare,character EXTENT,INPUT phSource HANDLE,INPUT phTarget HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 94 STRING "BUFFERCOMPARE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 96 STRING "phColumn1" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 96 STRING "piExtent1" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 96 STRING "poOperator" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 96 STRING "phColumn2" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 96 STRING "piExtent2" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 96 STRING "poStrength" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 102 STRING "lSame" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 103 STRING "iExtent" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 105 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Clob
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 111 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 119 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:IsEqual
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 121 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:LessThan
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 123 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:LessEqual
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 125 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:GreaterEqual
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 127 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:GreaterThan
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 129 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:NotEqual
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 135 METHOD PROTECTED,STATIC,,,,CompareFieldValues,logical,INPUT phColumn1 HANDLE,INPUT piExtent1 INTEGER,INPUT poOperator OPENEDGE.LANG.OPERATORENUM,INPUT phColumn2 HANDLE,INPUT piExtent2 INTEGER,INPUT poStrength OPENEDGE.LANG.COMPARESTRENGTHENUM
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 135 STRING "COMPAREFIELDVALUES" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 137 STRING "phColumn1" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 137 STRING "poOperator" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 137 STRING "phcolumn2" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 137 STRING "poStrength" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 141 STRING "cLong1" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 142 STRING "cLong2" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 143 STRING "lUnknown1" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 144 STRING "lUnknown2" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 145 STRING "lEqual" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 146 STRING "lCompare" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 148 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:IsEqual
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 171 METHOD PROTECTED,STATIC,,,,CompareClobValues,logical,INPUT phColumn1 HANDLE,INPUT poOperator OPENEDGE.LANG.OPERATORENUM,INPUT phcolumn2 HANDLE,INPUT poStrength OPENEDGE.LANG.COMPARESTRENGTHENUM
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 171 STRING "COMPARECLOBVALUES" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 172 CONSTRUCTOR PUBLIC,,,,BufferHelper,void,
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 172 STRING "BUFFERHELPER" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 51 NEW OpenEdge.Core.System.InvalidValueSpecifiedError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 54 NEW OpenEdge.Core.System.BufferNotAvailableError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 57 NEW OpenEdge.Core.System.InvalidValueSpecifiedError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 60 NEW OpenEdge.Core.System.BufferNotAvailableError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 70 NEW OpenEdge.Core.System.BufferFieldMismatchError,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 76 INVOKE OpenEdge.Core.Util.BufferHelper:CompareFieldValues,INPUT widget-handle,INPUT integer,INPUT OpenEdge.Lang.OperatorEnum,INPUT widget-handle,INPUT integer,INPUT OpenEdge.Lang.CompareStrengthEnum
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 105 INVOKE OpenEdge.Lang.EnumMember:Equals,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 106 INVOKE OpenEdge.Core.Util.BufferHelper:CompareClobValues,INPUT widget-handle,INPUT OpenEdge.Lang.OperatorEnum,INPUT widget-handle,INPUT OpenEdge.Lang.CompareStrengthEnum
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 111 INVOKE OpenEdge.Lang.EnumMember:Equals,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 112 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls .\referencecomponents\support\src\OpenEdge\Core\Util\BufferHelper.cls 164 INVOKE OpenEdge.Lang.EnumMember:ToString

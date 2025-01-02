@@ -1,0 +1,31 @@
+2025-01-02T13:36:53.720+01:00 : Could not access element 'AddError' of class 'OpenEdge.Core.System.ApplicationError' using object of type 'OpenEdge.Core.System.ApplicationError' - caller compilation is out of sync with class compilation. (12882)
+
+Static instance failed to load. Cannot reference class OpenEdge.Core.System.NotFoundError. (14631)
+
+THROW statement failed. (14456)
+
+Call Stack:
+------------
+NotFoundError OpenEdge.Core.System.NotFoundError at line 21  (OpenEdge/Core/System/NotFoundError.r)
+Resolve OpenEdge.Core.InjectABL.Binding.StandardBindingResolver at line 63  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\Binding\StandardBindingResolver.r)
+GetBindings OpenEdge.Core.InjectABL.KernelBase at line 430  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+SelectBinding OpenEdge.Core.InjectABL.KernelBase at line 315  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+Get OpenEdge.Core.InjectABL.KernelBase at line 297  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+Get OpenEdge.Core.InjectABL.KernelBase at line 266  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+OpenEdge/CommonInfrastructure/Common/start_session.p at line 108  (c:\workspace\autoedge\rcode\OpenEdge\CommonInfrastructure\Common\start_session.r)
+start_ui.p at line 55  (c:\workspace\autoedge\rcode\start_ui.r)2025-01-02T13:42:11.768+01:00 : Could not access element 'AddError' of class 'OpenEdge.Core.System.ApplicationError' using object of type 'OpenEdge.Core.System.ApplicationError' - caller compilation is out of sync with class compilation. (12882)
+
+Static instance failed to load. Cannot reference class OpenEdge.Core.System.NotFoundError. (14631)
+
+THROW statement failed. (14456)
+
+Call Stack:
+------------
+NotFoundError OpenEdge.Core.System.NotFoundError at line 21  (OpenEdge/Core/System/NotFoundError.r)
+Resolve OpenEdge.Core.InjectABL.Binding.StandardBindingResolver at line 63  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\Binding\StandardBindingResolver.r)
+GetBindings OpenEdge.Core.InjectABL.KernelBase at line 430  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+SelectBinding OpenEdge.Core.InjectABL.KernelBase at line 315  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+Get OpenEdge.Core.InjectABL.KernelBase at line 297  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+Get OpenEdge.Core.InjectABL.KernelBase at line 266  (c:\workspace\autoedge\rcode\OpenEdge\Core\InjectABL\KernelBase.r)
+OpenEdge/CommonInfrastructure/Common/start_session.p at line 108  (c:\workspace\autoedge\rcode\OpenEdge\CommonInfrastructure\Common\start_session.r)
+start_ui.p at line 55  (c:\workspace\autoedge\rcode\start_ui.r)

@@ -1,0 +1,10 @@
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 1 CPINTERNAL utf-8
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 1 CPSTREAM iso8859-1
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 23 STRING "/applicationusers.txt" 21 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 25 STRING "Login Name" 10 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 25 STRING "Login Domain" 12 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 25 STRING "Password" 8 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 25 STRING "Primary Email" 13 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 25 STRING "=" 1 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\list_users.p 34 STRING "CUSTOMERS: " 11 NONE TRANSLATABLE 

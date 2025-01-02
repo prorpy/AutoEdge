@@ -1,0 +1,230 @@
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 1 COMPILE OpenEdge\Core\XML\SaxWriter.cls
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 26 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 36 CLASS OpenEdge.Core.XML.SaxWriter,,,USE-WIDGET-POOL,,,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 36 STRING "OpenEdge.Core.XML.SaxWriter" 27 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 39 STRING "mhSaxWriter" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 42 STRING "WriteStatus" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 42 PROPERTY PUBLIC,,,,,WriteStatus
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 49 STRING "Encoding" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 49 PROPERTY PUBLIC,,,,,Encoding
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 51 STRING "pcEncoding" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 52 STRING "Encoding" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 54 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:Encoding
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 54 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:Encoding 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 58 STRING "IsFormatted" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 58 PROPERTY PUBLIC,,,,,IsFormatted
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 60 STRING "plFormatted" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 61 STRING "IsFormatted" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 62 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFormatted
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 62 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFormatted 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 67 STRING "IsFragment" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 67 PROPERTY PUBLIC,,,,,IsFragment
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 69 STRING "plFragment" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 70 STRING "IsFragment" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 71 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFragment
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 71 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFragment 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 76 STRING "IsStandalone" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 76 PROPERTY PUBLIC,,,,,IsStandalone
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 78 STRING "plStandalone" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 79 STRING "IsStandalone" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 80 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsStandalone
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 80 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsStandalone 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 85 STRING "IsStrict" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 85 PROPERTY PUBLIC,,,,,IsStrict
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 87 STRING "plStrict" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 88 STRING "IsStrict" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 89 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsStrict
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 89 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsStrict 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 94 STRING "Version" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 94 PROPERTY PUBLIC,,,,,Version
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 96 STRING "pcVersion" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 97 STRING "Version" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 99 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsStrict
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 99 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:Version
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 99 STRING "1.0" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 100 STRING "setting " 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 100 STRING "Version" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 100 STRING " property with SaxWriter:IsString and version is " 49 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 103 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:Version
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 103 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:Version 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 108 CONSTRUCTOR PUBLIC,,,,SaxWriter,void,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 108 STRING "SAXWRITER" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 110 STRING "pcFilename" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 113 CONSTRUCTOR PUBLIC,,,,SaxWriter,void,INPUT pcFilename CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 113 STRING "SAXWRITER" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 115 STRING "pcDocument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 118 CONSTRUCTOR PUBLIC,,,,SaxWriter,void,INPUT pcDocument LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 118 STRING "SAXWRITER" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 120 STRING "phStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 123 CONSTRUCTOR PUBLIC,,,,SaxWriter,void,INPUT phStream HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 123 STRING "SAXWRITER" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 125 STRING "pmDocument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 128 CONSTRUCTOR PUBLIC,,,,SaxWriter,void,INPUT pmDocument MEMPTR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 128 STRING "SAXWRITER" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 130 STRING "pcPropertyName" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 132 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:WriteStatus
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 133 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Idle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 133 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Complete
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 135 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:WriteStatus
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 135 STRING "setting " 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 135 STRING " property with SaxWriter status of " 35 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 138 METHOD PROTECTED,,,,,ValidateCanUpdateProperty,void,INPUT pcPropertyName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 138 STRING "VALIDATECANUPDATEPROPERTY" 25 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 145 METHOD PUBLIC,,,,,Initialize,void,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 145 STRING "INITIALIZE" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 152 METHOD PUBLIC,,,,,Reset,logical,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 152 STRING "RESET" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 154 STRING "pcFilename" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 155 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SerializationModeEnum:File
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 156 METHOD PUBLIC,,,,,WriteTo,logical,INPUT pcFilename CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 156 STRING "WRITETO" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 158 STRING "pcDocument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 159 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SerializationModeEnum:LongChar
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 160 METHOD PUBLIC,,,,,WriteTo,logical,INPUT pcDocument LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 160 STRING "WRITETO" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 162 STRING "phStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 163 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Stream
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 163 STRING "stream" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 165 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SerializationModeEnum:StreamHandle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 166 METHOD PUBLIC,,,,,WriteTo,logical,INPUT phStream HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 166 STRING "WRITETO" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 168 STRING "pmDocument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 169 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SerializationModeEnum:Memptr
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 170 METHOD PUBLIC,,,,,WriteTo,logical,INPUT pmDocument MEMPTR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 170 STRING "WRITETO" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 174 METHOD PUBLIC,,,,,StartDocument,logical,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 174 STRING "STARTDOCUMENT" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 178 METHOD PUBLIC,,,,,EndDocument,logical,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 178 STRING "ENDDOCUMENT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 180 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 182 METHOD PUBLIC,,,,,DeclareNamespace,logical,INPUT pcNamespaceURI LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 182 STRING "DECLARENAMESPACE" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 184 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 184 STRING "pcNamespacePrefix" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 187 METHOD PUBLIC,,,,,DeclareNamespace,logical,INPUT pcNamespaceURI LONGCHAR,INPUT pcNamespacePrefix LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 187 STRING "DECLARENAMESPACE" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 189 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 191 METHOD PUBLIC,,,,,StartElement,logical,INPUT pcName LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 191 STRING "STARTELEMENT" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 193 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 193 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 196 METHOD PUBLIC,,,,,StartElement,logical,INPUT pcName LONGCHAR,INPUT pcNamespaceURI LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 196 STRING "STARTELEMENT" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 198 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 198 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 198 STRING "phSaxAttributes" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 202 METHOD PUBLIC,,,,,StartElement,logical,INPUT pcName LONGCHAR,INPUT pcNamespaceURI LONGCHAR,INPUT phSaxAttributes HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 202 STRING "STARTELEMENT" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 205 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 207 METHOD PUBLIC,,,,,EndElement,logical,INPUT pcName LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 207 STRING "ENDELEMENT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 209 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 209 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 212 METHOD PUBLIC,,,,,EndElement,logical,INPUT pcName LONGCHAR,INPUT pcNamespaceURI LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 212 STRING "ENDELEMENT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 214 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 214 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 217 METHOD PUBLIC,,,,,InsertAttribute,logical,INPUT pcName LONGCHAR,INPUT pcValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 217 STRING "INSERTATTRIBUTE" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 219 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 219 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 219 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 223 METHOD PUBLIC,,,,,InsertAttribute,logical,INPUT pcName LONGCHAR,INPUT pcValue LONGCHAR,INPUT pcNamespaceURI LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 223 STRING "INSERTATTRIBUTE" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 230 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 231 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterDataTypeEnum:Characters
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 232 METHOD PUBLIC,,,,,WriteValue,logical,INPUT pcValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 232 STRING "WRITEVALUE" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 242 STRING "poType" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 242 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 245 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterDataTypeEnum:CData
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 246 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterDataTypeEnum:Characters
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 247 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterDataTypeEnum:Comment
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 248 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterDataTypeEnum:EntityReference
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 249 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriterDataTypeEnum:Fragment
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 251 METHOD PUBLIC,,,,,WriteValue,logical,INPUT poType OPENEDGE.CORE.XML.SAXWRITERDATATYPEENUM,INPUT pcValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 251 STRING "WRITEVALUE" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 257 STRING "phNodeRef" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 258 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlNodeRef
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 258 STRING "XML Node Ref" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 261 METHOD PUBLIC,,,,,WriteFragment,logical,INPUT phNodeRef HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 261 STRING "WRITEFRAGMENT" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 263 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 263 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 266 METHOD PUBLIC,,,,,WriteDataElement,logical,INPUT pcName LONGCHAR,INPUT pcValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 266 STRING "WRITEDATAELEMENT" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 268 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 268 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 268 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 272 METHOD PUBLIC,,,,,WriteDataElement,logical,INPUT pcName LONGCHAR,INPUT pcValue LONGCHAR,INPUT pcNamespaceURI LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 272 STRING "WRITEDATAELEMENT" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 274 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 274 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 274 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 274 STRING "phSaxAttributes" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 279 METHOD PUBLIC,,,,,WriteDataElement,logical,INPUT pcName LONGCHAR,INPUT pcValue LONGCHAR,INPUT pcNamespaceURI LONGCHAR,INPUT phSaxAttributes HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 279 STRING "WRITEDATAELEMENT" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 281 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 283 METHOD PUBLIC,,,,,WriteEmptyElement,logical,INPUT pcName LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 283 STRING "WRITEEMPTYELEMENT" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 285 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 285 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 288 METHOD PUBLIC,,,,,WriteEmptyElement,logical,INPUT pcName LONGCHAR,INPUT pcNamespaceURI LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 288 STRING "WRITEEMPTYELEMENT" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 290 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 290 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 290 STRING "phSaxAttributes" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 294 METHOD PUBLIC,,,,,WriteEmptyElement,logical,INPUT pcName LONGCHAR,INPUT pcNamespaceURI LONGCHAR,INPUT phSaxAttributes HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 294 STRING "WRITEEMPTYELEMENT" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 296 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 296 STRING "pcSystemId" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 299 METHOD PUBLIC,,,,,WriteExternalDTD,logical,INPUT pcName LONGCHAR,INPUT pcSystemId LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 299 STRING "WRITEEXTERNALDTD" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 301 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 301 STRING "pcSystemId" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 301 STRING "pcPublicId" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 305 METHOD PUBLIC,,,,,WriteExternalDTD,logical,INPUT pcName LONGCHAR,INPUT pcSystemId LONGCHAR,INPUT pcPublicId LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 305 STRING "WRITEEXTERNALDTD" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 307 STRING "pcTarget" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 307 STRING "pcData" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 310 METHOD PUBLIC,,,,,WriteProcessingInstruction,logical,INPUT pcTarget LONGCHAR,INPUT pcData LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 310 STRING "WRITEPROCESSINGINSTRUCTION" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 45 INVOKE OpenEdge.Lang.SaxWriteStatusEnum:EnumFromValue,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 52 INVOKE OpenEdge.Core.XML.SaxWriter:ValidateCanUpdateProperty,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 61 INVOKE OpenEdge.Core.XML.SaxWriter:ValidateCanUpdateProperty,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 70 INVOKE OpenEdge.Core.XML.SaxWriter:ValidateCanUpdateProperty,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 79 INVOKE OpenEdge.Core.XML.SaxWriter:ValidateCanUpdateProperty,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 88 INVOKE OpenEdge.Core.XML.SaxWriter:ValidateCanUpdateProperty,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 97 INVOKE OpenEdge.Core.XML.SaxWriter:ValidateCanUpdateProperty,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 100 NEW OpenEdge.Core.XML.SaxWriterError,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 107 INVOKE OpenEdge.Core.XML.SaxWriter:Initialize
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 111 INVOKE OpenEdge.Core.XML.SaxWriter:Initialize
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 112 INVOKE OpenEdge.Core.XML.SaxWriter:WriteTo,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 116 INVOKE OpenEdge.Core.XML.SaxWriter:Initialize
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 117 INVOKE OpenEdge.Core.XML.SaxWriter:WriteTo,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 121 INVOKE OpenEdge.Core.XML.SaxWriter:Initialize
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 122 INVOKE OpenEdge.Core.XML.SaxWriter:WriteTo,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 126 INVOKE OpenEdge.Core.XML.SaxWriter:Initialize
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 127 INVOKE OpenEdge.Core.XML.SaxWriter:WriteTo,INPUT memptr
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 135 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 135 NEW OpenEdge.Core.XML.SaxWriterError,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 144 INVOKE OpenEdge.Core.XML.SaxWriter:Reset
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 155 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 159 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 163 INVOKE OpenEdge.Lang.Assert:ArgumentIsType,INPUT widget-handle,INPUT OpenEdge.Lang.DataTypeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 165 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 169 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 181 INVOKE OpenEdge.Core.XML.SaxWriter:DeclareNamespace,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 190 INVOKE OpenEdge.Core.XML.SaxWriter:StartElement,INPUT longchar,INPUT longchar,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 195 INVOKE OpenEdge.Core.XML.SaxWriter:StartElement,INPUT longchar,INPUT longchar,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 206 INVOKE OpenEdge.Core.XML.SaxWriter:EndElement,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 216 INVOKE OpenEdge.Core.XML.SaxWriter:InsertAttribute,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 231 INVOKE OpenEdge.Core.XML.SaxWriter:WriteValue,INPUT OpenEdge.Core.XML.SaxWriterDataTypeEnum,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 258 INVOKE OpenEdge.Lang.Assert:ArgumentIsType,INPUT widget-handle,INPUT OpenEdge.Lang.DataTypeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 265 INVOKE OpenEdge.Core.XML.SaxWriter:WriteDataElement,INPUT longchar,INPUT longchar,INPUT longchar,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 271 INVOKE OpenEdge.Core.XML.SaxWriter:WriteDataElement,INPUT longchar,INPUT longchar,INPUT longchar,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 282 INVOKE OpenEdge.Core.XML.SaxWriter:WriteEmptyElement,INPUT longchar,INPUT longchar,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 287 INVOKE OpenEdge.Core.XML.SaxWriter:WriteEmptyElement,INPUT longchar,INPUT longchar,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxWriter.cls 298 INVOKE OpenEdge.Core.XML.SaxWriter:WriteExternalDTD,INPUT longchar,INPUT longchar,INPUT longchar

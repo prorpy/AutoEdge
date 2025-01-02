@@ -1,0 +1,11 @@
+OpenEdge.Core.Util
+OpenEdge.Core.Util.BufferHelper	C	78524c34998104d214ef871f15fdee84
+OpenEdge.Core.Util.IExternalizable	C	3022eeac90c3026eca00c192a0102ec1
+OpenEdge.Core.Util.IObjectInput	C	1b275ae01f534c4c886fc2f521c4e016
+OpenEdge.Core.Util.IObjectOutput	C	0f0470b1f1f3110736fd79d0894b04d9
+OpenEdge.Core.Util.ISerializable	C	43384ca59c22f9ed0186081b488bb0a0
+OpenEdge.Core.Util.ObjectInputError	C	08d9c5300c3628d3a27a64f41bb6afbd
+OpenEdge.Core.Util.ObjectInputStream	C	c6748f7b391cef1f39c32547af07b277
+OpenEdge.Core.Util.ObjectOutputError	C	9ae8efab0f9578bce2e2d0628e63dd7d
+OpenEdge.Core.Util.ObjectOutputStream	C	2f60fcad3cce2710cf26f0beedef494c
+OpenEdge.Core.Util.ObjectStreamConstants	C	e83297a06b914090e7eefe1c0f59d618

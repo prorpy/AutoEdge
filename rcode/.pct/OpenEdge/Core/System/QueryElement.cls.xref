@@ -1,0 +1,8 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 1 COMPILE OpenEdge\Core\System\QueryElement.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 27 CLASS OpenEdge.Core.System.QueryElement,,,,,ABSTRACT,
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 27 STRING "OpenEdge.Core.System.QueryElement" 33 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 29 CONSTRUCTOR PUBLIC,,,,QueryElement,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls .\referencecomponents\support\src\OpenEdge\Core\System\QueryElement.cls 29 STRING "QUERYELEMENT" 12 NONE UNTRANSLATABLE 

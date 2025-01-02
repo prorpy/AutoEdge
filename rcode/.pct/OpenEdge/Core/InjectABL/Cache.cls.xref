@@ -1,0 +1,134 @@
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 1 COMPILE OpenEdge\Core\InjectABL\Cache.cls
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 1 CPINTERNAL utf-8
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 35 CLASS OpenEdge.Core.InjectABL.Cache,,IMPLEMENTS OpenEdge.Core.InjectABL.ICache,USE-WIDGET-POOL,,,
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 35 STRING "OpenEdge.Core.InjectABL.Cache" 29 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 35 STRING "OpenEdge.Core.InjectABL.ICache" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 38 STRING "InstanceCache" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 38 STRING "Binding" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 38 STRING "LifecycleContext" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 38 STRING "Instance" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 38 STRING "Scope" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 38 STRING "CachedAt" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 52 STRING "Pipeline" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 52 PROPERTY PUBLIC,,,,,Pipeline
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 55 STRING "Count" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 55 PROPERTY PUBLIC,,,,,Count
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 57 STRING "iCount" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 59 STRING "lbCache" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 62 SEARCH DATA-MEMBER OpenEdge.Core.InjectABL.Cache:InstanceCache idx1 TEMPTABLE WHOLE-INDEX
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 62 STRING "WHOLE-INDEX,idx1" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 67 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 67 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 67 STRING "idx3" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 67 STRING "qryCache" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 69 STRING "PruningInterval" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 69 PROPERTY PUBLIC,,,,,PruningInterval
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 70 STRING "PruningUnit" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 70 PROPERTY PUBLIC,,,,,PruningUnit
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 72 STRING "poPipeline" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 72 STRING "piLifespan" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 72 STRING "poLifespanUnit" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 75 STRING "Lifespan unit" 13 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 76 STRING "Pipeline" 8 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 78 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:PruningInterval
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 78 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:PruningUnit
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 78 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:Pipeline
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 78 UPDATE PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:PruningInterval 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 78 UPDATE PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:PruningUnit 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 78 UPDATE PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:Pipeline 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 81 CONSTRUCTOR PUBLIC,,,,Cache,void,INPUT poPipeline OPENEDGE.CORE.INJECTABL.LIFECYCLE.IPIPELINE,INPUT piLifespan INTEGER,INPUT poLifespanUnit OPENEDGE.LANG.DATETIMEADDINTERVALENUM
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 81 STRING "CACHE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 87 STRING "poContext" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 87 STRING "poInstance" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 88 STRING "lbCache" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 90 STRING "Context" 7 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 91 STRING "Instance" 8 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 94 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext:Binding
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 99 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 99 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 99 STRING "idx3" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 99 METHOD PUBLIC,,,,,Remember,void,INPUT poContext OPENEDGE.CORE.INJECTABL.LIFECYCLE.ILIFECYCLECONTEXT,INPUT poInstance PROGRESS.LANG.OBJECT
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 99 STRING "REMEMBER" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 105 STRING "poContext" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 106 STRING "oInstance" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 107 STRING "oScope" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 109 STRING "lbCache" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 111 STRING "Context" 7 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 114 SEARCH DATA-MEMBER OpenEdge.Core.InjectABL.Cache:InstanceCache idx2 TEMPTABLE
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 117 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext:Binding
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 122 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 122 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 122 STRING "idx3" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 122 METHOD PUBLIC,,,,,TryGet,Progress.Lang.Object,INPUT poContext OPENEDGE.CORE.INJECTABL.LIFECYCLE.ILIFECYCLECONTEXT
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 122 STRING "TRYGET" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 128 STRING "poInstance" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 129 STRING "oContext" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 131 STRING "lbCache" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 133 STRING "Instance" 8 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 135 SEARCH DATA-MEMBER OpenEdge.Core.InjectABL.Cache:InstanceCache idx1 TEMPTABLE
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 137 CAST FROM Progress.Lang.Object TO OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 140 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 140 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 140 STRING "idx3" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 140 METHOD PUBLIC,,,,,TryGetContext,OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext,INPUT poInstance PROGRESS.LANG.OBJECT
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 140 STRING "TRYGETCONTEXT" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 146 STRING "poInstance" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 152 METHOD PUBLIC,,,,,Release,logical,INPUT poInstance PROGRESS.LANG.OBJECT
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 152 STRING "RELEASE" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 156 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:PruningInterval
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 157 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:PruningInterval
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 157 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:PruningUnit
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 157 STRING "CachedAt lt " 12 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 158 METHOD PUBLIC,,,,,Prune,void,
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 158 STRING "PRUNE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 164 STRING "poScope" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 165 STRING "Scope eq " 9 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 166 METHOD PUBLIC,,,,,Clear,void,INPUT poScope PROGRESS.LANG.OBJECT
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 166 STRING "CLEAR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 170 STRING "true" 4 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 171 METHOD PUBLIC,,,,,Clear,void,
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 171 STRING "CLEAR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 173 STRING "pcClause" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 174 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 176 STRING "lbCache" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 181 STRING "preselect each lbCache where " 29 NONE TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 190 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 190 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 190 STRING "idx3" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 190 STRING "qryCache" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 190 STRING "FORGETALLWHERE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 192 STRING "InstanceCache" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 192 STRING "pbCache" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 192 STRING "pbCache" 7 LEFT TRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 193 STRING "lCached" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 195 REFERENCE InstanceCache TEMPTABLE
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 199 ACCESS PUBLIC-PROPERTY OpenEdge.Core.InjectABL.Cache:Pipeline
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 199 CAST FROM Progress.Lang.Object TO OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 206 STRING "FORGET" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 208 STRING "poInstance" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 209 STRING "lbCache" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 211 SEARCH DATA-MEMBER OpenEdge.Core.InjectABL.Cache:InstanceCache idx1 TEMPTABLE
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 213 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 213 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 213 STRING "idx3" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 213 STRING "FORGET" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 75 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 76 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 90 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 91 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 94 INVOKE OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext:GetScope
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 111 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 112 INVOKE OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext:GetScope
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 117 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 133 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 149 INVOKE OpenEdge.Core.InjectABL.Cache:Clear,INPUT Progress.Lang.Object
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 151 INVOKE OpenEdge.Core.InjectABL.Cache:Forget,INPUT Progress.Lang.Object
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 157 INVOKE OpenEdge.Core.InjectABL.Cache:ForgetAllWhere,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 157 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 165 INVOKE OpenEdge.Core.InjectABL.Cache:ForgetAllWhere,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 170 INVOKE OpenEdge.Core.InjectABL.Cache:ForgetAllWhere,INPUT character
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 186 INVOKE OpenEdge.Core.InjectABL.Cache:Forget,BUFFER pbCache
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 199 INVOKE OpenEdge.Core.InjectABL.Lifecycle.IPipeline:Deactivate,INPUT OpenEdge.Core.InjectABL.Lifecycle.ILifecycleContext,INPUT Progress.Lang.Object
+.\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls .\referencecomponents\injectabl\src\OpenEdge\Core\InjectABL\Cache.cls 212 INVOKE OpenEdge.Core.InjectABL.Cache:Forget,BUFFER pbCache

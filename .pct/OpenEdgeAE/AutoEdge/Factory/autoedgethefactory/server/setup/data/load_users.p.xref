@@ -1,0 +1,10 @@
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 30 STRING "cLoginName" 10 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 31 STRING "cDomain" 7 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 32 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 33 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 34 STRING "cTenantUsers" 12 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_users.p 35 STRING "cPassword" 9 NONE UNTRANSLATABLE 

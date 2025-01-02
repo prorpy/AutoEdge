@@ -1,0 +1,216 @@
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 1 COMPILE server\tests\test_updateorder.p
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 1 CPINTERNAL utf-8
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 1 CPSTREAM iso8859-1
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 13 ROUTINE-LEVEL ON ERROR UNDO, THROW
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 57 STRING "piOrderNumber" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 58 STRING "pcBrand" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 61 STRING "pcDealerId" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 62 STRING "pcCustomerId" 12 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 63 STRING "plOrderApproved" 15 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 64 STRING "pcInstructions" 14 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 65 STRING "pcModel" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 66 STRING "pcInteriorTrimMaterial" 22 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 67 STRING "pcInteriorTrimColour" 20 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 68 STRING "pcInteriorAccessories" 21 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 69 STRING "pcExteriorColour" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 70 STRING "pcMoonroof" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 71 STRING "pcWheels" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 73 STRING "pcOrderId" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 74 STRING "pdOrderAmount" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 76 STRING "oServiceMessageManager" 22 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 77 STRING "oServiceMgr" 11 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 78 STRING "oSecMgr" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 79 STRING "mhOrderDataset" 14 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 83 STRING "pcOptions" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 84 STRING "cSelectedOption" 15 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 85 STRING "hTable" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 86 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 87 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 93 STRING "[" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 94 STRING "{" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 94 STRING "ttOptions" 9 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 94 STRING ":" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 94 STRING "}" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 97 STRING "longchar" 8 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 102 STRING "for each " 9 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 102 STRING " where selected = true " 23 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 107 STRING "," 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 107 STRING "value" 5 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 112 STRING "," 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 121 FUNCTION GetSelectedOption,character,INPUT pcOptions LONGCHAR
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 121 STRING "GETSELECTEDOPTION" 17 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 123 STRING "phDataset" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 124 STRING "oRequest" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 125 STRING "oResponse" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 127 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum:FetchSchema
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 127 STRING "OrderCapture" 12 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 130 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceMessage
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 131 FUNCTION FetchSchema,logical,OUTPUT phDataset DATASET-HANDLE
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 131 STRING "FETCHSCHEMA" 11 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 133 STRING "phDataset" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 134 STRING "oRequest" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 135 STRING "oResponse" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 137 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum:FetchData
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 137 STRING "OrderCapture" 12 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 140 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceMessage
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 141 FUNCTION FetchData,logical,OUTPUT phDataset DATASET-HANDLE
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 141 STRING "FETCHDATA" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 145 STRING "oSaveRequest" 12 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 146 STRING "cChangedTables" 14 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 147 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 148 STRING "iMax" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 149 STRING "iExtent" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 150 STRING "hTransportDataset" 17 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 151 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 153 STRING "OrderCapture" 12 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 161 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.DataFormatEnum:ProDataSet
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 161 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveRequest TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceMessage
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 184 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveRequest:TableNames
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 184 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveRequest:TableNames 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 186 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveRequest:TableNames
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 186 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveRequest:TableNames 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 190 FUNCTION BuildSaveRequest,OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveRequest,
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 190 STRING "BUILDSAVEREQUEST" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 192 STRING "phDataset" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 193 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 194 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 200 FUNCTION EnableDatasetForUpdate,logical,INPUT phDataset HANDLE
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 200 STRING "ENABLEDATASETFORUPDATE" 22 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 202 STRING "phDataset" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 203 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 204 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 210 FUNCTION DisableDatasetForUpdate,logical,INPUT phDataset HANDLE
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 210 STRING "DISABLEDATASETFORUPDATE" 23 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 212 STRING "phDataset" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 213 STRING "hOrder" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 214 STRING "hItem" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 215 STRING "hOrderLine" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 216 STRING "hFinishedItem" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 217 STRING "hItemOption" 11 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 219 STRING "hTransport" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 220 STRING "i" 1 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 221 STRING "i2" 2 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 222 STRING "oKeys" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 223 STRING "oTexts" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 224 STRING "cStrVal1" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 225 STRING "cStrVal2" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 227 STRING "eOrder" 6 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 228 STRING "eOrderLine" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 229 STRING "eFinishedItem" 13 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 230 STRING "eItemOption" 11 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "  |" 3 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "DealerId=" 9 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "Model=" 6 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "InteriorTrimColour=" 19 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "InteriorTrimMaterial=" 21 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "ExteriorColour=" 15 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "Moonroof=" 9 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "Wheels=" 7 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 236 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 246 STRING "InteriorAccessories=" 20 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 249 STRING "InteriorAccessories=" 20 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 258 STRING "ORDER-NEW" 9 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 287 FUNCTION CreateEntityData,logical,INPUT phDataset HANDLE
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 287 STRING "CREATEENTITYDATA" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 289 STRING "poRequest" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 290 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 291 STRING "iMax" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 292 STRING "oRequest" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 293 STRING "oResponse" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 294 STRING "cTableName" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 295 STRING "oTableResponse" 14 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 296 STRING "cKeys" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 297 STRING "cTexts" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 299 CAST TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceRequest
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 302 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:HasError
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 302 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 304 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:ErrorText
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 304 STRING "?" 1 LEFT TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 304 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 306 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:ErrorText
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 306 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 308 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveResponse:TableResponses
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 308 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveResponse
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 308 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveResponse:TableResponses
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 308 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.ISaveResponse
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 308 CAST TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.ITableResponse
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ITableResponse:ErrorText
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:KeySet
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ITableResponse:ErrorText
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:KeySet
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 CAST TO OpenEdge.Lang.String
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ITableResponse:ErrorText
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:Values
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ITableResponse:ErrorText
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:Values
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 CAST TO OpenEdge.Lang.String
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 312 STRING "creating orders" 15 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 312 STRING "[ OrderNum: &1 ]" 16 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 317 FUNCTION SaveData,logical,INPUT poRequest OPENEDGE.COMMONINFRASTRUCTURE.COMMON.SERVICEMESSAGE.ISAVEREQUEST
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 317 STRING "SAVEDATA" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 321 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 321 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 321 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 323 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 326 STRING "Savvion::Test" 13 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 328 STRING "pcOrderId" 9 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 334 STRING "fjord" 5 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 335 STRING "Brand" 5 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 338 STRING "Order Number" 12 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 341 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceManager:IServiceManagerType
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 341 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 341 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 341 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 341 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 341 CAST FROM Progress.Lang.Class TO OpenEdge.CommonInfrastructure.Common.IServiceManager
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 345 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.SecurityManager:ISecurityManagerType
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 345 CAST FROM Progress.Lang.Class TO OpenEdge.CommonInfrastructure.Common.ISecurityManager
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 347 STRING "guest" 5 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 347 STRING "guest." 6 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 347 STRING "letmein" 7 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 351 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum:SaveData
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 351 STRING "CaptureOrder" 12 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 353 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessageManager:IServiceMessageManagerType
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 353 CAST FROM Progress.Lang.Class TO OpenEdge.CommonInfrastructure.Common.IServiceMessageManager
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 363 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 364 STRING "eorder" 6 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 368 STRING "ordernum=" 9 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 368 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 380 STRING "oApplError" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 384 STRING "oAppError" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 385 ACCESS PUBLIC-PROPERTY Progress.Lang.AppError:ReturnValue
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 388 STRING "oError" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 127 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.FetchRequest,INPUT character,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 129 INVOKE OpenEdge.CommonInfrastructure.Common.IServiceMessageManager:ExecuteRequest,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceRequest EXTENT
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 130 INVOKE OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceMessage:GetMessageData,OUTPUT widget-handle
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 137 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.FetchRequest,INPUT character,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 139 INVOKE OpenEdge.CommonInfrastructure.Common.IServiceMessageManager:ExecuteRequest,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceRequest EXTENT
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 140 INVOKE OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceMessage:GetMessageData,OUTPUT widget-handle
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 153 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.SaveRequest,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 161 INVOKE OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceMessage:SetMessageData,INPUT widget-handle,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.DataFormatEnum
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 300 INVOKE OpenEdge.CommonInfrastructure.Common.IServiceMessageManager:ExecuteRequest,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceRequest EXTENT
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 308 INVOKE OpenEdge.CommonInfrastructure.Common.ServiceMessage.ITableResponseCollection:Get,INPUT OpenEdge.Lang.String
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 308 NEW OpenEdge.Lang.String,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 INVOKE OpenEdge.Lang.String:Join,INPUT OpenEdge.Lang.String EXTENT,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 310 INVOKE OpenEdge.Lang.Collections.ISet:ToArray
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 INVOKE OpenEdge.Lang.String:Join,INPUT OpenEdge.Lang.String EXTENT,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 311 INVOKE OpenEdge.Lang.Collections.ICollection:ToArray
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 312 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceRequestError,INPUT character,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 323 RUN OpenEdge/CommonInfrastructure/Server/as_startup.p
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 335 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrEmpty,INPUT character,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 338 INVOKE OpenEdge.Lang.Assert:ArgumentNonZero,INPUT integer,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 341 INVOKE OpenEdge.Lang.Collections.IMap:Get,INPUT Progress.Lang.Object
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 345 INVOKE OpenEdge.CommonInfrastructure.Common.IServiceManager:StartService,INPUT Progress.Lang.Class
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 347 INVOKE OpenEdge.CommonInfrastructure.Common.ISecurityManager:UserLogin,INPUT character,INPUT character,INPUT character
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 351 INVOKE OpenEdge.CommonInfrastructure.Common.ISecurityManager:AuthoriseServiceAction,INPUT character,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 353 INVOKE OpenEdge.CommonInfrastructure.Common.IServiceManager:StartService,INPUT Progress.Lang.Class
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 381 INVOKE OpenEdge.Core.System.ApplicationError:ResolvedMessageText
+autoedgethefactory\server\tests\test_updateorder.p autoedgethefactory\server\tests\test_updateorder.p 389 INVOKE Progress.Lang.Error:GetMessage,INPUT integer

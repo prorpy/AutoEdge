@@ -1,0 +1,15 @@
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 29 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 32 RUN setup/data/load_geography.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 33 RUN setup/data/load_statusdetail.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 34 RUN setup/data/load_tenants.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 35 RUN setup/data/load_salesregion.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 38 RUN setup/data/load_contact_types.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 39 RUN setup/data/load_addresses.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 41 RUN setup/data/load_dealers.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 42 RUN setup/data/load_customers.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 43 RUN setup/data/load_employees.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 44 RUN setup/data/load_users.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\setup\data\load_all.p 46 RUN setup/data/load_items.p

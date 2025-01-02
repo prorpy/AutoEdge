@@ -1,0 +1,87 @@
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 1 COMPILE show_options.p
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 16 STRING "childItemItem" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 16 STRING "Item" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 16 REFERENCE aetf.Item 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 17 STRING "childItemItemType" 17 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 17 STRING "ItemType" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 17 REFERENCE aetf.ItemType 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 18 STRING "childTenant" 11 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 18 STRING "Tenant" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 18 REFERENCE aetf.Tenant 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 22 STRING "Tenant" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 22 ACCESS aetf.Tenant Name 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 22 SEARCH aetf.Tenant Name WHOLE-INDEX
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 25 ACCESS aetf.Tenant ParentTenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 27 STRING "childTenant" 11 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 27 STRING "Tenant" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 27 ACCESS aetf.Tenant ParentTenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 27 ACCESS aetf.Tenant TenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 27 SEARCH aetf.Tenant Parent_FK
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 29 STRING "Brands" 6 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 29 ACCESS aetf.Tenant Name 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 29 STRING "x(50)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 STRING "ItemType" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 ACCESS aetf.ItemType Name 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 STRING "Vehicle-" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 SEARCH aetf.ItemType Name
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 STRING "Item" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 ACCESS aetf.Item ItemTypeId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 ACCESS aetf.ItemType ItemTypeId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 ACCESS aetf.Item TenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 ACCESS aetf.Tenant TenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 ACCESS aetf.Item ItemNum 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 SEARCH aetf.Item ItemType_FK
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 32 SORT-ACCESS aetf.Item ItemNum
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 41 STRING "Vehicles" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 41 ACCESS aetf.Item ItemNum 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 41 ACCESS aetf.Item ItemName 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 41 ACCESS aetf.ItemType Name 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 41 STRING "zzzzzzzzz9" 10 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 41 STRING "x(25)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 41 STRING "x(35)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 STRING "ItemOption" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.ItemOption TenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.Item TenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.ItemOption ItemId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.Item ItemId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 SEARCH aetf.ItemOption ItemOption_PK
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.Item TenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.ItemOption TenantId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.Item ItemId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.ItemOption ChildItemId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 SEARCH aetf.Item Item_PK
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.ItemType ItemTypeId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.Item ItemTypeId 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 ACCESS aetf.ItemType Name 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 SEARCH aetf.ItemType ItemType_PK
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 47 SORT-ACCESS aetf.ItemType Name
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 STRING "Item Options" 12 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 ACCESS aetf.ItemType Name 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 ACCESS aetf.Item ItemNum 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 ACCESS aetf.Item ItemName 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 ACCESS aetf.ItemOption StandardOption 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 STRING "x(35)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 STRING "zzzzzzzzz9" 10 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 STRING "x(25)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 60 STRING "yes/no" 6 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Name" 4 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "----------------------------------------------------" 52 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Item Num" 8 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Item Name" 9 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Name" 4 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "ItemNum" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "ItemName" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "---------------- --------------------------- -------------------------------------" 82 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Name" 4 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Item Num" 8 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Item Name" 9 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "StandardOption" 14 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "ItemNum" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "ItemName" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "StandardOption" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 68 STRING "------------------------------------- ---------------- --------------------------- ---------------" 98 NONE UNTRANSLATABLE 

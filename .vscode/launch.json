@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Attach to process",
+            "type": "abl",
+            "request": "attach",
+            "hostname": "localhost",
+            "mode": "legacy",
+            "port": 3099,
+            "localRoot": "${workspaceFolder}",
+            "pause": true
+        }
+
+        
+        
+
+    ]
+}

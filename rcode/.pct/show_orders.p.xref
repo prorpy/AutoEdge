@@ -1,0 +1,138 @@
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 1 COMPILE show_orders.p
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 17 STRING "itemItem" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 17 STRING "Item" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 17 REFERENCE aetf.Item 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 18 STRING "finishedItemItem" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 18 STRING "Item" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 18 REFERENCE aetf.Item 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 20 STRING "itemItemType" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 20 STRING "ItemType" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 20 REFERENCE aetf.ItemType 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 21 STRING "finishedItemItemType" 20 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 21 STRING "ItemType" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 21 REFERENCE aetf.ItemType 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 25 STRING "Tenant" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 25 SEARCH aetf.Tenant Tenant_PK WHOLE-INDEX
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 28 STRING "Order" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 28 ACCESS aetf.Order TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 28 STRING "Order" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 28 ACCESS aetf.Tenant TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 28 SEARCH aetf.Order Order_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 ACCESS aetf.Order TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 ACCESS aetf.Tenant TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 ACCESS aetf.Order OrderNum 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 SEARCH aetf.Order Order_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 SORT-ACCESS aetf.Order OrderNum
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 STRING "Customer" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 ACCESS aetf.Customer CustomerId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 ACCESS aetf.Order CustomerId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 SEARCH aetf.Customer Customer_PK WHOLE-INDEX
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 STRING "StatusDetail" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 ACCESS aetf.StatusDetail StatusDetailId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 ACCESS aetf.Order StatusId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 31 SEARCH aetf.StatusDetail StatusDetail_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 STRING "Orders" 6 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 ACCESS aetf.Tenant Name 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 ACCESS aetf.StatusDetail Code 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 ACCESS aetf.Order OrderNum 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 ACCESS aetf.Customer Name 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 ACCESS aetf.Order OrderDate 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 STRING "x(50)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 STRING "x(30)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 STRING "zzzzzzzzz9" 10 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 STRING "x(30)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 41 STRING "99/99/99" 8 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 STRING "OrderLine" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.OrderLine OrderId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.Order OrderId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.OrderLine TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.Order TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 SEARCH aetf.OrderLine OrderLine_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 STRING "FinishedItem" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.FinishedItem FinishedItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.OrderLine FinishedItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.FinishedItem TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.OrderLine TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 SEARCH aetf.FinishedItem FinishedItem_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.Item TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.FinishedItem TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.Item ItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.FinishedItem ItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 SEARCH aetf.Item Item_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.ItemType ItemTypeId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 ACCESS aetf.Item ItemTypeId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 49 SEARCH aetf.ItemType ItemType_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING "Order Lines" 11 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 ACCESS aetf.OrderLine LineNum 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 ACCESS aetf.OrderLine Price 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 ACCESS aetf.OrderLine Qty 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 ACCESS aetf.Item ItemNum 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 ACCESS aetf.Item ItemName 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 ACCESS aetf.Item Price 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 ACCESS aetf.ItemType Name 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING ">>9" 3 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING "->,>>>,>>9.99" 13 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING "->>>>9" 6 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING "zzzzzzzzz9" 10 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING "x(25)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING "->,>>>,>>9.99" 13 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 65 STRING "x(35)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 STRING "ComponentItem" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.ComponentItem FinishedItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.FinishedItem FinishedItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.ComponentItem TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.FinishedItem TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 SEARCH aetf.ComponentItem Component_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.Item TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.ComponentItem TenantId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.Item ItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.ComponentItem ItemId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 SEARCH aetf.Item Item_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.ItemType ItemTypeId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 ACCESS aetf.Item ItemTypeId 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 75 SEARCH aetf.ItemType ItemType_PK
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 STRING "Component Items" 15 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 ACCESS aetf.Item ItemNum 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 ACCESS aetf.Item ItemName 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 ACCESS aetf.ComponentItem Qty 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 ACCESS aetf.Item Price 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 ACCESS aetf.ItemType Name 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 STRING "zzzzzzzzz9" 10 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 STRING "x(25)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 STRING "->>,>>9.99" 10 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 STRING "->,>>>,>>9.99" 13 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 87 STRING "x(35)" 5 NONE TRANSLATABLE  FORMAT 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Brand" 5 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Status" 6 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Code" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Order Num" 9 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "OrderNum" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Customer" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Ordered" 7 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "OrderDate" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Item" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "ItemType" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "LineNum" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Price" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Qty" 3 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "ItemNum" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "ItemName" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Price" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "TOTAL" 5 RIGHT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Item Num" 8 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Item Name" 9 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Qty" 3 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Price" 5 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Name" 4 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "ItemNum" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "ItemName" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Qty" 3 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Price" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "X(5)" 4 LEFT TRANSLATABLE 
+.\autoedgethefactory\server\tests\show_orders.p .\autoedgethefactory\server\tests\show_orders.p 98 STRING "---------------- --------------------------- ---------------- -------------------- -------------------------------------" 120 NONE UNTRANSLATABLE 

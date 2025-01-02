@@ -1,0 +1,23 @@
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 1 COMPILE autoedgethefactory\server\setup\data\load_addresses.p
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 31 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 34 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 35 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 36 STRING "cStreets" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 37 STRING "cStreetTypes" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 38 STRING "cCities" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 39 STRING "cPostCodes" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 40 STRING "cTypes" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 42 STRING "cValueList" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 43 STRING "iEntries" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 44 STRING "|" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 46 STRING "|" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 48 FUNCTION getRandom,character,INPUT cValueList CHARACTER
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 48 STRING "GETRANDOM" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 50 STRING "shipping|billing|postal|home|street" 35 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 52 STRING "Smith|Main|Shawsheen|Yellow Brick|High|Loopy|Apple Blossom|Long|Shore|Pine|Oak|Park|Barnyard" 92 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 53 STRING "Ave|Str|Rd|Terrace|Lane|Rt|Ct" 29 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 54 STRING "Nashua|Bedford|Burlington|Boston|Manchester|Springfield|Milford|Danbury|Shrewsbury|Abbotdale|Malden" 99 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 55 STRING "03060|01730|02155|90210|10010|32329|90210|02020" 47 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_addresses.p .\autoedgethefactory\server\setup\data\load_addresses.p 63 STRING "|" 1 NONE TRANSLATABLE 

@@ -1,0 +1,165 @@
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 1 COMPILE OpenEdge\Lang\BPM\WorkItem.cls
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 36 CLASS OpenEdge.Lang.BPM.WorkItem,INHERITS OpenEdge.Lang.BPM.SavvionType,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 36 STRING "OpenEdge.Lang.BPM.WorkItem" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 36 STRING "OpenEdge.Lang.BPM.SavvionType" 29 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 38 STRING "DueDate" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 38 PROPERTY PUBLIC,,,,,DueDate
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 39 STRING "Id" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 39 PROPERTY PUBLIC,,,,,Id
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 40 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 40 PROPERTY PUBLIC,,,,,Name
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 41 STRING "Performer" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 41 PROPERTY PUBLIC,,,,,Performer
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 42 STRING "ProcessInstanceCreator" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 42 PROPERTY PUBLIC,,,,,ProcessInstanceCreator
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 43 STRING "ProcessInstanceName" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 43 PROPERTY PUBLIC,,,,,ProcessInstanceName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 44 STRING "ProcessInstanceId" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 44 PROPERTY PUBLIC,,,,,ProcessInstanceId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 45 STRING "Priority" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 45 PROPERTY PUBLIC,,,,,Priority
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 46 STRING "ProcessTemplateId" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 46 PROPERTY PUBLIC,,,,,ProcessTemplateId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 47 STRING "Status" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 47 PROPERTY PUBLIC,,,,,Status
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 48 STRING "TimeStarted" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 48 PROPERTY PUBLIC,,,,,TimeStarted
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 49 STRING "WorkStepName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 49 PROPERTY PUBLIC,,,,,WorkStepName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "WorkItem" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "DueDate" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "Id" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "Performer" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "ProcessInstanceCreator" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "ProcessInstanceName" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "ProcessInstanceId" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "Priority" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "ProcessTemplateId" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "WorkStepStatus" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "TimeStarted" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "WorkStepName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 51 STRING "WorkItem" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 70 CONSTRUCTOR PUBLIC,,,,WorkItem,void,
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 70 STRING "WORKITEM" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 76 STRING "phTable" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 78 METHOD PUBLIC,STATIC,,,,GetTable,void,OUTPUT phTable TABLE-HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 78 STRING "GETTABLE" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 83 STRING "phBuffer" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:DueDate
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Id
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Name
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Performer
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceCreator
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Priority
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessTemplateId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Status
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:TimeStarted
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:WorkStepName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 97 METHOD PUBLIC,,OVERRIDE,,,ObjectToBuffer,void,INPUT phBuffer HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 97 STRING "OBJECTTOBUFFER" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 99 STRING "poSaxWriter" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 99 STRING "pcNamespace" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 101 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:DueDate
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 101 STRING "duedate" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 104 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Id
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 104 STRING "id" 2 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 107 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Name
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 107 STRING "name" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 110 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Performer
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 110 STRING "performer" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 113 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceCreator
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 113 STRING "piCreator" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 116 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 116 STRING "piName" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 119 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 119 STRING "piid" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 122 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Priority
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 122 STRING "priority" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 122 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Priority
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 125 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessTemplateId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 125 STRING "ptid" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 128 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Status
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 128 STRING "status" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 128 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Status
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 131 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:TimeStarted
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 131 STRING "timeStarted" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 134 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:WorkStepName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 134 STRING "wsName" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 137 METHOD PUBLIC,,OVERRIDE,,,ObjectToXML,void,INPUT poSaxWriter OPENEDGE.CORE.XML.SAXWRITER,INPUT pcNamespace LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 137 STRING "OBJECTTOXML" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 139 STRING "pcElementName" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 139 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 142 STRING "duedate" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 142 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:DueDate
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 142 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:DueDate 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 143 STRING "id" 2 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 143 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Id
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 143 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:Id 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 144 STRING "name" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 144 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Name
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 144 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:Name 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 145 STRING "performer" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 145 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Performer
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 145 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:Performer 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 146 STRING "piCreator" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 146 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceCreator
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 146 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceCreator 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 147 STRING "piName" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 147 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 147 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceName 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 148 STRING "piid" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 148 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 148 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessInstanceId 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 149 STRING "priority" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 149 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Priority
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 149 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:Priority 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 150 STRING "ptid" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 150 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessTemplateId
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 150 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:ProcessTemplateId 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 151 STRING "status" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 151 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Status
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 151 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:Status 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 152 STRING "timeStarted" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 152 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:TimeStarted
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 152 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:TimeStarted 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 153 STRING "wsName" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 153 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:WorkStepName
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 153 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:WorkStepName 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 155 METHOD PUBLIC,,OVERRIDE,,,ReadElement,void,INPUT pcElementName LONGCHAR,INPUT pcValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 155 STRING "READELEMENT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 157 STRING "p0" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 158 STRING "lEquals" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 164 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.WorkItem:Id
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 164 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.WorkItem:Id
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 164 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.BPM.WorkItem
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 168 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT p0 PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 168 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 170 STRING "WORKITEM" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 170 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 170 STRING "idx2" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 69 INVOKE OpenEdge.Lang.BPM.SavvionType:SavvionType
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 101 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT datetime-tz,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 104 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT int64,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 107 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 110 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 113 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 116 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 119 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT int64,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 122 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 122 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 125 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT int64,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 128 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 128 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 131 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT datetime-tz,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 134 INVOKE OpenEdge.Lang.BPM.SavvionType:WriteElement,INPUT OpenEdge.Core.XML.SaxWriter,INPUT longchar,INPUT longchar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 142 INVOKE OpenEdge.Lang.TimeStamp:ToABLDateTimeFromISO,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 149 INVOKE OpenEdge.Lang.BPM.PriorityEnum:EnumFromString,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 151 INVOKE OpenEdge.Lang.BPM.WorkItemStatusEnum:EnumFromString,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 152 INVOKE OpenEdge.Lang.TimeStamp:ToABLDateTimeFromISO,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\WorkItem.cls 160 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object

@@ -1,0 +1,12 @@
+AutoEdge.Factory.Server.Order.BusinessComponent
+AutoEdge.Factory.Server.Order.BusinessComponent.ComponentItemTableDS	C	44fb4aabf0fa9a47e2545b1f69ffc24a
+AutoEdge.Factory.Server.Order.BusinessComponent.FinishedItemTableDS	C	e9f3c9ec1dff62c2da86cccd5a5d2e15
+AutoEdge.Factory.Server.Order.BusinessComponent.ItemOptionTableDS	C	de3bd77c501c95c254ee11b002ca9d60
+AutoEdge.Factory.Server.Order.BusinessComponent.ItemTableDS	C	be1e2158169eb780a98c63d69810a886
+AutoEdge.Factory.Server.Order.BusinessComponent.OrderDA	C	c0ce3234b479c6a09f435f51c70c987d
+AutoEdge.Factory.Server.Order.BusinessComponent.OrderEntity	C	de52c498ce99a478414b4819cc9ac418
+AutoEdge.Factory.Server.Order.BusinessComponent.OrderLineTableDS	C	835e2700a7d4d58c0a5e86f4a7b3a1be
+AutoEdge.Factory.Server.Order.BusinessComponent.OrderTableDS	C	63addbfdbb53dfabf3c5dd2e7cb3bbbd
+AutoEdge.Factory.Server.Order.BusinessComponent.VehicleDataSource	C	d0d72792f1d19253f7dc31c1950022d6
+AutoEdge.Factory.Server.Order.BusinessComponent.VehicleOptionsDA	C	5870e4d1b84f0f13f3b41d3d408c89a7
+AutoEdge.Factory.Server.Order.BusinessComponent.VehicleOptionsEntity	C	e694d2b2bd14ca169ab0235af10487bc

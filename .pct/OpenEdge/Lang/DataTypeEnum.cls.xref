@@ -1,0 +1,560 @@
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 1 COMPILE OpenEdge\Lang\DataTypeEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 30 CLASS OpenEdge.Lang.DataTypeEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 30 STRING "OpenEdge.Lang.DataTypeEnum" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 32 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 33 STRING "None" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,None
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 36 STRING "Character" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 36 PROPERTY PUBLIC,STATIC,,,,Character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 37 STRING "CharacterArray" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 37 PROPERTY PUBLIC,STATIC,,,,CharacterArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 38 STRING "LongChar" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 38 PROPERTY PUBLIC,STATIC,,,,LongChar
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 39 STRING "LongCharArray" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 39 PROPERTY PUBLIC,STATIC,,,,LongCharArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 40 STRING "Integer" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 40 PROPERTY PUBLIC,STATIC,,,,Integer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 41 STRING "IntegerArray" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 41 PROPERTY PUBLIC,STATIC,,,,IntegerArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 42 STRING "Int64" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 42 PROPERTY PUBLIC,STATIC,,,,Int64
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 43 STRING "Int64Array" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 43 PROPERTY PUBLIC,STATIC,,,,Int64Array
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 44 STRING "Decimal" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 44 PROPERTY PUBLIC,STATIC,,,,Decimal
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 45 STRING "DecimalArray" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 45 PROPERTY PUBLIC,STATIC,,,,DecimalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 46 STRING "Logical" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 46 PROPERTY PUBLIC,STATIC,,,,Logical
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 47 STRING "LogicalArray" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 47 PROPERTY PUBLIC,STATIC,,,,LogicalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 48 STRING "Rowid" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 48 PROPERTY PUBLIC,STATIC,,,,Rowid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 49 STRING "RowidArray" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 49 PROPERTY PUBLIC,STATIC,,,,RowidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 50 STRING "Recid" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 50 PROPERTY PUBLIC,STATIC,,,,Recid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 51 STRING "RecidArray" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 51 PROPERTY PUBLIC,STATIC,,,,RecidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 52 STRING "Date" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 52 PROPERTY PUBLIC,STATIC,,,,Date
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 53 STRING "DateArray" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 53 PROPERTY PUBLIC,STATIC,,,,DateArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 54 STRING "Datetime" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 54 PROPERTY PUBLIC,STATIC,,,,Datetime
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 55 STRING "DatetimeArray" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 55 PROPERTY PUBLIC,STATIC,,,,DatetimeArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 56 STRING "DatetimeTZ" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 56 PROPERTY PUBLIC,STATIC,,,,DatetimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 57 STRING "DatetimeTZArray" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 57 PROPERTY PUBLIC,STATIC,,,,DatetimeTZArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 58 STRING "Raw" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 58 PROPERTY PUBLIC,STATIC,,,,Raw
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 59 STRING "RawArray" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 59 PROPERTY PUBLIC,STATIC,,,,RawArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 60 STRING "Memptr" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 60 PROPERTY PUBLIC,STATIC,,,,Memptr
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 61 STRING "MemptrArray" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 61 PROPERTY PUBLIC,STATIC,,,,MemptrArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 62 STRING "Handle" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 62 PROPERTY PUBLIC,STATIC,,,,Handle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 63 STRING "HandleArray" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 63 PROPERTY PUBLIC,STATIC,,,,HandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 64 STRING "BLOB" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 64 PROPERTY PUBLIC,STATIC,,,,BLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 65 STRING "CLOB" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 65 PROPERTY PUBLIC,STATIC,,,,CLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 66 STRING "ComHandle" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 66 PROPERTY PUBLIC,STATIC,,,,ComHandle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 67 STRING "ComHandleArray" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 67 PROPERTY PUBLIC,STATIC,,,,ComHandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 70 STRING "Dataset" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 70 PROPERTY PUBLIC,STATIC,,,,Dataset
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 71 STRING "Buffer" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 71 PROPERTY PUBLIC,STATIC,,,,Buffer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 72 STRING "TempTable" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 72 PROPERTY PUBLIC,STATIC,,,,TempTable
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 75 STRING "ProgressLangObject" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 75 PROPERTY PUBLIC,STATIC,,,,ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 76 STRING "Enumeration" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 76 PROPERTY PUBLIC,STATIC,,,,Enumeration
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 77 STRING "Class" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 77 PROPERTY PUBLIC,STATIC,,,,Class
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 78 STRING "ClassArray" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 78 PROPERTY PUBLIC,STATIC,,,,ClassArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 81 STRING "Stream" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 81 PROPERTY PUBLIC,STATIC,,,,Stream
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 84 STRING "RowState" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 84 PROPERTY PUBLIC,STATIC,,,,RowState
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 87 STRING "XmlDocument" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 87 PROPERTY PUBLIC,STATIC,,,,XmlDocument
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 88 STRING "XmlNodeRef" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 88 PROPERTY PUBLIC,STATIC,,,,XmlNodeRef
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 91 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:None
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 91 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:None 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 92 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 92 STRING "Character" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 92 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Character 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 93 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CharacterArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 93 STRING "Character Extent" 16 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 93 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:CharacterArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 94 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LongChar
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 94 STRING "Longchar" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 94 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:LongChar 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 95 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LongCharArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 95 STRING "Longchar Extent" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 95 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:LongCharArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 96 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 96 STRING "Integer" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 96 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 97 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:IntegerArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 97 STRING "Integer Extent" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 97 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:IntegerArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 98 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 98 STRING "Int64" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 98 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 99 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64Array
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 99 STRING "Int64 Extent" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 99 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64Array 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 100 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Decimal
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 100 STRING "Decimal" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 100 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Decimal 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 101 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DecimalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 101 STRING "Decimal Extent" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 101 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DecimalArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 102 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Logical
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 102 STRING "Logical" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 102 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Logical 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 103 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LogicalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 103 STRING "Logical Extent" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 103 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:LogicalArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 104 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 104 STRING "Rowid" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 104 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 105 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 105 STRING "Rowid Extent" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 105 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:RowidArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 106 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Recid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 106 STRING "Recid" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 106 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Recid 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 107 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RecidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 107 STRING "Recid Extent" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 107 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:RecidArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 108 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Date
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 108 STRING "Date" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 108 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Date 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 109 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DateArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 109 STRING "Date Extent" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 109 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DateArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 110 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Datetime
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 110 STRING "Datetime" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 110 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Datetime 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 111 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 111 STRING "Datetime Extent" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 111 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 112 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 112 STRING "Datetime-TZ" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 112 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZ 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 113 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 113 STRING "Datetime-TZ Extent" 18 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 113 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 114 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Raw
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 114 STRING "Raw" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 114 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Raw 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 115 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RawArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 115 STRING "Raw Extent" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 115 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:RawArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 116 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Memptr
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 116 STRING "Memptr" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 116 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Memptr 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 117 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:MemptrArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 117 STRING "Memptr Extent" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 117 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:MemptrArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 118 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Handle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 118 STRING "Handle" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 118 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Handle 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 119 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:HandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 119 STRING "Handle Extent" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 119 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:HandleArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 120 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Class
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 120 STRING "Class &1" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 120 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Class 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 121 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ClassArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 121 STRING "Class &1 Extent" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 121 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:ClassArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 122 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 122 STRING "Progress.Lang.Object" 20 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 122 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 123 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:BLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 123 STRING "BLOB" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 123 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:BLOB 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 124 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 124 STRING "CLOB" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 124 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:CLOB 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 125 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 125 STRING "Com-Handle" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 125 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandle 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 126 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 126 STRING "Com-Handle Extent" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 126 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandleArray 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 127 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Dataset
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 127 STRING "Dataset" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 127 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Dataset 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 128 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Buffer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 128 STRING "Buffer" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 128 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Buffer 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 129 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:TempTable
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 129 STRING "Temp-Table" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 129 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:TempTable 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 131 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Enumeration
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 131 STRING "Enumeration" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 131 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Enumeration 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 132 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Stream
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 132 STRING "Stream" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 132 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Stream 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 133 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowState
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 133 STRING "row-state" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 133 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:RowState 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 135 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlNodeRef
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 135 STRING "x-noderef" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 135 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlNodeRef 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 136 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlDocument
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 136 STRING "x-document" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 136 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlDocument 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 138 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 138 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 138 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 139 CONSTRUCTOR ,STATIC,,,DataTypeEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 139 STRING "DATATYPEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 141 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 141 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 143 CONSTRUCTOR PUBLIC,,,,DataTypeEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 143 STRING "DATATYPEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 145 STRING "piDataType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 146 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 149 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:None
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 149 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 149 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:None
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 150 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 150 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 150 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 151 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CharacterArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 151 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 151 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CharacterArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 152 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Longchar
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 152 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 152 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LongChar
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 153 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LongcharArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 153 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 153 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LongCharArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 154 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 154 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 154 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 155 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:IntegerArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 155 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 155 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:IntegerArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 156 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 156 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 156 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 157 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64Array
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 157 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 157 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64Array
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 158 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Decimal
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 158 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 158 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Decimal
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 159 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DecimalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 159 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 159 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DecimalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 160 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Logical
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 160 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 160 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Logical
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 161 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LogicalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 161 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 161 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LogicalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 162 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 162 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 162 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 163 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 163 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 163 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 164 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Recid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 164 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 164 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Recid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 165 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RecidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 165 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 165 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RecidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 166 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Date
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 166 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 166 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Date
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 167 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DateArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 167 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 167 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DateArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 168 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Datetime
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 168 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 168 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Datetime
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 169 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 169 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 169 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 170 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 170 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 170 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 171 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 171 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 171 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 172 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Raw
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 172 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 172 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Raw
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 173 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RawArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 173 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 173 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RawArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 174 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Memptr
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 174 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 174 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Memptr
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 175 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:MemptrArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 175 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 175 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:MemptrArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 176 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Handle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 176 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 176 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Handle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 177 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:HandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 177 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 177 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:HandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 178 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Class
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 178 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 178 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Class
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 179 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ClassArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 179 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 179 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ClassArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 180 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 180 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 180 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 181 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:BLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 181 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 181 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:BLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 182 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 182 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 182 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 183 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 183 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 183 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 184 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 184 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 184 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 185 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Dataset
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 185 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 185 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Dataset
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 186 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Buffer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 186 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 186 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Buffer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 187 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:TempTable
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 187 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 187 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:TempTable
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 188 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Enumeration
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 188 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 188 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Enumeration
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 189 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Stream
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 189 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 189 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Stream
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 190 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowState
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 190 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 190 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowState
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 191 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlDocument
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 191 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 191 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlDocument
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 192 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlNodeRef
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 192 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 192 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlNodeRef
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 196 METHOD PUBLIC,STATIC,,,,EnumFromValue,OpenEdge.Lang.DataTypeEnum,INPUT piDataType INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 196 STRING "ENUMFROMVALUE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 198 STRING "pcDataType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 199 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 202 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:None
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 203 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 204 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CharacterArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 205 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Longchar
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 206 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LongcharArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 207 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 208 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:IntegerArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 209 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 210 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64Array
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 211 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Decimal
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 212 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DecimalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 213 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Logical
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 214 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:LogicalArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 215 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 216 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 217 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Recid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 218 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RecidArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 219 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Date
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 220 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DateArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 221 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Datetime
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 222 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 223 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 224 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 225 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Raw
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 226 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RawArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 227 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Memptr
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 228 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:MemptrArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 229 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Handle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 230 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:HandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 231 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Class
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 232 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ClassArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 233 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 234 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:BLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 235 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 236 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 237 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandleArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 238 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Dataset
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 239 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Buffer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 240 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:TempTable
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 241 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Enumeration
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 242 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Stream
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 243 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:RowState
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 244 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlDocument
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 245 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:XmlNodeRef
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 249 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.DataTypeEnum,INPUT pcDataType CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 249 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 251 STRING "poDataType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 252 STRING "lPrimitive" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 255 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Class
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 255 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ClassArray
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 255 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 255 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Enumeration
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 255 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:None
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 266 METHOD PUBLIC,STATIC,,,,IsPrimitive,logical,INPUT poDataType OPENEDGE.LANG.DATATYPEENUM
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 266 STRING "ISPRIMITIVE" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 268 STRING "poDataType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 269 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 269 STRING " " 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 269 STRING "extent" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 270 METHOD PUBLIC,STATIC,,,,IsArray,logical,INPUT poDataType OPENEDGE.LANG.DATATYPEENUM
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 270 STRING "ISARRAY" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 280 STRING "poDataType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 281 STRING "cXmlSchemaType" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 284 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:BLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 284 STRING "base64Binary" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 285 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 285 STRING "string" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 286 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:CLOB
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 286 STRING "string" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 287 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:ComHandle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 287 STRING "long" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 288 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Date
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 288 STRING "date" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 289 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DateTime
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 289 STRING "dateTime" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 290 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:DatetimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 290 STRING "dateTime" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 291 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Decimal
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 291 STRING "decimal" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 292 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Int64
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 292 STRING "long" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 293 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 293 STRING "int" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 294 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Logical
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 294 STRING "boolean" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 295 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Raw
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 295 STRING "base64Binary" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 296 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Recid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 296 STRING "long" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 297 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 297 STRING "base64Binary" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 298 ACCESS INHERITED-PROPERTY OpenEdge.Lang.DataTypeEnum:Handle
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 298 STRING "long" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 304 METHOD PUBLIC,STATIC,,,,ToXmlSchemaType,character,INPUT poDataType OPENEDGE.LANG.DATATYPEENUM
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 304 STRING "TOXMLSCHEMATYPE" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 91 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 92 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 93 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 94 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 95 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 96 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 97 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 98 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 99 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 100 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 101 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 102 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 103 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 104 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 105 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 106 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 107 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 108 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 109 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 110 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 111 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 112 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 113 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 114 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 115 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 116 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 117 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 118 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 119 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 120 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 121 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 122 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 123 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 124 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 125 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 126 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 127 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 128 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 129 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 131 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 132 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 133 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 135 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 136 NEW OpenEdge.Lang.DataTypeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 142 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 202 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 203 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 204 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 205 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 206 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 207 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 208 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 209 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 210 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 211 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 212 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 213 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 214 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 215 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 216 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 217 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 218 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 219 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 220 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 221 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 222 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 223 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 224 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 225 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 226 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 227 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 228 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 229 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 230 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 231 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 232 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 233 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 234 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 235 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 236 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 237 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 238 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 239 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 240 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 241 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 242 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 243 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 244 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 245 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\DataTypeEnum.cls 300 INVOKE OpenEdge.Lang.EnumMember:ToString

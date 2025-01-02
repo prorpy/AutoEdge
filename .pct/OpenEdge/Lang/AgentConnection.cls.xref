@@ -1,0 +1,28 @@
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 1 COMPILE OpenEdge\Lang\AgentConnection.cls
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 34 CLASS OpenEdge.Lang.AgentConnection,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 34 STRING "OpenEdge.Lang.AgentConnection" 29 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 36 STRING "ActiveSince" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 36 PROPERTY PUBLIC,,,,,ActiveSince
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 39 STRING "Id" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 39 PROPERTY PUBLIC,,,,,Id
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 42 STRING "ConnectionProperties" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 42 PROPERTY PUBLIC,,,,,ConnectionProperties
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 44 STRING "Instance" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 44 PROPERTY PUBLIC,STATIC,,,,Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 46 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 47 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 47 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:Instance 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 48 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.AgentConnection:Id
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 54 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:ConnectionProperties
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 54 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:ActiveSince
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 54 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:Id 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 54 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:ConnectionProperties 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 54 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentConnection:ActiveSince 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 57 STRING "AGENTCONNECTION" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 59 STRING "AGENTCONNECTION" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 47 NEW OpenEdge.Lang.AgentConnection
+.\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentConnection.cls 54 NEW OpenEdge.Lang.Collections.Map

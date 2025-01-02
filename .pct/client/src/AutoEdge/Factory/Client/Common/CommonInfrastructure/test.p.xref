@@ -1,0 +1,6 @@
+autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p 1 COMPILE client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p
+autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p 1 CPINTERNAL utf-8
+autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p 1 CPSTREAM iso8859-1
+autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p 3 STRING "cMessage" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p 5 STRING "Hello, World!" 13 NONE TRANSLATABLE 
+autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p autoedgethefactory\client\src\AutoEdge\Factory\Client\Common\CommonInfrastructure\test.p 8 RUN _edit.p

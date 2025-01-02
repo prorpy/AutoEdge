@@ -1,0 +1,5 @@
+.\referencecomponents\support\tests\workflow\start.p .\referencecomponents\support\tests\workflow\start.p 1 COMPILE referencecomponents\support\tests\workflow\start.p
+.\referencecomponents\support\tests\workflow\start.p .\referencecomponents\support\tests\workflow\start.p 1 CPINTERNAL utf-8
+.\referencecomponents\support\tests\workflow\start.p .\referencecomponents\support\tests\workflow\start.p 1 CPSTREAM iso8859-1
+.\referencecomponents\support\tests\workflow\start.p .\referencecomponents\support\tests\workflow\start.p 13 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\tests\workflow\start.p .\referencecomponents\support\tests\workflow\start.p 18 STRING "oDR" 3 NONE UNTRANSLATABLE 

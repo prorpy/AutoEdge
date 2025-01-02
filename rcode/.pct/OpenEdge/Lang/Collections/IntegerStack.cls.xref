@@ -1,0 +1,24 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 1 COMPILE OpenEdge\Lang\Collections\IntegerStack.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 30 CLASS OpenEdge.Lang.Collections.IntegerStack,INHERITS OpenEdge.Lang.Collections.Stack,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 30 STRING "OpenEdge.Lang.Collections.IntegerStack" 38 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 30 STRING "OpenEdge.Lang.Collections.Stack" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 32 STRING "piDepth" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 34 CONSTRUCTOR PUBLIC,,,,IntegerStack,void,INPUT piDepth INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 34 STRING "INTEGERSTACK" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 37 CONSTRUCTOR PUBLIC,,,,IntegerStack,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 37 STRING "INTEGERSTACK" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 39 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 41 METHOD PUBLIC,,,,,Push,void,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 41 STRING "PUSH" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 45 METHOD PUBLIC,,,,,Peek,integer,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 45 STRING "PEEK" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 49 METHOD PUBLIC,,,,,Pop,integer,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 49 STRING "POP" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 33 INVOKE OpenEdge.Lang.Collections.Stack:Stack,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls IMPLICIT INVOKE OpenEdge.Lang.Collections.Stack:Stack
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 40 INVOKE OpenEdge.Lang.Collections.Stack:PrimitivePush,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 44 INVOKE OpenEdge.Lang.Collections.Stack:PrimitivePeek
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IntegerStack.cls 48 INVOKE OpenEdge.Lang.Collections.Stack:PrimitivePop

@@ -1,0 +1,17 @@
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 1 COMPILE server\setup\data\load_geography.p
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 1 CPINTERNAL utf-8
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 1 CPSTREAM iso8859-1
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 31 STRING "strLoad" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 36 STRING "cValueList" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 37 STRING "iEntries" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 38 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 40 STRING "|" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 42 FUNCTION getRandom,character,INPUT cValueList CHARACTER
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 42 STRING "GETRANDOM" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 45 STRING "Standard USA" 12 NONE TRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 45 STRING "us" 2 NONE TRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 49 STRING "cName" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 50 STRING "cCode" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 52 STRING "setup/data/iso3166_en_code_lists.txt" 36 NONE TRANSLATABLE 
+autoedgethefactory\server\setup\data\load_geography.p autoedgethefactory\server\setup\data\load_geography.p 59 STRING "#" 1 NONE TRANSLATABLE 

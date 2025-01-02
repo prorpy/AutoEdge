@@ -1,0 +1,26 @@
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 1 CPINTERNAL utf-8
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 1 CPSTREAM iso8859-1
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 13 INCLUDE routinelevel.i
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 18 STRING "pcFilePattern" 13 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 20 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 21 STRING "iMax" 4 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 22 STRING "cOriginalExtension" 18 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 23 STRING "cFileBase" 9 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 24 STRING "cFolderBase" 11 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 25 STRING "cFile" 5 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 26 STRING "cPWD" 4 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 27 STRING "cFolder" 7 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 28 STRING "lHasSrc" 7 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 29 STRING "cLastEntry" 10 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 31 STRING "load_injectabl_modules.p" 24 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 35 STRING "." 1 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 43 STRING "." 1 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 43 STRING ".." 2 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 47 STRING "." 1 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 53 STRING "/" 1 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 55 STRING "bin" 3 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 58 STRING "src" 3 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 62 STRING "/" 1 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 68 STRING "bin" 3 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\compile_loadinjectabl.p 68 STRING "src" 3 NONE TRANSLATABLE 

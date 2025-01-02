@@ -1,0 +1,7 @@
+autoedgethefactory\shared\src\load_injectabl_modules.p autoedgethefactory\shared\src\load_injectabl_modules.p 1 COMPILE shared\src\load_injectabl_modules.p
+autoedgethefactory\shared\src\load_injectabl_modules.p autoedgethefactory\shared\src\load_injectabl_modules.p 1 CPINTERNAL utf-8
+autoedgethefactory\shared\src\load_injectabl_modules.p autoedgethefactory\shared\src\load_injectabl_modules.p 1 CPSTREAM iso8859-1
+autoedgethefactory\shared\src\load_injectabl_modules.p autoedgethefactory\shared\src\load_injectabl_modules.p 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+autoedgethefactory\shared\src\load_injectabl_modules.p autoedgethefactory\shared\src\load_injectabl_modules.p 31 STRING "poKernel" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\shared\src\load_injectabl_modules.p autoedgethefactory\shared\src\load_injectabl_modules.p 34 INVOKE OpenEdge.Core.InjectABL.IKernel:Load,INPUT OpenEdge.Core.InjectABL.Binding.Modules.IInjectionModule
+autoedgethefactory\shared\src\load_injectabl_modules.p autoedgethefactory\shared\src\load_injectabl_modules.p 34 NEW AutoEdge.Factory.Common.InjectABL.CommonModule

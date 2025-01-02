@@ -1,0 +1,21 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 1 COMPILE OpenEdge\Lang\Int.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 16 ANNOTATION todo(task=implement, action=complete this shadow object)
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 26 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 31 CLASS OpenEdge.Lang.Int,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 31 STRING "OpenEdge.Lang.Int" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 32 STRING "Value" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 32 PROPERTY PUBLIC,,,,,Value
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 34 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 36 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Int:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 36 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Int:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 37 CONSTRUCTOR PUBLIC,,,,Int,void,INPUT piValue INT64
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 37 STRING "INT" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 39 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Int:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Int:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 42 CONSTRUCTOR PUBLIC,,,,Int,void,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 42 STRING "INT" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 35 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\Int.cls .\referencecomponents\support\src\OpenEdge\Lang\Int.cls 40 INVOKE Progress.Lang.Object:Object

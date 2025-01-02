@@ -1,0 +1,49 @@
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 1 COMPILE OpenEdge\Lang\WidgetHandle.cls
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 27 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 37 CLASS OpenEdge.Lang.WidgetHandle,,IMPLEMENTS OpenEdge.Core.Util.IExternalizable,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 37 STRING "OpenEdge.Lang.WidgetHandle" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 37 STRING "OpenEdge.Core.Util.IExternalizable" 34 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 38 STRING "Type" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 38 PROPERTY PUBLIC,STATIC,,,,Type
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Type
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Type
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 41 STRING "OpenEdge.Lang.WidgetHandle" 26 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.WidgetHandle:Type 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Type
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 47 STRING "Value" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 47 PROPERTY PUBLIC,,,,,Value
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 51 CONSTRUCTOR PUBLIC,,,,WidgetHandle,void,
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 51 STRING "WIDGETHANDLE" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 53 STRING "phValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 56 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Value
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 56 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.WidgetHandle:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 57 CONSTRUCTOR PUBLIC,,,,WidgetHandle,void,INPUT phValue HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 57 STRING "WIDGETHANDLE" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 59 STRING "p0" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Value
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 61 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.WidgetHandle:Value
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 61 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.WidgetHandle
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 64 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT p0 PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 64 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 67 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 68 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Value
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 68 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.WidgetHandle:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 69 METHOD PUBLIC,,,,,ReadObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTINPUT
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 69 STRING "READOBJECT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 71 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 72 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Value
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 73 METHOD PUBLIC,,,,,WriteObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTOUTPUT
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 73 STRING "WRITEOBJECT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 76 STRING "cValue" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 77 ACCESS INHERITED-PROPERTY OpenEdge.Lang.WidgetHandle:Value
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 80 METHOD PUBLIC,,OVERRIDE,,,ToString,character,
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 80 STRING "TOSTRING" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 81 STRING "WIDGETHANDLE" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 41 INVOKE Progress.Lang.Class:GetClass,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 50 INVOKE OpenEdge.Lang.WidgetHandle:WidgetHandle,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 54 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 63 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 68 INVOKE OpenEdge.Core.Util.IObjectInput:ReadHandle
+.\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls .\referencecomponents\support\src\OpenEdge\Lang\WidgetHandle.cls 72 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteHandle,INPUT widget-handle

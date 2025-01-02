@@ -1,0 +1,9 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 1 COMPILE OpenEdge\Lang\Collections\IMapEntry.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 34 INTERFACE OpenEdge.Lang.Collections.IMapEntry,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 34 STRING "OpenEdge.Lang.Collections.IMapEntry" 35 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 35 STRING "Key" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 35 PROPERTY PUBLIC,,,,,Key
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 36 STRING "Value" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMapEntry.cls 36 PROPERTY PUBLIC,,,,,Value

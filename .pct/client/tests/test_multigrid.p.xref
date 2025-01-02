@@ -1,0 +1,62 @@
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 1 COMPILE client\tests\test_multigrid.p
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 1 CPINTERNAL utf-8
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 1 CPSTREAM iso8859-1
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "eDepartment" 11 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "DeptCode" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "DeptName" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "eDepartmentBefore" 17 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "__error-flag__" 14 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "__origin-rowid__" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "__error-string__" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "__after-rowid__" 15 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 7 STRING "__row-state__" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "eEmployee" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "Address" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "Address2" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "Birthdate" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "City" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "DeptCode" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "EmpNum" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "FirstName" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "HomePhone" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "LastName" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "Position" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "PostalCode" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "SickDaysLeft" 12 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "StartDate" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "State" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "VacationDaysLeft" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "WorkPhone" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "eEmployeeBefore" 15 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "__error-flag__" 14 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "__origin-rowid__" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "__error-string__" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "__after-rowid__" 15 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 12 STRING "__row-state__" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "eFamily" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "BenefitDate" 11 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "Birthdate" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "CoveredOnBenefits" 17 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "EmpNum" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "Relation" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "RelativeName" 12 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "eFamilyBefore" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "__error-flag__" 14 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "__origin-rowid__" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "__error-string__" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "__after-rowid__" 15 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 33 STRING "__row-state__" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 42 REFERENCE eDepartment DeptCode TEMPTABLE
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 42 REFERENCE eEmployee DeptCode TEMPTABLE
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 42 REFERENCE eEmployee EmpNum TEMPTABLE
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 42 REFERENCE eFamily EmpNum TEMPTABLE
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 42 DATASET dsDepartment,,,,,eDepartment eEmployee eFamily DATALINKS 2 RELATION1 0 eDepartment eEmployee 1 DeptCode DeptCode RELATION2 0 eEmployee eFamily 1 EmpNum EmpNum
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 46 STRING "Department" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 46 REFERENCE sports.Department 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 47 STRING "Employee" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 47 REFERENCE sports.Employee 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 48 STRING "Family" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 48 REFERENCE sports.Family 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 50 STRING "mhMasterDataset" 15 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 55 STRING "oform" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\client\tests\test_multigrid.p autoedgethefactory\client\tests\test_multigrid.p 56 STRING "ogrid" 5 NONE UNTRANSLATABLE 

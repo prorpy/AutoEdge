@@ -1,0 +1,30 @@
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 1 COMPILE OpenEdge\Lang\AgentRequest.cls
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 27 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 35 CLASS OpenEdge.Lang.AgentRequest,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 35 STRING "OpenEdge.Lang.AgentRequest" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 36 STRING "ActiveSince" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 36 PROPERTY PUBLIC,,,,,ActiveSince
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 39 STRING "RequestProperties" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 39 PROPERTY PUBLIC,,,,,RequestProperties
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 41 STRING "Instance" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 41 PROPERTY PUBLIC,STATIC,,,,Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 43 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 44 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 44 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:Instance 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 45 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 49 STRING "Id" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 49 PROPERTY PUBLIC,,,,,Id
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 ACCESS INHERITED-PROPERTY OpenEdge.Lang.AgentRequest:Id
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 ACCESS PUBLIC-PROPERTY Progress.Lang.OERequestInfo:RequestId
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 CAST TO Progress.Lang.OERequestInfo
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:RequestProperties
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:ActiveSince
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:Id 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:RequestProperties 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.AgentRequest:ActiveSince 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 55 STRING "AGENTREQUEST" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 57 STRING "AGENTREQUEST" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 44 NEW OpenEdge.Lang.AgentRequest
+.\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls .\referencecomponents\support\src\OpenEdge\Lang\AgentRequest.cls 52 NEW OpenEdge.Lang.Collections.Map

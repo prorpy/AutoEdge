@@ -1,0 +1,12 @@
+OpenEdge.Core.InjectABL
+OpenEdge.Core.InjectABL.Binding	P	ec81905419fafb204edd16c07775b26d
+OpenEdge.Core.InjectABL.Lifecycle	P	2393500f52b5676b443e064808c4d0f4
+OpenEdge.Core.InjectABL.Cache	C	c6e2cb0fd9b39ab451b6305a1ef05f7c
+OpenEdge.Core.InjectABL.ComponentContainer	C	b4f79f1d356d7e4827e30cd6d69c8d2a
+OpenEdge.Core.InjectABL.ICache	C	20668bddcba1703c24e6ad7e5b91d647
+OpenEdge.Core.InjectABL.IInjectionRequest	C	7c02f26728816456757e42105de7bb5b
+OpenEdge.Core.InjectABL.IKernel	C	0ca154af59ffd7cae76e71eeaf6b89a2
+OpenEdge.Core.InjectABL.InjectionRequest	C	0b6212491771d95994947888029161b2
+OpenEdge.Core.InjectABL.KernelBase	C	9556997b906aa459e9e4f767d021b5e7
+OpenEdge.Core.InjectABL.KernelSettings	C	027bdc921aff5c9b82b60bec905caa13
+OpenEdge.Core.InjectABL.StandardKernel	C	b6e044712408c680a896324251d62cc1

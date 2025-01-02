@@ -1,0 +1,26 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 1 COMPILE OpenEdge\Lang\Collections\StackError.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 30 CLASS OpenEdge.Lang.Collections.StackError,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 30 STRING "OpenEdge.Lang.Collections.StackError" 36 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 30 STRING "Progress.Lang.ProError" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 30 STRING "Progress.Lang.AppError" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 31 STRING "OVERFLOW" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 31 STRING "Stack overflow" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 31 PROPERTY PUBLIC,STATIC,,,,OVERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 32 STRING "UNDERFLOW" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 32 STRING "Stack underflow" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 32 PROPERTY PUBLIC,STATIC,,,,UNDERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 33 STRING "RESIZE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 33 STRING "Stack resize smaller than contents" 34 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 33 PROPERTY PUBLIC,STATIC,,,,RESIZE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 37 CONSTRUCTOR PUBLIC,,,,StackError,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 37 STRING "STACKERROR" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 39 STRING "pcArg1" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 42 CONSTRUCTOR PUBLIC,,,,StackError,void,INPUT pcArg1 CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 42 STRING "STACKERROR" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 44 STRING "STACKERROR" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 36 INVOKE Progress.Lang.AppError:AppError
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 40 INVOKE OpenEdge.Lang.Collections.StackError:StackError
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\StackError.cls 41 INVOKE Progress.Lang.AppError:AddMessage,INPUT character,INPUT integer

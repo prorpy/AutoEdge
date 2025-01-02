@@ -1,0 +1,5 @@
+referencecomponents\injectabl\src\load_injectabl_modules.p referencecomponents\injectabl\src\load_injectabl_modules.p 1 COMPILE injectabl\src\load_injectabl_modules.p
+referencecomponents\injectabl\src\load_injectabl_modules.p referencecomponents\injectabl\src\load_injectabl_modules.p 1 CPINTERNAL utf-8
+referencecomponents\injectabl\src\load_injectabl_modules.p referencecomponents\injectabl\src\load_injectabl_modules.p 1 CPSTREAM iso8859-1
+referencecomponents\injectabl\src\load_injectabl_modules.p referencecomponents\injectabl\src\load_injectabl_modules.p 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+referencecomponents\injectabl\src\load_injectabl_modules.p referencecomponents\injectabl\src\load_injectabl_modules.p 30 STRING "poKernel" 8 NONE UNTRANSLATABLE 

@@ -1,0 +1,405 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 1 COMPILE OpenEdge\Lang\Assert.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 35 CLASS OpenEdge.Lang.Assert,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 35 STRING "OpenEdge.Lang.Assert" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 37 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 37 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 39 STRING "&1 cannot be null" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 40 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT poArgument PROGRESS.LANG.OBJECT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 40 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 42 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 42 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 44 STRING "&1 cannot be null" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 45 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT poArgument PROGRESS.LANG.OBJECT EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 45 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 47 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 47 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 49 STRING "&1 cannot be unknown" 20 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 50 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT pcArgument CHARACTER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 50 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 52 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 52 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 54 STRING "&1 cannot be unknown" 20 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 55 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT pcArgument LONGCHAR,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 55 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 57 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 57 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 60 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.ICollection:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 61 STRING "&1 cannot be empty: collection must have at least one entry" 59 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 62 METHOD PUBLIC,STATIC,,,,ArgumentNotNullOrEmpty,void,INPUT poArgument OPENEDGE.LANG.COLLECTIONS.ICOLLECTION,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 62 STRING "ARGUMENTNOTNULLOREMPTY" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 64 STRING "phArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 64 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 69 METHOD PUBLIC,STATIC,,,,ArgumentIsEmpty,void,INPUT phArgument HANDLE,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 69 STRING "ARGUMENTISEMPTY" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 71 STRING "phArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 71 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 76 METHOD PUBLIC,STATIC,,,,ArgumentNotEmpty,void,INPUT phArgument HANDLE,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 76 STRING "ARGUMENTNOTEMPTY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 78 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 78 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 81 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 82 STRING "&1 cannot be empty: map must have at least one entry" 52 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 83 METHOD PUBLIC,STATIC,,,,ArgumentNotNullOrEmpty,void,INPUT poArgument OPENEDGE.LANG.COLLECTIONS.IMAP,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 83 STRING "ARGUMENTNOTNULLOREMPTY" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 85 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 85 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 89 STRING "&1 cannot be empty: array must have at least one valid extent" 61 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 90 METHOD PUBLIC,STATIC,,,,ArgumentNotNullOrEmpty,void,INPUT poArgument PROGRESS.LANG.OBJECT EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 90 STRING "ARGUMENTNOTNULLOREMPTY" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 92 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 92 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 93 STRING "cLongCharArg" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 96 METHOD PUBLIC,STATIC,,,,ArgumentNotNullOrEmpty,void,INPUT pcArgument CHARACTER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 96 STRING "ARGUMENTNOTNULLOREMPTY" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 98 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 98 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 99 STRING "cLongCharArg" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 102 STRING "argument cannot be an indeterminiate array" 42 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 106 METHOD PUBLIC,STATIC,,,,ArgumentNotNullOrEmpty,void,INPUT pcArgument CHARACTER EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 106 STRING "ARGUMENTNOTNULLOREMPTY" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 108 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 108 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 110 STRING "&1 cannot be empty" 18 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 111 METHOD PUBLIC,STATIC,,,,ArgumentNotEmpty,void,INPUT pcArgument LONGCHAR,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 111 STRING "ARGUMENTNOTEMPTY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 113 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 113 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 116 METHOD PUBLIC,STATIC,,,,ArgumentNotNullOrEmpty,void,INPUT pcArgument LONGCHAR,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 116 STRING "ARGUMENTNOTNULLOREMPTY" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 118 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 118 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 120 STRING "&1 cannot be zero" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 121 METHOD PUBLIC,STATIC,,,,ArgumentNonZero,void,INPUT piArgument INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 121 STRING "ARGUMENTNONZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 123 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 123 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 125 STRING "&1 cannot be zero" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 126 METHOD PUBLIC,STATIC,,,,ArgumentNonZero,void,INPUT piArgument INT64,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 126 STRING "ARGUMENTNONZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 128 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 128 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 129 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 130 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 135 STRING "Extent &2 of &1" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 137 METHOD PUBLIC,STATIC,,,,ArgumentNonZero,void,INPUT piArgument INTEGER EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 137 STRING "ARGUMENTNONZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 139 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 139 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 140 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 141 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 146 STRING "Extent &2 of &1" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 148 METHOD PUBLIC,STATIC,,,,ArgumentNonZero,void,INPUT piArgument INT64 EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 148 STRING "ARGUMENTNONZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 150 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 150 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 152 STRING "&1 cannot be zero" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 153 METHOD PUBLIC,STATIC,,,,ArgumentNonZero,void,INPUT piArgument DECIMAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 153 STRING "ARGUMENTNONZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 155 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 156 STRING "Type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 158 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 158 STRING "&1 is an interface" 18 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 159 METHOD PUBLIC,STATIC,,,,ArgumentIsInterface,void,INPUT poArgument PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 159 STRING "ARGUMENTISINTERFACE" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 161 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 162 STRING "Type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 164 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 164 STRING "&1 is not an interface" 22 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 165 METHOD PUBLIC,STATIC,,,,ArgumentNotInterface,void,INPUT poArgument PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 165 STRING "ARGUMENTNOTINTERFACE" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 167 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 168 STRING "Type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 170 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 170 STRING "&1 is not an abstract type" 26 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 171 METHOD PUBLIC,STATIC,,,,ArgumentIsAbstract,void,INPUT poArgument PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 171 STRING "ARGUMENTISABSTRACT" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 173 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 174 STRING "Type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 176 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 176 STRING "&1 is an abstract type" 22 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 177 METHOD PUBLIC,STATIC,,,,ArgumentNotAbstract,void,INPUT poArgument PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 177 STRING "ARGUMENTNOTABSTRACT" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 179 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 180 STRING "Type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 182 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 182 STRING "&1 is not a final type" 22 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 183 METHOD PUBLIC,STATIC,,,,ArgumentIsFinal,void,INPUT poArgument PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 183 STRING "ARGUMENTISFINAL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 185 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 186 STRING "Type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 188 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 188 STRING "&1 is a final type" 18 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 189 METHOD PUBLIC,STATIC,,,,ArgumentNotFinal,void,INPUT poArgument PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 189 STRING "ARGUMENTNOTFINAL" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 191 STRING "pcTypeName" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 192 STRING "oType" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 194 STRING "TypeName" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 197 STRING "&1 is not a valid type" 22 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 198 METHOD PUBLIC,STATIC,,,,ArgumentIsValidType,void,INPUT pcTypeName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 198 STRING "ARGUMENTISVALIDTYPE" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 200 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 200 STRING "poType" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 201 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 202 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 205 STRING "argument cannot be an indeterminiate array" 42 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 211 METHOD PUBLIC,STATIC,,,,ArgumentIsType,void,INPUT poArgument PROGRESS.LANG.OBJECT EXTENT,INPUT poType PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 211 STRING "ARGUMENTISTYPE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 213 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 213 STRING "poType" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 214 STRING "oDerivedClass" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 216 STRING "argument" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 217 STRING "type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 220 CAST FROM Progress.Lang.Object TO Progress.Lang.Class
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 225 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 225 STRING "Object &1 (of type &2) is not of type &3" 40 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 230 METHOD PUBLIC,STATIC,,,,ArgumentIsType,void,INPUT poArgument PROGRESS.LANG.OBJECT,INPUT poType PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 230 STRING "ARGUMENTISTYPE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 232 STRING "poArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 232 STRING "poType" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 233 STRING "oDerivedClass" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 235 STRING "argument" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 236 STRING "type" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 239 CAST FROM Progress.Lang.Object TO Progress.Lang.Class
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 244 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 244 STRING "Object &1 (of type &2) is of type &3" 36 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 249 METHOD PUBLIC,STATIC,,,,ArgumentNotType,void,INPUT poArgument PROGRESS.LANG.OBJECT,INPUT poType PROGRESS.LANG.CLASS
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 249 STRING "ARGUMENTNOTTYPE" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 255 STRING "phArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 255 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 257 STRING "&1 cannot be null" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 258 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT phArgument HANDLE,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 258 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 265 STRING "phArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 265 STRING "poCheckType" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 265 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 268 STRING "cCheckType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 271 STRING "Check DataType" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 275 STRING "&1 is not of type &2" 20 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 276 METHOD PUBLIC,STATIC,,,,ArgumentIsType,void,INPUT phArgument HANDLE,INPUT poCheckType OPENEDGE.LANG.DATATYPEENUM,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 276 STRING "ARGUMENTISTYPE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 283 STRING "phArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 283 STRING "poCheckType" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 283 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 286 STRING "cCheckType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 289 STRING "Check DataType" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 293 STRING "&1 cannot be of type &2" 23 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 294 METHOD PUBLIC,STATIC,,,,ArgumentNotType,void,INPUT phArgument HANDLE,INPUT poCheckType OPENEDGE.LANG.DATATYPEENUM,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 294 STRING "ARGUMENTNOTTYPE" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 296 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 296 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 299 STRING "&1 array cannot be indeterminate" 32 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 300 METHOD PUBLIC,STATIC,,,,ArgumentHasDeterminateExtent,void,INPUT pcArgument CHARACTER EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 300 STRING "ARGUMENTHASDETERMINATEEXTENT" 28 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 302 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 302 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 305 STRING "&1 array must be indeterminate" 30 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 306 METHOD PUBLIC,STATIC,,,,ArgumentIsIndeterminateArray,void,INPUT pcArgument CHARACTER EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 306 STRING "ARGUMENTISINDETERMINATEARRAY" 28 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 308 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 308 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 311 STRING "&1 array cannot be indeterminate" 32 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 312 METHOD PUBLIC,STATIC,,,,ArgumentHasDeterminateExtent,void,INPUT piArgument INTEGER EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 312 STRING "ARGUMENTHASDETERMINATEEXTENT" 28 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 314 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 314 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 317 STRING "&1 array must be indeterminate" 30 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 318 METHOD PUBLIC,STATIC,,,,ArgumentIsIndeterminateArray,void,INPUT piArgument INTEGER EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 318 STRING "ARGUMENTISINDETERMINATEARRAY" 28 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 320 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 320 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 323 STRING "&1 array cannot be indeterminate" 32 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 324 METHOD PUBLIC,STATIC,,,,ArgumentHasDeterminateExtent,void,INPUT piArgument INT64 EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 324 STRING "ARGUMENTHASDETERMINATEEXTENT" 28 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 326 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 326 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 329 STRING "&1 array must be indeterminate" 30 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 330 METHOD PUBLIC,STATIC,,,,ArgumentIsIndeterminateArray,void,INPUT piArgument INT64 EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 330 STRING "ARGUMENTISINDETERMINATEARRAY" 28 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 332 STRING "phArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 332 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 337 STRING "record in buffer &1 is not available" 36 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 338 METHOD PUBLIC,STATIC,,,,ArgumentIsAvailable,void,INPUT phArgument HANDLE,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 338 STRING "ARGUMENTISAVAILABLE" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 340 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 340 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 342 STRING "iCheckVal" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 346 STRING "&1 is an integer value" 22 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 347 METHOD PUBLIC,STATIC,,,,ArgumentIsInt,void,INPUT pcArgument CHARACTER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 347 STRING "ARGUMENTISINT" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 349 STRING "phArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 349 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 354 STRING "record in buffer &1 is available" 32 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 355 METHOD PUBLIC,STATIC,,,,ArgumentNotAvailable,void,INPUT phArgument HANDLE,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 355 STRING "ARGUMENTNOTAVAILABLE" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 357 STRING "pcArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 357 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 359 STRING "iCheckVal" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 363 STRING "&1 is an integer value" 22 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 364 METHOD PUBLIC,STATIC,,,,ArgumentIsInteger,void,INPUT pcArgument CHARACTER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 364 STRING "ARGUMENTISINTEGER" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 366 STRING "plArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 366 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 370 STRING "&1 is not true" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 371 METHOD PUBLIC,STATIC,,,,ArgumentIsTrue,void,INPUT plArgument LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 371 STRING "ARGUMENTISTRUE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 373 STRING "plArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 373 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 377 STRING "&1 is not false" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 378 METHOD PUBLIC,STATIC,,,,ArgumentIsFalse,void,INPUT plArgument LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 378 STRING "ARGUMENTISFALSE" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 380 STRING "plArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 380 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 384 STRING "&1 is unknown" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 385 METHOD PUBLIC,STATIC,,,,ArgumentIsUnknown,void,INPUT plArgument LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 385 STRING "ARGUMENTISUNKNOWN" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 387 STRING "plArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 387 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 390 STRING "&1 is true" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 391 METHOD PUBLIC,STATIC,,,,ArgumentNotTrue,void,INPUT plArgument LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 391 STRING "ARGUMENTNOTTRUE" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 393 STRING "plArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 393 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 396 STRING "&1 is false" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 397 METHOD PUBLIC,STATIC,,,,ArgumentNotFalse,void,INPUT plArgument LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 397 STRING "ARGUMENTNOTFALSE" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 399 STRING "plArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 399 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 402 STRING "&1 is unknown" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 403 METHOD PUBLIC,STATIC,,,,ArgumentNotUnknown,void,INPUT plArgument LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 403 STRING "ARGUMENTNOTUNKNOWN" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 405 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 405 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 407 STRING "&1 cannot be null" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 408 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT piArgument INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 408 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 410 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 410 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 412 STRING "&1 cannot be null" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 413 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT piArgument INT64,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 413 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 415 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 415 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 417 STRING "&1 cannot be zero" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 418 METHOD PUBLIC,STATIC,,,,ArgumentNotZero,void,INPUT piArgument DECIMAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 418 STRING "ARGUMENTNOTZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 420 STRING "pdArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 420 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 422 STRING "&1 cannot be null" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 423 METHOD PUBLIC,STATIC,,,,ArgumentNotNull,void,INPUT pdArgument DECIMAL,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 423 STRING "ARGUMENTNOTNULL" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 425 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 425 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 428 METHOD PUBLIC,STATIC,,,,ArgumentNotNullOrZero,void,INPUT piArgument INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 428 STRING "ARGUMENTNOTNULLORZERO" 21 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 430 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 430 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 432 STRING "&1 cannot be zero" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 433 METHOD PUBLIC,STATIC,,,,ArgumentNotZero,void,INPUT piArgument INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 433 STRING "ARGUMENTNOTZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 435 STRING "piArgument" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 435 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 437 STRING "&1 cannot be zero" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 438 METHOD PUBLIC,STATIC,,,,ArgumentNotZero,void,INPUT piArgument INT64,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 438 STRING "ARGUMENTNOTZERO" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 440 CONSTRUCTOR PUBLIC,,,,Assert,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 440 STRING "ASSERT" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 39 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 44 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 49 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 54 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 58 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 61 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 65 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 68 INVOKE OpenEdge.Lang.Assert:ArgumentNotAvailable,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 72 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 75 INVOKE OpenEdge.Lang.Assert:ArgumentIsAvailable,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 79 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 82 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 86 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object EXTENT,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 89 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 95 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrEmpty,INPUT longchar,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 102 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 105 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrEmpty,INPUT longchar,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 110 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 114 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT longchar,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 115 INVOKE OpenEdge.Lang.Assert:ArgumentNotEmpty,INPUT longchar,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 120 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 125 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 132 INVOKE OpenEdge.Lang.Assert:ArgumentHasDeterminateExtent,INPUT integer EXTENT,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 135 INVOKE OpenEdge.Lang.Assert:ArgumentNonZero,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 143 INVOKE OpenEdge.Lang.Assert:ArgumentHasDeterminateExtent,INPUT int64 EXTENT,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 146 INVOKE OpenEdge.Lang.Assert:ArgumentNonZero,INPUT int64,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 152 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 156 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 157 INVOKE Progress.Lang.Class:IsInterface
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 158 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 162 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 163 INVOKE Progress.Lang.Class:IsInterface
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 164 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 168 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 169 INVOKE Progress.Lang.Class:IsAbstract
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 170 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 174 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 175 INVOKE Progress.Lang.Class:IsAbstract
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 176 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 180 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 181 INVOKE Progress.Lang.Class:IsFinal
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 182 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 186 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 187 INVOKE Progress.Lang.Class:IsFinal
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 188 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 194 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrEmpty,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 195 INVOKE Progress.Lang.Class:GetClass,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 197 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 205 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 209 INVOKE OpenEdge.Lang.Assert:ArgumentIsType,INPUT Progress.Lang.Object,INPUT Progress.Lang.Class
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 216 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 217 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 222 INVOKE Progress.Lang.Object:GetClass
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 224 INVOKE Progress.Lang.Class:IsA,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 225 INVOKE Progress.Lang.Object:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 225 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 235 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 236 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 241 INVOKE Progress.Lang.Object:GetClass
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 243 INVOKE Progress.Lang.Class:IsA,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 244 INVOKE Progress.Lang.Object:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 244 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 257 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 270 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 271 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 273 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 275 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 288 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 289 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 291 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 293 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 299 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 305 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 311 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 317 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 323 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 329 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 334 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 337 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 346 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 351 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 354 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 363 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 370 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 377 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 384 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 390 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 396 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 402 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 407 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 412 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 417 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 422 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 426 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 427 INVOKE OpenEdge.Lang.Assert:ArgumentNotZero,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 432 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Assert.cls .\referencecomponents\support\src\OpenEdge\Lang\Assert.cls 437 NEW Progress.Lang.AppError,INPUT character

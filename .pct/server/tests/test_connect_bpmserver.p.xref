@@ -1,0 +1,175 @@
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 1 COMPILE server\tests\test_connect_bpmserver.p
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 1 CPINTERNAL utf-8
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 1 CPSTREAM iso8859-1
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 14 ROUTINE-LEVEL ON ERROR UNDO, THROW
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 48 STRING "pmUserContext" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 49 STRING "oContext" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 50 STRING "oInput" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 54 CAST FROM OpenEdge.Core.Util.IObjectInput TO OpenEdge.CommonInfrastructure.Common.IUserContext
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 60 FUNCTION DeserializeContext,OpenEdge.CommonInfrastructure.Common.IUserContext,INPUT pmUserContext MEMPTR
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 60 STRING "DESERIALIZECONTEXT" 18 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 67 STRING "poUserContext" 13 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 68 STRING "mContext" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 69 STRING "oOutput" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 79 FUNCTION SerializeContext,memptr,INPUT poUserContext OPENEDGE.COMMONINFRASTRUCTURE.COMMON.IUSERCONTEXT
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 79 STRING "SERIALIZECONTEXT" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 82 STRING "oConnMgr" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 83 STRING "oSvcMgr" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 84 STRING "oSC" 3 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 85 STRING "oUC" 3 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 87 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 87 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 87 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 89 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 91 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceManager:IServiceManagerType
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 91 CAST FROM Progress.Lang.Class TO OpenEdge.CommonInfrastructure.Common.IServiceManager
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 92 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ConnectionManager:IConnectionManagerType
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 92 CAST FROM Progress.Lang.Class TO OpenEdge.CommonInfrastructure.Common.IConnectionManager
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 101 STRING "john.webbs" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 101 STRING "sales.employee.fjord" 20 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 101 STRING "letmein" 7 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 109 STRING "poSC" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 111 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.Connection.ConnectionTypeEnum:BpmServer
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 111 STRING "bpmAutoEdgeTheFactory" 21 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 113 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.Connection.IServerConnection:IsConnected
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 113 STRING "poSC:IsConnected=" 17 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 113 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 116 PROCEDURE connect,,OUTPUT poSC OPENEDGE.COMMONINFRASTRUCTURE.COMMON.CONNECTION.ISERVERCONNECTION
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 116 STRING "CONNECT" 7 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 119 STRING "poSC" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 121 STRING "oBpmServer" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 122 STRING "cSessionId" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 124 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.Connection.IServerConnection:Server
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 124 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.BPM.IBizLogicAPI
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 125 STRING "ebms" 4 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 126 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.BPM.IBizLogicAPI:SessionId
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 126 STRING "?" 1 LEFT TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 128 STRING "cSessionId=" 11 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 128 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 132 PROCEDURE bpm_login,,INPUT poSC OPENEDGE.COMMONINFRASTRUCTURE.COMMON.CONNECTION.ISERVERCONNECTION
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 132 STRING "BPM_LOGIN" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 135 STRING "poSC" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 137 STRING "oBpmServer" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 138 STRING "cSessionId" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 140 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.Connection.IServerConnection:Server
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 140 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.BPM.IBizLogicAPI
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 143 STRING "oBpmServer:IsSessionValid()=" 28 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 143 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 147 PROCEDURE bpm_logout,,INPUT poSC OPENEDGE.COMMONINFRASTRUCTURE.COMMON.CONNECTION.ISERVERCONNECTION
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 147 STRING "BPM_LOGOUT" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 150 STRING "poSC" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 154 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.Connection.IServerConnection:IsConnected
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 154 STRING "poSC:IsConnected=" 17 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 154 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 158 PROCEDURE disconnect,,INPUT poSC OPENEDGE.COMMONINFRASTRUCTURE.COMMON.CONNECTION.ISERVERCONNECTION
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 158 STRING "DISCONNECT" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 161 STRING "pcName" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 162 STRING "pcDomain" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 163 STRING "pcPassword" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 164 STRING "poContext" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 166 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 167 STRING "iMax" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 168 STRING "cContextId" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 169 STRING "oResponse" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 170 STRING "mUserContext" 12 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 171 STRING "oRequest" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 173 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum:UserLogin
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 173 STRING "SecurityManager.UserLogin" 25 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 174 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserName
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 174 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserDomain
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 174 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserPassword
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 174 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserName 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 174 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserDomain 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 174 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserPassword 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 184 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 184 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 186 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserName
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 186 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserDomain
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 186 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserPassword
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 192 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse:UserContext
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 192 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse:UserContext 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 193 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse:UserContext
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 195 STRING "oError" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 196 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:HasError
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 196 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 196 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:HasError 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 197 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:ErrorText
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 197 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 197 STRING "?" 1 LEFT TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 197 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:ErrorText 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 201 PROCEDURE user_login,,INPUT pcName CHARACTER,INPUT pcDomain CHARACTER,INPUT pcPassword CHARACTER,OUTPUT poContext OPENEDGE.COMMONINFRASTRUCTURE.COMMON.IUSERCONTEXT
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 201 STRING "USER_LOGIN" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 204 STRING "poContext" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 206 STRING "oRequest" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 207 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 208 STRING "iMax" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 209 STRING "cContextId" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 210 STRING "oResponse" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 211 STRING "mUserContext" 12 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 213 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.SecurityManager:ISecurityManagerType
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 213 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 213 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum:UserLogout
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 215 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:ContextId
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 215 STRING "?" 1 LEFT TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 215 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.IUserContext:ContextId
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 215 STRING "?" 1 LEFT TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 215 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:ContextId 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 216 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserContext
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 216 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserContext 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 223 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 223 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 224 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest:UserContext
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 229 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse:UserContext
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 229 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse:UserContext 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 230 STRING "oError" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 231 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:HasError
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 231 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 231 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:HasError 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 232 ACCESS PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:ErrorText
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 232 CAST FROM OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse TO OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 232 UPDATE PUBLIC-PROPERTY OpenEdge.CommonInfrastructure.Common.ServiceMessage.IServiceResponse:ErrorText 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 235 PROCEDURE user_logout,,INPUT-OUTPUT poContext OPENEDGE.COMMONINFRASTRUCTURE.COMMON.IUSERCONTEXT
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 235 STRING "USER_LOGOUT" 11 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 238 STRING "oException" 10 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 243 STRING "oAppError" 9 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 244 ACCESS PUBLIC-PROPERTY Progress.Lang.AppError:ReturnValue
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 244 ACCESS PUBLIC-PROPERTY Progress.Lang.ProError:CallStack
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 244 STRING "Unhandled Progress.Lang.AppError" 32 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 250 STRING "oError" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 251 ACCESS PUBLIC-PROPERTY Progress.Lang.Error:CallStack
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 251 STRING "(" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 251 STRING ")" 1 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 251 STRING "Unhandled Progress.Lang.Error" 29 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 259 STRING "just about done" 15 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 259 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 52 NEW OpenEdge.Core.Util.ObjectInputStream
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 53 INVOKE OpenEdge.Core.Util.IObjectInput:Read,INPUT memptr
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 54 INVOKE OpenEdge.Core.Util.IObjectInput:ReadObject
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 71 NEW OpenEdge.Core.Util.ObjectOutputStream
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 72 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteObject,INPUT Progress.Lang.Object
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 73 INVOKE OpenEdge.Core.Util.IObjectOutput:Write,OUTPUT memptr
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 89 RUN OpenEdge/CommonInfrastructure/Server/as_startup.p
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 91 INVOKE OpenEdge.Lang.Collections.IMap:Get,INPUT Progress.Lang.Object
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 92 INVOKE OpenEdge.CommonInfrastructure.Common.IServiceManager:StartService,INPUT Progress.Lang.Class
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 111 INVOKE OpenEdge.CommonInfrastructure.Common.IConnectionManager:GetServerConnection,INPUT OpenEdge.CommonInfrastructure.Common.Connection.ConnectionTypeEnum,INPUT character
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 125 INVOKE OpenEdge.Lang.BPM.IBizLogicAPI:Login,INPUT character,INPUT character
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 141 INVOKE OpenEdge.Lang.BPM.IBizLogicAPI:Logout
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 143 INVOKE OpenEdge.Lang.BPM.IBizLogicAPI:IsSessionValid
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 152 INVOKE OpenEdge.CommonInfrastructure.Common.Connection.IServerConnection:Disconnect
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 173 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest,INPUT character,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 182 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 186 RUN OpenEdge/CommonInfrastructure/Server/service_interface_userlogin.p
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 197 INVOKE Progress.Lang.Error:GetMessage,INPUT integer
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 213 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest,INPUT character,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.ServiceMessageActionEnum
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 222 NEW OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerResponse,INPUT OpenEdge.CommonInfrastructure.Common.ServiceMessage.SecurityManagerRequest
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 226 RUN OpenEdge/CommonInfrastructure/Server/service_interface_userlogout.p
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 232 INVOKE Progress.Lang.Error:GetMessage,INPUT integer
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 239 INVOKE OpenEdge.Core.System.ApplicationError:LogError
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 240 INVOKE OpenEdge.Core.System.ApplicationError:ShowError
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 251 INVOKE Progress.Lang.Error:GetMessage,INPUT integer
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 251 INVOKE Progress.Lang.Error:GetMessageNum,INPUT integer
+autoedgethefactory\server\tests\test_connect_bpmserver.p autoedgethefactory\server\tests\test_connect_bpmserver.p 262 RUN OpenEdge/CommonInfrastructure/Common/stop_session.p

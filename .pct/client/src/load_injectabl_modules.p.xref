@@ -1,0 +1,5 @@
+autoedgethefactory\client\src\load_injectabl_modules.p autoedgethefactory\client\src\load_injectabl_modules.p 1 COMPILE client\src\load_injectabl_modules.p
+autoedgethefactory\client\src\load_injectabl_modules.p autoedgethefactory\client\src\load_injectabl_modules.p 1 CPINTERNAL utf-8
+autoedgethefactory\client\src\load_injectabl_modules.p autoedgethefactory\client\src\load_injectabl_modules.p 1 CPSTREAM iso8859-1
+autoedgethefactory\client\src\load_injectabl_modules.p autoedgethefactory\client\src\load_injectabl_modules.p 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+autoedgethefactory\client\src\load_injectabl_modules.p autoedgethefactory\client\src\load_injectabl_modules.p 33 STRING "poKernel" 8 NONE UNTRANSLATABLE 

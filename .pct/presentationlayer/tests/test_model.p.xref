@@ -1,0 +1,23 @@
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 COMPILE presentationlayer\tests\test_model.p
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 CPINTERNAL utf-8
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 CPSTREAM iso8859-1
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "eAction" 7 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "RecordKey" 9 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "QueryName" 9 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "BufferName" 10 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "ModelName" 9 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "UndoActionType" 14 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "Order" 5 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "eActionBefore" 13 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "__error-flag__" 14 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "__origin-rowid__" 16 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "__error-string__" 16 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "__after-rowid__" 15 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 1 STRING "__row-state__" 13 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 11 DATASET dsAction,,,,,eAction DATALINKS 0
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 14 STRING "h" 1 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 18 STRING "Row-Update" 10 NONE TRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 18 STRING "RowUpdate" 9 NONE TRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 18 STRING "idx1" 4 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 18 STRING "rowState" 8 NONE UNTRANSLATABLE 
+referencecomponents\presentationlayer\tests\test_model.p referencecomponents\presentationlayer\tests\test_model.p 18 STRING "dsAction" 8 NONE UNTRANSLATABLE 

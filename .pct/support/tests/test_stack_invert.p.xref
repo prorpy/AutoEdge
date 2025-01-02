@@ -1,0 +1,37 @@
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 1 COMPILE support\tests\test_stack_invert.p
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 1 CPINTERNAL utf-8
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 1 CPSTREAM iso8859-1
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 4 STRING "oMyStack" 8 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 5 STRING "i" 1 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 9 STRING "a" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 10 STRING "b" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 11 STRING "c" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 12 STRING "d" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 13 STRING "e" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 14 STRING "f" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 15 STRING "g" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 16 STRING "h" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 17 STRING "i" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 18 STRING "j" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 20 STRING "c" 1 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 21 STRING "cExpected" 9 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 23 STRING " a b c d e f g h i j" 20 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 27 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 28 STRING " " 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 31 STRING "right?" 6 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 40 STRING "e" 1 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 41 ACCESS PUBLIC-PROPERTY Progress.Lang.Error:CallStack
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 7 NEW OpenEdge.Lang.Collections.CharacterStack,INPUT integer
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 9 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 10 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 11 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 12 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 13 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 14 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 15 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 16 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 17 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 18 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 25 INVOKE OpenEdge.Lang.Collections.Stack:Invert
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 28 INVOKE OpenEdge.Lang.Collections.CharacterStack:Pop
+referencecomponents\support\tests\test_stack_invert.p referencecomponents\support\tests\test_stack_invert.p 41 INVOKE Progress.Lang.Error:GetMEssage,INPUT integer

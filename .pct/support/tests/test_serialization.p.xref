@@ -1,0 +1,20 @@
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 1 COMPILE support\tests\test_serialization.p
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 1 CPINTERNAL utf-8
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 1 CPSTREAM iso8859-1
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 7 STRING "lc1" 3 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 8 STRING "m1" 2 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 9 STRING "os1" 3 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 10 STRING "os3" 3 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 12 STRING "oos" 3 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 13 STRING "ois" 3 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 21 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 21 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 24 STRING "S1.ser" 6 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 35 STRING "S1.ser" 6 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 43 STRING "i" 1 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 44 STRING "i2" 2 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 61 STRING "eISE" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 67 STRING "e" 1 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 68 ACCESS PUBLIC-PROPERTY Progress.Lang.AppError:ReturnValue
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 68 ACCESS PUBLIC-PROPERTY Progress.Lang.ProError:CallStack
+referencecomponents\support\tests\test_serialization.p referencecomponents\support\tests\test_serialization.p 68 STRING "[DEBUG]" 7 NONE TRANSLATABLE 

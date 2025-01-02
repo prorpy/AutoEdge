@@ -1,0 +1,86 @@
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 1 COMPILE OpenEdge\Lang\ABLSession.cls
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 29 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 41 CLASS OpenEdge.Lang.ABLSession,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 41 STRING "OpenEdge.Lang.ABLSession" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 44 STRING "ActiveSince" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 44 PROPERTY PUBLIC,,,,,ActiveSince
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 48 STRING "Id" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 48 PROPERTY PUBLIC,,,,,Id
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 52 STRING "SessionProperties" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 52 PROPERTY PUBLIC,,,,,SessionProperties
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 57 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 57 PROPERTY PUBLIC,,,,,Name
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ABLSession:Name
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ABLSession:Name
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 61 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Name 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 63 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ABLSession:Name
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 67 STRING "Instance" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 67 PROPERTY PUBLIC,STATIC,,,,Instance
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 69 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 70 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 70 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 72 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 77 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ABLSession:Id
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 77 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:ActiveSince
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 77 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 77 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Id 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 77 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:ActiveSince 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 77 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 82 STRING "ABLSESSION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 86 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 86 STRING "SESSION:PARAM" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 87 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:SessionProperties
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 87 STRING "SESSION:ICFPARAM" 16 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 88 STRING "CACHESTARTUPPROPERTIES" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 96 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 97 STRING "hProc" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 105 METHOD PUBLIC,,,,,GetFirstRunningProc,widget-handle,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 105 STRING "GETFIRSTRUNNINGPROC" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 115 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 116 STRING "hProc" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 117 STRING "hTemp" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 118 STRING "cProcs" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 119 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 120 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 125 STRING "," 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 140 METHOD PUBLIC,,,,,GetAllRunningProcs,widget-handle EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 140 STRING "GETALLRUNNINGPROCS" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 152 STRING "piReference" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 153 STRING "oInstance" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 154 STRING "oReference" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 160 ACCESS PUBLIC-PROPERTY Progress.Lang.Object:Next-Sibling
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 164 METHOD PUBLIC,,,,,ResolveWeakReference,Progress.Lang.Object,INPUT piReference INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 164 STRING "RESOLVEWEAKREFERENCE" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 171 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 172 STRING "oInstance" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 178 ACCESS PUBLIC-PROPERTY Progress.Lang.Object:next-sibling
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 182 METHOD PUBLIC,,,,,GetFirstClassInstance,Progress.Lang.Object,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 182 STRING "GETFIRSTCLASSINSTANCE" 21 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 189 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 190 STRING "oInstance" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 191 STRING "oTemp" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 192 STRING "oCollection" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 203 ACCESS PUBLIC-PROPERTY Progress.Lang.Object:next-sibling
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 206 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.ICollection:Size
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 218 METHOD PUBLIC,,,,,GetAllInstances,Progress.Lang.Object EXTENT,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 218 STRING "GETALLINSTANCES" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 220 STRING "ABLSESSION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 70 NEW OpenEdge.Lang.ABLSession
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 77 NEW OpenEdge.Lang.Collections.Map
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 81 INVOKE OpenEdge.Lang.ABLSession:CacheStartupProperties
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 86 INVOKE OpenEdge.Lang.Collections.IMap:Put,INPUT Progress.Lang.Object,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 86 NEW OpenEdge.Lang.String,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 87 INVOKE OpenEdge.Lang.Collections.IMap:Put,INPUT Progress.Lang.Object,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 87 NEW OpenEdge.Lang.String,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 174 INVOKE OpenEdge.Lang.Assert:ArgumentIsValidType,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 177 INVOKE Progress.Lang.Object:GetClass
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 177 INVOKE Progress.Lang.Class:IsA,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 194 INVOKE OpenEdge.Lang.Assert:ArgumentIsValidType,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 196 NEW OpenEdge.Lang.Collections.Collection
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 200 INVOKE Progress.Lang.Object:GetClass
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 200 INVOKE Progress.Lang.Class:IsA,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 201 INVOKE OpenEdge.Lang.Collections.ICollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 207 INVOKE OpenEdge.Lang.Collections.ICollection:ToArray
+.\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLSession.cls 216 INVOKE OpenEdge.Lang.Collections.ICollection:Clear

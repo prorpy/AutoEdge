@@ -1,0 +1,50 @@
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 1 COMPILE test_vehbranddata.p
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 47 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 47 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 47 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 49 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 51 STRING "fjord" 5 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 54 STRING "pcBrand" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 56 STRING "pcDealerNameList" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 57 STRING "pcCompactModels" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 58 STRING "pcTruckModels" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 59 STRING "pcSuvModels" 11 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 60 STRING "pcPremiumModels" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 61 STRING "pcSedanModels" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 62 STRING "pcInteriorTrimMaterial" 22 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 63 STRING "pcInteriorTrimColour" 20 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 64 STRING "pcInteriorAccessories" 21 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 65 STRING "pcExteriorColour" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 66 STRING "pcMoonroof" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 67 STRING "pcWheels" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 68 STRING "iOrderNum" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 69 STRING "cUserContextId" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 89 STRING "pcDealerNameList=" 17 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 89 STRING "pcTruckModels=" 14 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 89 STRING "pcExteriorColour" 16 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 89 STRING "pcWheels=" 9 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 89 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 97 PROCEDURE test_getbranddata,,INPUT pcBrand CHARACTER
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 97 STRING "TEST_GETBRANDDATA" 17 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 100 STRING "oException" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 105 STRING "oAppError" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 106 ACCESS PUBLIC-PROPERTY Progress.Lang.AppError:ReturnValue
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 106 ACCESS PUBLIC-PROPERTY Progress.Lang.ProError:CallStack
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 106 STRING "Unhandled Progress.Lang.AppError" 32 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 112 STRING "oError" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 113 ACCESS PUBLIC-PROPERTY Progress.Lang.Error:CallStack
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 113 STRING "(" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 113 STRING ")" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 113 STRING "Unhandled Progress.Lang.Error" 29 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 121 STRING "just about done" 15 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 121 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 49 RUN OpenEdge/CommonInfrastructure/Server/as_startup.p
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 71 RUN AutoEdge/Factory/Server/Order/BusinessComponent/service_branddata.p
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 101 INVOKE OpenEdge.Core.System.ApplicationError:LogError
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 102 INVOKE OpenEdge.Core.System.ApplicationError:ShowError
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 113 INVOKE Progress.Lang.Error:GetMessage,INPUT integer
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 113 INVOKE Progress.Lang.Error:GetMessageNum,INPUT integer
+.\autoedgethefactory\server\tests\test_vehbranddata.p .\autoedgethefactory\server\tests\test_vehbranddata.p 124 RUN OpenEdge/CommonInfrastructure/Common/stop_session.p

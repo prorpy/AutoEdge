@@ -1,0 +1,104 @@
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 1 COMPILE OpenEdge\Lang\SaxWriteStatusEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 30 CLASS OpenEdge.Lang.SaxWriteStatusEnum,INHERITS OpenEdge.Lang.EnumMember,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 30 STRING "OpenEdge.Lang.SaxWriteStatusEnum" 32 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 32 STRING "Idle" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Idle
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 35 STRING "Begin" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Begin
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 38 STRING "Tag" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 38 PROPERTY PUBLIC,STATIC,,,,Tag
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 40 STRING "Element" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 40 PROPERTY PUBLIC,STATIC,,,,Element
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 42 STRING "Content" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 42 PROPERTY PUBLIC,STATIC,,,,Content
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 44 STRING "Complete" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 44 PROPERTY PUBLIC,STATIC,,,,Complete
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 50 STRING "Error" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 50 PROPERTY PUBLIC,STATIC,,,,Error
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 52 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 52 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Idle
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 55 STRING "SAX-WRITE-IDLE" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 55 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Idle 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 56 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Begin
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 56 STRING "SAX-WRITE-BEGIN" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 56 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Begin 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 57 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Tag
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 57 STRING "SAX-WRITE-TAG" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 57 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Tag 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 58 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Element
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 58 STRING "SAX-WRITE-ELEMENT" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 58 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Element 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 59 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Content
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 59 STRING "SAX-WRITE-CONTENT" 17 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 59 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Content 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Complete
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 60 STRING "SAX-WRITE-COMPLETE" 18 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 60 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Complete 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Error
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 61 STRING "SAX-WRITE-ERROR" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 61 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Error 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 63 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 63 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Idle
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 63 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 64 CONSTRUCTOR ,STATIC,,,SaxWriteStatusEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 64 STRING "SAXWRITESTATUSENUM" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 66 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 66 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 68 CONSTRUCTOR PUBLIC,,,,SaxWriteStatusEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 68 STRING "SAXWRITESTATUSENUM" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 70 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 71 STRING "oEnum" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 74 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Idle
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 75 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Begin
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 76 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Tag
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 77 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Element
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 78 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Content
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 79 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Complete
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 80 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Error
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 84 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.SaxWriteStatusEnum,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 84 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 86 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 87 STRING "oEnum" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 90 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Idle
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 90 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 90 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Idle
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 91 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Begin
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 91 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Begin
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 92 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Tag
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 92 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 92 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Tag
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 93 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Element
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 93 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 93 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Element
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 94 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Content
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 94 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 94 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Content
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 95 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Complete
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 95 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 95 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Complete
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 96 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Error
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 96 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 96 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SaxWriteStatusEnum:Error
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 100 METHOD PUBLIC,STATIC,,,,EnumFromValue,OpenEdge.Lang.SaxWriteStatusEnum,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 100 STRING "ENUMFROMVALUE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 55 NEW OpenEdge.Lang.SaxWriteStatusEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 56 NEW OpenEdge.Lang.SaxWriteStatusEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 57 NEW OpenEdge.Lang.SaxWriteStatusEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 58 NEW OpenEdge.Lang.SaxWriteStatusEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 59 NEW OpenEdge.Lang.SaxWriteStatusEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 60 NEW OpenEdge.Lang.SaxWriteStatusEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 61 NEW OpenEdge.Lang.SaxWriteStatusEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 67 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 74 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 75 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 76 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 77 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 78 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 79 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SaxWriteStatusEnum.cls 80 INVOKE OpenEdge.Lang.EnumMember:ToString

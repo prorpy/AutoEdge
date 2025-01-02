@@ -1,0 +1,4 @@
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\propath_compile.p 16 ROUTINE-LEVEL ON ERROR UNDO, THROW

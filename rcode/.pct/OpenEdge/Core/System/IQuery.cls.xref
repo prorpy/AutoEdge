@@ -1,0 +1,77 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 1 COMPILE OpenEdge\Core\System\IQuery.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 33 INTERFACE OpenEdge.Core.System.IQuery,,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 33 STRING "OpenEdge.Core.System.IQuery" 27 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 40 EVENT PUBLIC,,,,,QueryOpened,,void,INPUT poQuery OPENEDGE.CORE.SYSTEM.IQUERY,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 46 EVENT PUBLIC,,,,,QueryClosed,,void,INPUT poQuery OPENEDGE.CORE.SYSTEM.IQUERY,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 53 EVENT PUBLIC,,,,,QueryRepositioned,,void,INPUT poQuery OPENEDGE.CORE.SYSTEM.IQUERY,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 56 STRING "QueryHandle" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 56 PROPERTY PUBLIC,,,,,QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 59 STRING "IsOpen" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 59 PROPERTY PUBLIC,,,,,IsOpen
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 61 STRING "Definition" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 61 PROPERTY PUBLIC,,,,,Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 62 STRING "NumRows" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 62 PROPERTY PUBLIC,,,,,NumRows
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 63 STRING "CurrentRow" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 63 PROPERTY PUBLIC,,,,,CurrentRow
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 64 STRING "RowPosition" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 64 PROPERTY PUBLIC,,,,,RowPosition
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 65 STRING "TableOwner" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 65 PROPERTY PUBLIC,,,,,TableOwner
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 67 METHOD PUBLIC,,,,,Prepare,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 67 STRING "PREPARE" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 70 METHOD PUBLIC,,,,,Reset,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 70 STRING "RESET" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 73 METHOD PUBLIC,,,,,Rebase,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 73 STRING "REBASE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 76 METHOD PUBLIC,,,,,Open,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 76 STRING "OPEN" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 77 METHOD PUBLIC,,,,,Close,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 77 STRING "CLOSE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 79 METHOD PUBLIC,,,,,Reopen,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 79 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 80 STRING "pcRowKey" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 80 METHOD PUBLIC,,,,,Reopen,logical,INPUT pcRowKey CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 80 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 81 STRING "piRow" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 81 METHOD PUBLIC,,,,,Reopen,logical,INPUT piRow INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 81 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 84 STRING "pcRowKey" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 84 METHOD PUBLIC,,,,,Reposition,logical,INPUT pcRowKey CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 84 STRING "REPOSITION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 86 STRING "piRow" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 86 METHOD PUBLIC,,,,,Reposition,logical,INPUT piRow INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 86 STRING "REPOSITION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 88 METHOD PUBLIC,,,,,GetFirst,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 88 STRING "GETFIRST" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 89 METHOD PUBLIC,,,,,GetNext,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 89 STRING "GETNEXT" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 90 METHOD PUBLIC,,,,,GetLast,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 90 STRING "GETLAST" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 91 METHOD PUBLIC,,,,,GetPrev,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 91 STRING "GETPREV" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 94 STRING "piPosition" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 94 METHOD PUBLIC,,,,,GetRowKey,character EXTENT,INPUT piPosition INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 94 STRING "GETROWKEY" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 95 STRING "poQueryDefinition" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 95 STRING "poFindType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 95 METHOD PUBLIC,,,,,GetRowKeyWhere,character EXTENT,INPUT poQueryDefinition OPENEDGE.CORE.SYSTEM.IQUERYDEFINITION,INPUT poFindType OPENEDGE.LANG.FINDTYPEENUM
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 95 STRING "GETROWKEYWHERE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 98 METHOD PUBLIC,,,,,GetCurrentRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 98 STRING "GETCURRENTROWKEY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 99 METHOD PUBLIC,,,,,GetFirstRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 99 STRING "GETFIRSTROWKEY" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 100 METHOD PUBLIC,,,,,GetNextRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 100 STRING "GETNEXTROWKEY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 101 METHOD PUBLIC,,,,,GetLastRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 101 STRING "GETLASTROWKEY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 102 METHOD PUBLIC,,,,,GetPrevRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 102 STRING "GETPREVROWKEY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 104 STRING "pcBufferName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 104 METHOD PUBLIC,,,,,GetCurrentBufferKey,character,INPUT pcBufferName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 104 STRING "GETCURRENTBUFFERKEY" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 105 STRING "pcBufferName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 105 METHOD PUBLIC,,,,,GetBufferTableName,character,INPUT pcBufferName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls .\referencecomponents\support\src\OpenEdge\Core\System\IQuery.cls 105 STRING "GETBUFFERTABLENAME" 18 NONE UNTRANSLATABLE 

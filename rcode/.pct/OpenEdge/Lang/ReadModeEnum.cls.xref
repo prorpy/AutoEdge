@@ -1,0 +1,54 @@
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 1 COMPILE OpenEdge\Lang\ReadModeEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 30 CLASS OpenEdge.Lang.ReadModeEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 30 STRING "OpenEdge.Lang.ReadModeEnum" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 32 STRING "Append" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Append
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 33 STRING "Empty" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,Empty
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 34 STRING "Merge" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,Merge
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 35 STRING "Replace" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Replace
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 36 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 36 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Append
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 39 STRING "Append" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ReadModeEnum:Append 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Empty
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 40 STRING "Empty" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ReadModeEnum:Empty 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Merge
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 41 STRING "Empty-Handle" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ReadModeEnum:Merge 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Replace
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 42 STRING "Replace" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 42 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ReadModeEnum:Replace 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Merge
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ReadModeEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 44 CONSTRUCTOR ,STATIC,,,ReadModeEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 44 STRING "READMODEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 46 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 48 CONSTRUCTOR PUBLIC,,,,ReadModeEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 48 STRING "READMODEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 50 STRING "pcReadMode" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 51 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Append
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Empty
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 56 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Merge
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 57 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ReadModeEnum:Replace
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 61 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.ReadModeEnum,INPUT pcReadMode CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 61 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 39 NEW OpenEdge.Lang.ReadModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 40 NEW OpenEdge.Lang.ReadModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 41 NEW OpenEdge.Lang.ReadModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 42 NEW OpenEdge.Lang.ReadModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 47 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 54 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 55 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 56 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ReadModeEnum.cls 57 INVOKE OpenEdge.Lang.EnumMember:ToString

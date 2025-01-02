@@ -1,0 +1,7 @@
+OpenEdge.Core.XML
+OpenEdge.Core.XML.SaxReader	C	853c8c9b674362da61acb078315bb9d5
+OpenEdge.Core.XML.SaxWriter	C	b2cf76bf474f2335eaf436da69ac79cf
+OpenEdge.Core.XML.SaxWriterDataTypeEnum	C	f88330d599eb8517201bd0c6d0eed85c
+OpenEdge.Core.XML.SaxWriterError	C	90964bd03f92fb30c6dcc855367a25b7
+OpenEdge.Core.XML.WebServiceInvocationError	C	28399cdc5e2ecd6320fc4632c822f8d7
+OpenEdge.Core.XML.WebServiceProtocol	C	0d0925bb986a27665894fc977da6569e

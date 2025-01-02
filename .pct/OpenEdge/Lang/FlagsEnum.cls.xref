@@ -1,0 +1,29 @@
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 1 COMPILE OpenEdge\Lang\FlagsEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 29 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 34 CLASS OpenEdge.Lang.FlagsEnum,INHERITS OpenEdge.Lang.EnumMember,,,,ABSTRACT,
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 34 STRING "OpenEdge.Lang.FlagsEnum" 23 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 34 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 42 STRING "piValueSum" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 42 STRING "poCheckEnum" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 45 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 46 METHOD PUBLIC,STATIC,,,,IsA,logical,INPUT piValueSum INTEGER,INPUT poCheckEnum OPENEDGE.LANG.ENUMMEMBER
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 46 STRING "ISA" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 52 STRING "FLAGSENUM" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 54 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 56 CONSTRUCTOR PUBLIC,,,,FlagsEnum,void,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 56 STRING "FLAGSENUM" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 58 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 58 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 62 CONSTRUCTOR PUBLIC,,,,FlagsEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 62 STRING "FLAGSENUM" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 67 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 69 STRING " is not a power of 2, which is required for a flag enumeration value" 68 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 70 STRING "VALIDATEENUMMEMBERVALUE" 23 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 72 STRING "FLAGSENUM" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 51 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 55 INVOKE OpenEdge.Lang.FlagsEnum:FlagsEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 59 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 61 INVOKE OpenEdge.Lang.FlagsEnum:ValidateEnumMemberValue,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FlagsEnum.cls 69 NEW Progress.Lang.AppError,INPUT character

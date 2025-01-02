@@ -1,0 +1,5 @@
+.\autoedgethefactory\client\tests\test_connect_appserver.p .\autoedgethefactory\client\tests\test_connect_appserver.p 1 COMPILE test_connect_appserver.p
+.\autoedgethefactory\client\tests\test_connect_appserver.p .\autoedgethefactory\client\tests\test_connect_appserver.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\client\tests\test_connect_appserver.p .\autoedgethefactory\client\tests\test_connect_appserver.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\client\tests\test_connect_appserver.p .\autoedgethefactory\client\tests\test_connect_appserver.p 13 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\client\tests\test_connect_appserver.p .\autoedgethefactory\client\tests\test_connect_appserver.p 23 STRING "oParams" 7 NONE UNTRANSLATABLE 

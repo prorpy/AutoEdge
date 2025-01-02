@@ -1,0 +1,9 @@
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 1 COMPILE autoedgethefactory\server\setup\data\load_contact_types.p
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 34 STRING "cTypes" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 35 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 36 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 38 STRING "email-sales|email-info|email-home|email-admin|email-work|fax-work|phone-work|phone-home|phone-mobile|fax-home" 109 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_contact_types.p .\autoedgethefactory\server\setup\data\load_contact_types.p 40 STRING "|" 1 NONE TRANSLATABLE 

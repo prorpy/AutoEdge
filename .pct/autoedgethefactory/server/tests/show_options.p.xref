@@ -1,0 +1,6 @@
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 1 COMPILE autoedgethefactory\server\tests\show_options.p
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 16 STRING "childItemItem" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 16 STRING "Item" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\show_options.p .\autoedgethefactory\server\tests\show_options.p 16 REFERENCE sports.Item 

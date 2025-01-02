@@ -1,0 +1,79 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 1 COMPILE OpenEdge\Lang\Collections\IList.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 35 INTERFACE OpenEdge.Lang.Collections.IList,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 35 STRING "OpenEdge.Lang.Collections.IList" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 37 STRING "Size" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 37 PROPERTY PUBLIC,,,,,Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 41 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 41 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 41 METHOD PUBLIC,,,,,Add,logical,INPUT i INTEGER,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 41 STRING "ADD" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 45 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 45 METHOD PUBLIC,,,,,Add,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 45 STRING "ADD" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 50 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 50 METHOD PUBLIC,,,,,AddAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 50 STRING "ADDALL" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 54 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 54 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 54 METHOD PUBLIC,,,,,AddAll,logical,INPUT i INTEGER,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 54 STRING "ADDALL" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 58 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 58 METHOD PUBLIC,,,,,AddArray,logical,INPUT c PROGRESS.LANG.OBJECT EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 58 STRING "ADDARRAY" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 59 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 59 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 59 METHOD PUBLIC,,,,,AddArray,logical,INPUT i INTEGER,INPUT c PROGRESS.LANG.OBJECT EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 59 STRING "ADDARRAY" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 62 METHOD PUBLIC,,,,,Clear,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 62 STRING "CLEAR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 65 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 65 METHOD PUBLIC,,,,,Contains,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 65 STRING "CONTAINS" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 69 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 69 METHOD PUBLIC,,,,,ContainsAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 69 STRING "CONTAINSALL" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 72 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 72 METHOD PUBLIC,,,,,Get,Progress.Lang.Object,INPUT i INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 72 STRING "GET" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 76 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 76 METHOD PUBLIC,,,,,IndexOf,integer,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 76 STRING "INDEXOF" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 79 METHOD PUBLIC,,,,,Iterator,OpenEdge.Lang.Collections.IIterator,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 79 STRING "ITERATOR" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 82 METHOD PUBLIC,,,,,ListIterator,OpenEdge.Lang.Collections.IListIterator,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 82 STRING "LISTITERATOR" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 86 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 86 METHOD PUBLIC,,,,,ListIterator,OpenEdge.Lang.Collections.IListIterator,INPUT i INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 86 STRING "LISTITERATOR" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 90 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 90 METHOD PUBLIC,,,,,LastIndexOf,integer,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 90 STRING "LASTINDEXOF" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 93 METHOD PUBLIC,,,,,IsEmpty,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 93 STRING "ISEMPTY" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 97 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 97 METHOD PUBLIC,,,,,Remove,Progress.Lang.Object,INPUT i INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 97 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 101 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 101 METHOD PUBLIC,,,,,Remove,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 101 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 105 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 105 METHOD PUBLIC,,,,,RemoveAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 105 STRING "REMOVEALL" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 109 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 109 METHOD PUBLIC,,,,,RetainAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 109 STRING "RETAINALL" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 113 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 113 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 113 METHOD PUBLIC,,,,,Set,Progress.Lang.Object,INPUT i INTEGER,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 113 STRING "SET" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 117 STRING "fromIndex" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 117 STRING "toIndex" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 117 METHOD PUBLIC,,,,,SubList,OpenEdge.Lang.Collections.IList,INPUT fromIndex INTEGER,INPUT toIndex INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 117 STRING "SUBLIST" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 120 STRING "tt" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 120 METHOD PUBLIC,,,,,ToTable,void,OUTPUT tt TABLE-HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 120 STRING "TOTABLE" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 123 METHOD PUBLIC,,,,,ToArray,Progress.Lang.Object EXTENT,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IList.cls 123 STRING "TOARRAY" 7 NONE UNTRANSLATABLE 

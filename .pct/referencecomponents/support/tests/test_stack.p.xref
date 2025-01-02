@@ -1,0 +1,29 @@
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 1 COMPILE referencecomponents\support\tests\test_stack.p
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 1 CPINTERNAL utf-8
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 1 CPSTREAM iso8859-1
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 16 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 20 STRING "a" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 21 STRING "b" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 22 STRING "c" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 23 STRING "d" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 24 STRING "e" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 25 STRING "f" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 27 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 27 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 27 STRING "depth= " 7 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 27 STRING "size=" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 32 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 32 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 34 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 34 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 34 STRING "depth= " 7 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 34 STRING "size=" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 40 STRING "e" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 18 NEW OpenEdge.Lang.Collections.CharacterStack
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 20 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 21 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 22 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 23 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 24 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 25 INVOKE OpenEdge.Lang.Collections.CharacterStack:Push,INPUT character
+.\referencecomponents\support\tests\test_stack.p .\referencecomponents\support\tests\test_stack.p 41 INVOKE Progress.Lang.Error:GetMessage,INPUT integer

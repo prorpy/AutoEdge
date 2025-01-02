@@ -1,0 +1,24 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 1 COMPILE OpenEdge\Core\System\LoginData.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 16 ANNOTATION deprecated(version=0.0)
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 27 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 31 CLASS OpenEdge.Core.System.LoginData,,IMPLEMENTS OpenEdge.Core.System.ILoginData,,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 31 STRING "OpenEdge.Core.System.LoginData" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 31 STRING "OpenEdge.Core.System.ILoginData" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 33 STRING "UserName" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 33 PROPERTY PUBLIC,,,,,UserName
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 34 STRING "Password" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 34 PROPERTY PUBLIC,,,,,Password
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 39 CONSTRUCTOR PUBLIC,,,,LoginData,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 39 STRING "LOGINDATA" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 41 STRING "pcUserName" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 41 STRING "pcPassword" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 44 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.LoginData:UserName
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 44 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.LoginData:UserName 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 45 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.LoginData:Password
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 45 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.LoginData:Password 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 46 CONSTRUCTOR PUBLIC,,,,LoginData,void,INPUT pcUserName CHARACTER,INPUT pcPassword CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 46 STRING "LOGINDATA" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 37 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls .\referencecomponents\support\src\OpenEdge\Core\System\LoginData.cls 42 INVOKE Progress.Lang.Object:Object

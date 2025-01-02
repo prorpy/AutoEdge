@@ -1,0 +1,65 @@
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 1 COMPILE support\tests\saxwriter\test_saxwriter.p
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 1 CPINTERNAL utf-8
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 1 CPSTREAM iso8859-1
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 16 STRING "cInputParam" 11 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 17 STRING "cOutputParam" 12 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 18 STRING "cWholeDSI" 9 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 19 STRING "cDSI" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 20 STRING "moSaxWriter" 11 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 21 STRING "pcSessionId" 11 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 21 STRING "112233" 6 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 22 STRING "pcWorkItemName" 14 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 22 STRING "DoSomeWork" 10 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 23 STRING "lok" 3 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 25 STRING "pcName" 6 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 25 STRING "pcNS" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 28 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsStrict
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 28 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsStrict 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 30 STRING "test.xml" 8 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 32 STRING "&1:&2" 5 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 33 STRING "http://OpenEdge.Lang.BPM.savvion.com" 36 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 34 FUNCTION StartSoapMessage,logical,INPUT pcName CHARACTER,INPUT pcNS CHARACTER
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 34 STRING "STARTSOAPMESSAGE" 16 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 36 STRING "pcName" 6 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 36 STRING "pcNS" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 37 STRING "&1:&2" 5 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 38 FUNCTION EndSoapMessage,logical,INPUT pcName CHARACTER,INPUT pcNS CHARACTER
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 38 STRING "ENDSOAPMESSAGE" 14 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 42 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFragment
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 42 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFragment 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 45 ACCESS PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFormatted
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 45 UPDATE PUBLIC-PROPERTY OpenEdge.Core.XML.SaxWriter:IsFormatted 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 48 STRING "completeWorkItem" 16 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 48 STRING "ns0" 3 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 49 STRING "ns0:session" 11 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 51 STRING "ns0:session" 11 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 53 STRING "ns0:wiName" 10 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 55 STRING "ns0:wiName" 10 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 57 STRING "completeWorkItem" 16 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 57 STRING "ns0" 3 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 60 STRING "ok?=" 4 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 77 STRING "oException" 10 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 82 STRING "oError" 6 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 83 ACCESS PUBLIC-PROPERTY Progress.Lang.Error:CallStack
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 83 STRING "(" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 83 STRING ")" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 83 STRING "Unhandled Progress.Lang.Error" 29 NONE TRANSLATABLE 
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 26 INVOKE OpenEdge.Core.XML.SaxWriter:Reset
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 27 INVOKE OpenEdge.Core.XML.SaxWriter:Initialize
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 30 INVOKE OpenEdge.Core.XML.SaxWriter:WriteTo,INPUT character
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 31 INVOKE OpenEdge.Core.XML.SaxWriter:StartDocument
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 32 INVOKE OpenEdge.Core.XML.SaxWriter:StartElement,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 33 INVOKE OpenEdge.Core.XML.SaxWriter:DeclareNamespace,INPUT longchar,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 37 INVOKE OpenEdge.Core.XML.SaxWriter:EndElement,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 41 NEW OpenEdge.Core.XML.SaxWriter
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 49 INVOKE OpenEdge.Core.XML.SaxWriter:StartElement,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 50 INVOKE OpenEdge.Core.XML.SaxWriter:WriteValue,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 51 INVOKE OpenEdge.Core.XML.SaxWriter:EndElement,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 53 INVOKE OpenEdge.Core.XML.SaxWriter:StartElement,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 54 INVOKE OpenEdge.Core.XML.SaxWriter:WriteValue,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 55 INVOKE OpenEdge.Core.XML.SaxWriter:EndElement,INPUT longchar
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 58 INVOKE OpenEdge.Core.XML.SaxWriter:EndDocument
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 78 INVOKE OpenEdge.Core.System.ApplicationError:LogError
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 79 INVOKE OpenEdge.Core.System.ApplicationError:ShowError
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 83 INVOKE Progress.Lang.Error:GetMessage,INPUT integer
+referencecomponents\support\tests\saxwriter\test_saxwriter.p referencecomponents\support\tests\saxwriter\test_saxwriter.p 83 INVOKE Progress.Lang.Error:GetMessageNum,INPUT integer

@@ -1,0 +1,106 @@
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 1 COMPILE OpenEdge\Core\XML\SaxReader.cls
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 34 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 36 CLASS OpenEdge.Core.XML.SaxReader,,,,,,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 36 STRING "OpenEdge.Core.XML.SaxReader" 27 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 39 EVENT PUBLIC,,,,,SaxReaderStartDocument,,void,INPUT phReader WIDGET-HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 41 EVENT PUBLIC,,,,,SaxReaderProcessingInstruction,,void,INPUT phReader WIDGET-HANDLE,INPUT pcTarget CHARACTER,INPUT pcData CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 44 EVENT PUBLIC,,,,,SaxReaderResolveEntity,,void,INPUT phReader WIDGET-HANDLE,INPUT pcPublicID CHARACTER,INPUT pcSystemID CHARACTER,OUTPUT pcFilePath CHARACTER,OUTPUT pcMemPointer LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 49 EVENT PUBLIC,,,,,SaxReaderStartPrefixMapping,,void,INPUT phReader WIDGET-HANDLE,INPUT pcPrefix CHARACTER,INPUT pcURI CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 52 EVENT PUBLIC,,,,,SaxReaderEndPrefixMapping,,void,INPUT phReader WIDGET-HANDLE,INPUT pcPrefix CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 54 EVENT PUBLIC,,,,,SaxReaderStartElement,,void,INPUT phReader WIDGET-HANDLE,INPUT pcNamespaceURI CHARACTER,INPUT pcLocalName CHARACTER,INPUT pcQName CHARACTER,INPUT phAttributes WIDGET-HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 59 EVENT PUBLIC,,,,,SaxReaderCharacters,,void,INPUT phReader WIDGET-HANDLE,INPUT pcCharData LONGCHAR,INPUT piNumChars INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 62 EVENT PUBLIC,,,,,SaxReaderIgnorableWhitespace,,void,INPUT phReader WIDGET-HANDLE,INPUT pcCharData CHARACTER,INPUT piNumChars INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 65 EVENT PUBLIC,,,,,SaxReaderEndElement,,void,INPUT phReader WIDGET-HANDLE,INPUT pcName CHARACTER,INPUT pcPublicID CHARACTER,INPUT pcSystemID CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 69 EVENT PUBLIC,,,,,SaxReaderEndDocument,,void,INPUT phReader WIDGET-HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 70 EVENT PUBLIC,,,,,SaxReaderNotationDecl,,void,INPUT phReader WIDGET-HANDLE,INPUT pcName CHARACTER,INPUT pcPublicID CHARACTER,INPUT pcSystemID CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 74 EVENT PUBLIC,,,,,SaxReaderUnparsedEntityDecl,,void,INPUT phReader WIDGET-HANDLE,INPUT pcName CHARACTER,INPUT publicID CHARACTER,INPUT systemID CHARACTER,INPUT pcNotationName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 79 EVENT PUBLIC,,,,,SaxReaderWarning,,void,INPUT phReader WIDGET-HANDLE,INPUT pcErrMessage CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 81 EVENT PUBLIC,,,,,SaxReaderError,,void,INPUT phReader WIDGET-HANDLE,INPUT pcErrMessage CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 83 EVENT PUBLIC,,,,,SaxReaderFatalError,,void,INPUT phReader WIDGET-HANDLE,INPUT pcErrMessage CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 86 STRING "mhParserProc" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 90 CONSTRUCTOR PUBLIC,,,,SaxReader,void,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 90 STRING "SAXREADER" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 94 DESTRUCTOR PUBLIC,,,,SaxReader,void,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 94 STRING "SAXREADER" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 96 STRING "pcXML" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 98 METHOD PUBLIC,,,,,ParseDocument,void,INPUT pcXML LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 98 STRING "PARSEDOCUMENT" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 101 STRING "pcPublicID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 101 STRING "pcSystemID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 101 STRING "pcFilePath" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 101 STRING "pcMemPointer" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 105 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderResolveEntity
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 106 METHOD PUBLIC,,,,,ResolveEntity,void,INPUT pcPublicID CHARACTER,INPUT pcSystemID CHARACTER,OUTPUT pcFilePath CHARACTER,OUTPUT pcMemPointer LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 106 STRING "RESOLVEENTITY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 110 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderStartDocument
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 111 METHOD PUBLIC,,,,,StartDocument,void,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 111 STRING "STARTDOCUMENT" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 113 STRING "pcTarget" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 113 STRING "pcData" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 115 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderProcessingInstruction
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 116 METHOD PUBLIC,,,,,ProcessingInstruction,void,INPUT pcTarget CHARACTER,INPUT pcData CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 116 STRING "PROCESSINGINSTRUCTION" 21 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 118 STRING "pcPrefix" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 118 STRING "pcURI" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 120 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderStartPrefixMapping
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 121 METHOD PUBLIC,,,,,StartPrefixMapping,void,INPUT pcPrefix CHARACTER,INPUT pcURI CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 121 STRING "STARTPREFIXMAPPING" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 123 STRING "pcPrefix" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 124 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderEndPrefixMapping
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 125 METHOD PUBLIC,,,,,EndPrefixMapping,void,INPUT pcPrefix CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 125 STRING "ENDPREFIXMAPPING" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 127 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 127 STRING "pcLocalName" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 127 STRING "pcQName" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 127 STRING "phAttributes" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 131 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderStartElement
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 132 METHOD PUBLIC,,,,,StartElement,void,INPUT pcNamespaceURI CHARACTER,INPUT pcLocalName CHARACTER,INPUT pcQName CHARACTER,INPUT phAttributes HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 132 STRING "STARTELEMENT" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 134 STRING "pcCharData" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 134 STRING "piNumChars" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 136 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderCharacters
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 137 METHOD PUBLIC,,,,,Characters,void,INPUT pcCharData LONGCHAR,INPUT piNumChars INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 137 STRING "CHARACTERS" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 139 STRING "pcCharData" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 139 STRING "piNumChars" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 141 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderIgnorableWhitespace
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 142 METHOD PUBLIC,,,,,IgnorableWhitespace,void,INPUT pcCharData CHARACTER,INPUT piNumChars INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 142 STRING "IGNORABLEWHITESPACE" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 144 STRING "pcNamespaceURI" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 144 STRING "pcLocalName" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 144 STRING "pcQName" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 147 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderEndElement
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 148 METHOD PUBLIC,,,,,EndElement,void,INPUT pcNamespaceURI CHARACTER,INPUT pcLocalName CHARACTER,INPUT pcQName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 148 STRING "ENDELEMENT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 151 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderEndDocument
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 152 METHOD PUBLIC,,,,,EndDocument,void,
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 152 STRING "ENDDOCUMENT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 155 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 155 STRING "pcPublicID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 155 STRING "pcSystemID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 158 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderNotationDecl
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 159 METHOD PUBLIC,,,,,NotationDecl,void,INPUT pcName CHARACTER,INPUT pcPublicID CHARACTER,INPUT pcSystemID CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 159 STRING "NOTATIONDECL" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 161 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 161 STRING "pcPublicID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 161 STRING "pcSystemID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 161 STRING "pcNotationName" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 165 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderUnparsedEntityDecl
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 166 METHOD PUBLIC,,,,,UnparsedEntityDecl,void,INPUT pcName CHARACTER,INPUT pcPublicID CHARACTER,INPUT pcSystemID CHARACTER,INPUT pcNotationName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 166 STRING "UNPARSEDENTITYDECL" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 169 STRING "pcErrMessage" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 170 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderWarning
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 171 METHOD PUBLIC,,,,,Warning,void,INPUT pcErrMessage CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 171 STRING "WARNING" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 173 STRING "pcErrMessage" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 174 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderError
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 175 METHOD PUBLIC,,,,,Error,void,INPUT pcErrMessage CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 175 STRING "ERROR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 177 STRING "pcErrMessage" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 178 PUBLISH OpenEdge.Core.XML.SaxReader:SaxReaderFatalError
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 179 METHOD PUBLIC,,,,,FatalError,void,INPUT pcErrMessage CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 179 STRING "FATALERROR" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 89 RUN OpenEdge/Core/XML/saxreaderfacade.p PERSISTENT
+.\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls .\referencecomponents\support\src\OpenEdge\Core\XML\SaxReader.cls 97 RUN ParseDocument

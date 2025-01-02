@@ -1,0 +1,462 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 1 COMPILE OpenEdge\Core\System\Query.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 27 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 58 CLASS OpenEdge.Core.System.Query,,IMPLEMENTS OpenEdge.Core.System.IQuery,USE-WIDGET-POOL,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 58 STRING "OpenEdge.Core.System.Query" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 58 STRING "OpenEdge.Core.System.IQuery" 27 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 65 EVENT PUBLIC,,,,,QueryOpened,,void,INPUT poQuery OPENEDGE.CORE.SYSTEM.IQUERY,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 70 STRING "poArgs" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 71 PUBLISH OpenEdge.Core.System.Query:QueryOpened
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 72 METHOD PROTECTED,,,,,OnQueryOpened,void,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 72 STRING "ONQUERYOPENED" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 78 EVENT PUBLIC,,,,,QueryClosed,,void,INPUT poQuery OPENEDGE.CORE.SYSTEM.IQUERY,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 83 STRING "poArgs" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 84 PUBLISH OpenEdge.Core.System.Query:QueryClosed
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 85 METHOD PROTECTED,,,,,OnQueryClosed,void,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 85 STRING "ONQUERYCLOSED" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 91 EVENT PUBLIC,,,,,QueryRepositioned,,void,INPUT poQuery OPENEDGE.CORE.SYSTEM.IQUERY,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 96 STRING "poArgs" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 97 PUBLISH OpenEdge.Core.System.Query:QueryRepositioned
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 98 METHOD PROTECTED,,,,,OnQueryRepositioned,void,INPUT poArgs OPENEDGE.CORE.SYSTEM.EVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 98 STRING "ONQUERYREPOSITIONED" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 101 STRING "TableOwner" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 101 PROPERTY PUBLIC,,,,,TableOwner
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 103 STRING "QueryHandle" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 103 PROPERTY PUBLIC,,,,,QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 106 STRING "IsOpen" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 106 PROPERTY PUBLIC,,,,,IsOpen
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 108 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 113 STRING "Definition" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 113 PROPERTY PUBLIC,,,,,Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 118 STRING "BaseDefinition" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 118 PROPERTY PROTECTED,,,,,BaseDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 120 ACCESS PROPERTY OpenEdge.Core.System.Query:BaseDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 121 ACCESS PROPERTY OpenEdge.Core.System.Query:BaseDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 121 UPDATE PROPERTY OpenEdge.Core.System.Query:BaseDefinition 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 123 ACCESS PROPERTY OpenEdge.Core.System.Query:BaseDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 127 STRING "NumRows" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 127 PROPERTY PUBLIC,,,,,NumRows
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 129 STRING "iNumRows" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 131 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 132 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 139 STRING "CurrentRow" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 139 PROPERTY PUBLIC,,,,,CurrentRow
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 141 STRING "iCurrentRow" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 143 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 144 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 151 STRING "RowPosition" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 151 PROPERTY PUBLIC,,,,,RowPosition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 153 STRING "oRowPosition" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 155 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 158 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.RowPositionEnum:None
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 160 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 161 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.RowPositionEnum:IsFirst
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 163 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 164 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.RowPositionEnum:IsFirst
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 165 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.RowPositionEnum:IsFirstAndLast
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 167 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.RowPositionEnum:IsLast
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 169 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.RowPositionEnum:NotFirstOrLast
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 175 STRING "QueryElementsChanged" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 175 PROPERTY PROTECTED,,,,,QueryElementsChanged
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 177 STRING "BuildQuery" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 177 PROPERTY PROTECTED,,,,,BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 179 STRING "plBuildQuery" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 181 ACCESS PROPERTY OpenEdge.Core.System.Query:QueryElementsChanged
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 181 UPDATE PROPERTY OpenEdge.Core.System.Query:QueryElementsChanged 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 183 ACCESS PROPERTY OpenEdge.Core.System.Query:BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 183 UPDATE PROPERTY OpenEdge.Core.System.Query:BuildQuery 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 187 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 187 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 190 ACCESS PROPERTY OpenEdge.Core.System.Query:BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 190 UPDATE PROPERTY OpenEdge.Core.System.Query:BuildQuery 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 191 ACCESS PROPERTY OpenEdge.Core.System.Query:QueryElementsChanged
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 191 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QueryElementEnum:Buffer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 191 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 191 UPDATE PROPERTY OpenEdge.Core.System.Query:QueryElementsChanged 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 192 CONSTRUCTOR PROTECTED,,,,Query,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 192 STRING "QUERY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 194 STRING "poTableOwner" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 194 STRING "poDefinition" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 198 STRING "Query Definition" 16 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 200 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.Query:Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 200 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:TableOwner
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 200 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.Query:Definition 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 200 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.Query:TableOwner 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 207 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.Query:Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 207 SUBSCRIBE OpenEdge.Core.System.IQueryDefinition:QueryDefinitionChanged,OpenEdge.Core.System.Query:QueryDefinitionChangedHandler,INPUT OpenEdge.Core.System.IQueryDefinition,INPUT OpenEdge.Core.System.QueryDefinitionEventArgs
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 208 CONSTRUCTOR PUBLIC,,,,Query,void,INPUT poTableOwner OPENEDGE.CORE.SYSTEM.ITABLEOWNER,INPUT poDefinition OPENEDGE.CORE.SYSTEM.IQUERYDEFINITION
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 208 STRING "QUERY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 211 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 212 METHOD PUBLIC,,,,,Open,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 212 STRING "OPEN" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 214 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 225 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 226 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.EventArgs:Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 228 METHOD PROTECTED,,,,,Open,void,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 228 STRING "OPEN" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 231 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 232 METHOD PUBLIC,,,,,Close,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 232 STRING "CLOSE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 234 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 235 STRING "lOk" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 242 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 243 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.EventArgs:Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 246 METHOD PROTECTED,,,,,Close,logical,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 246 STRING "CLOSE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 248 STRING "piRow" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 249 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 250 METHOD PUBLIC,,,,,Reposition,logical,INPUT piRow INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 250 STRING "REPOSITION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 252 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 252 STRING "piRow" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 253 STRING "lOk" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 267 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 268 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.EventArgs:Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 271 METHOD PROTECTED,,,,,Reposition,logical,INPUT phQuery HANDLE,INPUT piRow INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 271 STRING "REPOSITION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 279 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 279 STRING "prRecord" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 281 STRING "lOk" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 304 METHOD PUBLIC,STATIC,,,,Reposition,logical,INPUT phQuery HANDLE,INPUT prRecord ROWID EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 304 STRING "REPOSITION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 306 STRING "pcRowKey" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 307 STRING "lOk" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 309 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 310 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.EventArgs:Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 313 METHOD PUBLIC,,,,,Reposition,logical,INPUT pcRowKey CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 313 STRING "REPOSITION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 321 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 321 STRING "pcRowKey" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 323 STRING "rCurrentRow" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 324 STRING "iExtent" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 325 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 334 STRING "where" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 346 METHOD PUBLIC,STATIC,,,,Reposition,logical,INPUT phQuery HANDLE,INPUT pcRowKey CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 346 STRING "REPOSITION" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 349 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 350 METHOD PUBLIC,,,,,Reopen,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 350 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 352 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 354 METHOD PROTECTED,,,,,Reopen,logical,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 354 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 356 STRING "pcRowKey" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 357 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 358 METHOD PUBLIC,,,,,Reopen,logical,INPUT pcRowKey CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 358 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 360 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 360 STRING "pcRowKey" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 363 METHOD PROTECTED,,,,,Reopen,logical,INPUT phQuery HANDLE,INPUT pcRowKey CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 363 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 365 STRING "piRow" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 366 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 367 METHOD PUBLIC,,,,,Reopen,logical,INPUT piRow INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 367 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 369 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 369 STRING "piRow" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 372 METHOD PROTECTED,,,,,Reopen,logical,INPUT phQuery HANDLE,INPUT piRow INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 372 STRING "REOPEN" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 375 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 376 METHOD PUBLIC,,,,,GetCurrentRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 376 STRING "GETCURRENTROWKEY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 378 STRING "phBuffer" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 379 STRING "cKeyWhere" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 380 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 381 STRING "cKeys" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 382 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 384 STRING "cSpacer" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 384 STRING " " 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 390 STRING "Rowid" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 395 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:IsEqual
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 395 STRING "where " 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 395 STRING " and " 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 395 STRING "." 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 395 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:IsEqual
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 403 METHOD PUBLIC,STATIC,,,,GetBufferRowKey,character,INPUT phBuffer HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 403 STRING "GETBUFFERROWKEY" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 405 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 406 STRING "cKeyWhere" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 407 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 408 STRING "iFields" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 409 STRING "cKeys" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 410 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 425 METHOD PUBLIC,STATIC,,,,GetCurrentRowKey,character EXTENT,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 425 STRING "GETCURRENTROWKEY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 427 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 428 STRING "oFilters" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 429 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 430 STRING "iFields" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 431 STRING "cKeys" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 432 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 447 STRING "Rowid" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 448 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:IsEqual
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 448 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 448 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.JoinEnum:And
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 457 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.OperatorEnum:IsEqual
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 457 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Rowid
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 457 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.JoinEnum:And
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 468 CAST FROM OpenEdge.Lang.Collections.ICollection TO OpenEdge.Core.System.QueryFilter
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 469 METHOD PUBLIC,STATIC,,,,GetCurrentRowKeyElements,OpenEdge.Core.System.QueryFilter EXTENT,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 469 STRING "GETCURRENTROWKEYELEMENTS" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 472 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 474 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 484 METHOD PUBLIC,,,,,GetFirstRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 484 STRING "GETFIRSTROWKEY" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 487 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 489 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 499 METHOD PUBLIC,,,,,GetNextRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 499 STRING "GETNEXTROWKEY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 502 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 504 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 514 METHOD PUBLIC,,,,,GetLastRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 514 STRING "GETLASTROWKEY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 517 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 519 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 529 METHOD PUBLIC,,,,,GetPrevRowKey,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 529 STRING "GETPREVROWKEY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 531 STRING "piPosition" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 532 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 534 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 544 METHOD PUBLIC,,,,,GetRowKey,character EXTENT,INPUT piPosition INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 544 STRING "GETROWKEY" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 546 STRING "poDefinition" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 546 STRING "poFindType" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 548 STRING "hQuery" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 549 STRING "cFirstRowKey" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 550 STRING "cRowKey" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 551 STRING "cAltRowKey" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 552 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 553 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 555 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 560 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.FindTypeEnum:Next
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 560 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.FindTypeEnum:Prev
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 566 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.FindTypeEnum:First
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 571 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.FindTypeEnum:Last
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 576 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.FindTypeEnum:Unique
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 585 ANNOTATION todo(task=implement, action=errors)
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 602 METHOD PUBLIC,,,,,GetRowKeyWhere,character EXTENT,INPUT poDefinition OPENEDGE.CORE.SYSTEM.IQUERYDEFINITION,INPUT poFindType OPENEDGE.LANG.FINDTYPEENUM
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 602 STRING "GETROWKEYWHERE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 609 STRING "phSource" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 610 STRING "hQueryClone" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 611 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 612 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 623 METHOD PROTECTED,,,,,CloneQuery,widget-handle,INPUT phSource HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 623 STRING "CLONEQUERY" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 626 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.Query:Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 626 UNSUBSCRIBE OpenEdge.Core.System.IQueryDefinition:QueryDefinitionChanged,OpenEdge.Core.System.Query:QueryDefinitionChangedHandler,INPUT OpenEdge.Core.System.IQueryDefinition,INPUT OpenEdge.Core.System.QueryDefinitionEventArgs
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 629 DESTRUCTOR PUBLIC,,,,Query,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 629 STRING "QUERY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 631 STRING "poSender" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 631 STRING "poArgs" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 639 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QueryElementEnum:Buffer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 639 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QueryDefinitionEventArgs:Element
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 639 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:TableOwner
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 639 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QueryDefinitionEventArgs:Element
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 641 ACCESS PROPERTY OpenEdge.Core.System.Query:BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 641 UPDATE PROPERTY OpenEdge.Core.System.Query:BuildQuery 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 644 ACCESS PROPERTY OpenEdge.Core.System.Query:BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 644 UPDATE PROPERTY OpenEdge.Core.System.Query:BuildQuery 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 645 ACCESS PROPERTY OpenEdge.Core.System.Query:QueryElementsChanged
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 645 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QueryDefinitionEventArgs:Element
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 645 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 645 UPDATE PROPERTY OpenEdge.Core.System.Query:QueryElementsChanged 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 647 METHOD PUBLIC,,,,,QueryDefinitionChangedHandler,void,INPUT poSender OPENEDGE.CORE.SYSTEM.IQUERYDEFINITION,INPUT poArgs OPENEDGE.CORE.SYSTEM.QUERYDEFINITIONEVENTARGS
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 647 STRING "QUERYDEFINITIONCHANGEDHANDLER" 29 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 650 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 653 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:TableOwner
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 653 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 656 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 657 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 660 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 662 METHOD PROTECTED,,,,,DeleteQuery,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 662 STRING "DELETEQUERY" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 668 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 668 ACCESS PROPERTY OpenEdge.Core.System.Query:BaseDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 668 CAST FROM OpenEdge.Lang.Collections.ObjectStack TO OpenEdge.Core.System.IQueryDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 668 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.Query:Definition 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 670 METHOD PUBLIC,,,,,Reset,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 670 STRING "RESET" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 674 ACCESS PROPERTY OpenEdge.Core.System.Query:BaseDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 674 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 674 CAST FROM OpenEdge.Core.System.IQueryDefinition TO OpenEdge.Core.System.IQueryDefinition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 675 METHOD PUBLIC,,,,,Rebase,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 675 STRING "REBASE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 678 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 679 METHOD PUBLIC,,,,,Prepare,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 679 STRING "PREPARE" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 681 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 683 STRING "cPrepareString" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 686 ACCESS PROPERTY OpenEdge.Core.System.Query:BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 686 UPDATE PROPERTY OpenEdge.Core.System.Query:BuildQuery 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 689 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.Query:Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 692 METHOD PROTECTED,,,,,Prepare,void,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 692 STRING "PREPARE" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 694 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 695 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 696 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 706 METHOD PROTECTED,,,,,RemoveQueryBuffers,void,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 706 STRING "REMOVEQUERYBUFFERS" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 712 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 713 STRING "cBuffers" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 714 STRING "cTables" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 715 STRING "oQueryTypes" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 716 STRING "oLockModes" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 717 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 718 STRING "iExtent" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 719 STRING "hTable" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 722 ACCESS PROPERTY OpenEdge.Core.System.Query:BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 734 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:TableOwner
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 734 ACCESS PROPERTY OpenEdge.Core.System.Query:QueryElementsChanged
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 734 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QueryElementEnum:Buffer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 740 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.Query:Definition
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 746 STRING "Buffer Handle for " 18 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 756 ACCESS PROPERTY OpenEdge.Core.System.Query:BuildQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 756 UPDATE PROPERTY OpenEdge.Core.System.Query:BuildQuery 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 757 METHOD PROTECTED,,,,,BuildQuery,void,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 757 STRING "BUILDQUERY" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 774 STRING "pcTableName" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 774 STRING "pcBufferName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 776 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 778 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:TableOwner
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 783 METHOD PROTECTED,,,,,GetQueryBuffer,widget-handle,INPUT pcTableName CHARACTER,INPUT pcBufferName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 783 STRING "GETQUERYBUFFER" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 786 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 787 METHOD PUBLIC,,,,,GetFirst,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 787 STRING "GETFIRST" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 789 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 793 METHOD PROTECTED,,,,,GetFirst,logical,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 793 STRING "GETFIRST" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 796 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 797 METHOD PUBLIC,,,,,GetNext,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 797 STRING "GETNEXT" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 799 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 803 METHOD PROTECTED,,,,,GetNext,logical,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 803 STRING "GETNEXT" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 806 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 807 METHOD PUBLIC,,,,,GetLast,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 807 STRING "GETLAST" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 809 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 813 METHOD PROTECTED,,,,,GetLast,logical,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 813 STRING "GETLAST" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 816 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 817 METHOD PUBLIC,,,,,GetPrev,logical,
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 817 STRING "GETPREV" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 819 STRING "phQuery" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 823 METHOD PROTECTED,,,,,GetPrev,logical,INPUT phQuery HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 823 STRING "GETPREV" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 825 STRING "poDefinition" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 826 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.FindTypeEnum:First
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 827 METHOD PUBLIC,,,,,GetRowKeyWhere,character EXTENT,INPUT poDefinition OPENEDGE.CORE.SYSTEM.IQUERYDEFINITION
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 827 STRING "GETROWKEYWHERE" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 829 STRING "pcBufferName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 830 STRING "cRowKey" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 831 STRING "cKey" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 832 STRING "cBuffers" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 833 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 834 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 836 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 845 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 850 METHOD PUBLIC,,,,,GetCurrentBufferKey,character,INPUT pcBufferName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 850 STRING "GETCURRENTBUFFERKEY" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 852 STRING "pcBufferName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 853 STRING "cTable" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 854 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 856 ANNOTATION todo(task=improve message in unsupported Error  or create new Error)
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 857 STRING "e" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 858 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.Query:QueryHandle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 859 STRING "buffer name" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 859 STRING """" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 861 STRING "buffer name" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 861 STRING """" 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 866 METHOD PUBLIC,,,,,GetBufferTableName,character,INPUT pcBufferName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 866 STRING "GETBUFFERTABLENAME" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 868 STRING "QUERY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 121 NEW OpenEdge.Lang.Collections.ObjectStack
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 196 INVOKE OpenEdge.Core.System.Query:Query
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 198 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 202 INVOKE OpenEdge.Core.System.Query:Rebase
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 211 INVOKE OpenEdge.Core.System.Query:Open,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 217 INVOKE OpenEdge.Core.System.Query:Prepare,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 226 INVOKE OpenEdge.Core.System.Query:OnQueryOpened,INPUT OpenEdge.Core.System.EventArgs
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 231 INVOKE OpenEdge.Core.System.Query:Close,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 243 INVOKE OpenEdge.Core.System.Query:OnQueryClosed,INPUT OpenEdge.Core.System.EventArgs
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 249 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 268 INVOKE OpenEdge.Core.System.Query:OnQueryRepositioned,INPUT OpenEdge.Core.System.EventArgs
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 309 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT character EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 310 INVOKE OpenEdge.Core.System.Query:OnQueryRepositioned,INPUT OpenEdge.Core.System.EventArgs
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 345 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT rowid EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 349 INVOKE OpenEdge.Core.System.Query:Reopen,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 353 INVOKE OpenEdge.Core.System.Query:Reopen,INPUT character EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 353 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 357 INVOKE OpenEdge.Core.System.Query:Reopen,INPUT widget-handle,INPUT character EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 361 INVOKE OpenEdge.Core.System.Query:Open,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 362 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT character EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 366 INVOKE OpenEdge.Core.System.Query:Reopen,INPUT widget-handle,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 370 INVOKE OpenEdge.Core.System.Query:Open,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 371 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 375 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 395 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 417 INVOKE OpenEdge.Core.System.Query:GetBufferRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 436 NEW OpenEdge.Lang.Collections.Collection
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 442 INVOKE OpenEdge.Lang.Collections.ICollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 448 INVOKE OpenEdge.Lang.Collections.ICollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 448 NEW OpenEdge.Lang.String,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 448 NEW OpenEdge.Core.System.QueryFilter,INPUT character,INPUT character,INPUT OpenEdge.Lang.OperatorEnum,INPUT OpenEdge.Lang.String,INPUT OpenEdge.Lang.DataTypeEnum,INPUT OpenEdge.Lang.JoinEnum
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 457 INVOKE OpenEdge.Lang.Collections.ICollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 457 NEW OpenEdge.Lang.String,INPUT RUNTYPE
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 457 NEW OpenEdge.Core.System.QueryFilter,INPUT character,INPUT character,INPUT OpenEdge.Lang.OperatorEnum,INPUT OpenEdge.Lang.String,INPUT OpenEdge.Lang.DataTypeEnum,INPUT OpenEdge.Lang.JoinEnum
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 468 INVOKE OpenEdge.Lang.Collections.ICollection:ToArray
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 474 INVOKE OpenEdge.Core.System.Query:CloneQuery,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 476 INVOKE OpenEdge.Core.System.Query:GetFirst,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 478 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 481 INVOKE OpenEdge.Core.System.Query:Close,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 489 INVOKE OpenEdge.Core.System.Query:CloneQuery,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 491 INVOKE OpenEdge.Core.System.Query:GetNext,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 493 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 496 INVOKE OpenEdge.Core.System.Query:Close,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 504 INVOKE OpenEdge.Core.System.Query:CloneQuery,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 506 INVOKE OpenEdge.Core.System.Query:GetLast,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 508 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 511 INVOKE OpenEdge.Core.System.Query:Close,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 519 INVOKE OpenEdge.Core.System.Query:CloneQuery,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 521 INVOKE OpenEdge.Core.System.Query:GetPrev,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 523 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 526 INVOKE OpenEdge.Core.System.Query:Close,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 534 INVOKE OpenEdge.Core.System.Query:CloneQuery,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 536 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 538 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 541 INVOKE OpenEdge.Core.System.Query:Close,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 555 INVOKE OpenEdge.Core.System.Query:CloneQuery,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 556 INVOKE OpenEdge.Core.System.IQueryDefinition:GetQueryString
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 569 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 574 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 579 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 583 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 599 INVOKE OpenEdge.Core.System.Query:Close,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 628 INVOKE OpenEdge.Core.System.Query:DeleteQuery
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 639 INVOKE OpenEdge.Lang.EnumMember:Equals,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 666 INVOKE OpenEdge.Core.System.Query:Close
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 668 INVOKE OpenEdge.Lang.Collections.ObjectStack:Pop
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 674 INVOKE OpenEdge.Lang.Collections.ObjectStack:Push,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 674 INVOKE Progress.Lang.Object:Clone
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 678 INVOKE OpenEdge.Core.System.Query:Prepare,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 687 INVOKE OpenEdge.Core.System.Query:BuildQuery,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 689 INVOKE OpenEdge.Core.System.IQueryDefinition:GetQueryString
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 734 INVOKE OpenEdge.Lang.FlagsEnum:IsA,INPUT integer,INPUT OpenEdge.Lang.EnumMember
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 737 INVOKE OpenEdge.Core.System.Query:RemoveQueryBuffers,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 740 INVOKE OpenEdge.Core.System.IQueryDefinition:GetBufferList,OUTPUT character EXTENT,OUTPUT OpenEdge.Lang.QueryTypeEnum EXTENT,OUTPUT OpenEdge.Lang.LockModeEnum EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 744 INVOKE OpenEdge.Core.System.Query:GetQueryBuffer,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 746 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 778 INVOKE OpenEdge.Core.System.ITableOwner:GetTableHandle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 786 INVOKE OpenEdge.Core.System.Query:GetFirst,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 790 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 796 INVOKE OpenEdge.Core.System.Query:GetNext,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 800 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT widget-handle,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 806 INVOKE OpenEdge.Core.System.Query:GetLast,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 810 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 816 INVOKE OpenEdge.Core.System.Query:GetPrev,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 820 INVOKE OpenEdge.Core.System.Query:Reposition,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 826 INVOKE OpenEdge.Core.System.Query:GetRowKeyWhere,INPUT OpenEdge.Core.System.IQueryDefinition,INPUT OpenEdge.Lang.FindTypeEnum
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 836 INVOKE OpenEdge.Core.System.Query:GetCurrentRowKey
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 859 NEW OpenEdge.Core.System.InvalidValueSpecifiedError,INPUT Progress.Lang.Error,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\Query.cls .\referencecomponents\support\src\OpenEdge\Core\System\Query.cls 861 NEW OpenEdge.Core.System.UnsupportedOperationError,INPUT Progress.Lang.Error,INPUT character,INPUT character

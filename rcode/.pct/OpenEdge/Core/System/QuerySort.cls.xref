@@ -1,0 +1,72 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 1 COMPILE OpenEdge\Core\System\QuerySort.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 35 CLASS OpenEdge.Core.System.QuerySort,,IMPLEMENTS OpenEdge.Core.Util.IExternalizable,,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 35 STRING "OpenEdge.Core.System.QuerySort" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 35 STRING "OpenEdge.Core.Util.IExternalizable" 34 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 38 STRING "BufferName" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 38 PROPERTY PUBLIC,,,,,BufferName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 39 STRING "FieldName" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 39 PROPERTY PUBLIC,,,,,FieldName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 40 STRING "Direction" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 40 PROPERTY PUBLIC,,,,,Direction
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 42 STRING "pcBufferName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 42 STRING "pcFieldName" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 42 STRING "poDirection" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 45 STRING "Buffer Name" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 46 STRING "Field Name" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 47 STRING "Direction" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 49 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:BufferName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 49 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:FieldName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 49 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:Direction
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 49 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:BufferName 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 49 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:FieldName 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 49 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:Direction 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 52 CONSTRUCTOR PUBLIC,,,,QuerySort,void,INPUT pcBufferName CHARACTER,INPUT pcFieldName CHARACTER,INPUT poDirection OPENEDGE.LANG.SORTDIRECTIONENUM
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 52 STRING "QUERYSORT" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 54 STRING "pcBufferName" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 54 STRING "pcFieldName" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 56 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SortDirectionEnum:Default
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 57 CONSTRUCTOR PUBLIC,,,,QuerySort,void,INPUT pcBufferName CHARACTER,INPUT pcFieldName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 57 STRING "QUERYSORT" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 59 STRING "p0" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 60 STRING "lEquals" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 61 STRING "oQB" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:BufferName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.QuerySort:BufferName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:FieldName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.QuerySort:FieldName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.QuerySort:Direction
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:Direction
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 CAST FROM Progress.Lang.Object TO OpenEdge.Core.System.QuerySort
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:Direction
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 72 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT p0 PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 72 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 74 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 75 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:BufferName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 76 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:FieldName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 77 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:Direction
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 78 METHOD PUBLIC,,,,,WriteObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTOUTPUT
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 78 STRING "WRITEOBJECT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 80 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:BufferName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:FieldName
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 ACCESS PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:Direction
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:BufferName 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:FieldName 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 CAST FROM OpenEdge.Core.Util.IObjectInput TO OpenEdge.Lang.SortDirectionEnum
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.QuerySort:Direction 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 84 METHOD PUBLIC,,,,,ReadObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTINPUT
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 84 STRING "READOBJECT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 45 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrEmpty,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 46 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrEmpty,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 47 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 56 INVOKE OpenEdge.Core.System.QuerySort:QuerySort,INPUT character,INPUT character,INPUT OpenEdge.Lang.SortDirectionEnum
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 63 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 66 INVOKE OpenEdge.Lang.EnumMember:Equals,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 75 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteChar,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 76 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteChar,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 77 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteEnum,INPUT OpenEdge.Lang.EnumMember
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 INVOKE OpenEdge.Core.Util.IObjectInput:ReadChar
+.\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls .\referencecomponents\support\src\OpenEdge\Core\System\QuerySort.cls 81 INVOKE OpenEdge.Core.Util.IObjectInput:ReadEnum

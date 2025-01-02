@@ -1,0 +1,7 @@
+autoedgethefactory\server\setup\data\load_orders.p autoedgethefactory\server\setup\data\load_orders.p 1 COMPILE server\setup\data\load_orders.p
+autoedgethefactory\server\setup\data\load_orders.p autoedgethefactory\server\setup\data\load_orders.p 1 CPINTERNAL utf-8
+autoedgethefactory\server\setup\data\load_orders.p autoedgethefactory\server\setup\data\load_orders.p 1 CPSTREAM iso8859-1
+autoedgethefactory\server\setup\data\load_orders.p autoedgethefactory\server\setup\data\load_orders.p 31 ROUTINE-LEVEL ON ERROR UNDO, THROW
+autoedgethefactory\server\setup\data\load_orders.p autoedgethefactory\server\setup\data\load_orders.p 34 STRING "pcType" 6 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_orders.p autoedgethefactory\server\setup\data\load_orders.p 34 STRING "pcCustomerId" 12 NONE UNTRANSLATABLE 
+autoedgethefactory\server\setup\data\load_orders.p autoedgethefactory\server\setup\data\load_orders.p 34 STRING "pcTenantId" 10 NONE UNTRANSLATABLE 

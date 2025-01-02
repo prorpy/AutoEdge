@@ -1,0 +1,60 @@
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 1 COMPILE OpenEdge\Lang\ByteOrderEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 30 CLASS OpenEdge.Lang.ByteOrderEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 30 STRING "OpenEdge.Lang.ByteOrderEnum" 27 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 32 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 33 STRING "HostByteOrder" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,HostByteOrder
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 34 STRING "BigEndian" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,BigEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 35 STRING "LittleEndian" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,LittleEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:HostByteOrder
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 38 STRING "host-byte-order" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ByteOrderEnum:HostByteOrder 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 39 STRING "big-endian" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:LittleEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 40 STRING "little-endian" 13 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ByteOrderEnum:LittleEndian 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:HostByteOrder
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 42 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.ByteOrderEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 43 CONSTRUCTOR ,STATIC,,,ByteOrderEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 43 STRING "BYTEORDERENUM" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 45 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 45 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 47 CONSTRUCTOR PUBLIC,,,,ByteOrderEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 47 STRING "BYTEORDERENUM" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 49 STRING "pcByteOrder" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 50 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 53 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:HostByteOrder
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:LittleEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 59 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.ByteOrderEnum,INPUT pcByteOrder CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 59 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 61 STRING "piByteOrder" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 62 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 65 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:HostByteOrder
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 65 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 65 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:HostByteOrder
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 66 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 66 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 66 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:BigEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 67 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:LittleEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 67 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 67 ACCESS INHERITED-PROPERTY OpenEdge.Lang.ByteOrderEnum:LittleEndian
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 71 METHOD PUBLIC,STATIC,,,,EnumFromValue,OpenEdge.Lang.ByteOrderEnum,INPUT piByteOrder INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 71 STRING "ENUMFROMVALUE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 38 NEW OpenEdge.Lang.ByteOrderEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 39 NEW OpenEdge.Lang.ByteOrderEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 40 NEW OpenEdge.Lang.ByteOrderEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 46 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 54 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\ByteOrderEnum.cls 55 INVOKE OpenEdge.Lang.EnumMember:ToString

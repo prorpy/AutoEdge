@@ -1,0 +1,9 @@
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 1 COMPILE autoedgethefactory\server\setup\data\load_salesregion.p
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 31 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 40 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 41 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 43 STRING "cRegions" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 45 STRING "NorthAmerica|EMEA|APAC|SouthCentralAmerica" 42 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_salesregion.p .\autoedgethefactory\server\setup\data\load_salesregion.p 46 STRING "|" 1 NONE TRANSLATABLE 

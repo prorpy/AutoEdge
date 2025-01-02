@@ -1,0 +1,5 @@
+OpenEdge.Core.InjectABL.Binding.Modules
+OpenEdge.Core.InjectABL.Binding.Modules.IInjectionModule	C	9530bd6dd39f146a27003d154bc8d1e6
+OpenEdge.Core.InjectABL.Binding.Modules.IInjectionModuleCollection	C	a3b796fa0024b4592e2b2ebeccd2b582
+OpenEdge.Core.InjectABL.Binding.Modules.InjectionModule	C	6c58a83140241b44a8f6bf254cef035f
+OpenEdge.Core.InjectABL.Binding.Modules.ModuleLoader	C	bd088f2f2de9ea016b97ae466af1642e

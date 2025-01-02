@@ -1,0 +1,9 @@
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 14 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 20 STRING "oInstance" 9 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 21 STRING "iRef" 4 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 22 STRING "oRef" 4 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 23 STRING "lAlive" 6 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_weak_reference.p 30 STRING "weak reference not same as int(obj)" 35 NONE TRANSLATABLE 

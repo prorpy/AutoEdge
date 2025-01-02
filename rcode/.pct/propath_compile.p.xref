@@ -1,0 +1,4 @@
+.\autoedgethefactory\server\tests\propath_compile.p .\autoedgethefactory\server\tests\propath_compile.p 1 COMPILE propath_compile.p
+.\autoedgethefactory\server\tests\propath_compile.p .\autoedgethefactory\server\tests\propath_compile.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\tests\propath_compile.p .\autoedgethefactory\server\tests\propath_compile.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\tests\propath_compile.p .\autoedgethefactory\server\tests\propath_compile.p 16 ROUTINE-LEVEL ON ERROR UNDO, THROW

@@ -1,0 +1,35 @@
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 1 COMPILE support\tests\test_pattern_load.p
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 1 CPINTERNAL utf-8
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 1 CPSTREAM iso8859-1
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 19 ROUTINE-LEVEL ON ERROR UNDO, THROW
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 21 STRING "pcFilePattern" 13 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 22 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 23 STRING "iMax" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 24 STRING "cOriginalExtension" 18 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 25 STRING "cFileBase" 9 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 26 STRING "cFolderBase" 11 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 27 STRING "cFile" 5 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 28 STRING "cPWD" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 29 STRING "cFolder" 7 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 30 STRING "oModules" 8 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 32 STRING "file pattern" 12 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 35 STRING "." 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 40 STRING "." 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 42 STRING "." 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 51 STRING "." 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 58 STRING "." 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 60 STRING "." 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 70 STRING "/" 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 70 STRING ".r" 2 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 73 STRING "." 1 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 78 FUNCTION Load,logical,INPUT pcFilePattern CHARACTER
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 78 STRING "LOAD" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 80 STRING "load_injectabl_modules" 22 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 80 STRING "Load" 4 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 81 STRING "load_injectabl_modules.p" 24 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 81 STRING "Load" 4 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 82 STRING "foo/load_injectabl_modules.p.old" 32 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 82 STRING "Load" 4 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 83 STRING "./foo/load_injectabl_modules.p.old" 34 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 83 STRING "Load" 4 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_pattern_load.p referencecomponents\support\tests\test_pattern_load.p 32 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrEmpty,INPUT character,INPUT character

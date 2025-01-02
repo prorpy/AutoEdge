@@ -1,0 +1,42 @@
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 1 COMPILE support\tests\test_weak_reference.p
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 1 CPINTERNAL utf-8
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 1 CPSTREAM iso8859-1
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 14 ROUTINE-LEVEL ON ERROR UNDO, THROW
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 20 STRING "oInstance" 9 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 21 STRING "iRef" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 22 STRING "oRef" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 23 STRING "lAlive" 6 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 30 STRING "weak reference not same as int(obj)" 35 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 32 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 34 STRING "weak reference not resolve; should be" 37 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 37 STRING "resolved weak reference not same as instance" 44 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 44 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 46 STRING "weak reference was resolved; should not be" 42 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 51 STRING "tests passed" 12 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 56 STRING "oInstance" 9 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 57 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 58 STRING "iMax" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 59 STRING "iRef" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 60 STRING "iRefLoc" 7 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 61 STRING "oRef" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 62 STRING "istart" 6 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 63 STRING "iend" 4 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 76 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.ABLSession:Instance
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 79 STRING " objects took " 14 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 79 STRING " milliseconds" 13 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 79 STRING " found ?" 8 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 79 STRING "iRefLoc=" 8 NONE TRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 87 PROCEDURE PerformanceTest,,
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 87 STRING "PERFORMANCETEST" 15 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 89 STRING "e" 1 NONE UNTRANSLATABLE 
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 90 ACCESS PUBLIC-PROPERTY Progress.Lang.AppError:ReturnValue
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 25 NEW Progress.Lang.Object
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 30 NEW Progress.Lang.AppError,INPUT character
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 32 INVOKE OpenEdge.Lang.ABLSession:ResolveWeakReference,INPUT integer
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 34 NEW Progress.Lang.AppError,INPUT character
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 37 NEW Progress.Lang.AppError,INPUT character
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 42 DELETE-INSTANCE Progress.Lang.Object
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 44 INVOKE OpenEdge.Lang.ABLSession:ResolveWeakReference,INPUT integer
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 46 NEW Progress.Lang.AppError,INPUT character
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 69 NEW Progress.Lang.Object
+referencecomponents\support\tests\test_weak_reference.p referencecomponents\support\tests\test_weak_reference.p 76 INVOKE OpenEdge.Lang.ABLSession:ResolveWeakReference,INPUT integer

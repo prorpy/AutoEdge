@@ -1,0 +1,60 @@
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 1 COMPILE OpenEdge\Lang\LockModeEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 30 CLASS OpenEdge.Lang.LockModeEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 30 STRING "OpenEdge.Lang.LockModeEnum" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 32 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 33 STRING "ShareLock" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,ShareLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 34 STRING "ExclusiveLock" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,ExclusiveLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 35 STRING "NoLock" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,NoLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ShareLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 38 STRING "share-lock" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.LockModeEnum:ShareLock 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ExclusiveLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 39 STRING "exclusive-lock" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.LockModeEnum:ExclusiveLock 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:NoLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 40 STRING "no-lock" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.LockModeEnum:NoLock 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:NoLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.LockModeEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 44 CONSTRUCTOR ,STATIC,,,LockModeEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 44 STRING "LOCKMODEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 46 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 46 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 48 CONSTRUCTOR PUBLIC,,,,LockModeEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 48 STRING "LOCKMODEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 50 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 51 STRING "oLockModeEnum" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ShareLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 54 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ShareLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ExclusiveLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 55 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ExclusiveLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 56 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:NoLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 56 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 56 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:NoLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 60 METHOD PUBLIC,STATIC,,,,EnumFromValue,OpenEdge.Lang.LockModeEnum,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 60 STRING "ENUMFROMVALUE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 62 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 63 STRING "oLockModeEnum" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 66 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ShareLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 67 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:ExclusiveLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 68 ACCESS INHERITED-PROPERTY OpenEdge.Lang.LockModeEnum:NoLock
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 72 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.LockModeEnum,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 72 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 38 NEW OpenEdge.Lang.LockModeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 39 NEW OpenEdge.Lang.LockModeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 40 NEW OpenEdge.Lang.LockModeEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 47 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 66 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 67 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\LockModeEnum.cls 68 INVOKE OpenEdge.Lang.EnumMember:ToString

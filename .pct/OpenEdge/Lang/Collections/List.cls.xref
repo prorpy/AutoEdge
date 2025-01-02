@@ -1,0 +1,190 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 1 COMPILE OpenEdge\Lang\Collections\List.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 37 CLASS OpenEdge.Lang.Collections.List,INHERITS OpenEdge.Lang.Collections.AbstractTTCollection,IMPLEMENTS OpenEdge.Lang.Collections.IList,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 37 STRING "OpenEdge.Lang.Collections.List" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 37 STRING "OpenEdge.Lang.Collections.AbstractTTCollection" 46 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 37 STRING "OpenEdge.Lang.Collections.IList" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 43 STRING "ttList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 43 STRING "sequence" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 43 STRING "objectref" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 51 STRING "objectref" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 52 CONSTRUCTOR PUBLIC,,,,List,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 52 STRING "LIST" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 54 STRING "list" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 55 CAST FROM OpenEdge.Lang.Collections.IList TO OpenEdge.Lang.Collections.ICollection
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 55 STRING "objectref" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 56 CONSTRUCTOR PUBLIC,,,,List,void,INPUT list OPENEDGE.LANG.COLLECTIONS.ILIST
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 56 STRING "LIST" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 58 STRING "poCol" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 58 STRING "phtt" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 58 STRING "pcField" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 60 CONSTRUCTOR PROTECTED,,,,List,void,INPUT poCol OPENEDGE.LANG.COLLECTIONS.ICOLLECTION,INPUT phtt HANDLE,INPUT pcField CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 60 STRING "LIST" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 62 STRING "phtt" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 62 STRING "pcField" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 64 CONSTRUCTOR PROTECTED,,,,List,void,INPUT phtt HANDLE,INPUT pcField CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 64 STRING "LIST" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 66 STRING "phtt" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 66 STRING "hField" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 68 CONSTRUCTOR PROTECTED,,,,List,void,INPUT phtt HANDLE,INPUT hField HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 68 STRING "LIST" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 70 STRING "checkObject" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 71 STRING "lContains" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 72 STRING "lbList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 75 STRING "lbList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 75 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList objidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 76 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 81 STRING "objidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 81 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 81 METHOD PUBLIC,,OVERRIDE,,,Contains,logical,INPUT checkObject PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 81 STRING "CONTAINS" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 83 STRING "findObject" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 84 STRING "lFoundRecord" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 87 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList objidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 87 SORT-ACCESS ttList sequence TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 92 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 97 METHOD PROTECTED,,OVERRIDE,,,FindBufferUseObject,void,INPUT findObject PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 97 STRING "FINDBUFFERUSEOBJECT" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 99 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 99 STRING "obj" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 100 STRING "btList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 104 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 112 STRING "objidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 112 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 112 METHOD PUBLIC,,,,,Add,logical,INPUT seq INTEGER,INPUT obj PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 112 STRING "ADD" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 114 STRING "obj" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 115 STRING "iSeq" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 121 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.AbstractTTCollection:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 125 METHOD PUBLIC,,OVERRIDE,,,Add,logical,INPUT obj PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 125 STRING "ADD" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 127 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 127 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 128 STRING "btList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 129 STRING "iterator" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 130 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 131 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.ICollection:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 140 STRING "objidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 140 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 140 METHOD PUBLIC,,,,,AddAll,logical,INPUT seq INTEGER,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 140 STRING "ADDALL" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 142 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 142 STRING "obj" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 143 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 144 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 146 STRING "btList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 150 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 161 STRING "objidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 161 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 161 METHOD PUBLIC,,,,,AddArray,logical,INPUT seq INTEGER,INPUT obj PROGRESS.LANG.OBJECT EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 161 STRING "ADDARRAY" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 163 STRING "collection" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 164 STRING "iterator" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 171 METHOD PUBLIC,,,,,ContainsAll,logical,INPUT collection OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 171 STRING "CONTAINSALL" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 174 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 175 STRING "btList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 176 STRING "oList" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 181 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.Collections.List
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 182 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.AbstractTTCollection:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 182 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.AbstractTTCollection:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 184 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 192 STRING "objidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 192 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 192 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 192 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 194 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 195 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 196 REFERENCE ttList TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 200 METHOD PUBLIC,,,,,Get,Progress.Lang.Object,INPUT i INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 200 STRING "GET" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 202 STRING "obj" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 203 STRING "iIndex" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 205 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList objidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 205 SORT-ACCESS ttList sequence TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 209 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 217 METHOD PUBLIC,,,,,IndexOf,integer,INPUT obj PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 217 STRING "INDEXOF" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 221 STRING "objectref" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 221 STRING "sequence" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 222 METHOD PUBLIC,,OVERRIDE,,,Iterator,OpenEdge.Lang.Collections.IIterator,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 222 STRING "ITERATOR" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 226 STRING "objectref" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 226 STRING "sequence" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 227 METHOD PUBLIC,,,,,ListIterator,OpenEdge.Lang.Collections.IListIterator,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 227 STRING "LISTITERATOR" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 230 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 231 STRING "objectref" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 231 STRING "sequence" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 231 STRING "sequence >= " 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 232 METHOD PUBLIC,,,,,ListIterator,OpenEdge.Lang.Collections.IListIterator,INPUT i INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 232 STRING "LISTITERATOR" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 234 STRING "obj" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 235 STRING "iIndex" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 237 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList objidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 237 SORT-ACCESS ttList sequence TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 241 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 249 METHOD PUBLIC,,,,,LastIndexOf,integer,INPUT obj PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 249 STRING "LASTINDEXOF" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 251 STRING "oldObject" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 252 STRING "iStart" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 253 STRING "btList" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 255 REFERENCE ttList TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 260 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 267 STRING "objidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 267 STRING "seq" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 267 METHOD PUBLIC,,OVERRIDE,,,Remove,logical,INPUT oldObject PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 267 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 269 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 270 STRING "oldObject" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 274 METHOD PUBLIC,,,,,Remove,Progress.Lang.Object,INPUT i INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 274 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 276 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 276 STRING "poReplacement" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 277 STRING "oldObject" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 278 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.List:ttList seq TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 279 REFERENCE ttList TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 286 METHOD PUBLIC,,,,,Set,Progress.Lang.Object,INPUT i INTEGER,INPUT poReplacement PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 286 STRING "SET" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 288 STRING "fromIndex" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 288 STRING "toIndex" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 289 STRING "list" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 290 STRING "oObject" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 302 METHOD PUBLIC,,,,,SubList,OpenEdge.Lang.Collections.IList,INPUT fromIndex INTEGER,INPUT toIndex INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 302 STRING "SUBLIST" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 51 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:AbstractTTCollection,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 55 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:AbstractTTCollection,INPUT OpenEdge.Lang.Collections.ICollection,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 59 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:AbstractTTCollection,INPUT OpenEdge.Lang.Collections.ICollection,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 63 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:AbstractTTCollection,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 67 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:AbstractTTCollection,INPUT widget-handle,INPUT widget-handle
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 77 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 95 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 102 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 116 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 119 INVOKE OpenEdge.Lang.Collections.List:findBufferUseObject,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 133 INVOKE OpenEdge.Lang.Collections.ICollection:Iterator
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 134 INVOKE OpenEdge.Lang.Collections.IIterator:HasNext
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 135 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 135 INVOKE OpenEdge.Lang.Collections.IIterator:Next
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 155 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 165 INVOKE OpenEdge.Lang.Collections.ICollection:Iterator
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 166 INVOKE OpenEdge.Lang.Collections.IIterator:hasNext
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 167 INVOKE OpenEdge.Lang.Collections.List:Contains,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 167 INVOKE OpenEdge.Lang.Collections.IIterator:Next
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 177 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 185 INVOKE OpenEdge.Lang.Collections.List:Get,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 212 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 221 NEW OpenEdge.Lang.Collections.Iterator,INPUT OpenEdge.Lang.Collections.ICollection,INPUT widget-handle,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 226 NEW OpenEdge.Lang.Collections.ListIterator,INPUT OpenEdge.Lang.Collections.ICollection,INPUT widget-handle,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 231 NEW OpenEdge.Lang.Collections.ListIterator,INPUT OpenEdge.Lang.Collections.ICollection,INPUT widget-handle,INPUT character,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 244 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 254 INVOKE OpenEdge.Lang.Collections.List:findBufferUseObject,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 258 INVOKE OpenEdge.Lang.Collections.AbstractTTCollection:remove,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 271 INVOKE OpenEdge.Lang.Collections.List:get,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 272 INVOKE OpenEdge.Lang.Collections.List:Remove,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 291 NEW OpenEdge.Lang.Collections.List
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 293 INVOKE OpenEdge.Lang.Collections.List:get,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 295 INVOKE OpenEdge.Lang.Collections.IList:add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\List.cls 297 DELETE-INSTANCE OpenEdge.Lang.Collections.IList

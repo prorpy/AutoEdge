@@ -1,0 +1,5 @@
+.\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls .\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls 1 COMPILE OpenEdge\Lang\ICloneable.cls
+.\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls .\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls .\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls .\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls 27 INTERFACE OpenEdge.Lang.ICloneable,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls .\referencecomponents\support\src\OpenEdge\Lang\ICloneable.cls 27 STRING "OpenEdge.Lang.ICloneable" 24 NONE UNTRANSLATABLE 

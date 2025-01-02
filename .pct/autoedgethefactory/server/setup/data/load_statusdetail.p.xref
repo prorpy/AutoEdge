@@ -1,0 +1,4 @@
+.\autoedgethefactory\server\setup\data\load_statusdetail.p .\autoedgethefactory\server\setup\data\load_statusdetail.p 1 COMPILE autoedgethefactory\server\setup\data\load_statusdetail.p
+.\autoedgethefactory\server\setup\data\load_statusdetail.p .\autoedgethefactory\server\setup\data\load_statusdetail.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\setup\data\load_statusdetail.p .\autoedgethefactory\server\setup\data\load_statusdetail.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\setup\data\load_statusdetail.p .\autoedgethefactory\server\setup\data\load_statusdetail.p 28 ROUTINE-LEVEL ON ERROR UNDO, THROW

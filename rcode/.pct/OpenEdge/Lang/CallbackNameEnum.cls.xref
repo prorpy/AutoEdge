@@ -1,0 +1,85 @@
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 1 COMPILE OpenEdge\Lang\CallbackNameEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 30 CLASS OpenEdge.Lang.CallbackNameEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 30 STRING "OpenEdge.Lang.CallbackNameEnum" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 33 STRING "RequestHeader" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,RequestHeader
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 34 STRING "ResponseHeader" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,ResponseHeader
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 37 STRING "BeforeFill" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 37 PROPERTY PUBLIC,STATIC,,,,BeforeFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 38 STRING "AfterFill" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 38 PROPERTY PUBLIC,STATIC,,,,AfterFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 41 STRING "BeforeRowFill" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 41 PROPERTY PUBLIC,STATIC,,,,BeforeRowFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 42 STRING "AfterRowFill" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 42 PROPERTY PUBLIC,STATIC,,,,AfterRowFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 43 STRING "RowCreate" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 43 PROPERTY PUBLIC,STATIC,,,,RowCreate
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 44 STRING "RowDelete" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 44 PROPERTY PUBLIC,STATIC,,,,RowDelete
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 45 STRING "RowUpdate" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 45 PROPERTY PUBLIC,STATIC,,,,RowUpdate
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 46 STRING "FindFailed" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 46 PROPERTY PUBLIC,STATIC,,,,FindFailed
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 47 STRING "Syncronize" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 47 PROPERTY PUBLIC,STATIC,,,,Syncronize
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 50 STRING "OffEnd" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 50 PROPERTY PUBLIC,STATIC,,,,OffEnd
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 53 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:RequestHeader
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 53 STRING "request-header" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 53 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:RequestHeader 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:ResponseHeader
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 54 STRING "response-header" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 54 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:ResponseHeader 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:BeforeFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 55 STRING "before-fill" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 55 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:BeforeFill 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 56 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:AfterFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 56 STRING "after-fill" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 56 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:AfterFill 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 57 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:BeforeRowFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 57 STRING "before-row-fill" 15 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 57 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:BeforeRowFill 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 58 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:AfterRowFill
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 58 STRING "after-row-fill" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 58 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:AfterRowFill 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 59 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:RowCreate
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 59 STRING "row-create" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 59 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:RowCreate 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:RowDelete
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 60 STRING "row-delete" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 60 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:RowDelete 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:RowUpdate
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 61 STRING "row-update" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 61 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:RowUpdate 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 62 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:FindFailed
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 62 STRING "find-failed" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 62 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:FindFailed 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 63 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:Syncronize
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 63 STRING "syncronize" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 63 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:Syncronize 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 64 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CallbackNameEnum:OffEnd
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 64 STRING "OFF-END" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 64 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CallbackNameEnum:OffEnd 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 65 CONSTRUCTOR ,STATIC,,,CallbackNameEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 65 STRING "CALLBACKNAMEENUM" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 67 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 69 CONSTRUCTOR PUBLIC,,,,CallbackNameEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 69 STRING "CALLBACKNAMEENUM" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 53 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 54 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 55 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 56 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 57 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 58 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 59 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 60 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 61 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 62 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 63 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 64 NEW OpenEdge.Lang.CallbackNameEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CallbackNameEnum.cls 68 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character

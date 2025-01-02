@@ -1,0 +1,405 @@
+/*------------------------------------------------------------------------
+    File        : ServiceManager
+    Purpose     : 
+    Syntax      : 
+    Description : 
+    Author(s)   : pjudge
+    Created     : Thu Feb 18 14:41:08 EST 2010
+    Notes       : 
+  ----------------------------------------------------------------------*/
+routine-level on error undo, throw.
+
+
+using OpenEdge.CommonInfrastructure.Common.ServiceManager.
+using OpenEdge.CommonInfrastructure.Common.IServiceManager.
+using OpenEdge.CommonInfrastructure.Common.ComponentTypeEnum.
+using OpenEdge.CommonInfrastructure.Common.IComponent.
+using OpenEdge.CommonInfrastructure.Common.IComponentInfo.
+using OpenEdge.CommonInfrastructure.Common.ComponentInfo.
+using OpenEdge.CommonInfrastructure.Common.ComponentFactory.
+using OpenEdge.CommonInfrastructure.Common.ManagerFactory.
+using OpenEdge.Core.PInject.IKernel.
+using OpenEdge.Core.System.NotFoundError.
+using OpenEdge.Lang.EnumMember.
+using Progress.Lang.Object.
+
+class OpenEdge.CommonInfrastructure.Common.ServiceManager abstract
+    implements IServiceManager, IComponent:
+    
+    define protected property Kernel as IKernel no-undo get. private set.        
+    
+    /* Component- and InstanceNames are only unique within a ComponentType, and not globally
+       across the application. The names may be either a type name, or a logical name. The relevant
+       Factory class will know how to deal with that. 
+       */
+    define private temp-table SessionComponent no-undo
+        field ComponentInfo       as Object   /* IComponentInfo*/
+        /* ComponentType, ComponentName, InstanceName all contained in ComponentInfo as properties,
+           but denormalised here for ease-of-use and performance. */
+        field ComponentType       as Object       /* EnumMember */
+        field ComponentName       as character    /* Name of component (type name) */
+        field InstanceName        as character    /* Unique instance name per parent component */
+        
+        field ComponentInstance   as Object       /* IComponent */
+        field Order               as integer
+        
+        field ParentComponentInfo as Object   /* IComponentInfo*/
+        
+        /* Order added, per component type */
+        index idx1 as primary unique ComponentInfo
+        index idx2 as unique         ParentComponentInfo InstanceName
+        index idx3                   ParentComponentInfo ComponentType
+        .           
+       
+    define public property ComponentInfo as IComponentInfo no-undo get. protected set.
+
+    constructor public ServiceManager(poKernel as IKernel):
+        this-object:Kernel = poKernel.
+    end constructor.
+            
+    method public void CreateComponent():
+        RegisterComponents().
+        
+        CreateServices().
+    end method.
+    
+    method protected void RegisterComponents():
+        /* Managers */
+        @todo(task="define config manager").
+        @todo(doc="").
+        RegisterManager('ConfigurationManager').
+        
+        RegisterManager('ContextManager').
+        RegisterManager('SecurityManager').
+    end method.
+    
+    /* THis is the DestroyComponent method for this component: the ServiceManager */
+    method public void DestroyComponent():
+        DestroyServices().
+    end method.
+    
+    method public void Initialize():
+        InitializeServices().
+    end method.
+    
+    method public void InitializeServices():
+        InitializeManagers().
+    end method.
+    
+    method protected void InitializeManagers():
+        define variable iLoop       as integer   no-undo.
+        define variable iMax        as integer   no-undo.
+        define variable oComponent  as IComponent extent no-undo. 
+        
+        assign 
+            oComponent = GetComponentInstance(this-object:ComponentInfo, ComponentTypeEnum:Manager)
+            iMax       = extent(oComponent).
+        do iLoop = 1 to iMax:
+            InitializeService(oComponent[iLoop]).
+        end.
+    end method.
+    
+    method public IComponentInfo RegisterManager(pcManagerName as character):
+        return RegisterComponent(ComponentTypeEnum:Manager, pcManagerName).
+    end method.
+    
+    method public IComponentInfo RegisterAppComponent(pcComponentName as character):
+        return RegisterComponent(ComponentTypeEnum:AppComponent, pcComponentName).
+    end method.
+    
+    method protected IComponentInfo RegisterComponent(poComponentType as EnumMember, pcComponentName as character):
+        return RegisterComponent(poComponentType, pcComponentName, this-object:ComponentInfo).
+    end method.
+    
+    method public void UnregisterComponent(poComponentInfo as IComponentInfo):
+        define buffer lbComponent for SessionComponent.
+        
+        find lbComponent where lbComponent.ComponentInfo = poComponentInfo no-error.
+        if not available lbComponent then
+            undo, throw new NotFoundError('Component ' + poComponentInfo:InstanceName + ' of type ' + poComponentInfo:ComponentType:ToString()).
+        
+        if valid-object(lbComponent.ComponentInstance) then
+            DestroyService(cast(lbComponent.ComponentInstance, IComponent)).
+        
+        delete lbComponent.
+    end method.
+    
+    method public IComponentInfo RegisterComponent(poComponentType as EnumMember,
+                                                   pcComponentName as character,
+                                                   poParentComponentInfo as IComponentInfo):
+        define buffer lbComponent for SessionComponent.
+        
+        create lbComponent.
+        assign
+            lbComponent.ComponentType       = poComponentType
+            lbComponent.ComponentName       = pcComponentName
+            lbComponent.InstanceName        = NextInstanceName(poParentComponentInfo, pcComponentName)
+            lbComponent.Order               = NextComponentOrder(poParentComponentInfo, poComponentType)
+            lbComponent.ParentComponentInfo = poParentComponentInfo
+            lbComponent.ComponentInfo       = new ComponentInfo(
+                                                    lbComponent.ComponentName,
+                                                    poComponentType,
+                                                    lbComponent.InstanceName) 
+            .
+        return cast(lbComponent.ComponentInfo, IComponentInfo). 
+    end method.
+    
+    method protected integer NextComponentOrder(poParentComponentInfo as IComponentInfo,
+                                                poComponentType as EnumMember):
+        define variable iOrder as integer no-undo.
+        
+        define buffer lbComponent for SessionComponent.
+        define query qryComponent for lbComponent.
+        
+        open query qryComponent 
+            preselect each lbComponent where 
+                      lbComponent.ComponentType = poComponentType and
+                      lbComponent.ParentComponentInfo = poParentComponentInfo.
+        iOrder = query qryComponent:num-results + 1.
+        close query qryComponent.
+        
+        return iOrder.
+    end method.
+    
+    method protected character NextInstanceName(poParentComponentInfo as IComponentInfo,
+                                                pcComponentName as character  ):
+        define variable cInstanceName as character no-undo.
+        define variable iInstance     as integer   no-undo.
+        
+        define buffer lbComponent for SessionComponent.        
+        define query qryComponent for lbComponent.
+        
+        open query qryComponent
+            preselect each lbComponent where
+                           lbComponent.ParentComponentInfo = poParentComponentInfo and
+                           lbComponent.ComponentName = pcComponentName.
+        iInstance = num-results('qryComponent').
+        close query qryComponent.
+        
+        if iInstance eq 0 then
+            cInstanceName = pcComponentName.
+        else
+            cInstanceName = pcComponentName + '_' + string(iInstance).
+        
+        return cInstanceName.
+    end method.
+    
+    method public void CreateServices():
+        CreateManagers().
+    end method.
+    
+    method protected void CreateManagers():
+        define variable iLoop       as integer   no-undo.
+        define variable iMax        as integer   no-undo.
+        define variable oComponent  as IComponentInfo extent no-undo. 
+        
+        assign 
+            oComponent = GetComponentInfo(this-object:ComponentInfo, ComponentTypeEnum:Manager)
+            iMax       = extent(oComponent).
+        do iLoop = 1 to iMax:
+            CreateService(oComponent[iLoop]).
+        end.
+    end method.
+    
+    method public void DestroyServices():
+        DestroyManagers().
+    end method.
+    
+    method protected void DestroyManagers():
+        define variable iLoop       as integer    no-undo.
+        define variable iMax        as integer    no-undo.
+        define variable oComponent  as IComponent extent no-undo. 
+        
+        assign 
+            oComponent = GetComponentInstance(this-object:ComponentInfo, ComponentTypeEnum:Manager)
+            iMax       = extent(oComponent).
+        do iLoop = 1 to iMax:
+            DestroyService(oComponent[iLoop]).
+        end.
+    end method.
+    
+    /* pcService name is the instance name of the service we want to start. */
+    method public IComponent CreateService(poComponentInfo as IComponentInfo):
+        define variable oComponent as IComponent no-undo.
+        
+        case poComponentInfo:ComponentType:
+            when ComponentTypeEnum:AppComponent then oComponent = CreateAppComponent(poComponentInfo).
+            when ComponentTypeEnum:Manager      then oComponent = CreateManager(poComponentInfo).
+            otherwise
+                undo, throw new NotFoundError('Component type ' + poComponentInfo:ComponentType:ToString()).
+        end case.
+        
+        SetComponentInstance(poComponentInfo, oComponent).
+        
+        return oComponent.
+    end method.
+    
+    method public IComponent StartService(poComponentInfo as IComponentInfo):
+        define variable oComponent as IComponent no-undo.
+        
+        oComponent = CreateService(poComponentInfo).
+        InitializeService(oComponent).
+        
+        return oComponent.
+    end method.
+    
+    method public void InitializeService(poComponent as IComponent):
+        poComponent:Initialize().        
+    end method.
+    
+    method public void InitializeService(poComponentInfo as IComponentInfo):
+        InitializeService(GetComponentInstance(poComponentInfo)).
+    end method.
+    
+    method protected IComponent CreateAppComponent(poComponentInfo as IComponentInfo):
+        define variable oComponent as IComponent no-undo.
+        
+        oComponent = ComponentFactory:GetComponent(poComponentInfo, this-object).
+        
+        return oComponent.
+    end method.
+    
+    method protected IComponent CreateManager(poComponentInfo as IComponentInfo):
+        define variable oComponent as IComponent no-undo.
+        
+        oComponent = ManagerFactory:GetManager(poComponentInfo, this-object).
+        
+        return oComponent.
+    end method.
+    
+    method public void DestroyService(poComponent as IComponent):
+        poComponent:DestroyComponent().
+    end method.
+    
+    method public void DestroyService(poComponentInfo as IComponentInfo):
+        DestroyService(GetComponentInstance(poComponentInfo)).
+    end method.
+    
+    method public IComponent extent GetComponentInstance(poParentComponentInfo as IComponentInfo,
+                                                         poComponentType as EnumMember):
+        return ListComponentInstance(' where lbComponent.ParentComponentInfo = ' + quoter(int(poParentComponentInfo))
+                                          + ' and lbComponent.ComponentType = ' + quoter(int(poComponentType)) ).
+    end method.
+    
+    method public void SetComponentInstance(poComponentInfo as IComponentInfo,
+        poComponent as IComponent):
+        define buffer lbComponent for SessionComponent.
+        
+        find lbComponent where lbComponent.ComponentInfo = poComponentInfo no-error.
+        if not available lbComponent then
+            undo, throw new NotFoundError('Component ' + poComponentInfo:InstanceName + ' of type ' + poComponentInfo:ComponentType:ToString()).
+        
+        /* Note that this may cause the a previously-assigned object to be GC'ed. */
+        lbComponent.ComponentInstance = poComponent.
+    end method.
+    
+    method public void ClearComponentInstance(poComponentInfo as IComponentInfo):
+        ClearComponentInstance(GetComponentInstance(poComponentInfo)).
+    end method.
+                                                                                        
+    method public void ClearComponentInstance(poComponentInstance as IComponent).
+        define buffer lbComponent for SessionComponent.
+        
+        find lbComponent where
+            lbComponent.ComponentInstance = poComponentInstance 
+            no-error.
+        if not available lbComponent then
+            undo, throw new NotFoundError('Component instance ' + poComponentInstance:ToString()).
+        
+        lbComponent.ComponentInstance = ?.
+    end method.
+    
+    method public IComponentInfo GetParentComponentInfo(poComponentInfo as IComponentInfo):
+        define buffer lbComponent for SessionComponent.
+        
+        find lbComponent where lbComponent.ComponentInfo = poComponentInfo no-error.
+        if not available lbComponent then
+            undo, throw new NotFoundError('Component instance ' + poComponentInfo:InstanceName).
+        return cast(lbComponent.ParentComponentInfo, IComponentInfo).
+    end method.
+    
+    method public IComponentInfo GetComponentInfo(poParentComponentInfo as IComponentInfo,
+                                                  pcInstanceName as character).
+        define buffer lbComponent for SessionComponent.
+        
+        find lbComponent where
+             lbComponent.ParentComponentInfo = poParentComponentInfo and
+             lbComponent.InstanceName = pcInstanceName 
+             no-error.
+        if not available lbComponent then
+            undo, throw new NotFoundError('Component instance ' + pcInstanceName + ' on parent ' + poParentComponentInfo:InstanceName).
+        
+        return cast(lbComponent.ComponentInfo, IComponentInfo).
+    end method.
+    
+    method public IComponentInfo extent GetComponentInfo(poParentComponentInfo as IComponentInfo,
+                                                         poComponentType as EnumMember).
+        return ListComponentInfo(' where lbComponent.ParentComponentInfo = ' + quoter(int(poParentComponentInfo)) 
+                                 + ' and  lbComponent.ComponentType = ' + quoter(int(poComponentType)) ).
+    end method.
+    
+    method public IComponent GetComponentInstance(poComponentInfo as IComponentInfo):
+        define buffer lbComponent for SessionComponent.
+        
+        find lbComponent where lbComponent.ComponentInfo = poComponentInfo no-error.
+        if not available lbComponent then
+            undo, throw new NotFoundError('Component instance ' + poComponentInfo:InstanceName).
+        return cast(lbComponent.ComponentInstance, IComponent).
+    end method.    
+    
+    /* returns an array of IComponentInfo objects that match the search criteria */
+    method private IComponentInfo extent ListComponentInfo(pcWhereString as char):
+        define variable iExtent     as integer        no-undo.
+        define variable oReturnList as IComponentInfo extent no-undo.
+        define variable hQuery      as handle         no-undo.
+        
+        define buffer lbComponent for SessionComponent.
+        define query qryComponent for lbComponent.
+        
+        hQuery = query qryComponent:handle.
+        hQuery:query-prepare('preselect each lbComponent ' + pcWhereString).
+        hQuery:query-open().
+        
+        iExtent = max(1, hQuery:num-results).
+        extent(oReturnList) = iExtent. 
+        oReturnList[1] = ?.
+        
+        hQuery:get-first().
+        do while not hQuery:query-off-end:
+            oReturnList[hQuery:current-result-row] = cast(lbComponent.ComponentInfo, IComponentInfo).
+            hQuery:get-next().
+        end.
+        hQuery:query-close().
+        
+        return oReturnList.
+    end method.
+    
+    /* returns an array of IComponents that match the search criteria */
+    method private IComponent extent ListComponentInstance(pcWhereString as char):
+        define variable oReturnList as IComponent extent no-undo.
+        define variable iExtent     as integer    no-undo.
+        define variable iLoop       as integer    no-undo.
+        define variable hQuery      as handle     no-undo.
+        
+        define buffer lbComponent for SessionComponent.
+        define query qryComponent for lbComponent.
+        
+        hQuery = query qryComponent:handle.
+        hQuery:query-prepare('preselect each lbComponent ' + pcWhereString).
+        hQuery:query-open().
+        
+        iExtent = max(1, hQuery:num-results).
+        extent(oReturnList) = iExtent. 
+        oReturnList[1] = ?.
+        
+        hQuery:get-first().
+        do while not hQuery:query-off-end:
+            oReturnList[hQuery:current-result-row] = cast(lbComponent.ComponentInstance, IComponent).
+            hQuery:get-next().
+        end.
+        hQuery:query-close().
+        
+        return oReturnList.
+    end method.
+    
+end class.

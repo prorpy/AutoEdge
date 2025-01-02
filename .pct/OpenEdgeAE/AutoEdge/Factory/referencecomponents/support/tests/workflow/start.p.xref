@@ -1,0 +1,5 @@
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p 13 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\workflow\start.p 18 STRING "oDR" 3 NONE UNTRANSLATABLE 

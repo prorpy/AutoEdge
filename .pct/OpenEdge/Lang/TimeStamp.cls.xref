@@ -1,0 +1,92 @@
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 1 COMPILE OpenEdge\Lang\TimeStamp.cls
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 29 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 36 CLASS OpenEdge.Lang.TimeStamp,,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 36 STRING "OpenEdge.Lang.TimeStamp" 23 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 38 STRING "Format" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 38 PROPERTY PUBLIC,,,,,Format
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 40 STRING "mtDate" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 41 STRING "miTime" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 42 STRING "miTZOffset" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 44 STRING "piTimeStamp" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 47 ACCESS INHERITED-PROPERTY OpenEdge.Lang.TimeStamp:Format
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 47 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 47 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.TimeStamp:Format 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 49 CONSTRUCTOR PUBLIC,,,,TimeStamp,void,INPUT piTimeStamp INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 49 STRING "TIMESTAMP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 51 STRING "ptTimeStamp" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.TimeStamp:Format
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 54 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Date
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 54 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.TimeStamp:Format 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 56 CONSTRUCTOR PUBLIC,,,,TimeStamp,void,INPUT ptTimeStamp DATE
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 56 STRING "TIMESTAMP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 58 STRING "ptTimeStamp" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.TimeStamp:Format
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 61 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DateTime
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 61 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.TimeStamp:Format 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 64 CONSTRUCTOR PUBLIC,,,,TimeStamp,void,INPUT ptTimeStamp DATETIME
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 64 STRING "TIMESTAMP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 66 STRING "ptTimeStamp" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 69 ACCESS INHERITED-PROPERTY OpenEdge.Lang.TimeStamp:Format
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 69 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DateTimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 69 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.TimeStamp:Format 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 73 CONSTRUCTOR PUBLIC,,,,TimeStamp,void,INPUT ptTimeStamp DATETIME-TZ
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 73 STRING "TIMESTAMP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 75 STRING "pcTimeStamp" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 76 STRING "tTimeStamp" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 82 ACCESS INHERITED-PROPERTY OpenEdge.Lang.TimeStamp:Format
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 82 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DateTimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 82 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.TimeStamp:Format 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 86 CONSTRUCTOR PUBLIC,,,,TimeStamp,void,INPUT pcTimeStamp CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 86 STRING "TIMESTAMP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 90 CONSTRUCTOR PUBLIC,,,,TimeStamp,void,
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 90 STRING "TIMESTAMP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 92 STRING "p0" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 94 ACCESS INHERITED-PROPERTY OpenEdge.Lang.TimeStamp:Format
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 95 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 95 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.TimeStamp
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 96 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Date
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 96 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.TimeStamp
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 97 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DateTime
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 97 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.TimeStamp
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 98 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:DateTimeTZ
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 98 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.TimeStamp
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 102 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT p0 PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 102 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 110 STRING "cDateFormat" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 113 STRING "ymd" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 119 METHOD PUBLIC,,,,,ToISODate,character,
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 119 STRING "TOISODATE" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 127 STRING "ptValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 128 STRING "cDateFormat" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 131 STRING "ymd" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 137 METHOD PUBLIC,STATIC,,,,ToISODateFromABL,character,INPUT ptValue DATETIME-TZ
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 137 STRING "TOISODATEFROMABL" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 145 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 146 STRING "cDateFormat" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 149 STRING "ymd" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 155 METHOD PUBLIC,STATIC,,,,ToABLDateTimeFromISO,datetime-tz,INPUT pcValue CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 155 STRING "TOABLDATETIMEFROMISO" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 159 METHOD PUBLIC,,,,,ToDateTimeTz,datetime-tz,
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 159 STRING "TODATETIMETZ" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 163 METHOD PUBLIC,,,,,ToDateTime,datetime,
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 163 STRING "TODATETIME" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 167 METHOD PUBLIC,,,,,ToDate,date,
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 167 STRING "TODATE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 171 METHOD PUBLIC,,,,,ToTime,integer,
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 171 STRING "TOTIME" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 173 STRING "TIMESTAMP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 45 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 52 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 59 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 67 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 78 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 80 INVOKE OpenEdge.Lang.TimeStamp:ToABLDateTimeFromISO,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 89 INVOKE OpenEdge.Lang.TimeStamp:TimeStamp,INPUT datetime-tz
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 95 INVOKE OpenEdge.Lang.TimeStamp:ToTime
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 96 INVOKE OpenEdge.Lang.TimeStamp:ToDate
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 97 INVOKE OpenEdge.Lang.TimeStamp:ToDateTime
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 98 INVOKE OpenEdge.Lang.TimeStamp:ToDateTimeTz
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 101 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls .\referencecomponents\support\src\OpenEdge\Lang\TimeStamp.cls 115 INVOKE OpenEdge.Lang.TimeStamp:ToDateTimeTz

@@ -1,0 +1,23 @@
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 1 COMPILE autoedgethefactory\server\setup\data\load_customers.p
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 30 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 34 STRING "cValueList" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 35 STRING "iEntries" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 36 STRING "|" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 38 STRING "|" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 40 FUNCTION getRandom,character,INPUT cValueList CHARACTER
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 40 STRING "GETRANDOM" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 43 STRING "iCustNum" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 44 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 45 STRING "iNumCreated" 11 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 46 STRING "cLastNames" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 47 STRING "cMiddleNames" 12 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 48 STRING "cFirstNamesMale" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 49 STRING "cFirstNamesFemale" 17 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 50 STRING "cSalutationsMale" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 51 STRING "cSalutationsFemale" 18 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 52 STRING "cNotes" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 53 STRING "cEmailAddress" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 54 STRING "cFullName" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\setup\data\load_customers.p .\autoedgethefactory\server\setup\data\load_customers.p 56 STRING "iNumAddresses" 13 NONE UNTRANSLATABLE 

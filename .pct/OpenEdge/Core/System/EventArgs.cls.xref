@@ -1,0 +1,16 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 1 COMPILE OpenEdge\Core\System\EventArgs.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 30 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 34 CLASS OpenEdge.Core.System.EventArgs,,,,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 34 STRING "OpenEdge.Core.System.EventArgs" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 39 STRING "Empty" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 39 PROPERTY PUBLIC,STATIC,,,,Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.EventArgs:Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.EventArgs:Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 42 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.EventArgs:Empty 
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 44 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.EventArgs:Empty
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 49 CONSTRUCTOR PUBLIC,,,,EventArgs,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 49 STRING "EVENTARGS" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 51 STRING "EVENTARGS" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls .\referencecomponents\support\src\OpenEdge\Core\System\EventArgs.cls 42 NEW OpenEdge.Core.System.EventArgs

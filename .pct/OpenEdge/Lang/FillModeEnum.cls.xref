@@ -1,0 +1,67 @@
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 1 COMPILE OpenEdge\Lang\FillModeEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 30 CLASS OpenEdge.Lang.FillModeEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 30 STRING "OpenEdge.Lang.FillModeEnum" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 32 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 33 STRING "Append" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,Append
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 34 STRING "Empty" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,Empty
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 35 STRING "Merge" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Merge
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 36 STRING "NoFill" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 36 PROPERTY PUBLIC,STATIC,,,,NoFill
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 37 STRING "Replace" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 37 PROPERTY PUBLIC,STATIC,,,,Replace
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Append
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 40 STRING "Append" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.FillModeEnum:Append 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Empty
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 41 STRING "Empty" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.FillModeEnum:Empty 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Merge
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 42 STRING "Merge" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 42 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.FillModeEnum:Merge 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:NoFill
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 43 STRING "No-Fill" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.FillModeEnum:NoFill 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 44 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Replace
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 44 STRING "Replace" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 44 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.FillModeEnum:Replace 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 46 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 46 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Merge
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 46 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.FillModeEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 47 CONSTRUCTOR ,STATIC,,,FillModeEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 47 STRING "FILLMODEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 49 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 51 CONSTRUCTOR PUBLIC,,,,FillModeEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 51 STRING "FILLMODEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 53 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 54 STRING "oEnum" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 57 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Append
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 57 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 57 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Append
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 58 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Empty
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 58 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 58 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Empty
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 59 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Merge
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 59 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 59 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Merge
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:NoFill
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 60 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:NoFill
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Replace
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 61 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.FillModeEnum:Replace
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 65 METHOD PUBLIC,STATIC,,,,StringToEnum,OpenEdge.Lang.FillModeEnum,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 65 STRING "STRINGTOENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 40 NEW OpenEdge.Lang.FillModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 41 NEW OpenEdge.Lang.FillModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 42 NEW OpenEdge.Lang.FillModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 43 NEW OpenEdge.Lang.FillModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 44 NEW OpenEdge.Lang.FillModeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\FillModeEnum.cls 50 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character

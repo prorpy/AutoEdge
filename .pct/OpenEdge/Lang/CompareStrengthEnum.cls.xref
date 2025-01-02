@@ -1,0 +1,62 @@
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 1 COMPILE OpenEdge\Lang\CompareStrengthEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 30 CLASS OpenEdge.Lang.CompareStrengthEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 30 STRING "OpenEdge.Lang.CompareStrengthEnum" 33 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 32 STRING "Raw" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Raw
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 33 STRING "CaseSensitive" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,CaseSensitive
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 34 STRING "CaseInsensitive" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,CaseInsensitive
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 35 STRING "Caps" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Caps
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 36 STRING "Primary" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 36 PROPERTY PUBLIC,STATIC,,,,Primary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 37 STRING "Secondary" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 37 PROPERTY PUBLIC,STATIC,,,,Secondary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 38 STRING "Tertiary" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 38 PROPERTY PUBLIC,STATIC,,,,Tertiary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 39 STRING "Quaternary" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 39 PROPERTY PUBLIC,STATIC,,,,Quaternary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Raw
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 42 STRING "RAW" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 42 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Raw 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:CaseSensitive
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 43 STRING "CASE-SENSITIVE" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:CaseSensitive 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 44 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:CaseInsensitive
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 44 STRING "CASE-INSENSITIVE" 16 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 44 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:CaseInsensitive 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 45 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Caps
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 45 STRING "CAPS" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 45 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Caps 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 46 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Primary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 46 STRING "PRIMARY" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 46 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Primary 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 47 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Secondary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 47 STRING "SECONDARY" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 47 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Secondary 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 48 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Tertiary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 48 STRING "TERTIARY" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 48 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Tertiary 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 49 ACCESS INHERITED-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Quaternary
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 49 STRING "QUATERNARY" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 49 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.CompareStrengthEnum:Quaternary 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 50 CONSTRUCTOR ,STATIC,,,CompareStrengthEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 50 STRING "COMPARESTRENGTHENUM" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 52 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 52 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 54 CONSTRUCTOR PUBLIC,,,,CompareStrengthEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 54 STRING "COMPARESTRENGTHENUM" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 42 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 43 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 44 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 45 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 46 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 47 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 48 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 49 NEW OpenEdge.Lang.CompareStrengthEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\CompareStrengthEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character

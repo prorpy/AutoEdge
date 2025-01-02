@@ -1,0 +1,11 @@
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 1 COMPILE OpenEdge\Core\Util\IExternalizable.cls
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 29 INTERFACE OpenEdge.Core.Util.IExternalizable,,,,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 29 STRING "OpenEdge.Core.Util.IExternalizable" 34 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 34 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 34 METHOD PUBLIC,,,,,WriteObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTOUTPUT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 34 STRING "WRITEOBJECT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 39 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 39 METHOD PUBLIC,,,,,ReadObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTINPUT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IExternalizable.cls 39 STRING "READOBJECT" 10 NONE UNTRANSLATABLE 

@@ -1,0 +1,5 @@
+.\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls .\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls 1 COMPILE OpenEdge\Core\Logger\ILogger.cls
+.\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls .\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls .\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls .\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls 28 INTERFACE OpenEdge.Core.Logger.ILogger,,,,
+.\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls .\referencecomponents\support\src\OpenEdge\Core\Logger\ILogger.cls 28 STRING "OpenEdge.Core.Logger.ILogger" 28 NONE UNTRANSLATABLE 

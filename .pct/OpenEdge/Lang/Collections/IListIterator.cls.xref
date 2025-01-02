@@ -1,0 +1,19 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 1 COMPILE OpenEdge\Lang\Collections\IListIterator.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 29 INTERFACE OpenEdge.Lang.Collections.IListIterator,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 29 STRING "OpenEdge.Lang.Collections.IListIterator" 39 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 30 METHOD PUBLIC,,,,,HasNext,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 30 STRING "HASNEXT" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 31 METHOD PUBLIC,,,,,Next,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 31 STRING "NEXT" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 32 METHOD PUBLIC,,,,,NextIndex,integer,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 32 STRING "NEXTINDEX" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 33 METHOD PUBLIC,,,,,Remove,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 33 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 34 METHOD PUBLIC,,,,,HasPrevious,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 34 STRING "HASPREVIOUS" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 35 METHOD PUBLIC,,,,,Previous,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 35 STRING "PREVIOUS" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 36 METHOD PUBLIC,,,,,PreviousIndex,integer,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IListIterator.cls 36 STRING "PREVIOUSINDEX" 13 NONE UNTRANSLATABLE 

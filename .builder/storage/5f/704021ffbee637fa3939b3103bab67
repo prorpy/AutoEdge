@@ -1,0 +1,8 @@
+OpenEdge.DataSource
+OpenEdge.DataSource.InjectABL	P	6669f6f69dda79264e04af6b22ed1cb1
+OpenEdge.DataSource.DataSource	C	ee4af67b0c9d0dbe405e9384765745f6
+OpenEdge.DataSource.DataSourceEventArgs	C	ba3401726ff212230b99d588daa755e0
+OpenEdge.DataSource.DataSourceEventEnum	C	a0f6016686c3b3645118bb7a7d3ae444
+OpenEdge.DataSource.DataSourceQuery	C	5d373922a0c88c593d8ada7a1efe8b3f
+OpenEdge.DataSource.IDataSource	C	0c269b6dab6143028b047cb32bf15350
+OpenEdge.DataSource.StandardDataSource	C	ea46b9e2c80599cfde669208717bf30d

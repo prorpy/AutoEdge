@@ -1,0 +1,8 @@
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 1 COMPILE referencecomponents\support\tests\read-dotser.p
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 1 CPINTERNAL utf-8
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 1 CPSTREAM iso8859-1
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 1 STRING "lc1" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 2 STRING "mm" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 4 STRING "C:\Devarea\views\pjudge_AUTOEDGE20\vobs_autoedge\uia\system\S1.ser" 66 NONE TRANSLATABLE 
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 7 STRING "i" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\tests\read-dotser.p .\referencecomponents\support\tests\read-dotser.p 8 STRING "i2" 2 NONE UNTRANSLATABLE 

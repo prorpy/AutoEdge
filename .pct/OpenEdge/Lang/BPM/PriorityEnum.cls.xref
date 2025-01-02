@@ -1,0 +1,49 @@
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 1 COMPILE OpenEdge\Lang\BPM\PriorityEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 31 CLASS OpenEdge.Lang.BPM.PriorityEnum,INHERITS OpenEdge.Lang.EnumMember,,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 31 STRING "OpenEdge.Lang.BPM.PriorityEnum" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 31 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 32 STRING "Low" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Low
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 33 STRING "Medium" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,Medium
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 34 STRING "High" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,High
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 35 STRING "Critical" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Critical
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Low
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 38 STRING "Low" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Low 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Medium
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 39 STRING "Medium" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Medium 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:High
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 40 STRING "High" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:High 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Critical
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 41 STRING "Critical" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Critical 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 42 CONSTRUCTOR ,STATIC,,,PriorityEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 42 STRING "PRIORITYENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 44 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 46 CONSTRUCTOR PUBLIC,,,,PriorityEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 46 STRING "PRIORITYENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 48 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 49 STRING "oEnum" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 52 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Low
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 53 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Medium
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:High
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.BPM.PriorityEnum:Critical
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 58 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.BPM.PriorityEnum,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 58 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 38 NEW OpenEdge.Lang.BPM.PriorityEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 39 NEW OpenEdge.Lang.BPM.PriorityEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 40 NEW OpenEdge.Lang.BPM.PriorityEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 41 NEW OpenEdge.Lang.BPM.PriorityEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 45 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 52 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 54 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\BPM\PriorityEnum.cls 55 INVOKE OpenEdge.Lang.EnumMember:ToString

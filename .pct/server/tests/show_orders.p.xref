@@ -1,0 +1,9 @@
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 1 COMPILE server\tests\show_orders.p
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 1 CPINTERNAL utf-8
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 1 CPSTREAM iso8859-1
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 17 STRING "itemItem" 8 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 17 STRING "Item" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 17 REFERENCE sports.Item 
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 18 STRING "finishedItemItem" 16 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 18 STRING "Item" 4 NONE UNTRANSLATABLE 
+autoedgethefactory\server\tests\show_orders.p autoedgethefactory\server\tests\show_orders.p 18 REFERENCE sports.Item 

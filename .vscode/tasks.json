@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": 
+    [
+        {   "label": "My GUI Application",
+            "type": "process",
+            "command": "c:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "-basekey",
+                "INI",
+                "-ininame",
+                "conf\\gui.ini",
+                "-db",
+                "aetf",
+                "-H",
+                "localhost",
+                "-S",
+                "4242",
+                "-cpinternal",
+                "iso8859-15",
+                "-p",
+                "start_ui.p",
+                "-nosplash"
+            ],
+            "windows": {
+                "command": "C:\\Progress\\OpenEdge\\bin\\prowin.exe"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new",
+                "focus": true
+            },
+            "options": {
+                "env": {
+                    "DLC": "C:\\Progress\\OpenEdge",
+                    "propath": "rcode"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "My GUI Application - Debugger",
+            "type": "process",
+            "command": "c:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "-basekey",
+                "INI",
+                "-ininame",
+                "conf/gui.ini",
+                "-db",
+                "sports",
+                "-H",
+                "localhost",
+                "-S",
+                "5444",
+                "-cpinternal",
+                "iso8859-15",
+                "-p",
+                "customer.p",
+                "-nosplash",
+                "-debugReady",
+                "3099"
+            ],
+            "windows": {
+                "command": "C:\\Progress\\OpenEdge\\bin\\prowin.exe"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new",
+                "focus": true
+            },
+            "options": {
+                "env": {
+                    "DLC": "C:\\Progress\\OpenEdge",
+                    "propath": "AppServer"
+                }
+            },
+            "problemMatcher": []
+        }
+    ]
+}

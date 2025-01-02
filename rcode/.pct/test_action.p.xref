@@ -1,0 +1,46 @@
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 1 COMPILE test_action.p
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "eAction" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "Key" 3 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "ActionType" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "ActionText" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "SmallImagePath" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "LargeImagePath" 14 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "HelpText" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 2 STRING "action" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 12 STRING "eActionStructure" 16 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 12 STRING "ParentKey" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 12 STRING "ChildKey" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 12 STRING "Order" 5 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 12 STRING "actionstructure" 15 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 19 STRING "eActionArgs" 11 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 19 STRING "ActionKey" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 19 STRING "ArgName" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 19 STRING "ArgValue" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 19 STRING "ArgType" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 19 STRING "ToolbarActionEventArgs" 22 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 27 REFERENCE eAction Key TEMPTABLE
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 27 REFERENCE eActionArgs ActionKey TEMPTABLE
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 27 DATASET dsAction,,,,,eAction eActionStructure eActionArgs DATALINKS 1 RELATION1 0 eAction eActionArgs 1 Key ActionKey
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 33 STRING "hq" 2 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 34 STRING "h1" 2 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 35 STRING "h2" 2 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 36 STRING "h3" 2 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 39 STRING "irow" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 47 FUNCTION getnext,logical,
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 47 STRING "GETNEXT" 7 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 53 FUNCTION getFirst,logical,
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 53 STRING "GETFIRST" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 59 STRING "lbGroup" 7 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 60 STRING "lbStructure" 11 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 61 STRING "lbAction" 8 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 67 STRING "preselect each lbGroup where       lbGroup.ActionType EQ ""3"" and lbGroup.Key EQ ""AG-FileMenu""     no-lock ,    each lbStructure where       lbStructure.ParentKey EQ lbGroup.Key     no-lock ,    each lbAction where       lbAction.Key EQ lbStructure.ChildKey     no-lock       by lbStructure.Order " 296 NONE TRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 83 STRING "hb1" 3 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 85 STRING "f1" 2 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 103 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 103 STRING "dsAction" 8 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 103 STRING "action" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 103 STRING "Key,ActionKey" 13 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 103 STRING "RELATION1" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\client\tests\test_action.p .\autoedgethefactory\client\tests\test_action.p 31 RUN OERA/Components/load_action.p

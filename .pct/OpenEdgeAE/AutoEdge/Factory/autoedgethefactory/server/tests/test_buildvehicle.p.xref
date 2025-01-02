@@ -1,0 +1,7 @@
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p 14 STRING "cOrder" 6 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p 15 STRING "piid" 4 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p 18 STRING "AE_TF_REL_V3#2165" 17 NONE TRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_buildvehicle.p 20 RUN service_buildvehicle.p

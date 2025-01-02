@@ -1,0 +1,9 @@
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 1 COMPILE referencecomponents\dataaccess\src\load_injectabl_modules.p
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 1 CPINTERNAL utf-8
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 1 CPSTREAM iso8859-1
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 29 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 36 STRING "poKernel" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 39 INVOKE OpenEdge.Core.InjectABL.IKernel:Load,INPUT OpenEdge.Core.InjectABL.Binding.Modules.IInjectionModule
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 39 NEW OpenEdge.DataAccess.InjectABL.DataAccessModule
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 40 INVOKE OpenEdge.Core.InjectABL.IKernel:Load,INPUT OpenEdge.Core.InjectABL.Binding.Modules.IInjectionModule
+.\referencecomponents\dataaccess\src\load_injectabl_modules.p .\referencecomponents\dataaccess\src\load_injectabl_modules.p 40 NEW OpenEdge.DataSource.InjectABL.DataSourcesModule

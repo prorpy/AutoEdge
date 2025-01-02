@@ -1,0 +1,8 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 1 COMPILE OpenEdge\Lang\Collections\Queue.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 30 CLASS OpenEdge.Lang.Collections.Queue,,,,,ABSTRACT,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 30 STRING "OpenEdge.Lang.Collections.Queue" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 32 CONSTRUCTOR PUBLIC,,,,Queue,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Queue.cls 32 STRING "QUEUE" 5 NONE UNTRANSLATABLE 

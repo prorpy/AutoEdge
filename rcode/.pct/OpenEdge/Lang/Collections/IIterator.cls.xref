@@ -1,0 +1,11 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 1 COMPILE OpenEdge\Lang\Collections\IIterator.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 28 INTERFACE OpenEdge.Lang.Collections.IIterator,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 28 STRING "OpenEdge.Lang.Collections.IIterator" 35 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 29 METHOD PUBLIC,,,,,HasNext,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 29 STRING "HASNEXT" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 30 METHOD PUBLIC,,,,,Next,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 30 STRING "NEXT" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 31 METHOD PUBLIC,,,,,Remove,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IIterator.cls 31 STRING "REMOVE" 6 NONE UNTRANSLATABLE 

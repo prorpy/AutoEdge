@@ -1,0 +1,5 @@
+.\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls 1 COMPILE OpenEdge\Core\Util\ISerializable.cls
+.\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls 25 INTERFACE OpenEdge.Core.Util.ISerializable,,,,
+.\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls .\referencecomponents\support\src\OpenEdge\Core\Util\ISerializable.cls 25 STRING "OpenEdge.Core.Util.ISerializable" 32 NONE UNTRANSLATABLE 

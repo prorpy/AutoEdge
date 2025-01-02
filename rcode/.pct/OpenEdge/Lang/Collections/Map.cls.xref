@@ -1,0 +1,178 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 1 COMPILE OpenEdge\Lang\Collections\Map.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 44 CLASS OpenEdge.Lang.Collections.Map,,IMPLEMENTS OpenEdge.Lang.Collections.IMap OpenEdge.Core.Util.IExternalizable OpenEdge.Core.Util.ISerializable,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 44 STRING "OpenEdge.Lang.Collections.Map" 29 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 44 STRING "OpenEdge.Lang.Collections.IMap" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 44 STRING "OpenEdge.Core.Util.IExternalizable" 34 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 44 STRING "OpenEdge.Core.Util.ISerializable" 32 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 47 STRING "ttMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 47 STRING "KeyRef" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 47 STRING "ValueRef" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 53 STRING "Size" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 53 PROPERTY PUBLIC,,,,,Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 57 STRING "Values" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 57 PROPERTY PUBLIC,,,,,Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 59 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 60 STRING "ValueRef" 8 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 60 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Values 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 65 STRING "KeySet" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 65 PROPERTY PUBLIC,,,,,KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 67 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 68 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 68 STRING "KeyRef" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 68 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:KeySet 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 69 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 72 STRING "EntrySet" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 72 PROPERTY PUBLIC,,,,,EntrySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 74 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:EntrySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 75 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:EntrySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 75 STRING "KeyRef" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 75 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:EntrySet 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 76 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:EntrySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 80 STRING "poMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 84 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 84 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 85 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 85 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 85 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 88 CONSTRUCTOR PUBLIC,,,,Map,void,INPUT poMap OPENEDGE.LANG.COLLECTIONS.IMAP
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 88 STRING "MAP" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 92 CONSTRUCTOR PUBLIC,,,,Map,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 92 STRING "MAP" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 96 METHOD PUBLIC,,,,,Clear,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 96 STRING "CLEAR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 98 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 99 STRING "lContainsKey" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 100 STRING "lbMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 106 STRING "lbMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 106 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 107 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 112 STRING "validx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 112 STRING "keyidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 112 METHOD PUBLIC,,,,,ContainsKey,logical,INPUT poKey PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 112 STRING "CONTAINSKEY" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 114 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 115 STRING "lContainsValue" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 116 STRING "lbMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 122 STRING "lbMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 122 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap validx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 123 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 128 STRING "validx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 128 STRING "keyidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 128 METHOD PUBLIC,,,,,ContainsValue,logical,INPUT poValue PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 128 STRING "CONTAINSVALUE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 131 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 132 STRING "btMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 133 STRING "oMap" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 134 STRING "oValue" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 140 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.Collections.IMap
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 141 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 141 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 143 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 161 STRING "validx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 161 STRING "keyidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 161 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 161 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 165 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 166 STRING "oValue" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 167 STRING "lbMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 172 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 176 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 182 STRING "validx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 182 STRING "keyidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 182 METHOD PUBLIC,,,,,Get,Progress.Lang.Object,INPUT poKey PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 182 STRING "GET" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 185 STRING "ttMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 185 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 186 METHOD PUBLIC,,,,,IsEmpty,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 186 STRING "ISEMPTY" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 190 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 190 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 191 STRING "oOld" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 192 STRING "lbMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 195 STRING "A Map cannot have itself as key." 32 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 200 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 201 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 202 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 202 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 204 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 204 SEARCH ttMap RECID TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 207 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 210 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 210 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 219 STRING "validx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 219 STRING "keyidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 219 METHOD PUBLIC,,,,,Put,Progress.Lang.Object,INPUT poKey PROGRESS.LANG.OBJECT,INPUT poValue PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 219 STRING "PUT" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 221 STRING "poMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 222 STRING "oKey" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 223 STRING "oIter" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 225 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.IMap:KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 230 METHOD PUBLIC,,,,,PutAll,void,INPUT poMap OPENEDGE.LANG.COLLECTIONS.IMAP
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 230 STRING "PUTALL" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 234 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 235 STRING "oOld" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 236 STRING "lbMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 239 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 240 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 241 SEARCH DATA-MEMBER OpenEdge.Lang.Collections.Map:ttMap keyidx TEMPTABLE WHOLE-INDEX
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 241 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 243 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 243 SEARCH ttMap RECID TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 246 REFERENCE ttMap TEMPTABLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 250 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 250 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 254 STRING "validx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 254 STRING "keyidx" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 254 METHOD PUBLIC,,,,,Remove,Progress.Lang.Object,INPUT poKey PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 254 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 256 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 257 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 258 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 259 METHOD PUBLIC,,,,,WriteObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTOUTPUT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 259 STRING "WRITEOBJECT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 261 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 262 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 263 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 264 STRING "oKeys" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 265 STRING "oValues" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 273 METHOD PUBLIC,,,,,ReadObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTINPUT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 273 STRING "READOBJECT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 276 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 276 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:Values 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 277 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Map:KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 277 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Map:KeySet 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 278 DESTRUCTOR PUBLIC,,,,Map,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 278 STRING "MAP" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 60 NEW OpenEdge.Lang.Collections.ValueCollection,INPUT OpenEdge.Lang.Collections.IMap,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 68 NEW OpenEdge.Lang.Collections.KeySet,INPUT OpenEdge.Lang.Collections.IMap,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 75 NEW OpenEdge.Lang.Collections.EntrySet,INPUT OpenEdge.Lang.Collections.IMap,INPUT widget-handle,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 81 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 84 INVOKE OpenEdge.Lang.Collections.ICollection:ToTable,OUTPUT TABLE-HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 87 INVOKE OpenEdge.Lang.Collections.Map:PutAll,INPUT OpenEdge.Lang.Collections.IMap
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 91 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 108 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 124 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 136 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 144 INVOKE OpenEdge.Lang.Collections.IMap:Get,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 150 INVOKE OpenEdge.Lang.Collections.IMap:ContainsKey,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 177 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 194 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 195 NEW Progress.Lang.AppError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 203 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 225 INVOKE OpenEdge.Lang.Collections.ISet:Iterator
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 226 INVOKE OpenEdge.Lang.Collections.IIterator:hasNext
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 227 INVOKE OpenEdge.Lang.Collections.IIterator:Next
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 228 INVOKE OpenEdge.Lang.Collections.Map:Put,INPUT Progress.Lang.Object,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 228 INVOKE OpenEdge.Lang.Collections.IMap:Get,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 242 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 257 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteObjectArray,INPUT Progress.Lang.Object EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 257 INVOKE OpenEdge.Lang.Collections.ISet:ToArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 258 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteObjectArray,INPUT Progress.Lang.Object EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 258 INVOKE OpenEdge.Lang.Collections.ICollection:ToArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 267 INVOKE OpenEdge.Core.Util.IObjectInput:ReadObjectArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Map.cls 271 INVOKE OpenEdge.Lang.Collections.Map:Put,INPUT Progress.Lang.Object,INPUT Progress.Lang.Object

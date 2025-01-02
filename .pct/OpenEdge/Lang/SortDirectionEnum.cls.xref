@@ -1,0 +1,49 @@
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 1 COMPILE OpenEdge\Lang\SortDirectionEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 30 CLASS OpenEdge.Lang.SortDirectionEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 30 STRING "OpenEdge.Lang.SortDirectionEnum" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 32 STRING "Default" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,Default
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 33 STRING "Ascending" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,Ascending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 34 STRING "Descending" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,Descending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Ascending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 39 STRING "Ascending" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SortDirectionEnum:Ascending 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Descending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 40 STRING "Descending" 10 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SortDirectionEnum:Descending 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Default
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 42 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Ascending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 42 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SortDirectionEnum:Default 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 43 CONSTRUCTOR ,STATIC,,,SortDirectionEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 43 STRING "SORTDIRECTIONENUM" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 45 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 45 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 47 CONSTRUCTOR PUBLIC,,,,SortDirectionEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 47 STRING "SORTDIRECTIONENUM" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 49 STRING "pcSortDirection" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 50 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 53 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Ascending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Descending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 58 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.SortDirectionEnum,INPUT pcSortDirection CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 58 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 60 STRING "piSortDirection" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 61 STRING "oMember" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 64 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Ascending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 64 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 64 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Ascending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 65 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Descending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 65 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 65 ACCESS INHERITED-PROPERTY OpenEdge.Lang.SortDirectionEnum:Descending
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 69 METHOD PUBLIC,STATIC,,,,EnumFromValue,OpenEdge.Lang.SortDirectionEnum,INPUT piSortDirection INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 69 STRING "ENUMFROMVALUE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 39 NEW OpenEdge.Lang.SortDirectionEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 40 NEW OpenEdge.Lang.SortDirectionEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 46 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\SortDirectionEnum.cls 54 INVOKE OpenEdge.Lang.EnumMember:ToString

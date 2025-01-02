@@ -1,0 +1,8 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 1 COMPILE OpenEdge\Core\System\ITableOwner.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 27 INTERFACE OpenEdge.Core.System.ITableOwner,,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 27 STRING "OpenEdge.Core.System.ITableOwner" 32 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 34 STRING "pcTableName" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 34 METHOD PUBLIC,,,,,GetTableHandle,widget-handle,INPUT pcTableName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls .\referencecomponents\support\src\OpenEdge\Core\System\ITableOwner.cls 34 STRING "GETTABLEHANDLE" 14 NONE UNTRANSLATABLE 

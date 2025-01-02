@@ -1,0 +1,76 @@
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 1 COMPILE OpenEdge\Core\Util\IObjectInput.cls
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 28 INTERFACE OpenEdge.Core.Util.IObjectInput,,,,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 28 STRING "OpenEdge.Core.Util.IObjectInput" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 31 METHOD PUBLIC,,,,,Reset,void,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 31 STRING "RESET" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 33 STRING "pcStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 33 METHOD PUBLIC,,,,,Read,void,INPUT pcStream LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 33 STRING "READ" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 34 STRING "pcFile" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 34 METHOD PUBLIC,,,,,Read,void,INPUT pcFile CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 34 STRING "READ" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 35 STRING "pmStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 35 METHOD PUBLIC,,,,,Read,void,INPUT pmStream MEMPTR
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 35 STRING "READ" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 37 METHOD PUBLIC,,,,,ReadObject,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 37 STRING "READOBJECT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 38 METHOD PUBLIC,,,,,ReadObjectArray,Progress.Lang.Object EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 38 STRING "READOBJECTARRAY" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 40 METHOD PUBLIC,,,,,ReadEnum,OpenEdge.Lang.EnumMember,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 40 STRING "READENUM" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 42 METHOD PUBLIC,,,,,ReadChar,character,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 42 STRING "READCHAR" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 43 METHOD PUBLIC,,,,,ReadCharArray,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 43 STRING "READCHARARRAY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 45 METHOD PUBLIC,,,,,ReadLongChar,longchar,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 45 STRING "READLONGCHAR" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 46 METHOD PUBLIC,,,,,ReadLongCharArray,longchar EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 46 STRING "READLONGCHARARRAY" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 48 METHOD PUBLIC,,,,,ReadInt,integer,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 48 STRING "READINT" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 49 METHOD PUBLIC,,,,,ReadIntArray,integer EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 49 STRING "READINTARRAY" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 51 METHOD PUBLIC,,,,,ReadInt64,int64,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 51 STRING "READINT64" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 52 METHOD PUBLIC,,,,,ReadInt64Array,int64 EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 52 STRING "READINT64ARRAY" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 54 METHOD PUBLIC,,,,,ReadDecimal,decimal,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 54 STRING "READDECIMAL" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 55 METHOD PUBLIC,,,,,ReadDecimalArray,decimal EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 55 STRING "READDECIMALARRAY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 57 METHOD PUBLIC,,,,,ReadDate,date,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 57 STRING "READDATE" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 58 METHOD PUBLIC,,,,,ReadDateArray,date EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 58 STRING "READDATEARRAY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 60 METHOD PUBLIC,,,,,ReadDateTime,datetime,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 60 STRING "READDATETIME" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 61 METHOD PUBLIC,,,,,ReadDateTimeArray,datetime EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 61 STRING "READDATETIMEARRAY" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 63 METHOD PUBLIC,,,,,ReadDateTimeTz,datetime-tz,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 63 STRING "READDATETIMETZ" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 64 METHOD PUBLIC,,,,,ReadDateTimeTzArray,datetime-tz EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 64 STRING "READDATETIMETZARRAY" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 66 METHOD PUBLIC,,,,,ReadLogical,logical,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 66 STRING "READLOGICAL" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 67 METHOD PUBLIC,,,,,ReadLogicalArray,logical EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 67 STRING "READLOGICALARRAY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 69 METHOD PUBLIC,,,,,ReadRowid,rowid,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 69 STRING "READROWID" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 70 METHOD PUBLIC,,,,,ReadRowidArray,rowid EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 70 STRING "READROWIDARRAY" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 72 METHOD PUBLIC,,,,,ReadRecid,recid,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 72 STRING "READRECID" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 73 METHOD PUBLIC,,,,,ReadRecidArray,recid EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 73 STRING "READRECIDARRAY" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 76 STRING "phValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 76 METHOD PUBLIC,,,,,ReadDataset,void,INPUT-OUTPUT phValue DATASET-HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 76 STRING "READDATASET" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 79 STRING "phValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 79 METHOD PUBLIC,,,,,ReadTable,void,INPUT-OUTPUT phValue TABLE-HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 79 STRING "READTABLE" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 81 METHOD PUBLIC,,,,,ReadHandle,widget-handle,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 81 STRING "READHANDLE" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 82 METHOD PUBLIC,,,,,ReadHandleArray,widget-handle EXTENT,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectInput.cls 82 STRING "READHANDLEARRAY" 15 NONE UNTRANSLATABLE 

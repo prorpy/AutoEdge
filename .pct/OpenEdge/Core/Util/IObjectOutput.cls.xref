@@ -1,0 +1,103 @@
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 1 COMPILE OpenEdge\Core\Util\IObjectOutput.cls
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 33 INTERFACE OpenEdge.Core.Util.IObjectOutput,,,,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 33 STRING "OpenEdge.Core.Util.IObjectOutput" 32 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 36 METHOD PUBLIC,,,,,Reset,void,
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 36 STRING "RESET" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 41 STRING "pcFileName" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 41 METHOD PUBLIC,,,,,Write,void,INPUT pcFileName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 41 STRING "WRITE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 46 STRING "pmStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 46 METHOD PUBLIC,,,,,Write,void,OUTPUT pmStream MEMPTR
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 46 STRING "WRITE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 51 STRING "pcStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 51 METHOD PUBLIC,,,,,Write,void,OUTPUT pcStream LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 51 STRING "WRITE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 55 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 55 METHOD PUBLIC,,,,,WriteObject,void,INPUT poValue PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 55 STRING "WRITEOBJECT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 56 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 56 METHOD PUBLIC,,,,,WriteObjectArray,void,INPUT poValue PROGRESS.LANG.OBJECT EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 56 STRING "WRITEOBJECTARRAY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 58 STRING "poMember" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 58 METHOD PUBLIC,,,,,WriteEnum,void,INPUT poMember OPENEDGE.LANG.ENUMMEMBER
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 58 STRING "WRITEENUM" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 60 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 60 METHOD PUBLIC,,,,,WriteChar,void,INPUT pcValue CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 60 STRING "WRITECHAR" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 61 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 61 METHOD PUBLIC,,,,,WriteCharArray,void,INPUT pcValue CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 61 STRING "WRITECHARARRAY" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 63 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 63 METHOD PUBLIC,,,,,WriteLongchar,void,INPUT pcValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 63 STRING "WRITELONGCHAR" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 64 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 64 METHOD PUBLIC,,,,,WriteLongcharArray,void,INPUT pcValue LONGCHAR EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 64 STRING "WRITELONGCHARARRAY" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 66 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 66 METHOD PUBLIC,,,,,WriteInt,void,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 66 STRING "WRITEINT" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 67 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 67 METHOD PUBLIC,,,,,WriteIntArray,void,INPUT piValue INTEGER EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 67 STRING "WRITEINTARRAY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 69 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 69 METHOD PUBLIC,,,,,WriteInt64,void,INPUT piValue INT64
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 69 STRING "WRITEINT64" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 70 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 70 METHOD PUBLIC,,,,,WriteInt64Array,void,INPUT piValue INT64 EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 70 STRING "WRITEINT64ARRAY" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 72 STRING "pdValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 72 METHOD PUBLIC,,,,,WriteDecimal,void,INPUT pdValue DECIMAL
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 72 STRING "WRITEDECIMAL" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 73 STRING "pdValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 73 METHOD PUBLIC,,,,,WriteDecimalArray,void,INPUT pdValue DECIMAL EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 73 STRING "WRITEDECIMALARRAY" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 75 STRING "ptValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 75 METHOD PUBLIC,,,,,WriteDate,void,INPUT ptValue DATE
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 75 STRING "WRITEDATE" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 76 STRING "ptValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 76 METHOD PUBLIC,,,,,WriteDateArray,void,INPUT ptValue DATE EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 76 STRING "WRITEDATEARRAY" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 78 STRING "ptValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 78 METHOD PUBLIC,,,,,WriteDateTime,void,INPUT ptValue DATETIME
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 78 STRING "WRITEDATETIME" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 79 STRING "ptValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 79 METHOD PUBLIC,,,,,WriteDateTimeArray,void,INPUT ptValue DATETIME EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 79 STRING "WRITEDATETIMEARRAY" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 81 STRING "ptValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 81 METHOD PUBLIC,,,,,WriteDateTimeTz,void,INPUT ptValue DATETIME-TZ
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 81 STRING "WRITEDATETIMETZ" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 82 STRING "ptValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 82 METHOD PUBLIC,,,,,WriteDateTimeTzArray,void,INPUT ptValue DATETIME-TZ EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 82 STRING "WRITEDATETIMETZARRAY" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 84 STRING "plValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 84 METHOD PUBLIC,,,,,WriteLogical,void,INPUT plValue LOGICAL
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 84 STRING "WRITELOGICAL" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 85 STRING "plValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 85 METHOD PUBLIC,,,,,WriteLogicalArray,void,INPUT plValue LOGICAL EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 85 STRING "WRITELOGICALARRAY" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 87 STRING "prValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 87 METHOD PUBLIC,,,,,WriteRowid,void,INPUT prValue ROWID
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 87 STRING "WRITEROWID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 88 STRING "prValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 88 METHOD PUBLIC,,,,,WriteRowidArray,void,INPUT prValue ROWID EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 88 STRING "WRITEROWIDARRAY" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 90 STRING "prValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 90 METHOD PUBLIC,,,,,WriteRecid,void,INPUT prValue RECID
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 90 STRING "WRITERECID" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 91 STRING "prValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 91 METHOD PUBLIC,,,,,WriteRecidArray,void,INPUT prValue RECID EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 91 STRING "WRITERECIDARRAY" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 93 STRING "phValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 93 METHOD PUBLIC,,,,,WriteDataset,void,INPUT phValue HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 93 STRING "WRITEDATASET" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 94 STRING "phValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 94 METHOD PUBLIC,,,,,WriteTable,void,INPUT phValue HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 94 STRING "WRITETABLE" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 96 STRING "phValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 96 METHOD PUBLIC,,,,,WriteHandle,void,INPUT phValue HANDLE
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 96 STRING "WRITEHANDLE" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 97 STRING "phValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 97 METHOD PUBLIC,,,,,WriteHandleArray,void,INPUT phValue HANDLE EXTENT
+.\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls .\referencecomponents\support\src\OpenEdge\Core\Util\IObjectOutput.cls 97 STRING "WRITEHANDLEARRAY" 16 NONE UNTRANSLATABLE 

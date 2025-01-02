@@ -1,0 +1,4 @@
+autoedgethefactory\server\setup\data\load_tenants.p autoedgethefactory\server\setup\data\load_tenants.p 1 COMPILE server\setup\data\load_tenants.p
+autoedgethefactory\server\setup\data\load_tenants.p autoedgethefactory\server\setup\data\load_tenants.p 1 CPINTERNAL utf-8
+autoedgethefactory\server\setup\data\load_tenants.p autoedgethefactory\server\setup\data\load_tenants.p 1 CPSTREAM iso8859-1
+autoedgethefactory\server\setup\data\load_tenants.p autoedgethefactory\server\setup\data\load_tenants.p 31 ROUTINE-LEVEL ON ERROR UNDO, THROW

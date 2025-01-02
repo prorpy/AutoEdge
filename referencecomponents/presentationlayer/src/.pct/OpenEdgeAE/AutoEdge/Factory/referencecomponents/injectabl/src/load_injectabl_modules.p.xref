@@ -1,0 +1,5 @@
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p 1 CPINTERNAL utf-8
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p 1 CPSTREAM iso8859-1
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\injectabl\src\load_injectabl_modules.p 30 STRING "poKernel" 8 NONE UNTRANSLATABLE 

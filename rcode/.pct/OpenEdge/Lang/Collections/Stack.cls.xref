@@ -1,0 +1,196 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 1 COMPILE OpenEdge\Lang\Collections\Stack.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 38 CLASS OpenEdge.Lang.Collections.Stack,,,,,ABSTRACT,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 38 STRING "OpenEdge.Lang.Collections.Stack" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 39 STRING "DEFAULT_STACK_DEPTH" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 39 DATA-MEMBER PUBLIC,STATIC,,DEFAULT_STACK_DEPTH
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 46 STRING "AutoExpand" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 46 PROPERTY PUBLIC,,,,,AutoExpand
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 50 STRING "DiscardOnShrink" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 50 PROPERTY PUBLIC,,,,,DiscardOnShrink
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 52 STRING "Depth" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 52 PROPERTY PUBLIC,,,,,Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 54 STRING "piDepth" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 56 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 56 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 59 STRING "Size" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 59 PROPERTY PUBLIC,,,,,Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 61 STRING "mcPrimitiveStack" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 62 STRING "moObjectStack" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 63 STRING "mlObjectStack" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 65 STRING "poArray" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 66 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 72 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 75 CONSTRUCTOR PROTECTED,,,,Stack,void,INPUT poArray PROGRESS.LANG.OBJECT EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 75 STRING "STACK" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 77 STRING "pcArray" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 80 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 81 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 84 CONSTRUCTOR PROTECTED,,,,Stack,void,INPUT pcArray CHARACTER EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 84 STRING "STACK" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 87 ACCESS INHERITED-DATA-MEMBER OpenEdge.Lang.Collections.Stack:DEFAULT_STACK_DEPTH
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 87 UPDATE PUBLIC-DATA-MEMBER OpenEdge.Lang.Collections.Stack:DEFAULT_STACK_DEPTH 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 88 CONSTRUCTOR ,STATIC,,,Stack,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 88 STRING "STACK" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 90 STRING "piDepth" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:AutoExpand
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 91 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:DiscardOnShrink
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 91 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 91 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:AutoExpand 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 91 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:DiscardOnShrink 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 95 CONSTRUCTOR PUBLIC,,,,Stack,void,INPUT piDepth INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 95 STRING "STACK" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 98 ACCESS INHERITED-DATA-MEMBER OpenEdge.Lang.Collections.Stack:DEFAULT_STACK_DEPTH
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 99 CONSTRUCTOR PUBLIC,,,,Stack,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 99 STRING "STACK" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 101 STRING "piDepth" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 102 STRING "cTempPrimitive" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 103 STRING "oTempObject" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 104 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 105 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 108 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 110 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 110 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:DiscardOnShrink
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 111 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.StackError:RESIZE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 114 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 117 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 117 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 125 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 125 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 138 STRING "SETSTACKDEPTH" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 140 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 141 STRING "Value" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 143 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 143 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 145 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:AutoExpand
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 146 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 146 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 146 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 148 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.StackError:OVERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 151 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 151 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 154 METHOD PROTECTED,,,,,ObjectPush,void,INPUT poValue PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 154 STRING "OBJECTPUSH" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 158 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 159 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.StackError:UNDERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 161 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 161 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 162 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.StackError:OVERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 164 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 165 METHOD PROTECTED,,,,,ObjectPeek,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 165 STRING "OBJECTPEEK" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 168 STRING "oValue" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 170 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 170 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 177 METHOD PROTECTED,,,,,ObjectPop,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 177 STRING "OBJECTPOP" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 179 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 180 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 180 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 182 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:AutoExpand
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 183 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 183 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 183 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 185 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.StackError:OVERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 188 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 188 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 191 METHOD PROTECTED,,,,,PrimitivePush,void,INPUT pcValue CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 191 STRING "PRIMITIVEPUSH" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 195 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 196 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.StackError:UNDERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 198 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 198 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 199 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.StackError:OVERFLOW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 201 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 202 METHOD PROTECTED,,,,,PrimitivePeek,character,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 202 STRING "PRIMITIVEPEEK" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 205 STRING "cValue" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 207 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 207 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 213 METHOD PROTECTED,,,,,PrimitivePop,character,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 213 STRING "PRIMITIVEPOP" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 215 STRING "piFromPos" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 215 STRING "piToPos" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 216 STRING "cTempPrimitive" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 217 STRING "oTempObject" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 231 METHOD PUBLIC,,,,,Swap,void,INPUT piFromPos INTEGER,INPUT piToPos INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 231 STRING "SWAP" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 233 STRING "piItems" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 234 STRING "cTempPrimitive" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 235 STRING "oTempObject" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 236 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 259 METHOD PUBLIC,,,,,Rotate,void,INPUT piItems INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 259 STRING "ROTATE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 263 METHOD PROTECTED,,,,,ObjectToArray,Progress.Lang.Object EXTENT,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 263 STRING "OBJECTTOARRAY" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 267 METHOD PROTECTED,,,,,PrimitiveToArray,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 267 STRING "PRIMITIVETOARRAY" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 270 STRING "cTempPrimitive" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 271 STRING "oTempObject" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 272 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 275 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 284 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 286 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 288 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 290 METHOD PUBLIC,,,,,Invert,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 290 STRING "INVERT" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 293 STRING "oParams" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 296 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 297 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:Integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 297 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.IOModeEnum:Input
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 297 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Stack:Depth
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 297 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.IOModeEnum:Input
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:ClassArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.IOModeEnum:Input
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:ProgressLangObject
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.IOModeEnum:Input
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 308 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.DataTypeEnum:CharacterArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 308 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.IOModeEnum:Input
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 314 METHOD PUBLIC,,OVERRIDE,,,Clone,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 314 STRING "CLONE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 316 STRING "poItem" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 317 STRING "lContains" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 318 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 321 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 326 METHOD PROTECTED,,,,,ObjectContains,logical,INPUT poItem PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 326 STRING "OBJECTCONTAINS" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 328 STRING "pcItem" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 329 STRING "lContains" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 330 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 333 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Stack:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 338 METHOD PROTECTED,,,,,PrimitiveContains,logical,INPUT pcItem CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 338 STRING "PRIMITIVECONTAINS" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 55 INVOKE OpenEdge.Lang.Collections.Stack:SetStackDepth,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 68 INVOKE OpenEdge.Lang.Collections.Stack:Stack,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 73 INVOKE OpenEdge.Lang.Collections.Stack:ObjectPush,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 78 INVOKE OpenEdge.Lang.Collections.Stack:Stack,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 82 INVOKE OpenEdge.Lang.Collections.Stack:PrimitivePush,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 98 INVOKE OpenEdge.Lang.Collections.Stack:Stack,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 111 NEW OpenEdge.Lang.Collections.StackError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 133 INVOKE OpenEdge.Lang.Collections.Stack:ObjectPush,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 135 INVOKE OpenEdge.Lang.Collections.Stack:PrimitivePush,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 141 INVOKE OpenEdge.Lang.Assert:ArgumentNotNull,INPUT Progress.Lang.Object,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 148 NEW OpenEdge.Lang.Collections.StackError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 159 NEW OpenEdge.Lang.Collections.StackError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 162 NEW OpenEdge.Lang.Collections.StackError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 170 INVOKE OpenEdge.Lang.Collections.Stack:ObjectPeek
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 185 NEW OpenEdge.Lang.Collections.StackError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 196 NEW OpenEdge.Lang.Collections.StackError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 199 NEW OpenEdge.Lang.Collections.StackError,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 207 INVOKE OpenEdge.Lang.Collections.Stack:PrimitivePeek
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 295 NEW Progress.Lang.ParameterList,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 297 INVOKE Progress.Lang.ParameterList:SetParameter,INPUT integer,INPUT character,INPUT character,INPUT 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 297 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 INVOKE Progress.Lang.ParameterList:SetParameter,INPUT integer,INPUT character,INPUT character,INPUT 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 303 INVOKE OpenEdge.Lang.Collections.Stack:ObjectToArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 308 INVOKE Progress.Lang.ParameterList:SetParameter,INPUT integer,INPUT character,INPUT character,INPUT 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 308 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 308 INVOKE OpenEdge.Lang.Collections.Stack:PrimitiveToArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 313 INVOKE Progress.Lang.Object:GetClass
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 313 INVOKE Progress.Lang.Class:New,INPUT Progress.Lang.ParameterList
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Stack.cls 322 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object

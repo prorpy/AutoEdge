@@ -1,0 +1,14 @@
+OpenEdge.Core.InjectABL.Binding
+OpenEdge.Core.InjectABL.Binding.Conditions	P	1876d455998d95b134c5cc5ffd6c21a5
+OpenEdge.Core.InjectABL.Binding.Modules	P	d9197984b7cb6995dee57414de1fae79
+OpenEdge.Core.InjectABL.Binding.Parameters	P	3d976c61d4a24f2d5f924d80fcfacc5a
+OpenEdge.Core.InjectABL.Binding.Binding	C	260eb091b98aad224f445c5a4520578a
+OpenEdge.Core.InjectABL.Binding.BindingBuilder	C	461965b976431cb0e294937f373f3041
+OpenEdge.Core.InjectABL.Binding.BindingRoot	C	8022244d06b725b4a3a9476e811c0df6
+OpenEdge.Core.InjectABL.Binding.BindingTargetEnum	C	236c4c80dd0cf5c26d693bdc59438229
+OpenEdge.Core.InjectABL.Binding.IBinding	C	f1c1f5fea27fb59e85271c1374dc77fc
+OpenEdge.Core.InjectABL.Binding.IBindingCollection	C	e4a7a893b4d79e4e5299a55d048c067e
+OpenEdge.Core.InjectABL.Binding.IBindingResolver	C	056834dfba5390e0e650e0313acb3c37
+OpenEdge.Core.InjectABL.Binding.IBindingRoot	C	48455d3241fa2f3481b20c85f367d505
+OpenEdge.Core.InjectABL.Binding.IBindingSyntax	C	8a0321d55332d3a02ae8801b32fb4efd
+OpenEdge.Core.InjectABL.Binding.StandardBindingResolver	C	f7657ca57873fdae6c77a8fff52ad01c

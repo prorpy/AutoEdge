@@ -1,0 +1,101 @@
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 1 COMPILE OpenEdge\Lang\String.cls
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 29 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 40 CLASS OpenEdge.Lang.String,,IMPLEMENTS OpenEdge.Core.Util.IExternalizable,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 40 STRING "OpenEdge.Lang.String" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 40 STRING "OpenEdge.Core.Util.IExternalizable" 34 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 43 STRING "Type" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 43 PROPERTY PUBLIC,STATIC,,,,Type
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 45 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Type
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 46 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Type
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 46 STRING "OpenEdge.Lang.String" 20 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 46 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.String:Type 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 48 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Type
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 52 STRING "moEmptyString" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 53 STRING "Value" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 53 PROPERTY PUBLIC,,,,,Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 57 CONSTRUCTOR PUBLIC,,,,String,void,
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 57 STRING "STRING" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 59 STRING "pcString" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 61 STRING "?" 1 LEFT TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 61 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.String:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 62 CONSTRUCTOR PUBLIC,,,,String,void,INPUT pcString LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 62 STRING "STRING" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 64 STRING "pcString" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 66 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 66 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.String:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 67 CONSTRUCTOR PUBLIC,,,,String,void,INPUT pcString CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 67 STRING "STRING" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 72 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 73 METHOD PUBLIC,,,,,Trim,void,
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 73 STRING "TRIM" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 80 METHOD PUBLIC,STATIC,,,,Empty,OpenEdge.Lang.String,
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 80 STRING "EMPTY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 82 STRING "p0" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 84 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 84 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 84 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.String
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 87 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT p0 PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 87 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 90 STRING "po" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 91 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 92 METHOD PUBLIC,,,,,WriteObject,void,INPUT po OPENEDGE.CORE.UTIL.IOBJECTOUTPUT
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 92 STRING "WRITEOBJECT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 94 STRING "po" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 95 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 95 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.String:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 96 METHOD PUBLIC,,,,,ReadObject,void,INPUT po OPENEDGE.CORE.UTIL.IOBJECTINPUT
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 96 STRING "READOBJECT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 98 STRING "pcDelimiter" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 99 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 100 METHOD PUBLIC,,,,,Split,character EXTENT,INPUT pcDelimiter CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 100 STRING "SPLIT" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 103 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 104 METHOD PUBLIC,,,,,Split,character EXTENT,
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 104 STRING "SPLIT" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 106 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 107 STRING "," 1 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 108 METHOD PUBLIC,STATIC,,,,Split,character EXTENT,INPUT pcValue LONGCHAR
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 108 STRING "SPLIT" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 110 ANNOTATION todo(action=refactor, comment=should return String[] not character[])
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 111 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 111 STRING "pcDelimiter" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 113 STRING "cArray" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 114 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 115 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 125 METHOD PUBLIC,STATIC,,,,Split,character EXTENT,INPUT pcValue LONGCHAR,INPUT pcDelimiter CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 125 STRING "SPLIT" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 127 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 127 STRING "pcDelimiter" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 129 STRING "cJoinedString" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 130 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 131 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 136 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 138 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 142 METHOD PUBLIC,STATIC,,,,Join,longchar,INPUT poValue OPENEDGE.LANG.STRING EXTENT,INPUT pcDelimiter CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 142 STRING "JOIN" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 144 STRING "pcValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 144 STRING "pcDelimiter" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 146 STRING "cJoinedString" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 147 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 148 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 159 METHOD PUBLIC,STATIC,,,,Join,longchar,INPUT pcValue CHARACTER EXTENT,INPUT pcDelimiter CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 159 STRING "JOIN" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 162 STRING "cValue" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 163 ACCESS INHERITED-PROPERTY OpenEdge.Lang.String:Value
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 166 METHOD PUBLIC,,OVERRIDE,,,ToString,character,
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 166 STRING "TOSTRING" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 168 STRING "STRING" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 46 INVOKE Progress.Lang.Class:GetClass,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 56 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 60 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 65 INVOKE Progress.Lang.Object:Object
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 77 NEW OpenEdge.Lang.String,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 86 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 91 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteLongChar,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 95 INVOKE OpenEdge.Core.Util.IObjectInput:ReadLongChar
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 99 INVOKE OpenEdge.Lang.String:Split,INPUT longchar,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 103 INVOKE OpenEdge.Lang.String:Split,INPUT longchar
+.\referencecomponents\support\src\OpenEdge\Lang\String.cls .\referencecomponents\support\src\OpenEdge\Lang\String.cls 107 INVOKE OpenEdge.Lang.String:Split,INPUT longchar,INPUT character

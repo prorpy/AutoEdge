@@ -1,0 +1,39 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 1 COMPILE OpenEdge\Lang\Collections\ISet.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 30 INTERFACE OpenEdge.Lang.Collections.ISet,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 30 STRING "OpenEdge.Lang.Collections.ISet" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 32 STRING "Size" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 32 PROPERTY PUBLIC,,,,,Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 36 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 36 METHOD PUBLIC,,,,,Add,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 36 STRING "ADD" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 40 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 40 METHOD PUBLIC,,,,,AddAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 40 STRING "ADDALL" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 43 METHOD PUBLIC,,,,,Clear,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 43 STRING "CLEAR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 46 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 46 METHOD PUBLIC,,,,,Contains,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 46 STRING "CONTAINS" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 50 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 50 METHOD PUBLIC,,,,,ContainsAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 50 STRING "CONTAINSALL" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 55 METHOD PUBLIC,,,,,IsEmpty,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 55 STRING "ISEMPTY" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 58 METHOD PUBLIC,,,,,Iterator,OpenEdge.Lang.Collections.IIterator,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 58 STRING "ITERATOR" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 62 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 62 METHOD PUBLIC,,,,,Remove,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 62 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 66 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 66 METHOD PUBLIC,,,,,RemoveAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 66 STRING "REMOVEALL" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 70 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 70 METHOD PUBLIC,,,,,RetainAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 70 STRING "RETAINALL" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 73 STRING "tt" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 73 METHOD PUBLIC,,,,,ToTable,void,OUTPUT tt TABLE-HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 73 STRING "TOTABLE" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 76 METHOD PUBLIC,,,,,ToArray,Progress.Lang.Object EXTENT,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\ISet.cls 76 STRING "TOARRAY" 7 NONE UNTRANSLATABLE 

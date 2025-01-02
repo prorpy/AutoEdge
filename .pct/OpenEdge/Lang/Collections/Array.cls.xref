@@ -1,0 +1,211 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 1 COMPILE OpenEdge\Lang\Collections\Array.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 10 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 26 CLASS OpenEdge.Lang.Collections.Array,,IMPLEMENTS OpenEdge.Core.Util.IExternalizable OpenEdge.Lang.Collections.ICollection,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 26 STRING "OpenEdge.Lang.Collections.Array" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 26 STRING "OpenEdge.Core.Util.IExternalizable" 34 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 26 STRING "OpenEdge.Lang.Collections.ICollection" 37 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 30 STRING "ttArray" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 30 STRING "ObjIndex" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 30 STRING "ObjRef" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 35 STRING "Type" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 35 PROPERTY PUBLIC,STATIC,,,,Type
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 37 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.String:Type
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Type
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 38 STRING "OpenEdge.Lang.Array" 19 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Type 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Type
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 44 STRING "DEFAULT_ARRAY_SIZE" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 44 DATA-MEMBER PUBLIC,STATIC,,DEFAULT_ARRAY_SIZE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 50 STRING "AutoExpand" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 50 PROPERTY PUBLIC,,,,,AutoExpand
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 54 STRING "DiscardOnShrink" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 54 PROPERTY PUBLIC,,,,,DiscardOnShrink
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 56 STRING "Value" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 56 PROPERTY PROTECTED,,,,,Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 58 STRING "Size" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 58 PROPERTY PUBLIC,,,,,Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 62 STRING "piSize" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 67 ACCESS INHERITED-DATA-MEMBER OpenEdge.Lang.Collections.Array:DEFAULT_ARRAY_SIZE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 67 UPDATE PUBLIC-DATA-MEMBER OpenEdge.Lang.Collections.Array:DEFAULT_ARRAY_SIZE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 68 CONSTRUCTOR ,STATIC,,,Array,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 68 STRING "ARRAY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 70 STRING "piSize" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 71 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 71 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:AutoExpand
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 71 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:DiscardOnShrink
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 71 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Size 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 71 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:AutoExpand 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 71 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:DiscardOnShrink 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 74 CONSTRUCTOR PUBLIC,,,,Array,void,INPUT piSize INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 74 STRING "ARRAY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 76 STRING "poArray" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 79 CONSTRUCTOR PUBLIC,,,,Array,void,INPUT poArray PROGRESS.LANG.OBJECT EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 79 STRING "ARRAY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 82 ACCESS INHERITED-DATA-MEMBER OpenEdge.Lang.Collections.Array:DEFAULT_ARRAY_SIZE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 83 CONSTRUCTOR PUBLIC,,,,Array,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 83 STRING "ARRAY" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 85 STRING "piNewSize" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 86 STRING "oTempObject" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 87 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 88 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 93 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:DiscardOnShrink
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 94 STRING "Array" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 94 STRING "smaller" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 95 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 95 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 98 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 100 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 100 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:DiscardOnShrink
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 101 STRING "Array" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 101 STRING "smaller" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 104 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 107 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 107 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 107 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 107 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 107 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 111 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 111 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 118 STRING "SETARRAYSIZE" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 120 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 121 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 122 METHOD PUBLIC,,,,,SetValue,void,INPUT poValue PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 122 STRING "SETVALUE" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 124 STRING "piExtent" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 125 STRING "Extent" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 126 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 127 METHOD PUBLIC,,,,,GetValue,Progress.Lang.Object,INPUT piExtent INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 127 STRING "GETVALUE" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 129 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 129 STRING "piExtent" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 133 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 135 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:AutoExpand
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 136 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 138 STRING "Array" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 138 STRING "smaller" 7 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 141 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 141 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 142 METHOD PUBLIC,,,,,SetValue,void,INPUT poValue PROGRESS.LANG.OBJECT,INPUT piExtent INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 142 STRING "SETVALUE" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 145 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 148 METHOD PUBLIC,,,,,Add,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 148 STRING "ADD" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 150 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 152 METHOD PUBLIC,,,,,AddAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 152 STRING "ADDALL" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 154 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 155 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 156 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 157 STRING "iStartSize" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 161 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 168 METHOD PUBLIC,,,,,AddArray,logical,INPUT c PROGRESS.LANG.OBJECT EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 168 STRING "ADDARRAY" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 172 METHOD PUBLIC,,,,,Clear,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 172 STRING "CLEAR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 174 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 175 STRING "lContainsArgument" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 176 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 177 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 179 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 181 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 185 METHOD PUBLIC,,,,,Contains,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 185 STRING "CONTAINS" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 188 STRING "oArrayIterator" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 190 METHOD PUBLIC,,,,,Iterator,OpenEdge.Lang.Collections.IIterator,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 190 STRING "ITERATOR" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 193 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 194 METHOD PUBLIC,,,,,IsEmpty,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 194 STRING "ISEMPTY" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 196 STRING "o" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 197 STRING "lRemoved" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 198 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 199 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 201 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 203 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 204 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 204 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 209 METHOD PUBLIC,,,,,Remove,logical,INPUT o PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 209 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 211 STRING "c" 1 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 212 STRING "oIterator" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 213 STRING "oRemove" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 214 STRING "lAny" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 225 METHOD PUBLIC,,,,,RemoveAll,logical,INPUT c OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 225 STRING "REMOVEALL" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 227 STRING "oCollection" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 228 STRING "oIterator" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 229 STRING "oChild" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 230 STRING "lAny" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 243 METHOD PUBLIC,,,,,RetainAll,logical,INPUT oCollection OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 243 STRING "RETAINALL" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 245 STRING "tt" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 246 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 247 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 250 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 253 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 258 METHOD PUBLIC,,,,,ToTable,void,OUTPUT tt TABLE-HANDLE
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 258 STRING "TOTABLE" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 261 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 262 METHOD PUBLIC,,,,,ToArray,Progress.Lang.Object EXTENT,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 262 STRING "TOARRAY" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 267 STRING "oClone" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 269 CAST TO OpenEdge.Lang.Collections.ICollection
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 273 METHOD PUBLIC,,OVERRIDE,,,Clone,Progress.Lang.Object,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 273 STRING "CLONE" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 275 STRING "poClone" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 276 STRING "oIterator" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 282 METHOD PROTECTED,,,,,CloneElements,void,INPUT poClone OPENEDGE.LANG.COLLECTIONS.ICOLLECTION
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 282 STRING "CLONEELEMENTS" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 285 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 286 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 287 METHOD PUBLIC,,,,,WriteObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTOUTPUT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 287 STRING "WRITEOBJECT" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 289 STRING "poStream" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 290 ACCESS INHERITED-PROPERTY OpenEdge.Lang.Collections.Array:Value
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 290 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.Collections.Array:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 291 METHOD PUBLIC,,,,,ReadObject,void,INPUT poStream OPENEDGE.CORE.UTIL.IOBJECTINPUT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 291 STRING "READOBJECT" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 293 STRING "idx1" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 38 INVOKE Progress.Lang.Class:GetClass,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 63 INVOKE OpenEdge.Lang.Collections.Array:SetArraySize,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 77 INVOKE OpenEdge.Lang.Collections.Array:Array,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 78 INVOKE OpenEdge.Lang.Collections.Array:AddArray,INPUT Progress.Lang.Object EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 82 INVOKE OpenEdge.Lang.Collections.Array:Array,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 94 NEW OpenEdge.Lang.Collections.ResizeError,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 101 NEW OpenEdge.Lang.Collections.ResizeError,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 115 INVOKE OpenEdge.Lang.Collections.Array:SetValue,INPUT Progress.Lang.Object,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 121 INVOKE OpenEdge.Lang.Collections.Array:SetValue,INPUT Progress.Lang.Object,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 125 INVOKE OpenEdge.Lang.Assert:ArgumentNotNullOrZero,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 136 INVOKE OpenEdge.Lang.Collections.Array:SetArraySize,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 138 NEW OpenEdge.Lang.Collections.ResizeError,INPUT character,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 146 INVOKE OpenEdge.Lang.Collections.Array:SetValue,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 151 INVOKE OpenEdge.Lang.Collections.Array:AddArray,INPUT Progress.Lang.Object EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 151 INVOKE OpenEdge.Lang.Collections.ICollection:ToArray
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 162 INVOKE OpenEdge.Lang.Collections.Array:SetArraySize,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 164 INVOKE OpenEdge.Lang.Collections.Array:SetValue,INPUT Progress.Lang.Object,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 171 INVOKE OpenEdge.Lang.Collections.Array:SetArraySize,INPUT integer
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 181 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 189 NEW OpenEdge.Lang.Collections.ArrayIterator,INPUT OpenEdge.Lang.Collections.Array
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 203 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 216 INVOKE OpenEdge.Lang.Collections.ICollection:Iterator
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 217 INVOKE OpenEdge.Lang.Collections.IIterator:HasNext
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 218 INVOKE OpenEdge.Lang.Collections.IIterator:Next
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 219 INVOKE OpenEdge.Lang.Collections.Array:Remove,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 232 INVOKE OpenEdge.Lang.Collections.Array:Iterator
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 233 INVOKE OpenEdge.Lang.Collections.IIterator:HasNext
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 234 INVOKE OpenEdge.Lang.Collections.IIterator:Next
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 235 INVOKE OpenEdge.Lang.Collections.ICollection:Contains,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 237 INVOKE OpenEdge.Lang.Collections.Array:Remove,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 269 INVOKE Progress.Lang.Object:GetClass
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 269 INVOKE Progress.Lang.Class:New
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 270 INVOKE OpenEdge.Lang.Collections.Array:CloneElements,INPUT OpenEdge.Lang.Collections.ICollection
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 278 INVOKE OpenEdge.Lang.Collections.Array:Iterator
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 279 INVOKE OpenEdge.Lang.Collections.IIterator:HasNext
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 280 INVOKE OpenEdge.Lang.Collections.ICollection:Add,INPUT Progress.Lang.Object
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 280 INVOKE OpenEdge.Lang.Collections.IIterator:Next
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 280 INVOKE Progress.Lang.Object:Clone
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 286 INVOKE OpenEdge.Core.Util.IObjectOutput:WriteObjectArray,INPUT Progress.Lang.Object EXTENT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\Array.cls 290 INVOKE OpenEdge.Core.Util.IObjectInput:ReadObjectArray

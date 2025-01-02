@@ -1,0 +1,50 @@
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 1 COMPILE OpenEdge\Lang\EnumMember.cls
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 28 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 35 CLASS OpenEdge.Lang.EnumMember,,,,,ABSTRACT,
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 35 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 37 STRING "Name" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 37 PROPERTY PUBLIC,,,,,Name
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 38 STRING "Value" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 38 PROPERTY PUBLIC,,,,,Value
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 40 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 40 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Name 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 43 CONSTRUCTOR PROTECTED,,,,EnumMember,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 43 STRING "ENUMMEMBER" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 45 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 47 CONSTRUCTOR PROTECTED,,,,EnumMember,void,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 47 STRING "ENUMMEMBER" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 49 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 51 CONSTRUCTOR PROTECTED,,,,EnumMember,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 51 STRING "ENUMMEMBER" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 53 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 54 STRING "lEquals" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 56 ACCESS INHERITED-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 59 METHOD PUBLIC,,,,,Equals,logical,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 59 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 61 STRING "poEnumMember" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 62 STRING "lEquals" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 69 CAST FROM Progress.Lang.Object TO OpenEdge.Lang.EnumMember
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 73 METHOD PUBLIC,,OVERRIDE,,,Equals,logical,INPUT poEnumMember PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 73 STRING "EQUALS" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 76 STRING "cName" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 78 ACCESS INHERITED-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 79 ACCESS INHERITED-PROPERTY OpenEdge.Lang.EnumMember:Name
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 79 STRING "&1" 2 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 81 ACCESS INHERITED-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 82 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 82 ACCESS INHERITED-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 82 STRING "&1_Value_&2" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 84 ACCESS PUBLIC-PROPERTY Progress.Lang.Class:TypeName
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 84 STRING "&1_&2" 5 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 87 METHOD PUBLIC,,OVERRIDE,,,ToString,character,
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 87 STRING "TOSTRING" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 46 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 50 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 65 INVOKE Progress.Lang.Object:Equals,INPUT progress.lang.object
+.\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls .\referencecomponents\support\src\OpenEdge\Lang\EnumMember.cls 69 INVOKE OpenEdge.Lang.EnumMember:ToString

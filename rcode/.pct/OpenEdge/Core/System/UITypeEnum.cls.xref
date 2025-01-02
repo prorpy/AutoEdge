@@ -1,0 +1,35 @@
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 1 COMPILE OpenEdge\Core\System\UITypeEnum.cls
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 16 ANNOTATION deprecated(version=0.0)
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 27 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 32 CLASS OpenEdge.Core.System.UITypeEnum,INHERITS OpenEdge.Lang.EnumMember,,,,,
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 32 STRING "OpenEdge.Core.System.UITypeEnum" 31 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 32 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 34 STRING "Chui" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,Chui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 36 STRING "AblGui" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 36 PROPERTY PUBLIC,STATIC,,,,AblGui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 38 STRING "DotNetGui" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 38 PROPERTY PUBLIC,STATIC,,,,DotNetGui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 40 STRING "RiaGui" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 40 PROPERTY PUBLIC,STATIC,,,,RiaGui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.UITypeEnum:Chui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.UITypeEnum:AblGui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.UITypeEnum:DotNetGui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 ACCESS INHERITED-PROPERTY OpenEdge.Core.System.UITypeEnum:RiaGui
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 STRING "Chui" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.UITypeEnum:Chui 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 STRING "AblGui" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.UITypeEnum:AblGui 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 STRING "DotNetGui" 9 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.UITypeEnum:DotNetGui 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 STRING "RiaGui" 6 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 UPDATE PUBLIC-PROPERTY OpenEdge.Core.System.UITypeEnum:RiaGui 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 47 CONSTRUCTOR ,STATIC,,,UITypeEnum,void,
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 47 STRING "UITYPEENUM" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 49 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 51 CONSTRUCTOR PUBLIC,,,,UITypeEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 51 STRING "UITYPEENUM" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 43 NEW OpenEdge.Core.System.UITypeEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls .\referencecomponents\support\src\OpenEdge\Core\System\UITypeEnum.cls 50 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character

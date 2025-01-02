@@ -1,0 +1,608 @@
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 1 COMPILE referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 1 CPINTERNAL utf-8
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 1 CPSTREAM iso8859-1
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 59 INCLUDE src/adm2/widgetprto.i
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 8 STRING "ASSIGNFOCUSEDWIDGET" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 8 FUNCTION assignFocusedWidget,LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 14 STRING "ASSIGNWIDGETVALUE" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 14 FUNCTION assignWidgetValue,LOGICAL,INPUT pcName CHARACTER,INPUT pcValue CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 21 STRING "ASSIGNWIDGETVALUELIST" 21 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 21 FUNCTION assignWidgetValueList,LOGICAL,INPUT pcNameList CHARACTER,INPUT pcValueList CHARACTER,INPUT pcDelimiter CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 29 STRING "BLANKWIDGET" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 29 FUNCTION blankWidget,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 35 STRING "CLEARWIDGET" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 35 FUNCTION clearWidget,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 41 STRING "DISABLERADIOBUTTON" 18 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 41 FUNCTION disableRadioButton,LOGICAL,INPUT pcNameList CHARACTER,INPUT piButtonNum INTEGER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 48 STRING "DISABLEWIDGET" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 48 FUNCTION disableWidget,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 54 STRING "ENABLERADIOBUTTON" 17 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 54 FUNCTION enableRadioButton,LOGICAL,INPUT pcNameList CHARACTER,INPUT piButtonNum INTEGER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 61 STRING "ENABLEWIDGET" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 61 FUNCTION enableWidget,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 67 STRING "FORMATTEDWIDGETVALUE" 20 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 67 FUNCTION formattedWidgetValue,CHARACTER,INPUT pcName CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 73 STRING "FORMATTEDWIDGETVALUELIST" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 73 FUNCTION formattedWidgetValueList,CHARACTER,INPUT pcNameList CHARACTER,INPUT pcDelimiter CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 80 STRING "HIDEWIDGET" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 80 FUNCTION hideWidget,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 86 STRING "HIGHLIGHTWIDGET" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 86 FUNCTION highlightWidget,LOGICAL,INPUT pcNameList CHARACTER,INPUT pcHighlightType CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 93 STRING "RESETWIDGETVALUE" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 93 FUNCTION resetWidgetValue,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 99 STRING "TOGGLEWIDGET" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 99 FUNCTION toggleWidget,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 105 STRING "VIEWWIDGET" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 105 FUNCTION viewWidget,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 111 STRING "WIDGETHANDLE" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 111 FUNCTION widgetHandle,HANDLE,INPUT pcName CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 117 STRING "WIDGETLONGCHARVALUE" 19 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 117 FUNCTION widgetLongcharValue,LONGCHAR,INPUT pcName CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 123 STRING "WIDGETISBLANK" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 123 FUNCTION widgetIsBlank,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 129 STRING "WIDGETISFOCUSED" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 129 FUNCTION widgetIsFocused,LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 135 STRING "WIDGETISMODIFIED" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 135 FUNCTION widgetIsModified,LOGICAL,INPUT pcNameList CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 141 STRING "WIDGETISTRUE" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 141 FUNCTION widgetIsTrue,LOGICAL,INPUT pcName CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 147 STRING "WIDGETVALUE" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 147 FUNCTION widgetValue,CHARACTER,INPUT pcName CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 153 STRING "WIDGETVALUELIST" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\widgetprto.i 153 FUNCTION widgetValueList,CHARACTER,INPUT pcNameList CHARACTER,INPUT pcDelimiter CHARACTER
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 60 INCLUDE OpenEdge/PresentationLayer/View/ABLGui/view.i
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 91 STRING "Btn-First" 9 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 91 STRING "First" 5 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 91 STRING "adeicon/first-au" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 96 STRING "Btn-Last" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 96 STRING "Last" 4 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 96 STRING "adeicon/last-au" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 101 STRING "Btn-Next" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 101 STRING "Next" 4 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 101 STRING "adeicon/next-au" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 106 STRING "Btn-Prev" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 106 STRING "Previous" 8 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 106 STRING "adeicon/prev-au" 15 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 111 STRING "RECT-2" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 118 STRING "F-Main" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 143 STRING ".\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w should only be RUN PERSISTENT." 124 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 164 INCLUDE src/adm2/visual.i
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 32 INCLUDE src/adm2/visprop.i
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 35 INCLUDE src/adm2/custom/visualdefscustom.i
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 103 INCLUDE src/adm2/visprto.i
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 14 PROCEDURE applyLayout,,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 17 PROCEDURE disableObject,,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 20 PROCEDURE enableObject,,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 23 PROCEDURE initializeObject,,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 27 PROCEDURE processAction,,INPUT pcAction CHARACTER
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 29 STRING "GETALLFIELDHANDLES" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 29 FUNCTION getAllFieldHandles,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 31 STRING "GETALLFIELDNAMES" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 31 FUNCTION getAllFieldNames,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 33 STRING "GETCOL" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 33 FUNCTION getCol,DECIMAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 35 STRING "GETDEFAULTLAYOUT" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 35 FUNCTION getDefaultLayout,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 37 STRING "GETDISABLEONINIT" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 37 FUNCTION getDisableOnInit,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 39 STRING "GETENABLEDOBJFLDS" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 39 FUNCTION getEnabledObjFlds,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 41 STRING "GETENABLEDOBJHDLS" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 41 FUNCTION getEnabledObjHdls,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 43 STRING "GETHEIGHT" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 43 FUNCTION getHeight,DECIMAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 45 STRING "GETHIDEONINIT" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 45 FUNCTION getHideOnInit,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 47 STRING "GETLAYOUTOPTIONS" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 47 FUNCTION getLayoutOptions,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 49 STRING "GETLAYOUTVARIABLE" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 49 FUNCTION getLayoutVariable,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 51 STRING "GETOBJECTENABLED" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 51 FUNCTION getObjectEnabled,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 53 STRING "GETOBJECTLAYOUT" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 53 FUNCTION getObjectLayout,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 55 STRING "GETROW" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 55 FUNCTION getRow,DECIMAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 57 STRING "GETWIDTH" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 57 FUNCTION getWidth,DECIMAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 59 STRING "GETRESIZEHORIZONTAL" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 59 FUNCTION getResizeHorizontal,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 61 STRING "GETRESIZEVERTICAL" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 61 FUNCTION getResizeVertical,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 63 STRING "SETALLFIELDHANDLES" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 63 FUNCTION setAllFieldHandles,LOGICAL,INPUT pcValue CHARACTER
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 66 STRING "SETALLFIELDNAMES" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 66 FUNCTION setAllFieldNames,LOGICAL,INPUT pcValue CHARACTER
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 69 STRING "SETDEFAULTLAYOUT" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 69 FUNCTION setDefaultLayout,LOGICAL,INPUT pcDefault CHARACTER
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 72 STRING "SETDISABLEONINIT" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 72 FUNCTION setDisableOnInit,LOGICAL,INPUT plDisable LOGICAL
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 75 STRING "SETHIDEONINIT" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 75 FUNCTION setHideOnInit,LOGICAL,INPUT plHide LOGICAL
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 78 STRING "SETLAYOUTOPTIONS" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 78 FUNCTION setLayoutOptions,LOGICAL,INPUT pcOptions CHARACTER
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 81 STRING "SETOBJECTLAYOUT" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 81 FUNCTION setObjectLayout,LOGICAL,INPUT pcLayout CHARACTER
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 84 STRING "SETRESIZEHORIZONTAL" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 84 FUNCTION setResizeHorizontal,LOGICAL,INPUT plResizeHorizontal LOGICAL
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 87 STRING "SETRESIZEVERTICAL" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 87 FUNCTION setResizeVertical,LOGICAL,INPUT plResizeVertical LOGICAL
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 90 STRING "GETOBJECTTYPE" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 90 FUNCTION getObjectType,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 92 STRING "GETOBJECTTRANSLATED" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 92 FUNCTION getObjectTranslated,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 94 STRING "GETOBJECTSECURED" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 94 FUNCTION getObjectSecured,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 96 STRING "CREATEUIEVENTS" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\visprto.i 96 FUNCTION createUiEvents,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 143 INCLUDE src/adm2/smrtprop.i
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 25 INCLUDE src/adm2/custom/smartdefscustom.i
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 29 INCLUDE "src/adm2/globals.i NEW GLOBAL"
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 100 STRING "gshAstraAppserver" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 100 GLOBAL-VARIABLE gshAstraAppserver
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 101 STRING "gshSessionManager" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 101 GLOBAL-VARIABLE gshSessionManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 102 STRING "gshRIManager" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 102 GLOBAL-VARIABLE gshRIManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 103 STRING "gshSecurityManager" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 103 GLOBAL-VARIABLE gshSecurityManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 104 STRING "gshProfileManager" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 104 GLOBAL-VARIABLE gshProfileManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 105 STRING "gshRepositoryManager" 20 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 105 GLOBAL-VARIABLE gshRepositoryManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 106 STRING "gshTranslationManager" 21 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 106 GLOBAL-VARIABLE gshTranslationManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 107 STRING "gshWebManager" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 107 GLOBAL-VARIABLE gshWebManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 108 STRING "gscSessionId" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 108 GLOBAL-VARIABLE gscSessionId
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 109 STRING "gsdSessionObj" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 109 GLOBAL-VARIABLE gsdSessionObj
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 110 STRING "gshFinManager" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 110 GLOBAL-VARIABLE gshFinManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 111 STRING "gshGenManager" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 111 GLOBAL-VARIABLE gshGenManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 112 STRING "gshAgnManager" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 112 GLOBAL-VARIABLE gshAgnManager
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 113 STRING "gsdTempUniqueID" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 113 GLOBAL-VARIABLE gsdTempUniqueID
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 114 STRING "gsdUserObj" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 114 GLOBAL-VARIABLE gsdUserObj
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 115 STRING "gsdRenderTypeObj" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 115 GLOBAL-VARIABLE gsdRenderTypeObj
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 116 STRING "gsdSessionScopeObj" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 116 GLOBAL-VARIABLE gsdSessionScopeObj
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\globals.i 119 INCLUDE src/adm2/custom/globalscustom.i
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 57 STRING "ghProp" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 58 STRING "ghADMProps" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 59 STRING "ghADMPropsBuf" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 60 STRING "glADMLoadFromRepos" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 61 STRING "glADMOk" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 180 INCLUDE src/adm2/smrtprto.i
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 17 PROCEDURE addLink,,INPUT phSource HANDLE,INPUT pcLink CHARACTER,INPUT phTarget HANDLE
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 23 PROCEDURE addMessage,,INPUT pcText CHARACTER,INPUT pcField CHARACTER,INPUT pcTable CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 29 PROCEDURE adjustTabOrder,,INPUT phObject HANDLE,INPUT phAnchor HANDLE,INPUT pcPosition CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 33 PROCEDURE applyEntry,,INPUT pcField CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 37 PROCEDURE changeCursor,,INPUT pcCursor CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 40 PROCEDURE createControls,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 43 PROCEDURE destroyObject,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 46 PROCEDURE displayLinks,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 49 PROCEDURE editInstanceProperties,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 52 PROCEDURE exitObject,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 55 PROCEDURE hideObject,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 58 PROCEDURE initializeObject,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 65 PROCEDURE modifyListProperty,,INPUT phCaller HANDLE,INPUT pcMode CHARACTER,INPUT pcListName CHARACTER,INPUT pcListValue CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 71 PROCEDURE modifyUserLinks,,INPUT pcMod CHARACTER,INPUT pcLinkName CHARACTER,INPUT phObject HANDLE
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 74 PROCEDURE removeAllLinks,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 80 PROCEDURE removeLink,,INPUT phSource HANDLE,INPUT pcLink CHARACTER,INPUT phTarget HANDLE
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 85 PROCEDURE repositionObject,,INPUT pdRow DECIMAL,INPUT pdCol DECIMAL
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 89 PROCEDURE returnFocus,,INPUT hTarget HANDLE
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 94 PROCEDURE showMessageProcedure,,INPUT pcMessage CHARACTER,OUTPUT plAnswer LOGICAL
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 98 PROCEDURE toggleData,,INPUT plEnabled LOGICAL
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 101 PROCEDURE viewObject,,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 103 STRING "ANYMESSAGE" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 103 FUNCTION anyMessage,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 105 STRING "ASSIGNLINKPROPERTY" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 105 FUNCTION assignLinkProperty,LOGICAL,INPUT pcLink CHARACTER,INPUT pcPropName CHARACTER,INPUT pcPropValue CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 110 STRING "FETCHMESSAGES" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 110 FUNCTION fetchMessages,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 112 STRING "GETCHILDDATAKEY" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 112 FUNCTION getChildDataKey,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 114 STRING "GETCONTAINERHANDLE" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 114 FUNCTION getContainerHandle,HANDLE,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 116 STRING "GETCONTAINERHIDDEN" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 116 FUNCTION getContainerHidden,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 118 STRING "GETCONTAINERSOURCE" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 118 FUNCTION getContainerSource,HANDLE,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 120 STRING "GETCONTAINERSOURCEEVENTS" 24 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 120 FUNCTION getContainerSourceEvents,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 122 STRING "GETCONTAINERTYPE" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 122 FUNCTION getContainerType,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 124 STRING "GETDATALINKSENABLED" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 124 FUNCTION getDataLinksEnabled,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 126 STRING "GETDATASOURCE" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 126 FUNCTION getDataSource,HANDLE,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 128 STRING "GETDATASOURCEEVENTS" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 128 FUNCTION getDataSourceEvents,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 130 STRING "GETDATASOURCENAMES" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 130 FUNCTION getDataSourceNames,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 132 STRING "GETDATATARGET" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 132 FUNCTION getDataTarget,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 134 STRING "GETDATATARGETEVENTS" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 134 FUNCTION getDataTargetEvents,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 136 STRING "GETDBAWARE" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 136 FUNCTION getDBAware,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 138 STRING "GETDESIGNDATAOBJECT" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 138 FUNCTION getDesignDataObject,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 140 STRING "GETDYNAMICOBJECT" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 140 FUNCTION getDynamicObject,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 142 STRING "GETINSTANCEPROPERTIES" 21 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 142 FUNCTION getInstanceProperties,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 144 STRING "GETLOGICALOBJECTNAME" 20 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 144 FUNCTION getLogicalObjectName,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 146 STRING "GETLOGICALVERSION" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 146 FUNCTION getLogicalVersion,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 148 STRING "GETOBJECTHIDDEN" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 148 FUNCTION getObjectHidden,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 150 STRING "GETOBJECTINITIALIZED" 20 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 150 FUNCTION getObjectInitialized,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 152 STRING "GETOBJECTNAME" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 152 FUNCTION getObjectName,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 154 STRING "GETOBJECTPAGE" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 154 FUNCTION getObjectPage,INTEGER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 156 STRING "GETOBJECTPARENT" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 156 FUNCTION getObjectParent,HANDLE,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 158 STRING "GETOBJECTVERSION" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 158 FUNCTION getObjectVersion,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 160 STRING "GETOBJECTVERSIONNUMBER" 22 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 160 FUNCTION getObjectVersionNumber,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 162 STRING "GETPARENTDATAKEY" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 162 FUNCTION getParentDataKey,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 164 STRING "GETPASSTHROUGHLINKS" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 164 FUNCTION getPassThroughLinks,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 166 STRING "GETPHYSICALOBJECTNAME" 21 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 166 FUNCTION getPhysicalObjectName,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 168 STRING "GETPHYSICALVERSION" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 168 FUNCTION getPhysicalVersion,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 170 STRING "GETPROPERTYDIALOG" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 170 FUNCTION getPropertyDialog,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 172 STRING "GETQUERYOBJECT" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 172 FUNCTION getQueryObject,LOGICAL,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 174 STRING "GETRUNATTRIBUTE" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 174 FUNCTION getRunAttribute,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 176 STRING "GETSUPPORTEDLINKS" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 176 FUNCTION getSupportedLinks,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 178 STRING "GETTRANSLATABLEPROPERTIES" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 178 FUNCTION getTranslatableProperties,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 180 STRING "GETUIBMODE" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 180 FUNCTION getUIBMode,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 182 STRING "GETUSERPROPERTY" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 182 FUNCTION getUserProperty,CHARACTER,INPUT pcPropName CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 185 STRING "INSTANCEPROPERTYLIST" 20 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 185 FUNCTION instancePropertyList,CHARACTER,INPUT pcPropList CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 188 STRING "LINKHANDLES" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 188 FUNCTION linkHandles,CHARACTER,INPUT pcLink CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 191 STRING "LINKPROPERTY" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 191 FUNCTION linkProperty,CHARACTER,INPUT pcLink CHARACTER,INPUT pcPropName CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 195 STRING "MAPPEDENTRY" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 195 FUNCTION mappedEntry,CHARACTER,INPUT pcEntry CHARACTER,INPUT pcList CHARACTER,INPUT plFirst LOGICAL,INPUT pcDelimiter CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 201 STRING "MESSAGENUMBER" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 201 FUNCTION messageNumber,CHARACTER,INPUT piMessage INTEGER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 204 STRING "PROPERTYTYPE" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 204 FUNCTION propertyType,CHARACTER,INPUT pcPropName CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 207 STRING "REVIEWMESSAGES" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 207 FUNCTION reviewMessages,CHARACTER,
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 209 STRING "SETCHILDDATAKEY" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 209 FUNCTION setChildDataKey,LOGICAL,INPUT cChildDataKey CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 212 STRING "SETCONTAINERHIDDEN" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 212 FUNCTION setContainerHidden,LOGICAL,INPUT plHidden LOGICAL
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 215 STRING "SETCONTAINERSOURCE" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 215 FUNCTION setContainerSource,LOGICAL,INPUT phObject HANDLE
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 218 STRING "SETCONTAINERSOURCEEVENTS" 24 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 218 FUNCTION setContainerSourceEvents,LOGICAL,INPUT pcEvents CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 221 STRING "SETDATALINKSENABLED" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 221 FUNCTION setDataLinksEnabled,LOGICAL,INPUT lDataLinksEnabled LOGICAL
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 224 STRING "SETDATASOURCE" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 224 FUNCTION setDataSource,LOGICAL,INPUT phObject HANDLE
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 227 STRING "SETDATASOURCEEVENTS" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 227 FUNCTION setDataSourceEvents,LOGICAL,INPUT pcEventsList CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 230 STRING "SETDATASOURCENAMES" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 230 FUNCTION setDataSourceNames,LOGICAL,INPUT pcSourceNames CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 233 STRING "SETDATATARGET" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 233 FUNCTION setDataTarget,LOGICAL,INPUT pcTarget CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 236 STRING "SETDATATARGETEVENTS" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 236 FUNCTION setDataTargetEvents,LOGICAL,INPUT pcEvents CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 239 STRING "SETDBAWARE" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 239 FUNCTION setDBAware,LOGICAL,INPUT lAware LOGICAL
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 242 STRING "SETDESIGNDATAOBJECT" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 242 FUNCTION setDesignDataObject,LOGICAL,INPUT pcDataObject CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 245 STRING "SETDYNAMICOBJECT" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 245 FUNCTION setDynamicObject,LOGICAL,INPUT lTemp LOGICAL
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 248 STRING "SETINSTANCEPROPERTIES" 21 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 248 FUNCTION setInstanceProperties,LOGICAL,INPUT pcPropList CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 251 STRING "SETLOGICALOBJECTNAME" 20 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 251 FUNCTION setLogicalObjectName,LOGICAL,INPUT c CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 254 STRING "SETLOGICALVERSION" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 254 FUNCTION setLogicalVersion,LOGICAL,INPUT cVersion CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 257 STRING "SETOBJECTNAME" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 257 FUNCTION setObjectName,LOGICAL,INPUT pcName CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 260 STRING "SETOBJECTPARENT" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 260 FUNCTION setObjectParent,LOGICAL,INPUT phParent HANDLE
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 263 STRING "SETOBJECTVERSION" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 263 FUNCTION setObjectVersion,LOGICAL,INPUT cObjectVersion CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 266 STRING "SETPARENTDATAKEY" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 266 FUNCTION setParentDataKey,LOGICAL,INPUT cParentDataKey CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 269 STRING "SETPASSTHROUGHLINKS" 19 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 269 FUNCTION setPassThroughLinks,LOGICAL,INPUT pcLinks CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 272 STRING "SETPHYSICALOBJECTNAME" 21 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 272 FUNCTION setPhysicalObjectName,LOGICAL,INPUT cTemp CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 275 STRING "SETPHYSICALVERSION" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 275 FUNCTION setPhysicalVersion,LOGICAL,INPUT cVersion CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 278 STRING "SETRUNATTRIBUTE" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 278 FUNCTION setRunAttribute,LOGICAL,INPUT cRunAttribute CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 281 STRING "SETSUPPORTEDLINKS" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 281 FUNCTION setSupportedLinks,LOGICAL,INPUT pcLinkList CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 284 STRING "SETTRANSLATABLEPROPERTIES" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 284 FUNCTION setTranslatableProperties,LOGICAL,INPUT pcPropList CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 287 STRING "SETUIBMODE" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 287 FUNCTION setUIBMode,LOGICAL,INPUT pcMode CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 290 STRING "SETUSERPROPERTY" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 290 FUNCTION setUserProperty,LOGICAL,INPUT pcPropName CHARACTER,INPUT pcPropValue CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 294 STRING "SHOWMESSAGE" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 294 FUNCTION showmessage,LOGICAL,INPUT pcMessage CHARACTER
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 297 STRING "SIGNATURE" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\smrtprto.i 297 FUNCTION Signature,CHARACTER,INPUT pcName CHARACTER
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 257 ACCESS SHARED gshRepositoryManager 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 283 ACCESS SHARED gshRepositoryManager 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 283 STRING "," 1 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 283 STRING "prepareInstance" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 313 STRING "ObjectName" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 313 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 314 STRING "ObjectVersion" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 314 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 314 STRING "ADM2.2" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 316 STRING "ObjectType" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 316 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 316 STRING "SmartObject" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 318 STRING "ContainerType" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 318 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 320 STRING "PropertyDialog" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 320 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 320 STRING "adm2/support/visuald.w" 22 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 322 STRING "QueryObject" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 322 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 323 STRING "ContainerHandle" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 323 STRING "HANDLE" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 324 STRING "InstanceProperties" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 324 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 324 STRING "HideOnInit,DisableOnInit,ObjectLayout" 37 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 327 STRING "SupportedLinks" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 327 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 329 STRING "ContainerHidden" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 329 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 330 STRING "ObjectInitialized" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 330 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 332 STRING "ObjectHidden" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 332 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 333 STRING "ObjectsCreated" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 333 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 334 STRING "HideOnInit" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 334 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 335 STRING "UIBMode" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 335 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 336 STRING "ContainerSource" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 336 STRING "HANDLE" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 342 STRING "ContainerSourceEvents" 21 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 342 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 342 STRING "initializeObject,hideObject,viewObject,destroyObject,enableObject,confirmExit,confirmCancel,confirmOk,isUpdateActive" 116 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 344 STRING "DataSource" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 344 STRING "HANDLE" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 350 STRING "DataSourceEvents" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 350 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 350 STRING "dataAvailable,queryPosition,updateState,deleteComplete,fetchDataSet,confirmContinue,confirmCommit,confirmUndo,assignMaxGuess,isUpdatePending" 140 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 352 STRING "TranslatableProperties" 22 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 352 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 354 STRING "ObjectPage" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 354 STRING "INT" 3 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 355 STRING "DBAware" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 355 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 361 STRING "DesignDataObject" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 361 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 362 STRING "DataSourceNames" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 362 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 363 STRING "DataTarget" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 363 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 364 STRING "DataTargetEvents" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 364 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 364 STRING "updateState,rowObjectState,fetchBatch,LinkState" 47 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 367 STRING "LogicalObjectName" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 367 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 368 STRING "PhysicalObjectName" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 368 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 370 STRING "LogicalVersion" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 370 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 371 STRING "PhysicalVersion" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 371 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 373 STRING "DynamicObject" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 373 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 374 STRING "RunAttribute" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 374 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 375 STRING "ChildDataKey" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 375 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 376 STRING "ParentDataKey" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 376 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 377 STRING "DataLinksEnabled" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 377 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 378 STRING "InactiveLinks" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 378 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 379 STRING "InstanceId" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 379 STRING "DECIMAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 381 STRING "SuperProcedure" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 381 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 382 STRING "SuperProcedureMode" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 382 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 383 STRING "SuperProcedureHandle" 20 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 383 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 385 STRING "LayoutPosition" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 385 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 386 STRING "ClassName" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 386 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 387 STRING "RenderingProcedure" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 387 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 388 STRING "ThinRenderingProcedure" 22 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 388 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 389 STRING "Label" 5 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 389 STRING "CHAR" 4 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 394 INCLUDE src/adm2/custom/smrtpropcustom.i
+C:\Progress\OpenEdge\src\adm2\smrtprop.i C:\Progress\OpenEdge\src\adm2\custom\smrtpropcustom.i 78 INCLUDE src/adm2/custom/smrtprtocustom.i
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 441 STRING "cType" 5 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 442 INCLUDE "get ObjectType cType"
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\gui\get 9 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\gui\get 9 STRING "Target" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\gui\get 9 STRING "WHERE Target = WIDGET-H(""" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\gui\get 9 STRING """)" 2 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\gui\get 9 STRING "ObjectType" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 449 FUNCTION getObjectType,character,
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\smrtprop.i 449 STRING "GETOBJECTTYPE" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 153 STRING "ObjectLayout" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 153 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 154 STRING "LayoutOptions" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 154 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 155 STRING "ObjectEnabled" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 155 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 156 STRING "LayoutVariable" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 156 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 157 STRING "DefaultLayout" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 157 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 158 STRING "DisableOnInit" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 158 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 159 STRING "EnabledObjFlds" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 159 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 160 STRING "EnabledObjHdls" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 160 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 161 STRING "FieldSecurity" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 161 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 162 STRING "SecuredTokens" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 162 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 163 STRING "AllFieldHandles" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 163 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 164 STRING "AllFieldNames" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 164 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 165 STRING "MinHeight" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 165 STRING "DECIMAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 166 STRING "MinWidth" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 166 STRING "DECIMAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 167 STRING "ResizeHorizontal" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 167 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 168 STRING "ResizeVertical" 14 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 168 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 169 STRING "ObjectSecured" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 169 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 170 STRING "ObjectTranslated" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 170 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 171 STRING "PopupButtonsInFields" 20 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 171 STRING "LOGICAL" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 172 STRING "ColorInfoBG" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 172 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 173 STRING "ColorInfoFG" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 173 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 174 STRING "ColorWarnBG" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 174 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 175 STRING "ColorWarnFG" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 175 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 176 STRING "ColorErrorBG" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 176 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 177 STRING "ColorErrorFG" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 177 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 178 STRING "BGColor" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 178 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 179 STRING "FGColor" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 179 STRING "INTEGER" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 180 STRING "FieldPopupMapping" 17 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 180 STRING "CHARACTER" 9 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\visprop.i 183 INCLUDE src/adm2/custom/vispropcustom.i
+C:\Progress\OpenEdge\src\adm2\visprop.i C:\Progress\OpenEdge\src\adm2\custom\vispropcustom.i 78 INCLUDE src/adm2/custom/visprtocustom.i
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 77 INCLUDE src/adm2/smart.i
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 42 STRING "ghContainer" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 102 STRING "adm2/smart.p" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 107 STRING "cObjectName" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 108 STRING "iStart" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 116 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 123 STRING "HideOnInit,DisableOnInit,ObjectLayout" 37 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 124 INCLUDE "set InstanceProperties cObjectName"
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "Target" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "WHERE Target = WIDGET-H(""" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING """)" 2 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "InstanceProperties" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 127 STRING "/" 1 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 127 STRING "\" 1 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 127 STRING "/" 1 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 127 STRING "." 1 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 136 INCLUDE "set ObjectName cObjectName"
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "Target" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "WHERE Target = WIDGET-H(""" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING """)" 2 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ObjectName" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 139 INCLUDE "set ContainerHandle ""FRAME F-Main:HANDLE"""
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "Target" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "WHERE Target = WIDGET-H(""" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING """)" 2 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ContainerHandle" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 156 INCLUDE "set ObjectType ""'SmartObject':U"""
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 156 INCLUDE "set ContainerType ""'':U"""
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 156 INCLUDE "set PhysicalVersion ""'':U"""
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 156 INCLUDE "set PhysicalObjectName ""(IF '':U <> '':U THEN '':U ELSE THIS-PROCEDURE:FILE-NAME)"""
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "Target" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "WHERE Target = WIDGET-H(""" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING """)" 2 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ObjectType" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "SmartObject" 11 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "ContainerType" 13 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "PhysicalVersion" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\set 9 STRING "PhysicalObjectName" 18 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 170 INCLUDE src/adm2/custom/smartcustom.i
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 199 STRING "hReposBuffer" 12 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 200 STRING "hPropTable" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 201 STRING "hBuffer" 7 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 202 STRING "hTable" 6 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 205 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 207 STRING "WHERE Target = WIDGET-H(""" 25 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 207 STRING """)" 2 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 213 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 218 INCLUDE "fn deleteProperties"
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\gui\fn 1 STRING "deleteProperties" 16 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 223 PROCEDURE adm-clone-props,,
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 223 STRING "ADM-CLONE-PROPS" 15 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 273 STRING "pcProcName" 10 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 275 STRING "hProc" 5 NONE UNTRANSLATABLE 
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 324 PROCEDURE start-super-proc,,INPUT pcProcName CHARACTER
+C:\Progress\OpenEdge\src\adm2\visual.i C:\Progress\OpenEdge\src\adm2\smart.i 324 STRING "START-SUPER-PROC" 16 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 95 STRING "cFields" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 99 STRING "adm2/visual.p" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 103 STRING "," 1 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 103 STRING " " 1 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 103 STRING "Btn-First Btn-Prev Btn-Next Btn-Last RECT-2" 43 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 104 INCLUDE "set EnabledObjFlds cFields"
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\gui\set 9 STRING "ADMProps" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\gui\set 9 STRING "Target" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\gui\set 9 STRING "WHERE Target = WIDGET-H(""" 25 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\gui\set 9 STRING """)" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\gui\set 9 STRING "EnabledObjFlds" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 109 INCLUDE src/adm2/custom/visualcustom.i
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 114 ACCESS SHARED gshSessionManager 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 116 ACCESS SHARED gshSessionManager 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 116 STRING "F-Main" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 121 STRING "CTRL-PAGE-UP" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 122 STRING "F-Main" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 125 STRING "CTRL-PAGE-DOWN" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w C:\Progress\OpenEdge\src\adm2\visual.i 126 STRING "F-Main" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 183 STRING "First" 5 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 187 STRING "Last" 4 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 191 STRING "Next" 4 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 195 STRING "Prev" 4 NONE TRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 225 STRING "oButton" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w .\referencecomponents\presentationlayer\src\OpenEdge\PresentationLayer\View\ABLGui\navpanel.w 226 STRING "oArgs" 5 NONE UNTRANSLATABLE 

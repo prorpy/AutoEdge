@@ -1,0 +1,64 @@
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 1 COMPILE OpenEdge\Lang\RowStateEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 33 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 38 CLASS OpenEdge.Lang.RowStateEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 38 STRING "OpenEdge.Lang.RowStateEnum" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 38 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 40 STRING "Unmodified" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 40 PROPERTY PUBLIC,STATIC,,,,Unmodified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 41 STRING "Deleted" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 41 PROPERTY PUBLIC,STATIC,,,,Deleted
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 42 STRING "Modified" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 42 PROPERTY PUBLIC,STATIC,,,,Modified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 43 STRING "Created" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 43 PROPERTY PUBLIC,STATIC,,,,Created
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 46 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Unmodified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 46 STRING "ROW-UNMODIFIED" 14 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 46 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.RowStateEnum:Unmodified 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 47 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Deleted
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 47 STRING "ROW-DELETED" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 47 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.RowStateEnum:Deleted 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 48 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Modified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 48 STRING "ROW-MODIFIED" 12 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 48 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.RowStateEnum:Modified 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 49 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Created
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 49 STRING "ROW-CREATED" 11 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 49 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.RowStateEnum:Created 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 50 CONSTRUCTOR ,STATIC,,,RowStateEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 50 STRING "ROWSTATEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 52 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 52 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 54 CONSTRUCTOR PUBLIC,,,,RowStateEnum,void,INPUT piValue INTEGER,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 54 STRING "ROWSTATEENUM" 12 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 56 STRING "piValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 57 STRING "oRowStateEnum" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Deleted
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 60 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 60 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Deleted
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Modified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 61 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 61 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Modified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 62 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Created
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 62 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.EnumMember:Value
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 62 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Created
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 63 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Unmodified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 68 METHOD PUBLIC,STATIC,,,,ValueToEnum,OpenEdge.Lang.RowStateEnum,INPUT piValue INTEGER
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 68 STRING "VALUETOENUM" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 70 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 71 STRING "oRowStateEnum" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 74 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Unmodified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 75 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Deleted
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 76 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Modified
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 77 ACCESS INHERITED-PROPERTY OpenEdge.Lang.RowStateEnum:Created
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 81 METHOD PUBLIC,STATIC,,,,NameToEnum,OpenEdge.Lang.RowStateEnum,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 81 STRING "NAMETOENUM" 10 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 46 NEW OpenEdge.Lang.RowStateEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 47 NEW OpenEdge.Lang.RowStateEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 48 NEW OpenEdge.Lang.RowStateEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 49 NEW OpenEdge.Lang.RowStateEnum,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT integer,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 74 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 75 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 76 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\RowStateEnum.cls 77 INVOKE OpenEdge.Lang.EnumMember:ToString

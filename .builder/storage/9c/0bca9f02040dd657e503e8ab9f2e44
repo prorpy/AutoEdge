@@ -1,0 +1,5 @@
+OpenEdge.BusinessComponent.Task
+OpenEdge.BusinessComponent.Task.BusinessTask	C	68d0b0db785be60a752c5144c5570316
+OpenEdge.BusinessComponent.Task.BusinessTaskDecorator	C	37eb12946e25e069315d709bf6980653
+OpenEdge.BusinessComponent.Task.IBusinessTask	C	b90cebf4183bad1df96985065f632e9b
+OpenEdge.BusinessComponent.Task.TaskServiceInterface	C	8684a0fe5dc833ee2aea11d00254e158

@@ -1,0 +1,15 @@
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 1 CPINTERNAL utf-8
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 1 CPSTREAM iso8859-1
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 1 STRING "m1" 2 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 2 STRING "r1" 2 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 3 STRING "i" 1 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 4 STRING "i2" 2 NONE UNTRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 6 STRING "S1.ser" 6 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 9 STRING "[DEBUG]" 7 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 9 STRING "read m1 is " 11 NONE TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 17 STRING "->,>>>,>>9" 10 NONE TRANSLATABLE  FORMAT 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 17 STRING "x(8)" 4 NONE TRANSLATABLE  FORMAT 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 21 STRING "i" 1 LEFT TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 21 STRING "i2" 2 LEFT TRANSLATABLE 
+OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\custom3.p 21 STRING "---------------- ----------------" 33 NONE UNTRANSLATABLE 

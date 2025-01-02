@@ -1,0 +1,8 @@
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 1 COMPILE OpenEdge\Lang\ABLPrimitive.cls
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 27 CLASS OpenEdge.Lang.ABLPrimitive,,,,,ABSTRACT,
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 27 STRING "OpenEdge.Lang.ABLPrimitive" 26 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 29 CONSTRUCTOR PUBLIC,,,,ABLPrimitive,void,
+.\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls .\referencecomponents\support\src\OpenEdge\Lang\ABLPrimitive.cls 29 STRING "ABLPRIMITIVE" 12 NONE UNTRANSLATABLE 

@@ -1,0 +1,17 @@
+OpenEdge.Lang.BPM
+OpenEdge.Lang.BPM.DataSlotInstance	C	734a2ac8c5c24446e08a9bc1f9916d95
+OpenEdge.Lang.BPM.DataSlotTemplate	C	f7a4c536093849c5542bb467a85cbf24
+OpenEdge.Lang.BPM.IBizLogicAPI	C	4d36ea851fb3d140095ce2a45fb549e9
+OpenEdge.Lang.BPM.PriorityEnum	C	41074c4215fe0547afb4e4bf9e38ee65
+OpenEdge.Lang.BPM.ProcessInstance	C	e71eb937bbfdc745b763982b9b0f1c75
+OpenEdge.Lang.BPM.ProcessInstanceStateEnum	C	8c93cdfa6a3cac6e65054a57c214fb84
+OpenEdge.Lang.BPM.ProcessTemplate	C	1173e5271d7743e92b2fd66dd22f363d
+OpenEdge.Lang.BPM.ProcessTemplateStateEnum	C	551d3e8f8ee119af83233f7b719e4d63
+OpenEdge.Lang.BPM.SavvionType	C	b73e3e1923f6f8897f5b3b954c348695
+OpenEdge.Lang.BPM.Task	C	29cd0c1c429ba04129dbbcf4db4353e0
+OpenEdge.Lang.BPM.WorkFlowWebService	C	a8ad7006d040816efb35421cd2459d06
+OpenEdge.Lang.BPM.WorkItem	C	e13f4378cde8412ad7467fbfa861b0f7
+OpenEdge.Lang.BPM.WorkItemStatusEnum	C	305a2a7308d094345fc936ec9aada8be
+OpenEdge.Lang.BPM.WorkStepInstance	C	b900811d36e7a226dcd461eeb5f12e06
+OpenEdge.Lang.BPM.WorkStepTemplate	C	5a47f43c7fe83c5daa8ddf109652fed4
+OpenEdge.Lang.BPM.WorkStepTemplateTypeEnum	C	575fea73fa0266a93e233828661b7084

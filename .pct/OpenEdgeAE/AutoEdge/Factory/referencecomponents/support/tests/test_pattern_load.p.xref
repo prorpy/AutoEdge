@@ -1,0 +1,14 @@
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 19 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 21 STRING "pcFilePattern" 13 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 22 STRING "iLoop" 5 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 23 STRING "iMax" 4 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 24 STRING "cOriginalExtension" 18 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 25 STRING "cFileBase" 9 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 26 STRING "cFolderBase" 11 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 27 STRING "cFile" 5 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 28 STRING "cPWD" 4 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 29 STRING "cFolder" 7 NONE UNTRANSLATABLE 
+.\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p .\OpenEdgeAE\AutoEdge\Factory\referencecomponents\support\tests\test_pattern_load.p 30 STRING "oModules" 8 NONE UNTRANSLATABLE 

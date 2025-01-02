@@ -1,0 +1,15 @@
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 1 COMPILE server\setup\data\load_all.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 1 CPINTERNAL utf-8
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 1 CPSTREAM iso8859-1
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 29 ROUTINE-LEVEL ON ERROR UNDO, THROW
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 32 RUN setup/data/load_geography.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 33 RUN setup/data/load_statusdetail.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 34 RUN setup/data/load_tenants.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 35 RUN setup/data/load_salesregion.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 38 RUN setup/data/load_contact_types.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 39 RUN setup/data/load_addresses.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 41 RUN setup/data/load_dealers.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 42 RUN setup/data/load_customers.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 43 RUN setup/data/load_employees.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 44 RUN setup/data/load_users.p
+autoedgethefactory\server\setup\data\load_all.p autoedgethefactory\server\setup\data\load_all.p 46 RUN setup/data/load_items.p

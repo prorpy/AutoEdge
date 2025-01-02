@@ -1,0 +1,4 @@
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p 1 COMPILE OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p 1 CPINTERNAL utf-8
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p 1 CPSTREAM iso8859-1
+.\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p .\OpenEdgeAE\AutoEdge\Factory\autoedgethefactory\server\tests\test_connect_bpmserver.p 14 ROUTINE-LEVEL ON ERROR UNDO, THROW

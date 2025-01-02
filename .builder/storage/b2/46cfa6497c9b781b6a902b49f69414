@@ -1,0 +1,6 @@
+OpenEdge.BusinessComponent.Entity
+OpenEdge.BusinessComponent.Entity.BusinessEntity	C	ecd05b9b5f571ec806dc39245ffe2457
+OpenEdge.BusinessComponent.Entity.BusinessEntityDecorator	C	8ac0bf03c1f241850af5c38fb42042c9
+OpenEdge.BusinessComponent.Entity.IBusinessEntity	C	7311663c512e47efa2e0265dfbba4da7
+OpenEdge.BusinessComponent.Entity.ServiceInterface	C	abc3f46655f94f95ae671c2fb638e9c5
+OpenEdge.BusinessComponent.Entity.StandardBusinessEntity	C	56f18d5b9ec299a7d6445826ae51d935

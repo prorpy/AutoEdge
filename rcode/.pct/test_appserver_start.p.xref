@@ -1,0 +1,26 @@
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 1 COMPILE test_appserver_start.p
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 1 CPINTERNAL utf-8
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 1 CPSTREAM iso8859-1
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 16 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 23 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 23 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 23 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:CurrentSession 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 25 ACCESS PUBLIC-PROPERTY OpenEdge.Lang.SessionClientTypeEnum:AppServer
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 28 STRING "oException" 10 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 33 STRING "oAppError" 9 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 34 ACCESS PUBLIC-PROPERTY Progress.Lang.AppError:ReturnValue
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 34 ACCESS PUBLIC-PROPERTY Progress.Lang.ProError:CallStack
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 34 STRING "Unhandled Progress.Lang.AppError" 32 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 40 STRING "oError" 6 NONE UNTRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 41 ACCESS PUBLIC-PROPERTY Progress.Lang.Error:CallStack
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 41 STRING "(" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 41 STRING ")" 1 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 41 STRING "Unhandled Progress.Lang.Error" 29 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 49 STRING "just about done" 15 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 49 STRING "[PJ DEBUG]" 10 NONE TRANSLATABLE 
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 25 RUN OpenEdge/CommonInfrastructure/Server/as_startup.p
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 29 INVOKE OpenEdge.Core.System.ApplicationError:LogError
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 30 INVOKE OpenEdge.Core.System.ApplicationError:ShowError
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 41 INVOKE Progress.Lang.Error:GetMessage,INPUT integer
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 41 INVOKE Progress.Lang.Error:GetMessageNum,INPUT integer
+.\autoedgethefactory\server\tests\test_appserver_start.p .\autoedgethefactory\server\tests\test_appserver_start.p 52 RUN OpenEdge/CommonInfrastructure/Common/stop_session.p

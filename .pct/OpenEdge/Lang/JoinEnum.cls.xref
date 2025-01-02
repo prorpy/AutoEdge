@@ -1,0 +1,49 @@
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 1 COMPILE OpenEdge\Lang\JoinEnum.cls
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 25 ROUTINE-LEVEL ON ERROR UNDO, THROW
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 30 CLASS OpenEdge.Lang.JoinEnum,INHERITS OpenEdge.Lang.EnumMember,,,FINAL,,
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 30 STRING "OpenEdge.Lang.JoinEnum" 22 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 30 STRING "OpenEdge.Lang.EnumMember" 24 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 32 STRING "None" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 32 PROPERTY PUBLIC,STATIC,,,,None
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 33 STRING "And" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 33 PROPERTY PUBLIC,STATIC,,,,And
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 34 STRING "Or" 2 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 34 PROPERTY PUBLIC,STATIC,,,,Or
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 35 STRING "Not" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 35 PROPERTY PUBLIC,STATIC,,,,Not
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 38 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:None
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 38 STRING "none" 4 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 38 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.JoinEnum:None 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 39 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:And
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 39 STRING "and" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 39 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.JoinEnum:And 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 40 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:Or
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 40 STRING "or" 2 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 40 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.JoinEnum:Or 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 41 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:Not
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 41 STRING "not" 3 NONE TRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 41 UPDATE PUBLIC-PROPERTY OpenEdge.Lang.JoinEnum:Not 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 42 CONSTRUCTOR ,STATIC,,,JoinEnum,void,
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 42 STRING "JOINENUM" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 44 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 46 CONSTRUCTOR PUBLIC,,,,JoinEnum,void,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 46 STRING "JOINENUM" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 48 STRING "pcName" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 49 STRING "oEnum" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 52 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:None
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 53 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:And
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 54 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:Or
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 55 ACCESS INHERITED-PROPERTY OpenEdge.Lang.JoinEnum:Not
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 59 METHOD PUBLIC,STATIC,,,,EnumFromString,OpenEdge.Lang.JoinEnum,INPUT pcName CHARACTER
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 59 STRING "ENUMFROMSTRING" 14 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 38 NEW OpenEdge.Lang.JoinEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 39 NEW OpenEdge.Lang.JoinEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 40 NEW OpenEdge.Lang.JoinEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 41 NEW OpenEdge.Lang.JoinEnum,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 45 INVOKE OpenEdge.Lang.EnumMember:EnumMember,INPUT character
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 52 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 53 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 54 INVOKE OpenEdge.Lang.EnumMember:ToString
+.\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls .\referencecomponents\support\src\OpenEdge\Lang\JoinEnum.cls 55 INVOKE OpenEdge.Lang.EnumMember:ToString

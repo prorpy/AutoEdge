@@ -1,0 +1,36 @@
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 1 COMPILE OpenEdge\Lang\Collections\IMap.cls
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 1 CPINTERNAL utf-8
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 1 CPSTREAM iso8859-1
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 35 INTERFACE OpenEdge.Lang.Collections.IMap,,,,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 35 STRING "OpenEdge.Lang.Collections.IMap" 30 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 38 STRING "Size" 4 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 38 PROPERTY PUBLIC,,,,,Size
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 44 STRING "Values" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 44 PROPERTY PUBLIC,,,,,Values
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 47 STRING "KeySet" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 47 PROPERTY PUBLIC,,,,,KeySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 50 STRING "EntrySet" 8 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 50 PROPERTY PUBLIC,,,,,EntrySet
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 53 METHOD PUBLIC,,,,,Clear,void,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 53 STRING "CLEAR" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 56 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 56 METHOD PUBLIC,,,,,ContainsKey,logical,INPUT poKey PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 56 STRING "CONTAINSKEY" 11 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 59 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 59 METHOD PUBLIC,,,,,ContainsValue,logical,INPUT poValue PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 59 STRING "CONTAINSVALUE" 13 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 62 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 62 METHOD PUBLIC,,,,,Get,Progress.Lang.Object,INPUT poKey PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 62 STRING "GET" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 67 METHOD PUBLIC,,,,,IsEmpty,logical,
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 67 STRING "ISEMPTY" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 70 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 70 STRING "poValue" 7 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 70 METHOD PUBLIC,,,,,Put,Progress.Lang.Object,INPUT poKey PROGRESS.LANG.OBJECT,INPUT poValue PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 70 STRING "PUT" 3 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 73 STRING "poMap" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 73 METHOD PUBLIC,,,,,PutAll,void,INPUT poMap OPENEDGE.LANG.COLLECTIONS.IMAP
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 73 STRING "PUTALL" 6 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 76 STRING "poKey" 5 NONE UNTRANSLATABLE 
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 76 METHOD PUBLIC,,,,,Remove,Progress.Lang.Object,INPUT poKey PROGRESS.LANG.OBJECT
+.\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls .\referencecomponents\support\src\OpenEdge\Lang\Collections\IMap.cls 76 STRING "REMOVE" 6 NONE UNTRANSLATABLE 
